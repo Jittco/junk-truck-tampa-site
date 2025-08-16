@@ -21,6 +21,8 @@ export default {
 			fontFamily: {
 				'anton': ['Anton', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
+				'changa-one': ['Changa One', 'Impact', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
