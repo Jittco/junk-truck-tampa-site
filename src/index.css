@@ -137,7 +137,7 @@ All colors MUST be HSL.
 
 /* Main Navigation */
 .main-nav {
-  height: 80px;
+  height: 100px;
   background-color: hsl(var(--background));
   display: flex;
   align-items: center;
@@ -154,13 +154,13 @@ All colors MUST be HSL.
 
 @media (max-width: 1024px) {
   .main-nav {
-    height: 68px;
+    height: 84px;
   }
 }
 
 @media (max-width: 768px) {
   .main-nav {
-    height: 60px;
+    height: 76px;
     padding: 0 16px;
   }
 }
@@ -171,21 +171,23 @@ All colors MUST be HSL.
   color: hsl(var(--text));
   font-size: 24px;
   text-decoration: none;
-  max-height: 48px;
+  max-height: 96px;
   line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {
   .nav-logo {
     font-size: 20px;
-    max-height: 44px;
+    max-height: 80px;
   }
 }
 
 @media (max-width: 768px) {
   .nav-logo {
     font-size: 18px;
-    max-height: 36px;
+    max-height: 72px;
   }
 }
 
