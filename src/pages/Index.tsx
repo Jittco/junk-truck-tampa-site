@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import BeforeAfter from "@/components/BeforeAfter";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ServiceAreas from "@/components/ServiceAreas";
 import Testimonial from "@/components/Testimonial";
@@ -15,6 +16,7 @@ const Index = () => {
       <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
         <Services />
+        <BeforeAfter />
         <WhyChooseUs />
         <ServiceAreas />
         <Testimonial />
