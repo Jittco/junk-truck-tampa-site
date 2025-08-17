@@ -1,14 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png)` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png)`
+    }}>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
@@ -25,32 +22,15 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            variant="cta" 
-            size="lg"
-            className="px-8 py-4 text-lg"
-            asChild
-          >
-            <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae">
-              Book Now
-            </a>
+          <Button variant="cta" size="lg" className="px-8 py-4 text-lg" asChild>
+            <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae">Book Online in 60 Seconds</a>
           </Button>
           
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="px-8 py-4 text-lg border-white text-white hover:bg-white hover:text-foreground"
-            asChild
-          >
-            <a href="tel:8448586546" className="flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              Call Now
-            </a>
+          <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white hover:bg-white hover:text-foreground" asChild>
+            
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
