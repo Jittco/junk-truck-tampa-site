@@ -25,7 +25,7 @@ const Navigation = () => {
         <img 
           src="/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png" 
           alt="Junk in the Truck Co Logo" 
-          className="h-16 w-auto"
+          className="h-30 w-auto"
         />
       </div>
 
