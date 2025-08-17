@@ -1,9 +1,7 @@
 import { Cross } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const ChristianValues = () => {
-  return (
-    <section className="bg-background py-16 md:py-24">
+  return <section className="bg-background py-16 md:py-24">
       <div className="container mx-auto px-4 max-w-4xl text-center">
         <div className="flex items-center justify-center gap-3 mb-8">
           <Cross className="w-6 h-6 text-muted-foreground" />
@@ -34,21 +32,10 @@ const ChristianValues = () => {
           </div>
         </div>
 
-        <Button 
-          asChild
-          className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 rounded-lg text-lg"
-        >
-          <a 
-            href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book Now
-          </a>
+        <Button asChild className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 rounded-lg text-lg">
+          
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ChristianValues;
