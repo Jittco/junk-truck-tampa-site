@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import QuickFAQ from "@/components/QuickFAQ";
 import HowItWorks from "@/components/HowItWorks";
 import BeforeAfter from "@/components/BeforeAfter";
+import CustomerReviews from "@/components/CustomerReviews";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ServiceAreas from "@/components/ServiceAreas";
 import Testimonial from "@/components/Testimonial";
@@ -22,6 +23,7 @@ const Index = () => {
         <QuickFAQ />
         <HowItWorks />
         <BeforeAfter />
+        <CustomerReviews />
         <WhyChooseUs />
         <ServiceAreas />
         <Testimonial />
