@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
 const Testimonial = () => {
-  return;
+  return null;
 };
 export default Testimonial;
