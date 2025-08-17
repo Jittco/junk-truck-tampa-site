@@ -10,12 +10,14 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
-      <Services />
-      <WhyChooseUs />
-      <Testimonial />
-      <About />
-      <Footer />
+      <div className="pt-20"> {/* Add padding-top to account for fixed nav */}
+        <Hero />
+        <Services />
+        <WhyChooseUs />
+        <Testimonial />
+        <About />
+        <Footer />
+      </div>
     </div>
   );
 };
