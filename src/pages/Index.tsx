@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import QuickFAQ from "@/components/QuickFAQ";
 import HowItWorks from "@/components/HowItWorks";
 import BeforeAfter from "@/components/BeforeAfter";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -18,6 +19,7 @@ const Index = () => {
       <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
         <Services />
+        <QuickFAQ />
         <HowItWorks />
         <BeforeAfter />
         <WhyChooseUs />
