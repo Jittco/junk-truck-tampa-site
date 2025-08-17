@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
-import heroImage from "@/assets/hero-truck.jpg";
 
 const Hero = () => {
   return (
@@ -8,7 +7,7 @@ const Hero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png)` }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
