@@ -31,7 +31,7 @@ const DumpsterRental = () => {
           <h1 className="text-4xl md:text-6xl font-semibold mb-6" style={{ fontFamily: 'Anton', color: '#ffffff' }}>
             Dumpster Rental in Tampa, Florida – Fast & Affordable
           </h1>
-          <p className="text-xl md:text-2xl mb-8" style={{ fontFamily: 'Inter', fontWeight: 400 }}>
+          <p className="text-xl md:text-2xl mb-8 text-white">
             Flat-rate pricing, same-day delivery, and driveway-safe roll-off dumpsters.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
