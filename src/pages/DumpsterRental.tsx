@@ -64,28 +64,28 @@ const DumpsterRental = () => {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
                 <Star className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2" style={{ color: '#444444' }}>5-Star Rated Local Service</h3>
+              <h3 className="text-xl font-medium mb-2" style={{ color: '#444444' }}>5-Star Rated Local Service</h3>
               <p style={{ color: '#444444' }}>Trusted by thousands of Tampa homeowners</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
                 <Clock className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2" style={{ color: '#444444' }}>Same-Day & Next-Day Delivery</h3>
+              <h3 className="text-xl font-medium mb-2" style={{ color: '#444444' }}>Same-Day & Next-Day Delivery</h3>
               <p style={{ color: '#444444' }}>Fast turnaround when you need it most</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
                 <DollarSign className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2" style={{ color: '#444444' }}>Flat-Rate Pricing</h3>
+              <h3 className="text-xl font-medium mb-2" style={{ color: '#444444' }}>Flat-Rate Pricing</h3>
               <p style={{ color: '#444444' }}>No hidden fees, no surprises</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
                 <Home className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2" style={{ color: '#444444' }}>Driveway Protection Included</h3>
+              <h3 className="text-xl font-medium mb-2" style={{ color: '#444444' }}>Driveway Protection Included</h3>
               <p style={{ color: '#444444' }}>We protect your property during delivery</p>
             </div>
           </div>
@@ -186,21 +186,21 @@ const DumpsterRental = () => {
               <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#18d13d] flex items-center justify-center">
                 <span className="text-3xl font-bold text-white">1</span>
               </div>
-              <h3 className="text-2xl font-semibold mb-4" style={{ color: '#444444' }}>Book Online in Minutes</h3>
+              <h3 className="text-2xl font-medium mb-4" style={{ color: '#444444' }}>Book Online in Minutes</h3>
               <p style={{ color: '#444444' }}>Choose your size and schedule delivery online or by phone</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#18d13d] flex items-center justify-center">
                 <span className="text-3xl font-bold text-white">2</span>
               </div>
-              <h3 className="text-2xl font-semibold mb-4" style={{ color: '#444444' }}>We Deliver to You</h3>
+              <h3 className="text-2xl font-medium mb-4" style={{ color: '#444444' }}>We Deliver to You</h3>
               <p style={{ color: '#444444' }}>Fast, professional delivery with driveway protection included</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#18d13d] flex items-center justify-center">
                 <span className="text-3xl font-bold text-white">3</span>
               </div>
-              <h3 className="text-2xl font-semibold mb-4" style={{ color: '#444444' }}>You Fill, We Haul</h3>
+              <h3 className="text-2xl font-medium mb-4" style={{ color: '#444444' }}>You Fill, We Haul</h3>
               <p style={{ color: '#444444' }}>Load at your pace, we'll pick up when you're ready</p>
             </div>
           </div>
@@ -272,7 +272,7 @@ const DumpsterRental = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
                   <Home className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4" style={{ color: '#444444' }}>Homeowners</h3>
+                <h3 className="text-2xl font-medium mb-4" style={{ color: '#444444' }}>Homeowners</h3>
                 <p style={{ color: '#444444' }}>Cleanouts, moving, and renovations.</p>
               </CardContent>
             </Card>
@@ -281,7 +281,7 @@ const DumpsterRental = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
                   <Hammer className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4" style={{ color: '#444444' }}>Contractors & Remodelers</h3>
+                <h3 className="text-2xl font-medium mb-4" style={{ color: '#444444' }}>Contractors & Remodelers</h3>
                 <p style={{ color: '#444444' }}>Construction, demolition, renovation debris.</p>
               </CardContent>
             </Card>
@@ -290,7 +290,7 @@ const DumpsterRental = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
                   <Building2 className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4" style={{ color: '#444444' }}>Property Managers & Realtors</h3>
+                <h3 className="text-2xl font-medium mb-4" style={{ color: '#444444' }}>Property Managers & Realtors</h3>
                 <p style={{ color: '#444444' }}>Tenant cleanouts, foreclosures, evictions.</p>
               </CardContent>
             </Card>
@@ -306,7 +306,7 @@ const DumpsterRental = () => {
           </h2>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger className="text-lg font-semibold" style={{ color: '#444444' }}>
+              <AccordionTrigger className="text-lg font-medium" style={{ color: '#444444' }}>
                 How much does dumpster rental cost in Tampa?
               </AccordionTrigger>
               <AccordionContent style={{ color: '#444444' }}>
@@ -314,7 +314,7 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger className="text-lg font-semibold" style={{ color: '#444444' }}>
+              <AccordionTrigger className="text-lg font-medium" style={{ color: '#444444' }}>
                 What size dumpster do I need?
               </AccordionTrigger>
               <AccordionContent style={{ color: '#444444' }}>
@@ -322,7 +322,7 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger className="text-lg font-semibold" style={{ color: '#444444' }}>
+              <AccordionTrigger className="text-lg font-medium" style={{ color: '#444444' }}>
                 Do I need a permit for dumpster rental in Tampa?
               </AccordionTrigger>
               <AccordionContent style={{ color: '#444444' }}>
@@ -330,7 +330,7 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger className="text-lg font-semibold" style={{ color: '#444444' }}>
+              <AccordionTrigger className="text-lg font-medium" style={{ color: '#444444' }}>
                 What items are not allowed in the dumpster?
               </AccordionTrigger>
               <AccordionContent style={{ color: '#444444' }}>
@@ -338,7 +338,7 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger className="text-lg font-semibold" style={{ color: '#444444' }}>
+              <AccordionTrigger className="text-lg font-medium" style={{ color: '#444444' }}>
                 How quickly can you deliver a dumpster?
               </AccordionTrigger>
               <AccordionContent style={{ color: '#444444' }}>
