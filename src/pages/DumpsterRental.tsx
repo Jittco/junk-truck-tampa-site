@@ -5,7 +5,7 @@ const DumpsterRental = () => {
     categoryName: "Dumpster Rental",
     slug: "dumpster-rental",
     heroSubtext: "Convenient dumpster rentals for home projects or commercial cleanouts. Flexible sizes, affordable pricing, and fast delivery.",
-    heroImage: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
+    heroImage: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
     metaTitle: "Dumpster Rental Tampa Bay | Junk in the Truck Co",
     metaDescription: "Affordable Dumpster Rental in Tampa Bay. Same-day & next-day service with upfront pricing and flexible rental periods.",
     subServices: [
