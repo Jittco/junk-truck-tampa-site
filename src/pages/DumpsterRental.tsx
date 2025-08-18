@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Star, Clock, DollarSign, Home, Hammer, Building2, Phone } from "lucide-react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const DumpsterRental = () => {
   return (
@@ -17,9 +19,11 @@ const DumpsterRental = () => {
         <link rel="canonical" href="/dumpster-rental" />
       </Helmet>
 
+      <Navigation />
+
       {/* Hero Section */}
       <section 
-        className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-32"
         style={{ backgroundImage: `url('/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png')` }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
@@ -369,6 +373,8 @@ const DumpsterRental = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };
