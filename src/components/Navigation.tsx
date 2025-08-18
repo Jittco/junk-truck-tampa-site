@@ -35,7 +35,7 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-6">
-              <a href="#home" className="nav-link">Junk Removal</a>
+              <a href="/services" className="nav-link">Junk Removal</a>
               
               <DropdownMenu>
                 <DropdownMenuTrigger className="nav-link bg-transparent border-none hover:bg-transparent focus:ring-0 focus:outline-none">
@@ -44,7 +44,7 @@ const Navigation = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="dropdown-content">
                   {services.map(service => <DropdownMenuItem key={service} asChild>
-                      <a href="#services" className="dropdown-nav-link">
+                      <a href="/services" className="dropdown-nav-link">
                         {service}
                       </a>
                     </DropdownMenuItem>)}
@@ -105,7 +105,7 @@ const Navigation = () => {
                 <div className="py-3 px-4">
                   <p className="text-foreground font-medium mb-2 font-inter">Services</p>
                   <div className="pl-4 space-y-2">
-                    {services.map(service => <a key={service} href="#services" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                    {services.map(service => <a key={service} href="/services" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         {service}
                       </a>)}
                   </div>
