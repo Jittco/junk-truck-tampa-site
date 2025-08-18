@@ -5,86 +5,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Calendar, Truck, Recycle, Phone, Shield, Clock, Leaf } from "lucide-react";
 
 const Services = () => {
-  const services = [
+  const primaryServices = [
     {
       title: "Residential Junk Removal",
-      description: "From furniture to household clutter, we'll clear your home fast.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
+      description: "From old furniture to household clutter, we'll clear your home fast with upfront pricing and eco-friendly disposal.",
+      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
+      link: "/services/residential-junk-removal/"
     },
     {
-      title: "Commercial Junk Removal", 
-      description: "Professional cleanouts for offices, retail spaces, and businesses.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
+      title: "Commercial Junk Removal",
+      description: "Professional junk hauling for offices, retail spaces, and warehouses. Same-day and next-day availability to keep your business running smoothly.",
+      image: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
+      link: "/services/commercial-junk-removal/"
     },
     {
-      title: "Appliance Removal",
-      description: "Safe removal and eco-friendly disposal of all appliances.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Furniture Removal",
-      description: "Quick pickup and responsible disposal of unwanted furniture.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Hot Tub Removal",
-      description: "We handle the cutting, lifting, and eco-friendly disposal.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Yard Waste Removal",
-      description: "Clear your outdoor space of debris, branches, and yard waste.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Garage Clean Out",
-      description: "Transform your garage from cluttered to organized space.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Apartment Clean Out",
-      description: "Complete apartment clearing for moves and renovations.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Property Clean Out",
-      description: "Full property clearing for real estate and estate sales.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Shed Removal",
-      description: "Complete shed demolition and debris removal service.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Playset Removal",
-      description: "Safe dismantling and removal of playground equipment.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Deck Removal",
-      description: "Professional deck demolition and material disposal.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Interior Demolition",
-      description: "Controlled demolition for renovation and remodeling projects.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Pergola Demolition",
-      description: "Expert removal of pergolas and outdoor structures.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
-    },
-    {
-      title: "Driveway Demo",
-      description: "Professional concrete and asphalt driveway removal.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
+      title: "Demolition Services",
+      description: "Safe, affordable demolition for sheds, decks, playsets, driveways, and more. We handle the tear-down and the haul-away.",
+      image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+      link: "/services/demolition/"
     },
     {
       title: "Dumpster Rental",
-      description: "Convenient dumpster rental for DIY projects and cleanouts.",
-      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png"
+      description: "Convenient dumpster rentals for home projects or commercial cleanouts. Flexible sizes, affordable pricing, and fast delivery.",
+      image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
+      link: "/services/dumpster-rental/"
     }
   ];
 
@@ -162,37 +106,39 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Services Grid */}
+        {/* Primary Services Grid */}
         <section className="py-16 md:py-20 section-bg">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-anton mb-4 text-foreground">
-                Complete Junk Removal & Demolition Services
+                Our Primary Services
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Professional, reliable service for all your cleanout and demolition needs
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {services.map((service, index) => (
-                <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <div className="aspect-video bg-muted overflow-hidden rounded-t-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {primaryServices.map((service, index) => (
+                <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-md">
+                  <div className="aspect-[4/3] bg-muted overflow-hidden rounded-t-lg">
                     <img 
                       src={service.image} 
                       alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <CardContent className="p-4">
-                    <h3 className="font-anton text-lg mb-2 text-foreground">
+                  <CardContent className="p-6">
+                    <h3 className="font-anton text-xl mb-3 text-foreground">
                       {service.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
                       {service.description}
                     </p>
-                    <Button variant="outline" size="sm" className="w-full">
-                      Learn More
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors duration-300" asChild>
+                      <a href={service.link}>
+                        View Category
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
