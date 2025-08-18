@@ -28,7 +28,7 @@ const DumpsterRental = () => {
       >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ fontFamily: 'Anton', color: '#ffffff' }}>
+          <h1 className="text-4xl md:text-6xl font-semibold mb-6" style={{ fontFamily: 'Anton', color: '#ffffff' }}>
             Dumpster Rental in Tampa, Florida – Fast & Affordable
           </h1>
           <p className="text-xl md:text-2xl mb-8" style={{ fontFamily: 'Inter', fontWeight: 400 }}>
@@ -56,7 +56,7 @@ const DumpsterRental = () => {
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
+          <h2 className="text-4xl font-semibold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
             Why Tampa Chooses Us for Dumpster Rentals
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -95,7 +95,7 @@ const DumpsterRental = () => {
       {/* Dumpster Sizes & Pricing */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
+          <h2 className="text-4xl font-semibold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
             Roll-Off Dumpster Sizes in Tampa
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -142,7 +142,7 @@ const DumpsterRental = () => {
       {/* Service Areas */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
+          <h2 className="text-4xl font-semibold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
             Dumpster Rentals Available Across Tampa, FL
           </h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -178,7 +178,7 @@ const DumpsterRental = () => {
       {/* How It Works */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
+          <h2 className="text-4xl font-semibold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
             Renting a Dumpster is Simple
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -210,7 +210,7 @@ const DumpsterRental = () => {
       {/* Customer Reviews */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
+          <h2 className="text-4xl font-semibold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
             What Our Tampa Customers Are Saying
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -263,7 +263,7 @@ const DumpsterRental = () => {
       {/* Who We Serve */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
+          <h2 className="text-4xl font-semibold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
             Roll-Off Dumpsters for Every Project in Tampa
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -301,7 +301,7 @@ const DumpsterRental = () => {
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
+          <h2 className="text-4xl font-semibold text-center mb-16" style={{ fontFamily: 'Anton', color: '#444444' }}>
             Tampa Dumpster Rental FAQs
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -352,7 +352,7 @@ const DumpsterRental = () => {
       {/* Final CTA Section */}
       <section className="py-20 bg-[#18d13d]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: 'Anton' }}>
+          <h2 className="text-4xl font-semibold text-white mb-8" style={{ fontFamily: 'Anton' }}>
             Ready to Book Your Dumpster in Tampa?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
