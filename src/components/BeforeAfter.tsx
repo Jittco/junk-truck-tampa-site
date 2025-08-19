@@ -44,6 +44,11 @@ const transformations = [
 const BeforeAfterItem = ({ transformation }: { transformation: typeof transformations[0] }) => {
   return (
     <div className="space-y-6">
+      {/* Transformation Title */}
+      <div className="text-center">
+        <h3 className="text-xl font-anton text-foreground">{transformation.title}</h3>
+      </div>
+
       {/* Desktop: Side by side images with slider */}
       <div className="hidden md:block">
         <div className="grid grid-cols-2 gap-8">
@@ -112,10 +117,6 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
         </div>
       </div>
 
-      {/* Transformation Title */}
-      <div className="text-center pt-4">
-        <h3 className="text-xl font-anton text-foreground">{transformation.title}</h3>
-      </div>
     </div>
   );
 };
