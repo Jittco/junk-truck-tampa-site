@@ -35,21 +35,11 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-6">
-              <a href="/services" className="nav-link">Junk Removal</a>
+              <a href="/junk-removal" className="nav-link">Junk Removal</a>
               
-              <DropdownMenu>
-                <DropdownMenuTrigger className="nav-link bg-transparent border-none hover:bg-transparent focus:ring-0 focus:outline-none">
-                  Services
-                  <ChevronDown className="h-4 w-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="dropdown-content">
-                  {services.map(service => <DropdownMenuItem key={service} asChild>
-                      <a href="/services" className="dropdown-nav-link">
-                        {service}
-                      </a>
-                    </DropdownMenuItem>)}
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <a href="/demolition" className="nav-link">Demolition</a>
+              
+              <a href="/dumpster-rental" className="nav-link">Dumpster Rental</a>
 
               <a href="#how-it-works" className="nav-link">
                 How It Works
@@ -68,14 +58,6 @@ const Navigation = () => {
                     </DropdownMenuItem>)}
                 </DropdownMenuContent>
               </DropdownMenu>
-              
-              <a href="#reviews" className="nav-link">
-                Reviews
-              </a>
-
-              <a href="#contact" className="nav-link">
-                Contact
-              </a>
 
               <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button" aria-label="Book junk removal and demolition">
                 Book Now
@@ -97,18 +79,17 @@ const Navigation = () => {
           {/* Mobile Navigation */}
           {isMenuOpen && <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg">
               <div className="px-4 py-4 space-y-2 max-w-7xl mx-auto">
-                <a href="#home" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
-                  Home
+                <a href="/junk-removal" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                  Junk Removal
                 </a>
                 
-                <div className="py-3 px-4">
-                  <p className="text-foreground font-medium mb-2 font-inter">Services</p>
-                  <div className="pl-4 space-y-2">
-                    {services.map(service => <a key={service} href="/services" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
-                        {service}
-                      </a>)}
-                  </div>
-                </div>
+                <a href="/demolition" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                  Demolition
+                </a>
+                
+                <a href="/dumpster-rental" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                  Dumpster Rental
+                </a>
 
                 <a href="#how-it-works" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                   How It Works
@@ -122,14 +103,6 @@ const Navigation = () => {
                       </a>)}
                   </div>
                 </div>
-                
-                <a href="#reviews" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
-                  Reviews
-                </a>
-
-                <a href="#contact" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
-                  Contact
-                </a>
               </div>
             </div>}
         </nav>
