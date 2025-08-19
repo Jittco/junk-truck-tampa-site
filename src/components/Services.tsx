@@ -9,8 +9,8 @@ const services = [{
   description: "Light demolition services for home renovations and property improvements."
 }, {
   icon: Home,
-  title: "Property Cleanouts",
-  description: "Complete property cleanouts for estates, foreclosures, and relocations."
+  title: "Commercial Junk Removal",
+  description: "Professional junk removal for offices, retail spaces, and commercial properties."
 }, {
   icon: Package,
   title: "Dumpster Rental",
