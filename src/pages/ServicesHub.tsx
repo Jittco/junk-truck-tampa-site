@@ -69,12 +69,15 @@ const ServicesHub: React.FC = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-16 bg-gradient-to-r from-primary/10 to-primary/5">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-anton mb-4 text-foreground">
+        <section className="relative py-16 bg-cover bg-center bg-no-repeat" style={{
+          backgroundImage: `url('/lovable-uploads/07549538-2da7-443a-8e8e-c14da7c0df97.png')`
+        }}>
+          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="relative z-10 container mx-auto px-4 text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-anton mb-4">
               Our Junk Removal, Demolition & Dumpster Services
             </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className="text-lg mb-8 max-w-3xl mx-auto">
               Fast, upfront pricing, and eco-friendly disposal across Tampa Bay.
             </p>
             <Button 
