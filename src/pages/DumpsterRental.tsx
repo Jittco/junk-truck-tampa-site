@@ -35,7 +35,7 @@ const DumpsterRental = () => {
             <Button size="lg" className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 text-lg transform hover:scale-105 transition-all">
               Book Online Now
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#444444] px-8 py-3 transform hover:scale-105 transition-all text-lg font-semibold">
+            <Button size="lg" variant="outline" className="border-2 border-white text-white px-8 py-3 text-lg font-semibold">
               <Phone className="mr-2 h-5 w-5" />
               Call Us Today: 844-858-6546
             </Button>
