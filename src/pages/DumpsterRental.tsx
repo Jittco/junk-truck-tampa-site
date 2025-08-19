@@ -133,7 +133,7 @@ const DumpsterRental = () => {
               </CardContent>
             </Card>
           </div>
-          <p className="text-center text-lg" style={{ color: '#444444' }}>
+          <p className="text-center text-lg text-gray-700">
             All rentals include 3–7 day agreements. One-day turnaround available depending on demand.
           </p>
         </div>
