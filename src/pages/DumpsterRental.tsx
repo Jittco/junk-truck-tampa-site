@@ -35,7 +35,7 @@ const DumpsterRental = () => {
             <Button size="lg" className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 text-lg transform hover:scale-105 transition-all">
               Book Online Now
             </Button>
-            <Button size="lg" variant="outline" className="border border-white text-white px-4 py-2">
+            <Button size="lg" variant="outline" className="border border-white px-4 py-2 text-slate-50">
               <Phone className="mr-2 h-5 w-5" />
               Call Us Today: 844-858-6546
             </Button>
@@ -164,12 +164,12 @@ const DumpsterRental = () => {
       </section>
 
       {/* What's Included Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#222222]">
         <div className="container mx-auto px-4">
           <h2 style={{
-            fontFamily: 'Anton',
-            color: '#444444'
-          }} className="text-4xl text-center mb-16 font-medium">
+          fontFamily: 'Anton',
+          color: '#444444'
+        }} className="text-4xl text-center mb-16 font-medium">
             What's Included with Your Dumpster Rental
           </h2>
           
@@ -177,16 +177,18 @@ const DumpsterRental = () => {
             {/* Left Column - Included */}
             <div className="space-y-6">
               <h3 style={{
-                fontFamily: 'Anton',
-                color: '#444444'
-              }} className="text-2xl font-medium mb-6">Included</h3>
+              fontFamily: 'Anton',
+              color: '#444444'
+            }} className="text-2xl font-medium mb-6">Included</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
-                  <p style={{ color: '#444444' }} className="font-normal">
+                  <p style={{
+                  color: '#444444'
+                }} className="font-normal">
                     <strong>2‑Ton Weight Allowance Included</strong> (covers most homeowner projects)
                   </p>
                 </div>
@@ -195,7 +197,9 @@ const DumpsterRental = () => {
                   <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
-                  <p style={{ color: '#444444' }} className="font-normal">
+                  <p style={{
+                  color: '#444444'
+                }} className="font-normal">
                     <strong>Flat‑Rate Pricing</strong> — 20‑yard dumpsters start at $350; typical range $350–$450 (depends on items and location)
                   </p>
                 </div>
@@ -204,7 +208,9 @@ const DumpsterRental = () => {
                   <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
-                  <p style={{ color: '#444444' }} className="font-normal">
+                  <p style={{
+                  color: '#444444'
+                }} className="font-normal">
                     <strong>3–7 Day Rental Window</strong> (flexible for DIY timelines; may adjust with demand)
                   </p>
                 </div>
@@ -213,7 +219,9 @@ const DumpsterRental = () => {
                   <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
-                  <p style={{ color: '#444444' }} className="font-normal">
+                  <p style={{
+                  color: '#444444'
+                }} className="font-normal">
                     <strong>Driveway‑Safe Setup</strong> (boards/protection included)
                   </p>
                 </div>
@@ -222,14 +230,18 @@ const DumpsterRental = () => {
                   <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-sm font-bold">✓</span>
                   </div>
-                  <p style={{ color: '#444444' }} className="font-normal">
+                  <p style={{
+                  color: '#444444'
+                }} className="font-normal">
                     <strong>Fast Pickup When You're Done</strong>
                   </p>
                 </div>
               </div>
               
               <div className="mt-6 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
-                <p style={{ color: '#444444' }} className="text-sm font-normal">
+                <p style={{
+                color: '#444444'
+              }} className="text-sm font-normal">
                   <strong>Note:</strong> Overage is $100 per additional ton beyond the included 2 tons.
                 </p>
               </div>
@@ -239,11 +251,15 @@ const DumpsterRental = () => {
             <div>
               <Card className="border-red-200 bg-red-50">
                 <CardHeader className="pb-4">
-                  <CardTitle className="flex items-center gap-2" style={{ color: '#444444' }}>
+                  <CardTitle className="flex items-center gap-2" style={{
+                  color: '#444444'
+                }}>
                     <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center">
                       <span className="text-white text-sm font-bold">!</span>
                     </div>
-                    <span style={{ fontFamily: 'Anton' }} className="text-2xl font-medium">
+                    <span style={{
+                    fontFamily: 'Anton'
+                  }} className="text-2xl font-medium">
                       Restrictions (Can't Go In)
                     </span>
                   </CardTitle>
@@ -254,7 +270,9 @@ const DumpsterRental = () => {
                       <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-sm font-bold">✕</span>
                       </div>
-                      <span style={{ color: '#444444' }} className="font-normal">
+                      <span style={{
+                      color: '#444444'
+                    }} className="font-normal">
                         Roofing materials (shingles, tar, etc.)
                       </span>
                     </li>
@@ -263,7 +281,9 @@ const DumpsterRental = () => {
                       <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-sm font-bold">✕</span>
                       </div>
-                      <span style={{ color: '#444444' }} className="font-normal">
+                      <span style={{
+                      color: '#444444'
+                    }} className="font-normal">
                         Concrete, dirt, or heavy fill
                       </span>
                     </li>
@@ -272,7 +292,9 @@ const DumpsterRental = () => {
                       <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-sm font-bold">✕</span>
                       </div>
-                      <span style={{ color: '#444444' }} className="font-normal">
+                      <span style={{
+                      color: '#444444'
+                    }} className="font-normal">
                         Wet paint or solvents
                       </span>
                     </li>
@@ -281,7 +303,9 @@ const DumpsterRental = () => {
                       <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-sm font-bold">✕</span>
                       </div>
-                      <span style={{ color: '#444444' }} className="font-normal">
+                      <span style={{
+                      color: '#444444'
+                    }} className="font-normal">
                         Harsh chemicals / hazardous waste
                       </span>
                     </li>
@@ -290,14 +314,18 @@ const DumpsterRental = () => {
                       <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-sm font-bold">✕</span>
                       </div>
-                      <span style={{ color: '#444444' }} className="font-normal">
+                      <span style={{
+                      color: '#444444'
+                    }} className="font-normal">
                         Batteries (and electronics with toxic components)
                       </span>
                     </li>
                   </ul>
                   
                   <div className="pt-3 border-t border-red-200">
-                    <p style={{ color: '#444444' }} className="text-sm font-normal">
+                    <p style={{
+                    color: '#444444'
+                  }} className="text-sm font-normal">
                       Not sure about an item? Call 844‑858‑6546 and we'll confirm before delivery.
                     </p>
                   </div>
@@ -308,23 +336,16 @@ const DumpsterRental = () => {
 
           {/* CTA Row */}
           <div className="text-center border-t border-gray-200 pt-12">
-            <p style={{ color: '#444444' }} className="text-xl mb-6 font-normal">
+            <p style={{
+            color: '#444444'
+          }} className="text-xl mb-6 font-normal">
               Ready to reserve your dumpster?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 text-lg transform hover:scale-105 transition-all"
-                aria-label="Reserve dumpster rental now"
-              >
+              <Button size="lg" className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 text-lg transform hover:scale-105 transition-all" aria-label="Reserve dumpster rental now">
                 Reserve Now
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-[#18d13d] text-[#18d13d] hover:bg-[#18d13d] hover:text-white px-8 py-3 text-lg transform hover:scale-105 transition-all"
-                aria-label="Call us for dumpster rental information"
-              >
+              <Button size="lg" variant="outline" className="border-[#18d13d] text-[#18d13d] hover:bg-[#18d13d] hover:text-white px-8 py-3 text-lg transform hover:scale-105 transition-all" aria-label="Call us for dumpster rental information">
                 <Phone className="mr-2 h-5 w-5" />
                 Call 844‑858‑6546
               </Button>
@@ -473,14 +494,12 @@ const DumpsterRental = () => {
       </section>
 
       {/* Who We Serve */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#222222]">
         <div className="container mx-auto px-4">
           <h2 style={{
           fontFamily: 'Anton',
           color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium">
-            Roll-Off Dumpsters for Every Project in Tampa
-          </h2>
+        }} className="text-4xl text-center mb-16 font-medium text-neutral-50">Dumpsters for Every Project in Tampa</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
