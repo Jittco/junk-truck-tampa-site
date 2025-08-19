@@ -169,7 +169,7 @@ const DumpsterRental = () => {
           <h2 style={{
           fontFamily: 'Anton',
           color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium">
+        }} className="text-4xl text-center mb-16 font-medium text-slate-50">
             What's Included with Your Dumpster Rental
           </h2>
           
@@ -179,9 +179,9 @@ const DumpsterRental = () => {
               <h3 style={{
               fontFamily: 'Anton',
               color: '#444444'
-            }} className="text-2xl font-medium mb-6">Included</h3>
+            }} className="text-2xl font-medium mb-6 text-slate-50">Included</h3>
               
-              <div className="space-y-4">
+              <div className="space-y-4 bg-slate-50 rounded">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-sm font-bold">✓</span>
@@ -338,7 +338,7 @@ const DumpsterRental = () => {
           <div className="text-center border-t border-gray-200 pt-12">
             <p style={{
             color: '#444444'
-          }} className="text-xl mb-6 font-normal">
+          }} className="text-xl mb-6 font-normal text-slate-50">
               Ready to reserve your dumpster?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
