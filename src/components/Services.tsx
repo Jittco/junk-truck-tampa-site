@@ -13,8 +13,8 @@ const services = [{
   description: "Complete property cleanouts for estates, foreclosures, and relocations."
 }, {
   icon: Package,
-  title: "Curbside Pickups & Hauling",
-  description: "Convenient curbside pickup and hauling services for your convenience."
+  title: "Dumpster Rental",
+  description: "20-yard roll-off dumpsters for your renovation and cleanout projects."
 }];
 const Services = () => {
   return <section className="py-20 section-bg">
