@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { ChevronDown, Menu, X, Phone } from "lucide-react";
+import { ChevronDown, Menu, X, Phone, ChevronRight } from "lucide-react";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const services = ["Junk Removal", "Demolition", "Property Cleanouts", "Curbside Pickup"];
   const aboutItems = ["Our Story", "FAQs", "Reviews"];
   return <>
@@ -96,12 +97,20 @@ const Navigation = () => {
                 </a>
                 
                 <div className="py-3 px-4">
-                  <p className="text-foreground font-medium mb-2 font-inter">About Us</p>
-                  <div className="pl-4 space-y-2">
-                    {aboutItems.map(item => <a key={item} href="#about" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
-                        {item}
-                      </a>)}
-                  </div>
+                  <button 
+                    className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2"
+                    onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+                  >
+                    About Us
+                    <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-90' : ''}`} />
+                  </button>
+                  {isAboutDropdownOpen && (
+                    <div className="pl-4 space-y-2 mt-2">
+                      {aboutItems.map(item => <a key={item} href="#about" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                          {item}
+                        </a>)}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>}
