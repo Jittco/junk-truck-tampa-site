@@ -69,7 +69,7 @@ const ServicesHub: React.FC = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-16 bg-cover bg-center bg-no-repeat" style={{
+        <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{
           backgroundImage: `url('/lovable-uploads/07549538-2da7-443a-8e8e-c14da7c0df97.png')`
         }}>
           <div className="absolute inset-0 bg-black/40"></div>
