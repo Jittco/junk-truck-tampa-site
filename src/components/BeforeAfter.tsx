@@ -9,8 +9,8 @@ import {
 // Import before/after images
 import garageBefore from "@/assets/garage-before.jpg";
 import garageAfter from "@/assets/garage-after.jpg";
-import shedBefore from "@/assets/shed-before.jpg";
-import shedAfter from "@/assets/shed-after.jpg";
+const shedBefore = "/lovable-uploads/f3f7ce71-ab76-47bf-a3ce-e01508b8ac04.png";
+const shedAfter = "/lovable-uploads/06842b0f-cce4-442f-b267-5706103755cd.png";
 import yardBefore from "@/assets/yard-before.jpg";
 import yardAfter from "@/assets/yard-after.jpg";
 
