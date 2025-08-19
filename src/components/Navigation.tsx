@@ -84,7 +84,7 @@ const Navigation = () => {
 
             {/* Mobile phone number and menu button */}
             <div className="lg:hidden flex items-center gap-4">
-              <a href="tel:844-858-6546" className="flex items-center gap-2 px-3 py-2 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold text-sm animate-shake-3s">
+              <a href="tel:844-858-6546" className="flex items-center gap-2 px-3 py-2 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold text-sm animate-breathe-3s">
                 <Phone className="h-4 w-4" />
                 844-858-6546
               </a>
