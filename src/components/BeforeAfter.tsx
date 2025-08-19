@@ -75,8 +75,8 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
                 alt={`After: ${transformation.afterCaption}`}
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute top-4 left-4 bg-cta-green px-3 py-1 rounded-md">
-                <span className="text-sm font-semibold text-white">After</span>
+              <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-md">
+                <span className="text-sm font-semibold text-black">After</span>
               </div>
             </div>
             <p className="mt-3 text-sm text-muted-foreground">{transformation.afterCaption}</p>
@@ -109,8 +109,8 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
               alt={`After: ${transformation.afterCaption}`}
               className="w-full h-48 object-cover"
             />
-            <div className="absolute top-4 left-4 bg-cta-green px-3 py-1 rounded-md">
-              <span className="text-sm font-semibold text-white">After</span>
+            <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-md">
+              <span className="text-sm font-semibold text-black">After</span>
             </div>
           </div>
           <p className="mt-3 text-sm text-muted-foreground">{transformation.afterCaption}</p>
