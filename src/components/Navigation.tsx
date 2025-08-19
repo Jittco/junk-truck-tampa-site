@@ -77,23 +77,17 @@ const Navigation = () => {
                 Contact
               </a>
 
-              <a href="tel:844-858-6546" className="flex items-center gap-2 px-4 py-2 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold">
-                <Phone className="h-4 w-4" />
-                844-858-6546
-              </a>
-
               <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button" aria-label="Book junk removal and demolition">
                 Book Now
               </a>
             </div>
 
-            {/* Mobile menu button */}
+            {/* Mobile phone number and menu button */}
             <div className="lg:hidden flex items-center gap-4">
-              <div className="sm:hidden">
-                <a href="tel:844-858-6546" className="text-primary">
-                  <Phone className="h-5 w-5" />
-                </a>
-              </div>
+              <a href="tel:844-858-6546" className="flex items-center gap-2 px-3 py-2 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold text-sm">
+                <Phone className="h-4 w-4" />
+                844-858-6546
+              </a>
               <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-foreground hover:text-primary p-2" aria-label="Open menu">
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
