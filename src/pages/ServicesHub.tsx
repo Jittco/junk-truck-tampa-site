@@ -30,7 +30,7 @@ const ServicesHub: React.FC = () => {
     {
       title: "Dumpster Rental",
       description: "20-yard dumpsters perfect for renovations and cleanouts.",
-      image: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
+      image: "/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png",
       link: "/services/dumpster-rental/"
     }
   ];
