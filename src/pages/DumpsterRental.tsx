@@ -46,10 +46,10 @@ const DumpsterRental = () => {
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-semibold text-center mb-16" style={{
+          <h2 style={{
           fontFamily: 'Anton',
           color: '#444444'
-        }}>
+        }} className="text-4xl text-center mb-16 font-medium">
             Why Tampa Chooses Us for Dumpster Rentals
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -184,7 +184,7 @@ const DumpsterRental = () => {
             }}>
                 We proudly provide fast, reliable dumpster rentals across all Tampa neighborhoods including South Tampa, West Tampa, New Tampa, and Downtown.
               </p>
-              <Button variant="outline" size="lg" className="border-[#18d13d] text-[#18d13d] hover:bg-[#18d13d] hover:text-white transform hover:scale-105 transition-all">
+              <Button variant="outline" size="lg" className="border-[#18d13d] text-[#18d13d] hover:bg-[#18d13d] hover:text-white transform hover:scale-105 transition-all text-center">
                 <Phone className="mr-2 h-5 w-5" />
                 Not sure if we serve your neighborhood? Call us at 844-858-6546
               </Button>
@@ -243,10 +243,10 @@ const DumpsterRental = () => {
       {/* Customer Reviews */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-semibold text-center mb-16" style={{
+          <h2 style={{
           fontFamily: 'Anton',
           color: '#444444'
-        }}>
+        }} className="text-4xl text-center mb-16 font-medium">
             What Our Tampa Customers Are Saying
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -358,17 +358,17 @@ const DumpsterRental = () => {
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-4xl font-semibold text-center mb-16" style={{
+          <h2 style={{
           fontFamily: 'Anton',
           color: '#444444'
-        }}>
+        }} className="text-4xl text-center mb-16 font-medium">
             Tampa Dumpster Rental FAQs
           </h2>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger className="text-lg font-medium" style={{
+              <AccordionTrigger style={{
               color: '#444444'
-            }}>
+            }} className="text-lg font-extralight">
                 How much does dumpster rental cost in Tampa?
               </AccordionTrigger>
               <AccordionContent style={{
@@ -378,9 +378,9 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger className="text-lg font-medium" style={{
+              <AccordionTrigger style={{
               color: '#444444'
-            }}>
+            }} className="text-lg font-extralight">
                 What size dumpster do I need?
               </AccordionTrigger>
               <AccordionContent style={{
@@ -390,9 +390,9 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger className="text-lg font-medium" style={{
+              <AccordionTrigger style={{
               color: '#444444'
-            }}>
+            }} className="text-lg font-extralight">
                 Do I need a permit for dumpster rental in Tampa?
               </AccordionTrigger>
               <AccordionContent style={{
@@ -402,9 +402,9 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger className="text-lg font-medium" style={{
+              <AccordionTrigger style={{
               color: '#444444'
-            }}>
+            }} className="text-lg font-extralight">
                 What items are not allowed in the dumpster?
               </AccordionTrigger>
               <AccordionContent style={{
@@ -414,9 +414,9 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger className="text-lg font-medium" style={{
+              <AccordionTrigger style={{
               color: '#444444'
-            }}>
+            }} className="text-lg font-extralight">
                 How quickly can you deliver a dumpster?
               </AccordionTrigger>
               <AccordionContent style={{
@@ -432,9 +432,9 @@ const DumpsterRental = () => {
       {/* Final CTA Section */}
       <section className="py-20 bg-[#18d13d]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-semibold text-white mb-8" style={{
+          <h2 style={{
           fontFamily: 'Anton'
-        }}>
+        }} className="text-4xl text-white mb-8 font-medium">
             Ready to Book Your Dumpster in Tampa?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
