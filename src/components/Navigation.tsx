@@ -26,7 +26,7 @@ const Navigation = () => {
         <nav className="main-nav bg-white border-b border-gray-100">
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
-            <a href="#home" className="nav-logo">
+            <a href="/" className="nav-logo">
               <img 
                 src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" 
                 alt="Junk in the Truck Co Logo" 
