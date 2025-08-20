@@ -101,44 +101,56 @@ const DumpsterRental = () => {
             Why Choose Junk in the Truck Co. for Dumpster Rentals in Tampa?
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Locally owned & operated in Tampa Bay</h3>
-                <p className="text-sm text-muted-foreground">Supporting our community with personalized service</p>
-              </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image Column */}
+            <div className="order-2 md:order-1">
+              <img 
+                src="/lovable-uploads/a1ded288-114d-471e-b0e5-4999c577601c.png" 
+                alt="Junk in the Truck Co team member with dumpster"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
 
-            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Transparent, flat-rate pricing</h3>
-                <p className="text-sm text-muted-foreground">No surprises or hidden fees</p>
+            {/* Benefits Column */}
+            <div className="order-1 md:order-2 space-y-6">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Locally owned & operated in Tampa Bay</h3>
+                  <p className="text-sm text-muted-foreground">Supporting our community with personalized service</p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Driveway-friendly dumpster delivery</h3>
-                <p className="text-sm text-muted-foreground">Professional placement that protects your property</p>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Transparent, flat-rate pricing</h3>
+                  <p className="text-sm text-muted-foreground">No surprises or hidden fees</p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Courteous, reliable team</h3>
-                <p className="text-sm text-muted-foreground">Professional service you can count on</p>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Driveway-friendly dumpster delivery</h3>
+                  <p className="text-sm text-muted-foreground">Professional placement that protects your property</p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Flexible scheduling to fit your project</h3>
-                <p className="text-sm text-muted-foreground">1-7 day rentals with same-day delivery available</p>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Courteous, reliable team</h3>
+                  <p className="text-sm text-muted-foreground">Professional service you can count on</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Flexible scheduling to fit your project</h3>
+                  <p className="text-sm text-muted-foreground">1-7 day rentals with same-day delivery available</p>
+                </div>
               </div>
             </div>
           </div>
