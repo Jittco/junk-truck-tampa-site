@@ -3,33 +3,11 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { 
-  Phone, 
-  Calendar, 
-  DollarSign, 
-  Truck, 
-  CheckCircle,
-  Home,
-  Hammer,
-  TreePine,
-  Wrench,
-  Building,
-  Trash2,
-  AlertTriangle,
-  Droplets,
-  Battery,
-  Fuel,
-  Zap,
-  Shield,
-  Syringe,
-  Cylinder
-} from "lucide-react";
+import { Phone, Calendar, DollarSign, Truck, CheckCircle, Home, Hammer, TreePine, Wrench, Building, Trash2, AlertTriangle, Droplets, Battery, Fuel, Zap, Shield, Syringe, Cylinder } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-
 const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
 const PHONE = "844-858-6546";
-
 const DumpsterRental = () => {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -49,12 +27,10 @@ const DumpsterRental = () => {
       "telephone": PHONE,
       "url": "https://junkinthetruckco.com"
     },
-    "areaServed": [
-      {
-        "@type": "State",
-        "name": "Florida"
-      }
-    ],
+    "areaServed": [{
+      "@type": "State",
+      "name": "Florida"
+    }],
     "serviceType": "Dumpster Rental",
     "offers": {
       "@type": "Offer",
@@ -62,9 +38,7 @@ const DumpsterRental = () => {
       "priceCurrency": "USD"
     }
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Dumpster Rental Tampa Bay | 18-Yard Roll-Off | Same-Day Delivery</title>
         <meta name="description" content="Affordable 18-yard dumpster rentals in Tampa Bay. Same-day delivery, flat-rate pricing, 1 ton included. Serving Hillsborough & Pinellas. Book online in minutes." />
@@ -77,8 +51,9 @@ const DumpsterRental = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-32" 
-        style={{backgroundImage: `url('/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png')`}}>
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-32" style={{
+      backgroundImage: `url('/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png')`
+    }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-anton mb-6 text-white">
@@ -375,54 +350,54 @@ const DumpsterRental = () => {
       </section>
 
       {/* Prohibited Items Section */}
-      <section className="py-16 lg:py-20 bg-muted/30">
+      <section className="py-16 lg:py-20 bg-[#222222]">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-slate-50">
             What You Can't Put in Your Dumpster
           </h2>
-          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-center mb-12 max-w-3xl mx-auto text-slate-50">
             For safety and compliance, some materials <strong>cannot</strong> be placed in our dumpsters. If you're unsure, give us a call.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <AlertTriangle className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="font-semibold text-foreground text-sm">Hazardous waste & chemicals</h3>
+              <h3 className="text-foreground font-light text-lg">Hazardous waste & chemicals</h3>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <Droplets className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="font-semibold text-foreground text-sm">Paints, stains & solvents</h3>
+              <h3 className="text-foreground text-lg font-light">Paints, stains & solvents</h3>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <Fuel className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="font-semibold text-foreground text-sm">Oils, fuels & flammable liquids</h3>
+              <h3 className="text-foreground text-lg font-light">Oils, fuels & flammable liquids</h3>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <Shield className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="font-semibold text-foreground text-sm">Asbestos & contaminated materials</h3>
+              <h3 className="text-foreground text-lg font-light">Asbestos & contaminated materials</h3>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <Truck className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="font-semibold text-foreground text-sm">Tires & auto parts</h3>
+              <h3 className="text-foreground text-lg font-light">Tires & auto parts</h3>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <Battery className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="font-semibold text-foreground text-sm">Batteries & electronics (e-waste)</h3>
+              <h3 className="text-foreground font-light text-lg">Batteries & electronics (e-waste)</h3>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <Syringe className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="font-semibold text-foreground text-sm">Medical waste & sharps</h3>
+              <h3 className="text-foreground text-lg font-light">Medical waste & sharps</h3>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <Cylinder className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="font-semibold text-foreground text-sm">Propane tanks & pressurized containers</h3>
+              <h3 className="text-foreground font-light text-lg">Propane tanks & pressurized containers</h3>
             </div>
           </div>
         </div>
@@ -520,8 +495,6 @@ const DumpsterRental = () => {
       </section>
 
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default DumpsterRental;
