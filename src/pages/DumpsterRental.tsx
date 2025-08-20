@@ -499,7 +499,7 @@ const DumpsterRental = () => {
           <h2 style={{
           fontFamily: 'Anton',
           color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium text-neutral-50">Dumpsters for Every Project in Tampa</h2>
+        }} className="text-4xl text-center mb-16 font-medium text-slate-50">Dumpsters for Every Project in Tampa</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
