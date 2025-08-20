@@ -284,7 +284,7 @@ const DumpsterRental = () => {
                 <Calendar className="h-8 w-8" />
               </div>
               <div className="text-primary font-bold text-lg mb-2">1</div>
-              <h3 className="font-semibold text-foreground mb-2">Book Your Tampa Bay Dumpster Rental</h3>
+              <h3 className="font-normal text-foreground mb-2">Book Your Tampa Bay Dumpster Rental</h3>
               <p className="text-sm text-muted-foreground">Reserve online in minutes or call {PHONE} for same-day delivery throughout Hillsborough & Pinellas County</p>
             </li>
 
