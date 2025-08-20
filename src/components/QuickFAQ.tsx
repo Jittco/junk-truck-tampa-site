@@ -13,10 +13,10 @@ const shortFaqs = [{
   answer: "We donate, recycle, and responsibly dispose."
 }];
 const QuickFAQ = () => {
-  return <section className="py-16 md:py-20 bg-background">
+  return <section className="py-16 md:py-20 bg-[z#] bg-[#222222]">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-anton text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-anton mb-6 text-slate-50">
             Top Questions We Hear
           </h2>
         </div>
@@ -26,10 +26,10 @@ const QuickFAQ = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                 <faq.icon className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-foreground mb-3 text-lg font-normal">
+              <h3 className="mb-3 text-lg font-normal text-slate-50">
                 {faq.question}
               </h3>
-              <p className="font-inter text-foreground/80 leading-relaxed">
+              <p className="font-inter leading-relaxed text-slate-50">
                 {faq.answer}
               </p>
             </div>)}
