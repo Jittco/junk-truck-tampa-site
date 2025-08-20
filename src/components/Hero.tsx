@@ -2,11 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image with preload */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-110 contrast-110 saturate-125" style={{
       backgroundImage: `url(/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png)`
     }}>
       </div>
+      <link rel="preload" as="image" href="/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">

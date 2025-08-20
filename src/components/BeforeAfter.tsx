@@ -59,6 +59,10 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
                 src={transformation.beforeImage}
                 alt={`Before: ${transformation.beforeCaption}`}
                 className="w-full h-64 object-cover"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="256"
               />
               <div className="absolute top-4 left-4 bg-muted px-3 py-1 rounded-md">
                 <span className="text-sm font-semibold text-foreground">Before</span>
@@ -74,6 +78,10 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
                 src={transformation.afterImage}
                 alt={`After: ${transformation.afterCaption}`}
                 className="w-full h-64 object-cover"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="256"
               />
               <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-md">
                 <span className="text-sm font-semibold text-black">After</span>
@@ -93,6 +101,10 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
               src={transformation.beforeImage}
               alt={`Before: ${transformation.beforeCaption}`}
               className="w-full h-48 object-cover"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="192"
             />
             <div className="absolute top-4 left-4 bg-muted px-3 py-1 rounded-md">
               <span className="text-sm font-semibold text-foreground">Before</span>
@@ -108,6 +120,10 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
               src={transformation.afterImage}
               alt={`After: ${transformation.afterCaption}`}
               className="w-full h-48 object-cover"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="192"
             />
             <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-md">
               <span className="text-sm font-semibold text-black">After</span>
