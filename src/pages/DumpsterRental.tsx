@@ -390,7 +390,7 @@ const DumpsterRental = () => {
           <h2 style={{
           fontFamily: 'Anton',
           color: '#444444'
-        }} className="text-center mb-16 text-lg font-normal">
+        }} className="text-center mb-16 font-normal text-lg">
             Renting a Dumpster is Simple
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
