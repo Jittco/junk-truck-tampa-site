@@ -265,6 +265,19 @@ const DumpsterRental = () => {
             How Dumpster Rental Works
           </h2>
 
+          {/* YouTube Video */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/Ri3ZM6FCOBQ"
+                title="How Dumpster Rental Works"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
           <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <li className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
