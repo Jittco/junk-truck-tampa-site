@@ -2,7 +2,7 @@ import { Truck, Hammer, Home, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import garageAfter from "@/assets/garage-after.jpg";
+import heroTruck from "@/assets/hero-truck.jpg";
 import shedAfter from "@/assets/shed-after.jpg";
 import yardAfter from "@/assets/yard-after.jpg";
 
@@ -28,7 +28,7 @@ const services = [{
   icon: Truck,
   title: "Dumpster Rental",
   description: "20-yard roll-off dumpsters delivered to your location for renovation and cleanout projects.",
-  image: garageAfter,
+  image: heroTruck,
   link: "/services/dumpster-rental/"
 }];
 const Services = () => {
