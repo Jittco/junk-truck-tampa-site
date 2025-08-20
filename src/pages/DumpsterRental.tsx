@@ -95,7 +95,7 @@ const DumpsterRental = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 lg:py-20 bg-muted/30">
+      <section className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-anton text-center mb-12 text-foreground">Why Choose Junk in the Truck Co for Dumpster Rentals in Tampa?</h2>
 
