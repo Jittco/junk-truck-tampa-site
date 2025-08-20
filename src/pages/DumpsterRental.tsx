@@ -193,7 +193,7 @@ const DumpsterRental = () => {
             </Card>
           </div>
 
-          <p className="text-center text-sm text-red-500 mt-8">
+          <p className="text-center text-sm text-primary mt-8">
             <strong>Note:</strong> Same-day delivery available (call to confirm availability)
           </p>
         </div>
