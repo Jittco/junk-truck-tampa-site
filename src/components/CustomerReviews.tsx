@@ -14,6 +14,7 @@ const CustomerReviews = () => {
             defer 
             async 
             src="https://cdn.trustindex.io/loader.js?eebdd2152344226b7d7635171a0"
+            onLoad={() => {}}
           ></script>
         </div>
       </div>
