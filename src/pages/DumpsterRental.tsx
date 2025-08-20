@@ -278,41 +278,32 @@ const DumpsterRental = () => {
             </div>
           </div>
 
-          <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <ol className="grid md:grid-cols-3 gap-8 mb-12">
             <li className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
                 <Calendar className="h-8 w-8" />
               </div>
               <div className="text-primary font-bold text-lg mb-2">1</div>
-              <h3 className="font-semibold text-foreground mb-2">Book online in minutes</h3>
-              <p className="text-sm text-muted-foreground">or call {PHONE}</p>
-            </li>
-
-            <li className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
-                <Truck className="h-8 w-8" />
-              </div>
-              <div className="text-primary font-bold text-lg mb-2">2</div>
-              <h3 className="font-semibold text-foreground mb-2">We deliver your 18-yard dumpster</h3>
-              <p className="text-sm text-muted-foreground">Same-day available</p>
+              <h3 className="font-semibold text-foreground mb-2">Book Your Tampa Bay Dumpster Rental</h3>
+              <p className="text-sm text-muted-foreground">Reserve online in minutes or call {PHONE} for same-day delivery throughout Hillsborough & Pinellas County</p>
             </li>
 
             <li className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
                 <Trash2 className="h-8 w-8" />
               </div>
-              <div className="text-primary font-bold text-lg mb-2">3</div>
-              <h3 className="font-semibold text-foreground mb-2">You fill it at your own pace</h3>
-              <p className="text-sm text-muted-foreground">1-7 day rental periods</p>
+              <div className="text-primary font-bold text-lg mb-2">2</div>
+              <h3 className="font-semibold text-foreground mb-2">Fill Your 18-Yard Dumpster</h3>
+              <p className="text-sm text-muted-foreground">Take 1-7 days to load household junk, construction debris, or renovation materials at your own pace</p>
             </li>
 
             <li className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
                 <CheckCircle className="h-8 w-8" />
               </div>
-              <div className="text-primary font-bold text-lg mb-2">4</div>
-              <h3 className="font-semibold text-foreground mb-2">We pick it up</h3>
-              <p className="text-sm text-muted-foreground">and responsibly dispose of debris</p>
+              <div className="text-primary font-bold text-lg mb-2">3</div>
+              <h3 className="font-semibold text-foreground mb-2">Professional Pickup & Disposal</h3>
+              <p className="text-sm text-muted-foreground">We collect your full dumpster and responsibly dispose of all materials - no extra work for you</p>
             </li>
           </ol>
 
