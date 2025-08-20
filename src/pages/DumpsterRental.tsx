@@ -210,7 +210,7 @@ const DumpsterRental = () => {
             <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Flat, transparent pricing</h3>
+                <h3 className="font-normal text-foreground mb-2">Flat, transparent pricing</h3>
                 <p className="text-sm text-muted-foreground">No hidden fees</p>
               </div>
             </div>
@@ -218,7 +218,7 @@ const DumpsterRental = () => {
             <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Flexible rental periods</h3>
+                <h3 className="font-normal text-foreground mb-2">Flexible rental periods</h3>
                 <p className="text-sm text-muted-foreground">1–7 days</p>
               </div>
             </div>
@@ -226,7 +226,7 @@ const DumpsterRental = () => {
             <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Same-day delivery available</h3>
+                <h3 className="font-normal text-foreground mb-2">Same-day delivery available</h3>
                 <p className="text-sm text-muted-foreground">When you need it fast</p>
               </div>
             </div>
@@ -234,7 +234,7 @@ const DumpsterRental = () => {
             <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">First ton of disposal included</h3>
+                <h3 className="font-normal text-foreground mb-2">First ton of disposal included</h3>
                 <p className="text-sm text-muted-foreground">Covers most projects</p>
               </div>
             </div>
@@ -242,7 +242,7 @@ const DumpsterRental = () => {
             <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Driveway-friendly placement</h3>
+                <h3 className="font-normal text-foreground mb-2">Driveway-friendly placement</h3>
                 <p className="text-sm text-muted-foreground">We protect your property</p>
               </div>
             </div>
@@ -250,7 +250,7 @@ const DumpsterRental = () => {
             <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Professional delivery & pickup</h3>
+                <h3 className="font-normal text-foreground mb-2">Professional delivery & pickup</h3>
                 <p className="text-sm text-muted-foreground">Hassle-free service</p>
               </div>
             </div>
