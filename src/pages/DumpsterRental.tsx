@@ -293,7 +293,7 @@ const DumpsterRental = () => {
                 <Trash2 className="h-8 w-8" />
               </div>
               <div className="text-primary font-bold text-lg mb-2">2</div>
-              <h3 className="font-semibold text-foreground mb-2">Fill Your 18-Yard Dumpster</h3>
+              <h3 className="font-normal text-foreground mb-2">Fill Your 18-Yard Dumpster</h3>
               <p className="text-sm text-muted-foreground">Take 1-7 days to load household junk, construction debris, or renovation materials at your own pace</p>
             </li>
 
