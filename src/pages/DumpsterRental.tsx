@@ -3,615 +3,490 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Star, Clock, DollarSign, Home, Hammer, Building2, Phone } from "lucide-react";
+import { 
+  Phone, 
+  Calendar, 
+  DollarSign, 
+  Truck, 
+  CheckCircle,
+  Home,
+  Hammer,
+  TreePine,
+  Wrench,
+  Building,
+  Trash2,
+  AlertTriangle,
+  Droplets,
+  Battery,
+  Fuel,
+  Zap,
+  Shield,
+  Syringe,
+  Cylinder
+} from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+
+const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
+const PHONE = "844-858-6546";
+
 const DumpsterRental = () => {
-  return <>
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Dumpster Rental Tampa Bay",
+    "description": "Affordable 18-yard dumpster rentals in Tampa Bay with same-day delivery, flat-rate pricing, and 1 ton included. Serving Hillsborough & Pinellas County.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Junk in the Truck Co",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3810 W San Carlos Street",
+        "addressLocality": "Tampa",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "telephone": PHONE,
+      "url": "https://junkinthetruckco.com"
+    },
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Florida"
+      }
+    ],
+    "serviceType": "Dumpster Rental",
+    "offers": {
+      "@type": "Offer",
+      "priceRange": "$300-$350",
+      "priceCurrency": "USD"
+    }
+  };
+
+  return (
+    <>
       <Helmet>
-        <title>Dumpster Rental Tampa, FL | Junk in the Truck Co</title>
-        <meta name="description" content="Affordable dumpster rentals in Tampa, FL. Flat-rate pricing, same-day delivery, and 5-star local service. Book online today!" />
-        <link rel="canonical" href="/dumpster-rental" />
+        <title>Dumpster Rental Tampa Bay | 18-Yard Roll-Off | Same-Day Delivery</title>
+        <meta name="description" content="Affordable 18-yard dumpster rentals in Tampa Bay. Same-day delivery, flat-rate pricing, 1 ton included. Serving Hillsborough & Pinellas. Book online in minutes." />
+        <link rel="canonical" href="/dumpster-rental-tampa" />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
       </Helmet>
 
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-32" style={{
-      backgroundImage: `url('/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png')`
-    }}>
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-32" 
+        style={{backgroundImage: `url('/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png')`}}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 style={{
-          fontFamily: 'Anton',
-          color: '#ffffff'
-        }} className="text-4xl mb-6 md:text-4xl font-medium">
-            Dumpster Rental in Tampa, Florida – Fast & Affordable
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-anton mb-6 text-white">
+            Affordable Dumpster Rental in Tampa Bay
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white">
-            Flat-rate pricing, same-day delivery, and driveway-safe roll-off dumpsters.
+          <p className="text-xl md:text-2xl mb-8 text-white max-w-3xl mx-auto">
+            Get a clean <strong>18-yard roll-off dumpster</strong> with <strong>same-day delivery available</strong>, flat-rate pricing, and local service you can trust.
           </p>
+          
+          {/* Badges */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-medium">
+              Same-Day Available
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-medium">
+              Flat, Upfront Pricing
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-medium">
+              1 Ton Included
+            </div>
+          </div>
+
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 text-lg transform hover:scale-105 transition-all">
-              Book Online Now
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-3 text-lg" asChild>
+              <a href={BOOK_URL} target="_blank" rel="noopener noreferrer">
+                Book a Dumpster
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border border-white px-4 py-2 text-slate-50">
-              <Phone className="mr-2 h-5 w-5" />
-              Call Us Today: 844-858-6546
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground px-8 py-3 text-lg" asChild>
+              <a href={`tel:${PHONE.replace(/[^0-9]/g, "")}`}>
+                <Phone className="mr-2 h-5 w-5" />
+                Call {PHONE}
+              </a>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 style={{
-          fontFamily: 'Anton',
-          color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium">
-            Why Tampa Chooses Us for Dumpster Rentals
+      {/* Pricing & Details Section */}
+      <section className="py-16 lg:py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-foreground">
+            18 Cubic Yard Dumpster – Pricing & Details
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
-                <Star className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-medium mb-2" style={{
-              color: '#444444'
-            }}>5-Star Rated Local Service</h3>
-              <p style={{
-              color: '#444444'
-            }}>Trusted by thousands of Tampa homeowners</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
-                <Clock className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-medium mb-2" style={{
-              color: '#444444'
-            }}>Same-Day & Next-Day Delivery</h3>
-              <p style={{
-              color: '#444444'
-            }}>Fast turnaround when you need it most</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
-                <DollarSign className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-medium mb-2" style={{
-              color: '#444444'
-            }}>Flat-Rate Pricing</h3>
-              <p style={{
-              color: '#444444'
-            }}>No hidden fees, no surprises</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
-                <Home className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-medium mb-2" style={{
-              color: '#444444'
-            }}>Driveway Protection Included</h3>
-              <p style={{
-              color: '#444444'
-            }}>We protect your property during delivery</p>
-            </div>
-          </div>
-        </div>
-      </section>
+          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Our single-size, 18-yard dumpster fits most home and light commercial projects—cleanouts, remodels, roofing, and more.
+          </p>
 
-      {/* Dumpster Sizes & Pricing */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 style={{
-          fontFamily: 'Anton',
-          color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium">
-            Roll-Off Dumpster Sizes in Tampa
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle style={{
-                color: '#444444'
-              }} className="text-center text-2xl font-extralight">12-Yard Dumpster</CardTitle>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="border-2 border-primary">
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl font-anton text-foreground">1–3 Days</CardTitle>
+                <div className="text-4xl font-bold text-primary">$300</div>
               </CardHeader>
               <CardContent className="text-center">
-                <p className="mb-6" style={{
-                color: '#444444'
-              }}>Perfect for cleanouts & yard debris.</p>
-                <Button className="bg-[#18d13d] hover:bg-[#15b835] text-white transform hover:scale-105 transition-all">
-                  Reserve Now
-                </Button>
+                <p className="text-muted-foreground mb-4">Perfect for quick cleanouts</p>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li>• 1 ton included</li>
+                  <li>• $0.08 per lb after first ton</li>
+                  <li>• Same-day delivery available</li>
+                </ul>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle style={{
-                color: '#444444'
-              }} className="text-2xl text-center font-extralight">18-Yard Dumpster</CardTitle>
+
+            <Card>
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl font-anton text-foreground">4–7 Days</CardTitle>
+                <div className="text-4xl font-bold text-primary">$350</div>
               </CardHeader>
               <CardContent className="text-center">
-                <p className="mb-6" style={{
-                color: '#444444'
-              }}>Great for kitchen/bath remodels.</p>
-                <Button className="bg-[#18d13d] hover:bg-[#15b835] text-white transform hover:scale-105 transition-all">
-                  Reserve Now
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle style={{
-                color: '#444444'
-              }} className="text-2xl text-center font-extralight">20-Yard Dumpster</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="mb-6" style={{
-                color: '#444444'
-              }}>Ideal for big renovations & demolition.</p>
-                <Button className="bg-[#18d13d] hover:bg-[#15b835] text-white transform hover:scale-105 transition-all">
-                  Reserve Now
-                </Button>
+                <p className="text-muted-foreground mb-4">Great for bigger projects</p>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li>• 1 ton included</li>
+                  <li>• $0.08 per lb after first ton</li>
+                  <li>• Flexible timeline</li>
+                </ul>
               </CardContent>
             </Card>
           </div>
-          <p className="text-center text-lg text-gray-700">
-            All rentals include 3–7 day agreements. One-day turnaround available depending on demand.
+
+          <p className="text-center text-sm text-muted-foreground mt-8">
+            <strong>Note:</strong> Same-day delivery available (call to confirm availability)
           </p>
         </div>
       </section>
 
       {/* What's Included Section */}
-      <section className="py-20 bg-[#222222]">
-        <div className="container mx-auto px-4">
-          <h2 style={{
-          fontFamily: 'Anton',
-          color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium text-slate-50">
+      <section className="py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-12 text-foreground">
             What's Included with Your Dumpster Rental
           </h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 mb-12">
-            {/* Left Column - Included */}
-            <div className="space-y-6">
-              <h3 style={{
-              fontFamily: 'Anton',
-              color: '#444444'
-            }} className="text-2xl font-medium mb-6 text-slate-50">Included</h3>
-              
-              <div className="space-y-4 bg-slate-50 rounded">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-sm font-bold">✓</span>
-                  </div>
-                  <p style={{
-                  color: '#444444'
-                }} className="font-normal">
-                    <strong>2‑Ton Weight Allowance Included</strong> (covers most homeowner projects)
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-sm font-bold">✓</span>
-                  </div>
-                  <p style={{
-                  color: '#444444'
-                }} className="font-normal">
-                    <strong>Flat‑Rate Pricing</strong> — 20‑yard dumpsters start at $350; typical range $350–$450 (depends on items and location)
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-sm font-bold">✓</span>
-                  </div>
-                  <p style={{
-                  color: '#444444'
-                }} className="font-normal">
-                    <strong>3–7 Day Rental Window</strong> (flexible for DIY timelines; may adjust with demand)
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-sm font-bold">✓</span>
-                  </div>
-                  <p style={{
-                  color: '#444444'
-                }} className="font-normal">
-                    <strong>Driveway‑Safe Setup</strong> (boards/protection included)
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-sm font-bold">✓</span>
-                  </div>
-                  <p style={{
-                  color: '#444444'
-                }} className="font-normal">
-                    <strong>Fast Pickup When You're Done</strong>
-                  </p>
-                </div>
-              </div>
-              
-              <div className="mt-6 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
-                <p style={{
-                color: '#444444'
-              }} className="text-sm font-normal">
-                  <strong>Note:</strong> Overage is $100 per additional ton beyond the included 2 tons.
-                </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Flat, transparent pricing</h3>
+                <p className="text-sm text-muted-foreground">No hidden fees</p>
               </div>
             </div>
 
-            {/* Right Column - Restrictions */}
-            <div>
-              <Card className="border-red-200 bg-red-50">
-                <CardHeader className="pb-4">
-                  <CardTitle className="flex items-center gap-2" style={{
-                  color: '#444444'
-                }}>
-                    <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center">
-                      <span className="text-white text-sm font-bold">!</span>
-                    </div>
-                    <span style={{
-                    fontFamily: 'Anton'
-                  }} className="text-2xl font-medium">
-                      Restrictions (Can't Go In)
-                    </span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 mb-4">
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-white text-sm font-bold">✕</span>
-                      </div>
-                      <span style={{
-                      color: '#444444'
-                    }} className="font-normal">
-                        Roofing materials (shingles, tar, etc.)
-                      </span>
-                    </li>
-                    
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-white text-sm font-bold">✕</span>
-                      </div>
-                      <span style={{
-                      color: '#444444'
-                    }} className="font-normal">
-                        Concrete, dirt, or heavy fill
-                      </span>
-                    </li>
-                    
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-white text-sm font-bold">✕</span>
-                      </div>
-                      <span style={{
-                      color: '#444444'
-                    }} className="font-normal">
-                        Wet paint or solvents
-                      </span>
-                    </li>
-                    
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-white text-sm font-bold">✕</span>
-                      </div>
-                      <span style={{
-                      color: '#444444'
-                    }} className="font-normal">
-                        Harsh chemicals / hazardous waste
-                      </span>
-                    </li>
-                    
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-white text-sm font-bold">✕</span>
-                      </div>
-                      <span style={{
-                      color: '#444444'
-                    }} className="font-normal">
-                        Batteries (and electronics with toxic components)
-                      </span>
-                    </li>
-                  </ul>
-                  
-                  <div className="pt-3 border-t border-red-200">
-                    <p style={{
-                    color: '#444444'
-                  }} className="text-sm font-normal">
-                      Not sure about an item? Call 844‑858‑6546 and we'll confirm before delivery.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Flexible rental periods</h3>
+                <p className="text-sm text-muted-foreground">1–7 days</p>
+              </div>
             </div>
-          </div>
 
-          {/* CTA Row */}
-          <div className="text-center border-t border-gray-200 pt-12">
-            <p style={{
-            color: '#444444'
-          }} className="text-xl mb-6 font-normal text-slate-50">
-              Ready to reserve your dumpster?
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 text-lg transform hover:scale-105 transition-all" aria-label="Reserve dumpster rental now">
-                Reserve Now
-              </Button>
-              <Button size="lg" variant="outline" className="border-[#18d13d] text-[#18d13d] hover:bg-[#18d13d] hover:text-white px-8 py-3 text-lg transform hover:scale-105 transition-all" aria-label="Call us for dumpster rental information">
-                <Phone className="mr-2 h-5 w-5" />
-                Call 844‑858‑6546
-              </Button>
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Same-day delivery available</h3>
+                <p className="text-sm text-muted-foreground">When you need it fast</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">First ton of disposal included</h3>
+                <p className="text-sm text-muted-foreground">Covers most projects</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Driveway-friendly placement</h3>
+                <p className="text-sm text-muted-foreground">We protect your property</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Professional delivery & pickup</h3>
+                <p className="text-sm text-muted-foreground">Hassle-free service</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service Areas */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 style={{
-          fontFamily: 'Anton',
-          color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium">
-            Dumpster Rentals Available Across Tampa, FL
+      {/* How It Works Section */}
+      <section className="py-16 lg:py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-12 text-foreground">
+            How Dumpster Rental Works
           </h2>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.54000000002!2d-82.6404194!3d27.9506338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20FL!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="100%" style={{
-              border: 0
-            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Tampa Service Area Map"></iframe>
-            </div>
-            <div>
-              <p className="text-lg mb-6" style={{
-              color: '#444444'
-            }}>
-                We proudly provide fast, reliable dumpster rentals across all Tampa neighborhoods including South Tampa, West Tampa, New Tampa, and Downtown.
-              </p>
-              <Button variant="outline" size="lg" className="border-[#18d13d] text-[#18d13d] hover:bg-[#18d13d] hover:text-white transform hover:scale-105 transition-all text-center">
-                <Phone className="mr-2 h-5 w-5" />
-                Not sure if we serve your neighborhood? Call us at 844-858-6546
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* How It Works */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 style={{
-          fontFamily: 'Anton',
-          color: '#444444'
-        }} className="text-center mb-16 text-lg font-normal">
-            Renting a Dumpster is Simple
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#18d13d] flex items-center justify-center">
-                <span className="text-3xl font-bold text-white">1</span>
+          <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <li className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
+                <Calendar className="h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-medium mb-4" style={{
-              color: '#444444'
-            }}>Book Online in Minutes</h3>
-              <p style={{
-              color: '#444444'
-            }}>Choose your size and schedule delivery online or by phone</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#18d13d] flex items-center justify-center">
-                <span className="text-3xl font-bold text-white">2</span>
-              </div>
-              <h3 className="text-2xl font-medium mb-4" style={{
-              color: '#444444'
-            }}>We Deliver to You</h3>
-              <p style={{
-              color: '#444444'
-            }}>Fast, professional delivery with driveway protection included</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#18d13d] flex items-center justify-center">
-                <span className="text-3xl font-bold text-white">3</span>
-              </div>
-              <h3 className="text-2xl font-medium mb-4" style={{
-              color: '#444444'
-            }}>You Fill, We Haul</h3>
-              <p style={{
-              color: '#444444'
-            }}>Load at your pace, we'll pick up when you're ready</p>
-            </div>
-          </div>
-        </div>
-      </section>
+              <div className="text-primary font-bold text-lg mb-2">1</div>
+              <h3 className="font-semibold text-foreground mb-2">Book online in minutes</h3>
+              <p className="text-sm text-muted-foreground">or call {PHONE}</p>
+            </li>
 
-      {/* Customer Reviews */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 style={{
-          fontFamily: 'Anton',
-          color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium">
-            What Our Tampa Customers Are Saying
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-[#18d13d] text-[#18d13d]" />)}
-                </div>
-                <p className="mb-4" style={{
-                color: '#444444'
-              }}>
-                  "Outstanding service! They delivered exactly when promised and the dumpster was perfect for our kitchen remodel."
-                </p>
-                <p className="font-semibold" style={{
-                color: '#444444'
-              }}>- Sarah M., South Tampa</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-[#18d13d] text-[#18d13d]" />)}
-                </div>
-                <p className="mb-4" style={{
-                color: '#444444'
-              }}>
-                  "Great pricing and no hidden fees. The team was professional and protected our driveway perfectly."
-                </p>
-                <p className="font-semibold" style={{
-                color: '#444444'
-              }}>- Mike R., West Tampa</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-[#18d13d] text-[#18d13d]" />)}
-                </div>
-                <p className="mb-4" style={{
-                color: '#444444'
-              }}>
-                  "Same-day delivery saved our project timeline. Highly recommend for any construction job!"
-                </p>
-                <p className="font-semibold" style={{
-                color: '#444444'
-              }}>- Jennifer L., New Tampa</p>
-              </CardContent>
-            </Card>
-          </div>
+            <li className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
+                <Truck className="h-8 w-8" />
+              </div>
+              <div className="text-primary font-bold text-lg mb-2">2</div>
+              <h3 className="font-semibold text-foreground mb-2">We deliver your 18-yard dumpster</h3>
+              <p className="text-sm text-muted-foreground">Same-day available</p>
+            </li>
+
+            <li className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
+                <Trash2 className="h-8 w-8" />
+              </div>
+              <div className="text-primary font-bold text-lg mb-2">3</div>
+              <h3 className="font-semibold text-foreground mb-2">You fill it at your own pace</h3>
+              <p className="text-sm text-muted-foreground">1-7 day rental periods</p>
+            </li>
+
+            <li className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white">
+                <CheckCircle className="h-8 w-8" />
+              </div>
+              <div className="text-primary font-bold text-lg mb-2">4</div>
+              <h3 className="font-semibold text-foreground mb-2">We pick it up</h3>
+              <p className="text-sm text-muted-foreground">and responsibly dispose of debris</p>
+            </li>
+          </ol>
+
           <div className="text-center">
-            <script defer async src='https://cdn.trustindex.io/loader.js?eebdd2152344226b7d7635171a0'></script>
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-3" asChild>
+              <a href={BOOK_URL} target="_blank" rel="noopener noreferrer">
+                Reserve Your Dumpster
+              </a>
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* Who We Serve */}
-      <section className="py-20 bg-[#222222]">
-        <div className="container mx-auto px-4">
-          <h2 style={{
-          fontFamily: 'Anton',
-          color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium text-slate-50">Dumpsters for Every Project in Tampa</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
-                  <Home className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-medium mb-4" style={{
-                color: '#444444'
-              }}>Homeowners</h3>
-                <p style={{
-                color: '#444444'
-              }}>Cleanouts, moving, and renovations.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
-                  <Hammer className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-medium mb-4" style={{
-                color: '#444444'
-              }}>Contractors & Remodelers</h3>
-                <p style={{
-                color: '#444444'
-              }}>Construction, demolition, renovation debris.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#18d13d] flex items-center justify-center">
-                  <Building2 className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-medium mb-4" style={{
-                color: '#444444'
-              }}>Property Managers & Realtors</h3>
-                <p style={{
-                color: '#444444'
-              }}>Tenant cleanouts, foreclosures, evictions.</p>
-              </CardContent>
-            </Card>
+      {/* Project Types Section */}
+      <section className="py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-foreground">
+            A Dumpster for Every Project in Tampa
+          </h2>
+          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            No matter your project, our <strong>18-yard roll-off dumpster</strong> makes cleanup fast and stress-free.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex items-center gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <Home className="h-8 w-8 text-primary" />
+              <span className="font-medium text-foreground">Home cleanouts</span>
+            </div>
+
+            <div className="flex items-center gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <Trash2 className="h-8 w-8 text-primary" />
+              <span className="font-medium text-foreground">Furniture removal</span>
+            </div>
+
+            <div className="flex items-center gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <TreePine className="h-8 w-8 text-primary" />
+              <span className="font-medium text-foreground">Yard waste</span>
+            </div>
+
+            <div className="flex items-center gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <Wrench className="h-8 w-8 text-primary" />
+              <span className="font-medium text-foreground">Small renovations</span>
+            </div>
+
+            <div className="flex items-center gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <Hammer className="h-8 w-8 text-primary" />
+              <span className="font-medium text-foreground">Roofing shingles</span>
+            </div>
+
+            <div className="flex items-center gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <Building className="h-8 w-8 text-primary" />
+              <span className="font-medium text-foreground">Light construction debris</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-16 lg:py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-foreground">
+            Service Areas – Dumpster Rentals in Tampa Bay
+          </h2>
+          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            We proudly serve <strong>Hillsborough County</strong> and <strong>Pinellas County</strong> with fast delivery and local support.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-xl font-anton text-primary mb-6">Hillsborough County</h3>
+              <div className="grid grid-cols-2 gap-2 text-sm text-foreground">
+                <div>Tampa</div>
+                <div>Brandon</div>
+                <div>Riverview</div>
+                <div>Gibsonton</div>
+                <div>Apollo Beach</div>
+                <div>Valrico</div>
+                <div>Seffner</div>
+                <div>Plant City</div>
+                <div>Ruskin</div>
+                <div>Sun City Center</div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-anton text-primary mb-6">Pinellas County</h3>
+              <div className="grid grid-cols-2 gap-2 text-sm text-foreground">
+                <div>St. Petersburg</div>
+                <div>Clearwater</div>
+                <div>Largo</div>
+                <div>Pinellas Park</div>
+                <div>Dunedin</div>
+                <div>Tarpon Springs</div>
+                <div>Palm Harbor</div>
+                <div>Safety Harbor</div>
+                <div>Seminole</div>
+                <div>Gulfport</div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-muted-foreground mt-8">
+            Don't see your city? Call us at <strong>{PHONE}</strong> to check availability.
+          </p>
+        </div>
+      </section>
+
+      {/* Prohibited Items Section */}
+      <section className="py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-foreground">
+            What You Can't Put in Your Dumpster
+          </h2>
+          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            For safety and compliance, some materials <strong>cannot</strong> be placed in our dumpsters. If you're unsure, give us a call.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
+              <AlertTriangle className="h-8 w-8 text-destructive mb-3" />
+              <h3 className="font-semibold text-foreground text-sm">Hazardous waste & chemicals</h3>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
+              <Droplets className="h-8 w-8 text-destructive mb-3" />
+              <h3 className="font-semibold text-foreground text-sm">Paints, stains & solvents</h3>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
+              <Fuel className="h-8 w-8 text-destructive mb-3" />
+              <h3 className="font-semibold text-foreground text-sm">Oils, fuels & flammable liquids</h3>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
+              <Shield className="h-8 w-8 text-destructive mb-3" />
+              <h3 className="font-semibold text-foreground text-sm">Asbestos & contaminated materials</h3>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
+              <Truck className="h-8 w-8 text-destructive mb-3" />
+              <h3 className="font-semibold text-foreground text-sm">Tires & auto parts</h3>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
+              <Battery className="h-8 w-8 text-destructive mb-3" />
+              <h3 className="font-semibold text-foreground text-sm">Batteries & electronics (e-waste)</h3>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
+              <Syringe className="h-8 w-8 text-destructive mb-3" />
+              <h3 className="font-semibold text-foreground text-sm">Medical waste & sharps</h3>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
+              <Cylinder className="h-8 w-8 text-destructive mb-3" />
+              <h3 className="font-semibold text-foreground text-sm">Propane tanks & pressurized containers</h3>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 lg:py-20 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 style={{
-          fontFamily: 'Anton',
-          color: '#444444'
-        }} className="text-4xl text-center mb-16 font-medium">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-12 text-foreground">
             Tampa Dumpster Rental FAQs
           </h2>
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger style={{
-              color: '#444444'
-            }} className="text-lg font-extralight">
-                How much does dumpster rental cost in Tampa?
+
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="size" className="border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold">
+                What size is your dumpster?
               </AccordionTrigger>
-              <AccordionContent style={{
-              color: '#444444'
-            }}>
-                Our flat-rate pricing starts at competitive rates with no hidden fees. Contact us for exact pricing based on your project size and rental period.
+              <AccordionContent className="text-muted-foreground">
+                We offer one size: an <strong>18 cubic yard roll-off dumpster</strong>. This size fits most residential and light commercial projects including cleanouts, renovations, and debris removal.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger style={{
-              color: '#444444'
-            }} className="text-lg font-extralight">
-                What size dumpster do I need?
+
+            <AccordionItem value="cost" className="border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold">
+                How much does it cost to rent a dumpster?
               </AccordionTrigger>
-              <AccordionContent style={{
-              color: '#444444'
-            }}>
-                12-yard for small cleanouts, 18-yard for bathroom/kitchen remodels, and 20-yard for major renovations. Our team can help you choose the right size.
+              <AccordionContent className="text-muted-foreground">
+                $300 (1–3 days) or $350 (4–7 days). Includes 1 ton of disposal, with additional weight at $0.08 per lb after the first ton. No hidden fees or surprises.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger style={{
-              color: '#444444'
-            }} className="text-lg font-extralight">
-                Do I need a permit for dumpster rental in Tampa?
+
+            <AccordionItem value="same-day" className="border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold">
+                Do you offer same-day delivery?
               </AccordionTrigger>
-              <AccordionContent style={{
-              color: '#444444'
-            }}>
-                Permits are typically required if the dumpster is placed on public property. We can help guide you through the permit process if needed.
+              <AccordionContent className="text-muted-foreground">
+                Yes — call {PHONE} to confirm availability. Same-day delivery is often available for urgent projects.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger style={{
-              color: '#444444'
-            }} className="text-lg font-extralight">
-                What items are not allowed in the dumpster?
+
+            <AccordionItem value="allowed" className="border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold">
+                What can I put in the dumpster?
               </AccordionTrigger>
-              <AccordionContent style={{
-              color: '#444444'
-            }}>
-                Hazardous materials, chemicals, paint, batteries, and electronics are prohibited. We'll provide a complete list of restricted items when you book.
+              <AccordionContent className="text-muted-foreground">
+                Household junk, furniture, yard waste, remodeling debris, shingles, and light construction debris. Most common project materials are accepted.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-5">
-              <AccordionTrigger style={{
-              color: '#444444'
-            }} className="text-lg font-extralight">
-                How quickly can you deliver a dumpster?
+
+            <AccordionItem value="prohibited" className="border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold">
+                What items are prohibited?
               </AccordionTrigger>
-              <AccordionContent style={{
-              color: '#444444'
-            }}>
-                We offer same-day and next-day delivery in most Tampa areas. One-day turnaround is available depending on current demand.
+              <AccordionContent className="text-muted-foreground">
+                Hazardous waste, chemicals, paints, oils, asbestos, tires, batteries, medical waste, propane tanks, and flammable materials. Call us if you're unsure about specific items.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="booking" className="border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold">
+                How do I book?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Use our online booking link or call us. We'll confirm delivery time and place the dumpster in a driveway-friendly location with proper protection for your property.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -619,26 +494,34 @@ const DumpsterRental = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-[#18d13d]">
-        <div className="container mx-auto px-4 text-center">
-          <h2 style={{
-          fontFamily: 'Anton'
-        }} className="text-4xl text-white mb-8 font-medium">
-            Ready to Book Your Dumpster in Tampa?
+      <section className="py-16 lg:py-20 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-anton mb-6">
+            Ready to Book Your Dumpster?
           </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Get your <strong>18-yard dumpster delivered today</strong> — fast, affordable, and local.
+          </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-[#18d13d] hover:bg-gray-100 font-semibold px-8 py-3 text-lg transform hover:scale-105 transition-all">
-              Book Online in Minutes
+            <Button size="lg" variant="secondary" className="px-8 py-3 text-lg font-semibold" asChild>
+              <a href={BOOK_URL} target="_blank" rel="noopener noreferrer">
+                Reserve Online Now
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#18d13d] font-semibold px-8 py-3 text-lg transform hover:scale-105 transition-all">
-              <Phone className="mr-2 h-5 w-5" />
-              Call 844-858-6546
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold" asChild>
+              <a href={`tel:${PHONE.replace(/[^0-9]/g, "")}`}>
+                <Phone className="mr-2 h-5 w-5" />
+                Call {PHONE}
+              </a>
             </Button>
           </div>
         </div>
       </section>
 
       <Footer />
-    </>;
+    </>
+  );
 };
+
 export default DumpsterRental;
