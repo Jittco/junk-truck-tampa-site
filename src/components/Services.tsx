@@ -22,7 +22,7 @@ const services = [{
   icon: Hammer,
   title: "Demolition Services",
   description: "Light demolition for home renovations, deck removal, and property improvements with proper disposal.",
-  image: yardAfter,
+  image: "/lovable-uploads/83002140-5f76-41b6-b916-a3beec2589d8.png",
   link: "/services/demolition/"
 }, {
   icon: Truck,
