@@ -425,7 +425,7 @@ const DumpsterRental = () => {
 
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="size" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
+              <AccordionTrigger className="text-left font-normal">
                 What size is your dumpster?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
@@ -434,7 +434,7 @@ const DumpsterRental = () => {
             </AccordionItem>
 
             <AccordionItem value="cost" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
+              <AccordionTrigger className="text-left font-normal">
                 How much does it cost to rent a dumpster?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
@@ -443,7 +443,7 @@ const DumpsterRental = () => {
             </AccordionItem>
 
             <AccordionItem value="same-day" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
+              <AccordionTrigger className="text-left font-normal">
                 Do you offer same-day delivery?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
@@ -452,7 +452,7 @@ const DumpsterRental = () => {
             </AccordionItem>
 
             <AccordionItem value="allowed" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
+              <AccordionTrigger className="text-left font-normal">
                 What can I put in the dumpster?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
@@ -461,7 +461,7 @@ const DumpsterRental = () => {
             </AccordionItem>
 
             <AccordionItem value="prohibited" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
+              <AccordionTrigger className="text-left font-normal">
                 What items are prohibited?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
@@ -470,7 +470,7 @@ const DumpsterRental = () => {
             </AccordionItem>
 
             <AccordionItem value="booking" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold">
+              <AccordionTrigger className="text-left font-normal">
                 How do I book?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
