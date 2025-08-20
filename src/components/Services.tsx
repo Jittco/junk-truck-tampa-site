@@ -28,7 +28,7 @@ const services = [{
   icon: Truck,
   title: "Dumpster Rental",
   description: "20-yard roll-off dumpsters delivered to your location for renovation and cleanout projects.",
-  image: heroTruck,
+  image: "/lovable-uploads/8cc552ae-7f45-4fce-9ab9-57252c36303f.png",
   link: "/services/dumpster-rental/"
 }];
 const Services = () => {
