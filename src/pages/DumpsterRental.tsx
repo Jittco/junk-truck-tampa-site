@@ -302,7 +302,7 @@ const DumpsterRental = () => {
                 <CheckCircle className="h-8 w-8" />
               </div>
               <div className="text-primary font-bold text-lg mb-2">3</div>
-              <h3 className="font-semibold text-foreground mb-2">Professional Pickup & Disposal</h3>
+              <h3 className="font-normal text-foreground mb-2">Professional Pickup & Disposal</h3>
               <p className="text-sm text-muted-foreground">We collect your full dumpster and responsibly dispose of all materials - no extra work for you</p>
             </li>
           </ol>
