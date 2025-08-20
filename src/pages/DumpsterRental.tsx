@@ -94,6 +94,57 @@ const DumpsterRental = () => {
         </div>
       </section>
 
+      {/* Why Choose Us Section */}
+      <section className="py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-12 text-foreground">
+            Why Choose Junk in the Truck Co. for Dumpster Rentals in Tampa?
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Locally owned & operated in Tampa Bay</h3>
+                <p className="text-sm text-muted-foreground">Supporting our community with personalized service</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Transparent, flat-rate pricing</h3>
+                <p className="text-sm text-muted-foreground">No surprises or hidden fees</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Driveway-friendly dumpster delivery</h3>
+                <p className="text-sm text-muted-foreground">Professional placement that protects your property</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Courteous, reliable team</h3>
+                <p className="text-sm text-muted-foreground">Professional service you can count on</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">Flexible scheduling to fit your project</h3>
+                <p className="text-sm text-muted-foreground">1-7 day rentals with same-day delivery available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing & Details Section */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="container mx-auto px-4 max-w-6xl">
