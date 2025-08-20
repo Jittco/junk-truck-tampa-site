@@ -27,20 +27,16 @@ const Navigation = () => {
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <a href="/" className="nav-logo">
-              <img 
-                src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" 
-                alt="Junk in the Truck Co Logo" 
-                className="h-24 w-auto font-bold"
-              />
+              <img src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" alt="Junk in the Truck Co Logo" className="h-24 w-auto font-bold" />
             </a>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-6">
-              <a href="/junk-removal" className="nav-link">Junk Removal</a>
+              <a href="/junk-removal" className="nav-link">SERVICES</a>
               
-              <a href="/demolition" className="nav-link">Demolition</a>
+              <a href="/demolition" className="nav-link">DEMOLITION</a>
               
-              <a href="/dumpster-rental" className="nav-link">Dumpster Rental</a>
+              <a href="/dumpster-rental" className="nav-link">DUMPSTER </a>
 
               <a href="#how-it-works" className="nav-link">
                 How It Works
@@ -97,20 +93,15 @@ const Navigation = () => {
                 </a>
                 
                 <div className="py-3 px-4">
-                  <button 
-                    className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2"
-                    onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
-                  >
+                  <button className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2" onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}>
                     About Us
                     <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-90' : ''}`} />
                   </button>
-                  {isAboutDropdownOpen && (
-                    <div className="pl-4 space-y-2 mt-2">
+                  {isAboutDropdownOpen && <div className="pl-4 space-y-2 mt-2">
                       {aboutItems.map(item => <a key={item} href="#about" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                           {item}
                         </a>)}
-                    </div>
-                  )}
+                    </div>}
                 </div>
               </div>
             </div>}
