@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Phone, Calendar, DollarSign, Truck, CheckCircle, Home, Hammer, TreePine, Wrench, Building, Trash2, AlertTriangle, Droplets, Battery, Fuel, Zap, Shield, Syringe, Cylinder } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ServiceAreaMap from "@/components/ServiceAreaMap";
 const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
 const PHONE = "844-858-6546";
 const DumpsterRental = () => {
@@ -299,55 +300,6 @@ const DumpsterRental = () => {
         </div>
       </section>
 
-      {/* Service Areas Section */}
-      <section className="py-16 lg:py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-foreground">
-            Service Areas – Dumpster Rentals in Tampa Bay
-          </h2>
-          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            We proudly serve <strong>Hillsborough County</strong> and <strong>Pinellas County</strong> with fast delivery and local support.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-xl font-anton text-primary mb-6">Hillsborough County</h3>
-              <div className="grid grid-cols-2 gap-2 text-sm text-foreground">
-                <div>Tampa</div>
-                <div>Brandon</div>
-                <div>Riverview</div>
-                <div>Gibsonton</div>
-                <div>Apollo Beach</div>
-                <div>Valrico</div>
-                <div>Seffner</div>
-                <div>Plant City</div>
-                <div>Ruskin</div>
-                <div>Sun City Center</div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-anton text-primary mb-6">Pinellas County</h3>
-              <div className="grid grid-cols-2 gap-2 text-sm text-foreground">
-                <div>St. Petersburg</div>
-                <div>Clearwater</div>
-                <div>Largo</div>
-                <div>Pinellas Park</div>
-                <div>Dunedin</div>
-                <div>Tarpon Springs</div>
-                <div>Palm Harbor</div>
-                <div>Safety Harbor</div>
-                <div>Seminole</div>
-                <div>Gulfport</div>
-              </div>
-            </div>
-          </div>
-
-          <p className="text-center text-muted-foreground mt-8">
-            Don't see your city? Call us at <strong>{PHONE}</strong> to check availability.
-          </p>
-        </div>
-      </section>
 
       {/* Prohibited Items Section */}
       <section className="py-16 lg:py-20 bg-[#222222]">
@@ -465,6 +417,61 @@ const DumpsterRental = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-foreground">
+            Service Areas – Dumpster Rentals in Tampa Bay
+          </h2>
+          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            We proudly serve <strong>Hillsborough County</strong> and <strong>Pinellas County</strong> with fast delivery and local support.
+          </p>
+
+          {/* Map */}
+          <div className="mb-12">
+            <ServiceAreaMap />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-xl font-anton text-primary mb-6">Hillsborough County</h3>
+              <div className="grid grid-cols-2 gap-2 text-sm text-foreground">
+                <div>Tampa</div>
+                <div>Brandon</div>
+                <div>Riverview</div>
+                <div>Gibsonton</div>
+                <div>Apollo Beach</div>
+                <div>Valrico</div>
+                <div>Seffner</div>
+                <div>Plant City</div>
+                <div>Ruskin</div>
+                <div>Sun City Center</div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-anton text-primary mb-6">Pinellas County</h3>
+              <div className="grid grid-cols-2 gap-2 text-sm text-foreground">
+                <div>St. Petersburg</div>
+                <div>Clearwater</div>
+                <div>Largo</div>
+                <div>Pinellas Park</div>
+                <div>Dunedin</div>
+                <div>Tarpon Springs</div>
+                <div>Palm Harbor</div>
+                <div>Safety Harbor</div>
+                <div>Seminole</div>
+                <div>Gulfport</div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-muted-foreground mt-8">
+            Don't see your city? Call us at <strong>{PHONE}</strong> to check availability.
+          </p>
         </div>
       </section>
 
