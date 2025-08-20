@@ -97,18 +97,12 @@ const DumpsterRental = () => {
       {/* Why Choose Us Section */}
       <section className="py-16 lg:py-20 bg-muted/30">
         <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-anton text-center mb-12 text-foreground">
-            Why Choose Junk in the Truck Co. for Dumpster Rentals in Tampa?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-anton text-center mb-12 text-foreground">Why Choose Junk in the Truck Co for Dumpster Rentals in Tampa?</h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image Column */}
             <div className="order-2 md:order-1">
-              <img 
-                src="/lovable-uploads/a1ded288-114d-471e-b0e5-4999c577601c.png" 
-                alt="Junk in the Truck Co team member with dumpster"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
+              <img src="/lovable-uploads/a1ded288-114d-471e-b0e5-4999c577601c.png" alt="Junk in the Truck Co team member with dumpster" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
 
             {/* Benefits Column */}
@@ -116,7 +110,7 @@ const DumpsterRental = () => {
               <div className="flex items-start gap-4">
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Locally owned & operated in Tampa Bay</h3>
+                  <h3 className="text-foreground mb-2 font-normal">Locally owned & operated in Tampa Bay</h3>
                   <p className="text-sm text-muted-foreground">Supporting our community with personalized service</p>
                 </div>
               </div>
@@ -124,7 +118,7 @@ const DumpsterRental = () => {
               <div className="flex items-start gap-4">
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Transparent, flat-rate pricing</h3>
+                  <h3 className="text-foreground mb-2 font-normal">Transparent, flat-rate pricing</h3>
                   <p className="text-sm text-muted-foreground">No surprises or hidden fees</p>
                 </div>
               </div>
@@ -132,7 +126,7 @@ const DumpsterRental = () => {
               <div className="flex items-start gap-4">
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Driveway-friendly dumpster delivery</h3>
+                  <h3 className="text-foreground mb-2 font-normal">Driveway-friendly dumpster delivery</h3>
                   <p className="text-sm text-muted-foreground">Professional placement that protects your property</p>
                 </div>
               </div>
@@ -140,7 +134,7 @@ const DumpsterRental = () => {
               <div className="flex items-start gap-4">
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Courteous, reliable team</h3>
+                  <h3 className="text-foreground mb-2 font-normal">Courteous, reliable team</h3>
                   <p className="text-sm text-muted-foreground">Professional service you can count on</p>
                 </div>
               </div>
@@ -148,7 +142,7 @@ const DumpsterRental = () => {
               <div className="flex items-start gap-4">
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Flexible scheduling to fit your project</h3>
+                  <h3 className="text-foreground mb-2 font-normal">Flexible scheduling to fit your project</h3>
                   <p className="text-sm text-muted-foreground">1-7 day rentals with same-day delivery available</p>
                 </div>
               </div>
