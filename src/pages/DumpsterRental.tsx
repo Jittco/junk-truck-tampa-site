@@ -157,7 +157,7 @@ const DumpsterRental = () => {
           <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-white">
             18 Cubic Yard Dumpster – Pricing & Details
           </h2>
-          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-center text-white mb-12 max-w-3xl mx-auto">
             Our single-size, 18-yard dumpster fits most home and light commercial projects—cleanouts, remodels, roofing, and more.
           </p>
 
