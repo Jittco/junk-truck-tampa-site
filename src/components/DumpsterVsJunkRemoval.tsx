@@ -47,10 +47,6 @@ const DumpsterVsJunkRemoval = () => {
                 <span className="font-semibold text-green-800">Included:</span>
                 <span className="text-green-700"> 1 ton of disposal, driveway-friendly placement</span>
               </div>
-              <div>
-                <span className="font-semibold text-green-800">Local SEO:</span>
-                <span className="text-green-700"> Perfect for homeowners & contractors searching dumpster rental Tampa Bay</span>
-              </div>
             </div>
 
             <a 
@@ -93,10 +89,6 @@ const DumpsterVsJunkRemoval = () => {
               <div>
                 <span className="font-semibold text-blue-800">Included:</span>
                 <span className="text-blue-700"> 2-man crew, sweep-up service, eco-friendly disposal</span>
-              </div>
-              <div>
-                <span className="font-semibold text-blue-800">Local SEO:</span>
-                <span className="text-blue-700"> Ideal for searches like junk removal Tampa or same-day junk hauling Pinellas</span>
               </div>
             </div>
 
