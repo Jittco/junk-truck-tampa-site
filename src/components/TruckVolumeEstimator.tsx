@@ -125,7 +125,7 @@ function TruckLegend({
       <div className="mt-3 text-xs text-muted-foreground">Legend is illustrative. This tool estimates volume only and does not display pricing.</div>
     </div>;
 }
-export default function TruckVolumeEstimator() {
+export default function TruckVolumeEstimator(): JSX.Element {
   const [method, setMethod] = useState<"items" | "loads" | "yards">("items");
   const [selected, setSelected] = useState<string[]>([]);
   const [loads, setLoads] = useState<number>(0);
@@ -174,5 +174,121 @@ export default function TruckVolumeEstimator() {
     });
     return best;
   }, [fillPct]);
-  return;
+  return (
+    <div className="mx-auto max-w-5xl space-y-6 p-4">
+      <h2 className="text-2xl font-bold text-foreground">Visual: How Much Space Will Your Items Fill?</h2>
+      <p className="text-muted-foreground">
+        Our truck is <strong>{TRUCK_WIDTH_FT}ft</strong> wide × <strong>{TRUCK_LENGTH_FT}ft</strong> long × <strong>{TRUCK_HEIGHT_FT}ft</strong> high
+        (≈ <strong>{TRUCK_VOL_CY.toFixed(1)}</strong> cubic yards). One full truck equals <strong>{PICKUP_EQUIV}</strong> pickup loads.
+      </p>
+
+      <div className="grid gap-6 md:grid-cols-3">
+        <div className="space-y-4 md:col-span-2">
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setMethod("items")}
+              className={`rounded-full px-4 py-2 text-sm ${method === "items" ? "bg-primary text-white" : "bg-muted text-foreground"}`}
+            >
+              Build by Items
+            </button>
+            <button
+              onClick={() => setMethod("loads")}
+              className={`rounded-full px-4 py-2 text-sm ${method === "loads" ? "bg-primary text-white" : "bg-muted text-foreground"}`}
+            >
+              Estimate by Pickup Loads
+            </button>
+            <button
+              onClick={() => setMethod("yards")}
+              className={`rounded-full px-4 py-2 text-sm ${method === "yards" ? "bg-primary text-white" : "bg-muted text-foreground"}`}
+            >
+              Enter Cubic Yards
+            </button>
+          </div>
+
+          {method === "items" && (
+            <div>
+              <div className="mb-2 text-sm text-muted-foreground">Select typical items to estimate volume (cubic yards):</div>
+              <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {ITEMS.map((item) => {
+                  const active = selected.includes(item.id);
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() =>
+                        setSelected((prev) =>
+                          active ? prev.filter((x) => x !== item.id) : [...prev, item.id]
+                        )
+                      }
+                      className={`flex items-center justify-between rounded-xl border p-3 text-left ${
+                        active ? "border-primary bg-primary/10" : "bg-card"
+                      }`}
+                    >
+                      <div>
+                        <div className="font-medium text-foreground">{item.label}</div>
+                        <div className="text-xs text-muted-foreground">≈ {item.cy} yd³</div>
+                      </div>
+                      <input type="checkbox" checked={active} readOnly className="h-4 w-4" />
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {method === "loads" && (
+            <div className="space-y-2">
+              <label className="text-sm text-muted-foreground">How many pickup loads worth of stuff?</label>
+              <input
+                type="range"
+                min={0}
+                max={8}
+                step={0.5}
+                value={loads}
+                onChange={(e) => setLoads(parseFloat(e.target.value))}
+                className="w-full"
+              />
+              <div className="text-sm text-foreground">Pickup loads: <strong>{loads}</strong></div>
+            </div>
+          )}
+
+          {method === "yards" && (
+            <div className="space-y-2">
+              <label className="text-sm text-muted-foreground">Enter estimated total volume (cubic yards)</label>
+              <input
+                type="number"
+                min={0}
+                step={0.1}
+                value={yards}
+                onChange={(e) => setYards(parseFloat(e.target.value) || 0)}
+                className="w-full rounded-xl border border-border bg-background p-2 text-foreground"
+                placeholder="e.g., 3.5"
+              />
+            </div>
+          )}
+        </div>
+
+        <div className="space-y-4">
+          <Stat label="Estimated Volume" value={`${totalCY.toFixed(1)} yd³`} />
+          <Stat label="Pickup Load Equivalent" value={`${eqPickupLoads.toFixed(2)} of 8 loads`} />
+          <Stat label="Closest Truck Fraction" value={closestTier.label} />
+          <Gauge percent={fillPct} />
+          <TruckLegend percent={fillPct} />
+          <div className="text-xs text-muted-foreground">Volume-only visualizer — not a price quote. Final pricing is confirmed on-site.</div>
+        </div>
+      </div>
+
+      <div className="grid gap-3 rounded-2xl border border-border bg-card p-4 md:grid-cols-3">
+        {truckFractionSteps.map((t) => (
+          <div key={t.label} className="flex items-center justify-between rounded-xl bg-muted p-3">
+            <div className="text-sm font-medium text-foreground">{t.label}</div>
+            <div className="text-sm text-muted-foreground">≈ {(t.fraction * TRUCK_VOL_CY).toFixed(1)} yd³ · {(t.fraction * PICKUP_EQUIV).toFixed(2)} pickup loads</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="rounded-2xl bg-primary/10 p-4 text-sm text-foreground">
+        <strong>Truck Dimensions:</strong> {TRUCK_WIDTH_FT}ft (W) × {TRUCK_LENGTH_FT}ft (L) × {TRUCK_HEIGHT_FT}ft (H) = {TRUCK_VOL_CF} ft³ (≈ {TRUCK_VOL_CY.toFixed(1)} yd³). One full truck equals {PICKUP_EQUIV} pickup loads.
+      </div>
+    </div>
+  );
 }
