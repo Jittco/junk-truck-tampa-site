@@ -69,7 +69,7 @@ const DumpsterVsJunkRemoval = () => {
                 <Truck className="h-6 w-6" />
               </div>
               <h3 className="text-xl font-bold text-blue-800">
-                🟦 Full-Service Junk Removal
+                Full-Service Junk Removal
               </h3>
             </div>
             
