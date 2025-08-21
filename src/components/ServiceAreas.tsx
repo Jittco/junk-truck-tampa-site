@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 const ServiceAreas = () => {
   const serviceAreas = ["Tampa", "St. Petersburg", "Brandon", "Riverview", "Clearwater", "Wesley Chapel", "Valrico", "Plant City", "Apollo Beach", "Gibsonton"];
-  return <section className="py-20 bg-cta-green">
+  return <section className="py-20 bg-primary">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-anton mb-6 text-foreground">
