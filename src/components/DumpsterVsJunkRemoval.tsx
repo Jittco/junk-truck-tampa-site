@@ -22,7 +22,7 @@ const DumpsterVsJunkRemoval = () => {
                 <Recycle className="h-6 w-6" />
               </div>
               <h3 className="text-xl font-bold text-green-800">
-                🟩 Dumpster Rental (18-Yard Roll-Off)
+                Dumpster Rental (18-Yard Roll-Off)
               </h3>
             </div>
             
