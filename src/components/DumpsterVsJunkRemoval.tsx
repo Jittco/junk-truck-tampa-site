@@ -1,14 +1,12 @@
 import { Truck, Recycle, ArrowRight } from "lucide-react";
-
 const DumpsterVsJunkRemoval = () => {
-  return (
-    <section className="py-16 bg-background">
+  return <section className="py-16 bg-[#222222]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="text-2xl md:text-3xl mb-4 font-medium text-slate-50">
             Dumpster Rental vs. Junk Removal in Tampa Bay — Which Is Right for You?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-lg max-w-4xl mx-auto text-slate-50">
             Wondering whether to book a dumpster rental in Tampa or go with full-service junk removal? 
             Both options save you time and hassle — it just depends on your project. Here's a side-by-side comparison:
           </p>
@@ -21,7 +19,7 @@ const DumpsterVsJunkRemoval = () => {
               <div className="bg-green-500 text-white p-2 rounded-lg mr-3">
                 <Recycle className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold text-green-800">
+              <h3 className="text-xl text-green-800 font-medium">
                 Dumpster Rental (18-Yard Roll-Off)
               </h3>
             </div>
@@ -49,10 +47,7 @@ const DumpsterVsJunkRemoval = () => {
               </div>
             </div>
 
-            <a 
-              href="/dumpster-rental" 
-              className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold transition-colors"
-            >
+            <a href="/dumpster-rental" className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold transition-colors">
               👉 Learn more about our Dumpster Rentals
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
@@ -64,7 +59,7 @@ const DumpsterVsJunkRemoval = () => {
               <div className="bg-blue-500 text-white p-2 rounded-lg mr-3">
                 <Truck className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold text-blue-800">
+              <h3 className="text-xl text-blue-800 font-medium">
                 Full-Service Junk Removal
               </h3>
             </div>
@@ -92,10 +87,7 @@ const DumpsterVsJunkRemoval = () => {
               </div>
             </div>
 
-            <a 
-              href="/services" 
-              className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors"
-            >
+            <a href="/services" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors">
               👉 See all our Junk Removal Services
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
@@ -111,8 +103,6 @@ const DumpsterVsJunkRemoval = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default DumpsterVsJunkRemoval;
