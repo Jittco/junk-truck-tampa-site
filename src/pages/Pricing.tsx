@@ -2,14 +2,12 @@ import { useState } from "react";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import TruckVolumeEstimator from "@/components/TruckVolumeEstimator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Phone, Check, MapPin, Truck, Package } from "lucide-react";
 
 const Pricing = () => {
-  const [estimatorMode, setEstimatorMode] = useState<'items' | 'pickup' | 'cubic'>('items');
-  const [truckFill, setTruckFill] = useState(0);
-
   const tierCards = [
     { name: "Minimum / Single Item", fraction: "up to 10%", description: "Single furniture piece or appliance" },
     { name: "1/8 Truck", fraction: "12.5%", description: "Few small items or boxes" },
@@ -171,116 +169,7 @@ const Pricing = () => {
               </p>
             </div>
 
-            <Card className="max-w-4xl mx-auto">
-              <CardContent className="p-8">
-                <div className="flex flex-col lg:flex-row gap-8">
-                  {/* Estimator Controls */}
-                  <div className="lg:w-1/2">
-                    <div className="flex gap-4 mb-6">
-                      <button
-                        onClick={() => setEstimatorMode('items')}
-                        className={`px-4 py-2 rounded-lg transition-colors ${
-                          estimatorMode === 'items' 
-                            ? 'bg-primary text-white' 
-                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                        }`}
-                      >
-                        By Items
-                      </button>
-                      <button
-                        onClick={() => setEstimatorMode('pickup')}
-                        className={`px-4 py-2 rounded-lg transition-colors ${
-                          estimatorMode === 'pickup' 
-                            ? 'bg-primary text-white' 
-                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                        }`}
-                      >
-                        Pickup Loads
-                      </button>
-                      <button
-                        onClick={() => setEstimatorMode('cubic')}
-                        className={`px-4 py-2 rounded-lg transition-colors ${
-                          estimatorMode === 'cubic' 
-                            ? 'bg-primary text-white' 
-                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                        }`}
-                      >
-                        Cubic Yards
-                      </button>
-                    </div>
-
-                    <div className="space-y-4 mb-6">
-                      <div>
-                        <label className="block text-sm font-medium mb-2">
-                          Truck Fill Percentage
-                        </label>
-                        <input
-                          type="range"
-                          min="0"
-                          max="100"
-                          value={truckFill}
-                          onChange={(e) => setTruckFill(parseInt(e.target.value))}
-                          className="w-full"
-                        />
-                        <div className="flex justify-between text-xs text-muted-foreground">
-                          <span>0%</span>
-                          <span>50%</span>
-                          <span>100%</span>
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-4 text-sm">
-                        <div className="bg-gray-100 p-3 rounded">
-                          <div className="font-medium">Truck Fill</div>
-                          <div className="text-primary font-bold">{truckFill}%</div>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <div className="font-medium">Pickup Loads</div>
-                          <div className="text-primary font-bold">{(truckFill * 8 / 100).toFixed(1)}</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Truck Visual */}
-                  <div className="lg:w-1/2">
-                    <div className="relative bg-gray-200 rounded-lg p-4">
-                      <div className="text-center mb-4">
-                        <Truck className="h-12 w-12 mx-auto text-primary" />
-                        <div className="text-sm font-medium">8′ × 12′ × 6′ Truck</div>
-                      </div>
-                      
-                      <div className="h-32 bg-white border-2 border-primary rounded relative overflow-hidden">
-                        <div 
-                          className="absolute bottom-0 left-0 bg-primary/30 transition-all duration-300"
-                          style={{ 
-                            height: `${truckFill}%`, 
-                            width: '100%' 
-                          }}
-                        ></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <span className="text-lg font-bold text-gray-700">
-                            {truckFill}% Full
-                          </span>
-                        </div>
-                      </div>
-
-                      <div className="mt-4 grid grid-cols-4 gap-1 text-xs">
-                        {['1/4', '1/2', '3/4', 'Full'].map((fraction, i) => (
-                          <div key={i} className="text-center p-1 bg-gray-100 rounded">
-                            {fraction}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <p className="text-xs text-muted-foreground text-center mt-6">
-                  Volume-only visualizer — not a price quote.
-                </p>
-              </CardContent>
-            </Card>
+            <TruckVolumeEstimator />
           </div>
         </section>
 
