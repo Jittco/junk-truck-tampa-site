@@ -197,6 +197,151 @@ const Pricing = () => {
           </div>
         </section>
 
+        {/* Dumpster vs Junk Removal Comparison */}
+        <section className="py-16 lg:py-20 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
+                Dumpster vs. Junk Removal: Which is Right for You?
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+                Many Tampa Bay homeowners ask: "Is it cheaper to rent a dumpster or hire a junk removal company?" The truth is — it depends on your project. Both options save you trips to the dump, but they serve different needs. Here's a simple comparison to help you decide.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {/* Dumpster Rental Column */}
+              <div className="bg-card rounded-lg border p-6">
+                <div className="text-center mb-6">
+                  <Truck className="h-12 w-12 text-primary mx-auto mb-3" />
+                  <h3 className="text-2xl font-anton text-foreground">18-Yard Dumpster Rental</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Best For
+                    </h4>
+                    <p className="text-muted-foreground text-sm">Ongoing projects, renovations, DIY cleanouts, roofing debris, yard work</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Cost-Effectiveness
+                    </h4>
+                    <p className="text-muted-foreground text-sm">Most affordable for larger loads & multi-day projects</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Labor
+                    </h4>
+                    <p className="text-muted-foreground text-sm">You load the dumpster yourself</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Flexibility
+                    </h4>
+                    <p className="text-muted-foreground text-sm">Keep it 1–7 days, load at your pace</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Included
+                    </h4>
+                    <p className="text-muted-foreground text-sm">1 ton disposal included, driveway-friendly placement, flexible rental</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Stress Level
+                    </h4>
+                    <p className="text-muted-foreground text-sm">Budget-friendly but requires effort</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Junk Removal Column */}
+              <div className="bg-card rounded-lg border p-6">
+                <div className="text-center mb-6">
+                  <Package className="h-12 w-12 text-primary mx-auto mb-3" />
+                  <h3 className="text-2xl font-anton text-foreground">Full-Service Junk Removal</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Best For
+                    </h4>
+                    <p className="text-muted-foreground text-sm">One-time pickups, bulky furniture, moving cleanouts, when you want zero lifting</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Cost-Effectiveness
+                    </h4>
+                    <p className="text-muted-foreground text-sm">Flat, transparent pricing — pay only for truck space used</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Labor
+                    </h4>
+                    <p className="text-muted-foreground text-sm">Our crew does all the lifting, loading & hauling</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Flexibility
+                    </h4>
+                    <p className="text-muted-foreground text-sm">Same-day pickup, done in one visit</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Included
+                    </h4>
+                    <p className="text-muted-foreground text-sm">2-man crew, sweep-up, donation/recycling whenever possible</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      Stress Level
+                    </h4>
+                    <p className="text-muted-foreground text-sm">Higher convenience — we take the burden off your shoulders</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center bg-primary/10 rounded-lg p-6">
+              <p className="text-foreground mb-4">
+                Not sure which option is best for your Tampa Bay project?
+              </p>
+              <a 
+                href="tel:844-858-6546"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                <Phone className="h-5 w-5" />
+                Call us at 844-858-6546 and we'll recommend the most affordable fit for you
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Visual Estimator */}
         <section className="py-16 lg:py-20 bg-gray-50">
           <div className="container mx-auto px-4 max-w-6xl">
