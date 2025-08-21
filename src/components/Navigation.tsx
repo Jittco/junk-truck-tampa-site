@@ -42,6 +42,10 @@ const Navigation = () => {
                 How It Works
               </a>
 
+              <a href="/pricing" className="nav-link">
+                Pricing
+              </a>
+
               <DropdownMenu>
                 <DropdownMenuTrigger className="nav-link bg-transparent border-none hover:bg-transparent focus:ring-0 focus:outline-none">
                   About Us
@@ -90,6 +94,10 @@ const Navigation = () => {
 
                 <a href="#how-it-works" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                   How It Works
+                </a>
+
+                <a href="/pricing" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                  Pricing
                 </a>
                 
                 <div className="py-3 px-4">

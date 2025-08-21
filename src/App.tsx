@@ -11,6 +11,7 @@ import ResidentialJunkRemoval from "./pages/ResidentialJunkRemoval";
 import CommercialJunkRemoval from "./pages/CommercialJunkRemoval";
 import DemolitionServices from "./pages/DemolitionServices";
 import DumpsterRental from "./pages/DumpsterRental";
+import Pricing from "./pages/Pricing";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/services/junk-removal/commercial/" element={<CommercialJunkRemoval />} />
           <Route path="/services/demolition/" element={<DemolitionServices />} />
           <Route path="/services/dumpster-rental/" element={<DumpsterRental />} />
+          <Route path="/pricing" element={<Pricing />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
