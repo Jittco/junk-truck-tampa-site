@@ -16,6 +16,7 @@ const WhatWeTake = lazy(() => import("@/components/WhatWeTake"));
 const BeforeAfter = lazy(() => import("@/components/BeforeAfter"));
 const WhoWeHelp = lazy(() => import("@/components/WhoWeHelp"));
 const CustomerReviews = lazy(() => import("@/components/CustomerReviews"));
+const DumpsterVsJunkRemoval = lazy(() => import("@/components/DumpsterVsJunkRemoval"));
 const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs"));
 const ServiceAreas = lazy(() => import("@/components/ServiceAreas"));
 const Testimonial = lazy(() => import("@/components/Testimonial"));
@@ -52,6 +53,9 @@ const Index = () => {
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <CustomerReviews />
+        </Suspense>
+        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
+          <DumpsterVsJunkRemoval />
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <WhyChooseUs />
