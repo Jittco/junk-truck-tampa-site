@@ -11,7 +11,7 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg">
           Affordable Junk Removal in Tampa Bay<br />
           <span className="text-primary">Take Back Your Space.</span>
         </h1>
