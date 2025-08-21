@@ -214,7 +214,7 @@ const Pricing = () => {
               <div className="bg-card rounded-lg border p-6">
                 <div className="text-center mb-6">
                   <Truck className="h-12 w-12 text-primary mx-auto mb-3" />
-                  <h3 className="text-2xl font-anton text-foreground">18-Yard Dumpster Rental</h3>
+                  <h3 className="text-2xl font-normal text-foreground">18-Yard Dumpster Rental</h3>
                 </div>
                 
                 <div className="space-y-4">
@@ -272,7 +272,7 @@ const Pricing = () => {
               <div className="bg-card rounded-lg border p-6">
                 <div className="text-center mb-6">
                   <Package className="h-12 w-12 text-primary mx-auto mb-3" />
-                  <h3 className="text-2xl font-anton text-foreground">Full-Service Junk Removal</h3>
+                  <h3 className="text-2xl font-normal text-foreground">Full-Service Junk Removal</h3>
                 </div>
                 
                 <div className="space-y-4">
