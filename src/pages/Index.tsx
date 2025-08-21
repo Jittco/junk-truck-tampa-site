@@ -12,6 +12,7 @@ import cleanImg from "@/assets/how-it-works-clean.jpg";
 
 // Lazy load components below the fold
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
+const WhatWeTake = lazy(() => import("@/components/WhatWeTake"));
 const BeforeAfter = lazy(() => import("@/components/BeforeAfter"));
 const CustomerReviews = lazy(() => import("@/components/CustomerReviews"));
 const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs"));
@@ -38,6 +39,9 @@ const Index = () => {
             step3Img={haulImg}
             step4Img={cleanImg}
           />
+        </Suspense>
+        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
+          <WhatWeTake />
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <BeforeAfter />
