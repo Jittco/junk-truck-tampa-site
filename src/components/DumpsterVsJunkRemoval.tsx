@@ -69,6 +69,28 @@ const DumpsterVsJunkRemoval = () => {
               </h3>
             </div>
             
+            <div className="space-y-3 mb-6">
+              <div>
+                <span className="font-semibold text-blue-800">Best For:</span>
+                <span className="text-blue-700"> Furniture removal, estate cleanouts, bulky items</span>
+              </div>
+              <div>
+                <span className="font-semibold text-blue-800">Convenience:</span>
+                <span className="text-blue-700"> We do all the lifting & loading for you</span>
+              </div>
+              <div>
+                <span className="font-semibold text-blue-800">Pricing:</span>
+                <span className="text-blue-700"> Flat, transparent truck-based rates</span>
+              </div>
+              <div>
+                <span className="font-semibold text-blue-800">Flexibility:</span>
+                <span className="text-blue-700"> Same-day or next-day service</span>
+              </div>
+              <div>
+                <span className="font-semibold text-blue-800">Included:</span>
+                <span className="text-blue-700"> 2-man crew, sweep-up service, eco-friendly disposal</span>
+              </div>
+            </div>
 
             <a 
               href="/services" 
