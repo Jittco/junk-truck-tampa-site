@@ -14,6 +14,7 @@ import cleanImg from "@/assets/how-it-works-clean.jpg";
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
 const WhatWeTake = lazy(() => import("@/components/WhatWeTake"));
 const BeforeAfter = lazy(() => import("@/components/BeforeAfter"));
+const WhoWeHelp = lazy(() => import("@/components/WhoWeHelp"));
 const CustomerReviews = lazy(() => import("@/components/CustomerReviews"));
 const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs"));
 const ServiceAreas = lazy(() => import("@/components/ServiceAreas"));
@@ -45,6 +46,9 @@ const Index = () => {
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <BeforeAfter />
+        </Suspense>
+        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
+          <WhoWeHelp />
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <CustomerReviews />
