@@ -6,63 +6,66 @@ import TruckVolumeEstimator from "@/components/TruckVolumeEstimator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Phone, Check, MapPin, Truck, Package } from "lucide-react";
-
 const Pricing = () => {
-  const tierCards = [
-    { name: "Minimum / Single Item", fraction: "up to 10%", description: "Single furniture piece or appliance" },
-    { name: "1/8 Truck", fraction: "12.5%", description: "Few small items or boxes" },
-    { name: "1/4 Truck", fraction: "25%", description: "Couple pieces of furniture" },
-    { name: "3/8 Truck", fraction: "37.5%", description: "Small room cleanout" },
-    { name: "1/2 Truck", fraction: "50%", description: "Bedroom or office cleanout" },
-    { name: "5/8 Truck", fraction: "62.5%", description: "Large furniture set" },
-    { name: "3/4 Truck", fraction: "75%", description: "Garage or basement cleanout" },
-    { name: "7/8 Truck", fraction: "87.5%", description: "Major home cleanout" },
-    { name: "Full Truck", fraction: "100%", description: "Complete property cleanout" }
-  ];
-
-  const whatsIncluded = [
-    "Two-man crew",
-    "All loading & hauling", 
-    "Responsible disposal",
-    "Sweep-up",
-    "Transparent on-site quote",
-    "No hidden fees"
-  ];
-
-  const cities = [
-    "Tampa", "Brandon", "Riverview", "Gibsonton", "Apollo Beach", "Valrico",
-    "St. Petersburg", "Clearwater", "Largo", "Dunedin", "Palm Harbor", "Seminole", "Gulfport"
-  ];
-
-  const faqs = [
-    {
-      question: "How do you charge for junk removal?",
-      answer: "We charge by truck space used - you only pay for the fraction of our truck that your items fill."
-    },
-    {
-      question: "How big is your truck?",
-      answer: "Our truck measures 8′ × 12′ × 6′ (≈21.3 yd³). One full truck equals 8 pickup truck loads."
-    },
-    {
-      question: "Can I get a quote by photo?",
-      answer: "Yes! Send us photos or book an on-site estimate for the most accurate pricing."
-    },
-    {
-      question: "Do you recycle or donate?",
-      answer: "When possible, yes. We prioritize responsible disposal through recycling and donation."
-    },
-    {
-      question: "Any items you can't take?",
-      answer: "We cannot take hazardous waste, paints/solvents, oils/fuels, asbestos, tires, batteries, medical waste, or propane/pressurized tanks."
-    },
-    {
-      question: "Do you offer same-day service?",
-      answer: "Often yes! Call 844-858-6546 to confirm same-day availability in your area."
-    }
-  ];
-
-  return (
-    <>
+  const tierCards = [{
+    name: "Minimum / Single Item",
+    fraction: "up to 10%",
+    description: "Single furniture piece or appliance"
+  }, {
+    name: "1/8 Truck",
+    fraction: "12.5%",
+    description: "Few small items or boxes"
+  }, {
+    name: "1/4 Truck",
+    fraction: "25%",
+    description: "Couple pieces of furniture"
+  }, {
+    name: "3/8 Truck",
+    fraction: "37.5%",
+    description: "Small room cleanout"
+  }, {
+    name: "1/2 Truck",
+    fraction: "50%",
+    description: "Bedroom or office cleanout"
+  }, {
+    name: "5/8 Truck",
+    fraction: "62.5%",
+    description: "Large furniture set"
+  }, {
+    name: "3/4 Truck",
+    fraction: "75%",
+    description: "Garage or basement cleanout"
+  }, {
+    name: "7/8 Truck",
+    fraction: "87.5%",
+    description: "Major home cleanout"
+  }, {
+    name: "Full Truck",
+    fraction: "100%",
+    description: "Complete property cleanout"
+  }];
+  const whatsIncluded = ["Two-man crew", "All loading & hauling", "Responsible disposal", "Sweep-up", "Transparent on-site quote", "No hidden fees"];
+  const cities = ["Tampa", "Brandon", "Riverview", "Gibsonton", "Apollo Beach", "Valrico", "St. Petersburg", "Clearwater", "Largo", "Dunedin", "Palm Harbor", "Seminole", "Gulfport"];
+  const faqs = [{
+    question: "How do you charge for junk removal?",
+    answer: "We charge by truck space used - you only pay for the fraction of our truck that your items fill."
+  }, {
+    question: "How big is your truck?",
+    answer: "Our truck measures 8′ × 12′ × 6′ (≈21.3 yd³). One full truck equals 8 pickup truck loads."
+  }, {
+    question: "Can I get a quote by photo?",
+    answer: "Yes! Send us photos or book an on-site estimate for the most accurate pricing."
+  }, {
+    question: "Do you recycle or donate?",
+    answer: "When possible, yes. We prioritize responsible disposal through recycling and donation."
+  }, {
+    question: "Any items you can't take?",
+    answer: "We cannot take hazardous waste, paints/solvents, oils/fuels, asbestos, tires, batteries, medical waste, or propane/pressurized tanks."
+  }, {
+    question: "Do you offer same-day service?",
+    answer: "Often yes! Call 844-858-6546 to confirm same-day availability in your area."
+  }];
+  return <>
       <Helmet>
         <title>Junk Removal Pricing | Pay by Truck Space | Tampa Bay</title>
         <meta name="description" content="Transparent junk removal pricing in Tampa Bay. See how much space your items take in the truck. 1 full truck = 8 pickup loads. Book online in minutes." />
@@ -99,18 +102,10 @@ const Pricing = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg"
-                >
+                <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
                   Get Pricing & Book Online
                 </a>
-                <a 
-                  href="tel:844-858-6546"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors text-lg"
-                >
+                <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors text-lg">
                   <Phone className="h-5 w-5" />
                   Call 844-858-6546
                 </a>
@@ -145,18 +140,18 @@ const Pricing = () => {
                 <div className="mb-6">
                   <svg viewBox="0 0 800 200" className="w-full h-32">
                     {/* Full truck outline */}
-                    <rect x="50" y="50" width="700" height="100" rx="10" fill="hsl(var(--muted))" stroke="hsl(var(--border))" strokeWidth="2"/>
+                    <rect x="50" y="50" width="700" height="100" rx="10" fill="hsl(var(--muted))" stroke="hsl(var(--border))" strokeWidth="2" />
                     
                     {/* Fraction divisions */}
-                    <line x1="225" y1="50" x2="225" y2="150" stroke="hsl(var(--border))" strokeWidth="1" strokeDasharray="4,4"/>
-                    <line x1="400" y1="50" x2="400" y2="150" stroke="hsl(var(--border))" strokeWidth="1" strokeDasharray="4,4"/>
-                    <line x1="575" y1="50" x2="575" y2="150" stroke="hsl(var(--border))" strokeWidth="1" strokeDasharray="4,4"/>
+                    <line x1="225" y1="50" x2="225" y2="150" stroke="hsl(var(--border))" strokeWidth="1" strokeDasharray="4,4" />
+                    <line x1="400" y1="50" x2="400" y2="150" stroke="hsl(var(--border))" strokeWidth="1" strokeDasharray="4,4" />
+                    <line x1="575" y1="50" x2="575" y2="150" stroke="hsl(var(--border))" strokeWidth="1" strokeDasharray="4,4" />
                     
                     {/* Filled sections with different colors */}
-                    <rect x="50" y="50" width="175" height="100" rx="10" fill="hsl(var(--primary) / 0.3)"/>
-                    <rect x="50" y="50" width="350" height="100" rx="10" fill="hsl(var(--primary) / 0.5)"/>
-                    <rect x="50" y="50" width="525" height="100" rx="10" fill="hsl(var(--primary) / 0.7)"/>
-                    <rect x="50" y="50" width="700" height="100" rx="10" fill="hsl(var(--primary) / 0.9)"/>
+                    <rect x="50" y="50" width="175" height="100" rx="10" fill="hsl(var(--primary) / 0.3)" />
+                    <rect x="50" y="50" width="350" height="100" rx="10" fill="hsl(var(--primary) / 0.5)" />
+                    <rect x="50" y="50" width="525" height="100" rx="10" fill="hsl(var(--primary) / 0.7)" />
+                    <rect x="50" y="50" width="700" height="100" rx="10" fill="hsl(var(--primary) / 0.9)" />
                     
                     {/* Labels */}
                     <text x="137.5" y="105" textAnchor="middle" className="fill-white text-sm font-medium">1/8</text>
@@ -198,13 +193,13 @@ const Pricing = () => {
         </section>
 
         {/* Dumpster vs Junk Removal Comparison */}
-        <section className="py-16 lg:py-20 bg-gray-50">
+        <section className="py-16 lg:py-20 bg-[#222222]">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
+              <h2 className="text-3xl md:text-4xl font-anton mb-6 font-medium text-slate-50">
                 Dumpster vs. Junk Removal: Which is Right for You?
               </h2>
-              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+              <p className="text-lg max-w-4xl mx-auto text-slate-50">
                 Many Tampa Bay homeowners ask: "Is it cheaper to rent a dumpster or hire a junk removal company?" The truth is — it depends on your project. Both options save you trips to the dump, but they serve different needs. Here's a simple comparison to help you decide.
               </p>
             </div>
@@ -219,7 +214,7 @@ const Pricing = () => {
                 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Best For
                     </h4>
@@ -227,7 +222,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Cost-Effectiveness
                     </h4>
@@ -235,7 +230,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Labor
                     </h4>
@@ -243,7 +238,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Flexibility
                     </h4>
@@ -251,7 +246,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Included
                     </h4>
@@ -259,7 +254,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Stress Level
                     </h4>
@@ -277,7 +272,7 @@ const Pricing = () => {
                 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Best For
                     </h4>
@@ -285,7 +280,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Cost-Effectiveness
                     </h4>
@@ -293,7 +288,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Labor
                     </h4>
@@ -301,7 +296,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Flexibility
                     </h4>
@@ -309,7 +304,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Included
                     </h4>
@@ -317,7 +312,7 @@ const Pricing = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
                       <Check className="h-4 w-4 text-primary" />
                       Stress Level
                     </h4>
@@ -328,13 +323,10 @@ const Pricing = () => {
             </div>
 
             <div className="text-center bg-primary/10 rounded-lg p-6">
-              <p className="text-foreground mb-4">
+              <p className="mb-4 text-slate-50">
                 Not sure which option is best for your Tampa Bay project?
               </p>
-              <a 
-                href="tel:844-858-6546"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors"
-              >
+              <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors">
                 <Phone className="h-5 w-5" />
                 Call us at 844-858-6546 and we'll recommend the most affordable fit for you
               </a>
@@ -368,12 +360,10 @@ const Pricing = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {whatsIncluded.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-card rounded-lg border">
+              {whatsIncluded.map((item, index) => <div key={index} className="flex items-center gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-foreground font-medium">{item}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </section>
@@ -443,11 +433,9 @@ const Pricing = () => {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
-              {cities.map((city, index) => (
-                <div key={index} className="text-center p-3 bg-card rounded-lg border">
+              {cities.map((city, index) => <div key={index} className="text-center p-3 bg-card rounded-lg border">
                   <span className="text-foreground font-medium">{city}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <p className="text-sm text-muted-foreground text-center">
@@ -466,16 +454,14 @@ const Pricing = () => {
             </div>
 
             <Accordion type="single" collapsible className="w-full space-y-4">
-              {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border border-border rounded-lg px-6">
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left text-foreground hover:no-underline py-6 font-normal">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-6">
                     {faq.answer}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
         </section>
@@ -491,18 +477,10 @@ const Pricing = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg"
-              >
+              <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg">
                 Book Online
               </a>
-              <a 
-                href="tel:844-858-6546"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors text-lg"
-              >
+              <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors text-lg">
                 <Phone className="h-5 w-5" />
                 Call 844-858-6546
               </a>
@@ -512,8 +490,6 @@ const Pricing = () => {
       </main>
 
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default Pricing;
