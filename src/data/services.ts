@@ -218,6 +218,30 @@ export const serviceCategories: ServiceCategory[] = [
 // Individual Services for Residential and Commercial Junk Removal
 export const residentialServices: SubService[] = [
   {
+    name: "Residential Junk Removal",
+    slug: "residential-junk-removal",
+    shortDescription: "Complete home cleanouts and junk removal for Tampa Bay residents. From single items to whole house cleanouts.",
+    longDescription: "Our residential junk removal service handles everything from single item pickups to complete estate cleanouts. We'll remove furniture, appliances, electronics, and any unwanted items from your home quickly and responsibly.",
+    heroImage: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+    metaTitle: "Residential Junk Removal Tampa Bay | Junk in the Truck Co",
+    metaDescription: "Professional residential junk removal in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal.",
+    faq: [
+      {
+        question: "What items can you remove from my home?",
+        answer: "We remove almost everything including furniture, appliances, electronics, clothing, books, and general household items. We cannot remove hazardous materials like paint, chemicals, or asbestos."
+      },
+      {
+        question: "Do you offer same-day service?",
+        answer: "Yes! We offer same-day and next-day service throughout Tampa Bay. Call us early in the day for same-day availability."
+      },
+      {
+        question: "How do you price your services?",
+        answer: "We provide upfront pricing based on volume. Our team will assess your items and give you a no-obligation quote before we start."
+      }
+    ],
+    order: 0
+  },
+  {
     name: "Appliance Removal",
     slug: "appliance-removal",
     shortDescription: "Professional appliance removal service. We'll haul away old refrigerators, washers, dryers, and all major appliances.",
@@ -308,8 +332,8 @@ export const residentialServices: SubService[] = [
     order: 6
   },
   {
-    name: "Property/Estate Clean Out",
-    slug: "property-clean-out",
+    name: "Estate Clean Out",
+    slug: "estate-clean-out",
     shortDescription: "Comprehensive estate and property cleanouts. Sensitive handling of personal belongings with donation and recycling options.",
     longDescription: "Our estate cleanout service provides compassionate and thorough clearing of entire properties. We handle personal belongings with care and work with families to donate, recycle, or dispose of items appropriately.",
     heroImage: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
@@ -322,6 +346,38 @@ export const residentialServices: SubService[] = [
       }
     ],
     order: 7
+  },
+  {
+    name: "Clean Out Services",
+    slug: "clean-out",
+    shortDescription: "Comprehensive cleanout services for homes, offices, and properties of all sizes.",
+    longDescription: "Our cleanout services handle complete clearing of any space. Whether it's a home, office, storage unit, or entire property, we provide thorough and efficient cleanout services with responsible disposal.",
+    heroImage: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+    metaTitle: "Clean Out Services Tampa Bay | Junk in the Truck Co",
+    metaDescription: "Professional cleanout services in Tampa Bay. Complete clearing for homes, offices, and properties with eco-friendly disposal.",
+    faq: [
+      {
+        question: "What types of properties do you clean out?",
+        answer: "We handle cleanouts for residential homes, commercial properties, storage units, estates, and any other space that needs clearing."
+      }
+    ],
+    order: 8
+  },
+  {
+    name: "Couch Disposal",
+    slug: "couch-disposal",
+    shortDescription: "Professional couch and sofa removal service. We'll haul away old couches, sectionals, and upholstered furniture.",
+    longDescription: "Our couch disposal service handles removal of all types of seating furniture including couches, sofas, sectionals, recliners, and chairs. We prioritize donation and recycling to keep furniture out of landfills.",
+    heroImage: "/assets/shed-after.jpg",
+    metaTitle: "Couch Disposal Tampa Bay | Junk in the Truck Co",
+    metaDescription: "Professional couch and sofa removal in Tampa Bay. Same-day service with donation and recycling options.",
+    faq: [
+      {
+        question: "Do you remove sectional couches?",
+        answer: "Yes, we handle all types of couches including large sectionals. We can disassemble them if needed for easier removal."
+      }
+    ],
+    order: 9
   },
   {
     name: "Mattress Removal",
@@ -353,6 +409,26 @@ export const residentialServices: SubService[] = [
 ];
 
 export const commercialServices: SubService[] = [
+  {
+    name: "Commercial Junk Removal",
+    slug: "commercial-junk-removal", 
+    shortDescription: "Professional commercial cleanouts for offices, retail spaces, warehouses, and construction sites in Tampa Bay.",
+    longDescription: "Our commercial junk removal service helps businesses clear out unwanted items efficiently. Perfect for office moves, retail renovations, warehouse cleanouts, and construction debris removal.",
+    heroImage: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
+    metaTitle: "Commercial Junk Removal Tampa Bay | Junk in the Truck Co",
+    metaDescription: "Professional commercial junk removal in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal.",
+    faq: [
+      {
+        question: "Do you work with businesses of all sizes?",
+        answer: "Yes! We work with small businesses, large corporations, and everything in between. Our team can handle any size commercial cleanout."
+      },
+      {
+        question: "Can you work around our business hours?",
+        answer: "Absolutely. We offer flexible scheduling including evenings and weekends to minimize disruption to your business operations."
+      }
+    ],
+    order: 0
+  },
   {
     name: "Office Clean Out",
     slug: "office-clean-out",

@@ -113,8 +113,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:image" content={service.heroImage} />
-        <meta property="og:url" content={`https://junkinthetruckco.com/services/${categorySlug}/${service.slug}/`} />
-        <link rel="canonical" href={`https://junkinthetruckco.com/services/${categorySlug}/${service.slug}/`} />
+        <meta property="og:url" content={`https://junkinthetruckco.com/services/${service.slug}/`} />
+        <link rel="canonical" href={`https://junkinthetruckco.com/services/${service.slug}/`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
@@ -135,8 +135,6 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               <li><a href="/" className="hover:text-primary">Home</a></li>
               <li>›</li>
               <li><a href="/services" className="hover:text-primary">Services</a></li>
-              <li>›</li>
-              <li><a href={`/services/${categorySlug}`} className="hover:text-primary">{categoryName}</a></li>
               <li>›</li>
               <li className="text-foreground">{service.name}</li>
             </ol>
@@ -280,7 +278,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                       <Button 
                         variant="outline" 
                         className="w-full"
-                        onClick={() => window.location.href = `/services/${categorySlug}/${relatedService.slug}/`}
+                        onClick={() => window.location.href = `/services/${relatedService.slug}/`}
                       >
                         Learn More
                       </Button>
