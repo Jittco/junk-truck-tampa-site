@@ -174,7 +174,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 <img 
                   src={service.heroImage} 
                   alt={`${service.name} service in Tampa Bay`}
-                  className="rounded-lg shadow-lg w-full h-80 object-cover"
+                  className="rounded-lg shadow-lg w-full h-96 object-contain"
                 />
               </div>
             </div>
