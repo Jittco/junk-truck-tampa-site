@@ -270,7 +270,7 @@ export const residentialServices: SubService[] = [
     slug: "furniture-removal",
     shortDescription: "Complete furniture removal service. From single pieces to entire room sets, we'll haul away any unwanted furniture.",
     longDescription: "Our furniture removal service handles everything from single pieces to complete room sets. We'll remove sofas, chairs, tables, beds, dressers, and any other furniture items from your home. We prioritize donation and recycling to keep furniture out of landfills.",
-    heroImage: "/assets/shed-after.jpg",
+    heroImage: "/lovable-uploads/683f36db-cf67-4418-a899-c0ee94ca3ce8.png",
     metaTitle: "Furniture Removal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional furniture removal in Tampa Bay. Same-day & next-day service for all types of furniture removal.",
     faq: [
