@@ -441,7 +441,7 @@ export const residentialServices: SubService[] = [
     slug: "couch-disposal",
     shortDescription: "Professional couch and sofa removal service. We'll haul away old couches, sectionals, and upholstered furniture.",
     longDescription: "Our couch disposal service handles removal of all types of seating furniture including couches, sofas, sectionals, recliners, and chairs. We prioritize donation and recycling to keep furniture out of landfills. Serving all of Tampa Bay with same-day service available.",
-    heroImage: "/assets/shed-after.jpg",
+    heroImage: "/lovable-uploads/afbaf09f-b268-4683-afe1-25fcb5904f31.png",
     metaTitle: "Couch Disposal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional couch and sofa removal in Tampa Bay. Same-day service with donation and recycling options.",
     faq: [
