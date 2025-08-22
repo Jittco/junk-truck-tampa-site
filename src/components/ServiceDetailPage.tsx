@@ -181,14 +181,67 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           </div>
         </section>
 
-        {/* Service Overview */}
+        {/* Service Details Section */}
         <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-anton mb-8 text-center">What Our {service.name} Includes</h2>
+              <div className="prose prose-lg max-w-none">
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                        <span>Complete removal of all unwanted items</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                        <span>Professional team with proper equipment</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                        <span>Same-day and next-day service available</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                        <span>Upfront pricing with no hidden fees</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                        <span>Eco-friendly donation and recycling</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                        <span>Complete cleanup and debris removal</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  We prioritize eco-friendly disposal through donation and recycling programs, ensuring your unwanted items are handled responsibly and sustainably.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Overview */}
+        <section className="py-16 section-bg">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-anton mb-8 text-center">Service Overview</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed">
                   {service.longDescription}
+                </p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  <a href="/services/" className="text-primary hover:underline">
+                    View all our services
+                  </a> or contact us today for your free estimate.
                 </p>
               </div>
             </div>
@@ -216,7 +269,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         {/* Process Steps */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-anton text-center mb-12">Our Simple Process</h2>
+            <h2 className="text-3xl font-anton text-center mb-12">How Our {service.name} Works</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {processSteps.map((step, index) => (
                 <div key={index} className="text-center">
@@ -232,6 +285,34 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   <p className="text-muted-foreground">{step.description}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Service Area Section */}
+        <section className="py-16 section-bg">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl font-anton mb-8">Serving Tampa Bay and Surrounding Communities</h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                We proudly serve all of Tampa Bay with fast, reliable {service.name.toLowerCase()} services. 
+                Our professional team is ready to help customers throughout the greater Tampa area.
+              </p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                {[
+                  "Tampa", "Brandon", "Carrollwood", "Riverview", 
+                  "Apollo Beach", "St. Petersburg", "Seffner", "Temple Terrace"
+                ].map((city, index) => (
+                  <div key={index} className="bg-background border rounded-lg p-3">
+                    <span className="font-semibold">{city}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-muted-foreground">
+                <a href="/service-areas/" className="text-primary hover:underline">
+                  View all service areas
+                </a> we cover in the Tampa Bay region.
+              </p>
             </div>
           </div>
         </section>
