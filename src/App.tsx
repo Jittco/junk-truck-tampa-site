@@ -39,9 +39,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<ServicesHub />} />
-          <Route path="/services/old" element={<Services />} />
-          <Route path="/services/junk-removal/residential/" element={<ResidentialJunkRemoval />} />
-          <Route path="/services/junk-removal/commercial/" element={<CommercialJunkRemoval />} />
           <Route path="/services/demolition/" element={<DemolitionServices />} />
           <Route path="/services/dumpster-rental/" element={<DumpsterRental />} />
           <Route path="/pricing" element={<Pricing />} />
