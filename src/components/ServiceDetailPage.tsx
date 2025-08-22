@@ -142,7 +142,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         </nav>
 
         {/* Hero Section */}
-        <section className="relative py-16 bg-gradient-to-r from-primary/10 to-primary/5">
+        <section className="relative py-24 bg-gradient-to-r from-primary/10 to-primary/5">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
