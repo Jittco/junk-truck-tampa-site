@@ -294,7 +294,7 @@ export const residentialServices: SubService[] = [
     slug: "hot-tub-removal",
     shortDescription: "Professional hot tub and spa removal service. We'll safely disconnect and haul away your old hot tub.",
     longDescription: "Our hot tub removal service includes safe disconnection, demolition if necessary, and complete removal. We handle all types of hot tubs and spas, both above-ground and built-in units. Complete cleanup and debris removal included.",
-    heroImage: "/assets/yard-before.jpg",
+    heroImage: "/lovable-uploads/c766f531-e1bc-4150-baef-3c7d0dd966bf.png",
     metaTitle: "Hot Tub Removal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional hot tub and spa removal in Tampa Bay. Safe disconnection and removal with complete cleanup.",
     faq: [
