@@ -222,7 +222,7 @@ export const residentialServices: SubService[] = [
     slug: "residential-junk-removal",
     shortDescription: "Complete home cleanouts and junk removal for Tampa Bay residents. From single items to whole house cleanouts.",
     longDescription: "Our residential junk removal service handles everything from single item pickups to complete estate cleanouts. We'll remove furniture, appliances, electronics, and any unwanted items from your home quickly and responsibly. Serving Tampa, Brandon, Carrollwood, Riverview, Apollo Beach, St. Pete, Seffner, and Temple Terrace with same-day and next-day service.",
-    heroImage: "/lovable-uploads/83b35b49-8ca4-431a-8c25-f73acc8a6852.png",
+    heroImage: "/lovable-uploads/6a335dcb-180c-4c15-b5dd-a1ba512c588d.png",
     metaTitle: "Residential Junk Removal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional residential junk removal in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal.",
     faq: [
