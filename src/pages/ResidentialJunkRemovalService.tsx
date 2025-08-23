@@ -291,9 +291,9 @@ const ResidentialJunkRemovalService: React.FC = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 text-center">
-              <div className="border rounded-lg p-4">
-                <h4 className="text-foreground mb-2 font-medium">Small Load</h4>
-                <p className="text-2xl font-bold text-primary mb-2">$95-$289</p>
+              <div className="border rounded-lg p-4 bg-slate-950">
+                <h4 className="mb-2 text-slate-50 font-medium text-xl">Small Load</h4>
+                <p className="font-bold mb-2 text-[3] text-[#18d13d]">$95-$289</p>
                 <p className="text-sm text-muted-foreground">Few pieces of furniture or 1-2 appliances</p>
               </div>
               <div className="border rounded-lg p-4">
