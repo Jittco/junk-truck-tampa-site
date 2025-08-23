@@ -157,20 +157,20 @@ const ResidentialJunkRemovalService: React.FC = () => {
       </section>
 
       {/* What We Remove */}
-      <section className="py-16 md:py-20 bg-secondary/5">
+      <section className="py-16 md:py-20 bg-[#222222]">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-anton mb-6 text-slate-50">
               What We Remove From Your Home
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-slate-50">
               From single items to complete house cleanouts, we handle it all.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Common Household Items:</h3>
+              <h3 className="text-xl mb-4 text-slate-950 font-medium">Common Household Items:</h3>
               <ul className="space-y-2">
                 {["Furniture (sofas, chairs, tables, dressers)", "Appliances (refrigerators, washers, dryers)", "Electronics (TVs, computers, stereos)", "Mattresses and box springs", "Exercise equipment", "General household clutter", "Books, clothing, and personal items", "Yard debris and outdoor furniture"].map((item, index) => <li key={index} className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
@@ -179,7 +179,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
               </ul>
             </div>
             <div className="rounded-lg bg-transparent">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">We Cannot Accept:</h3>
+              <h3 className="text-xl mb-4 text-slate-50 font-medium">We Cannot Accept:</h3>
               <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                 <p className="text-red-800 font-medium mb-2">Hazardous Materials</p>
                 <ul className="text-red-700 text-sm space-y-1">
