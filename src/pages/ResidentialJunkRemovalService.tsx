@@ -238,28 +238,28 @@ const ResidentialJunkRemovalService: React.FC = () => {
               <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
                 1
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Call or Book Online</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Call or Book Online</h3>
               <p className="text-muted-foreground">Schedule your appointment online in 60 seconds or call us at 844-858-6546.</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
                 2
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Free On-Site Estimate</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Free On-Site Estimate</h3>
               <p className="text-muted-foreground">We arrive on time and provide an upfront, no-obligation quote based on volume.</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">We Haul It Away</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">We Haul It Away</h3>
               <p className="text-muted-foreground">Our crew handles all the heavy lifting and loading. You just point to what goes.</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
                 4
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Donation & Recycling</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Donation & Recycling</h3>
               <p className="text-muted-foreground">We donate usable items and recycle what we can, keeping waste out of landfills.</p>
             </div>
           </div>
@@ -280,8 +280,8 @@ const ResidentialJunkRemovalService: React.FC = () => {
 
           <div className="rounded-lg shadow-lg p-8 mb-8 bg-gray-50">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-semibold text-foreground mb-2">Volume-Based Pricing</h3>
-              <p className="text-muted-foreground">We price by truckload, not by item or hour</p>
+              <h3 className="text-2xl font-semibold mb-2 text-slate-950">Volume-Based Pricing</h3>
+              <p className="text-slate-950">We price by truckload, not by item or hour</p>
             </div>
             
             <div className="bg-primary/10 rounded-lg p-6 text-center mb-6 border border-green-500">
@@ -291,20 +291,20 @@ const ResidentialJunkRemovalService: React.FC = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 text-center">
-              <div className="border rounded-lg p-4 bg-slate-950">
-                <h4 className="mb-2 text-slate-50 font-medium text-xl">Small Load</h4>
+              <div className="border rounded-lg p-4 bg-green-50">
+                <h4 className="mb-2 font-medium text-xl text-slate-950">Small Load</h4>
                 <p className="font-bold mb-2 text-[3] text-[#18d13d]">$95-$289</p>
-                <p className="text-sm text-muted-foreground">Few pieces of furniture or 1-2 appliances</p>
+                <p className="text-sm text-slate-950">Few pieces of furniture or 1-2 appliances</p>
               </div>
-              <div className="border rounded-lg p-4">
-                <h4 className="text-foreground mb-2 font-medium">Medium Load</h4>
+              <div className="border rounded-lg p-4 bg-green-50">
+                <h4 className="mb-2 font-medium text-xl text-slate-950">Medium Load</h4>
                 <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
-                <p className="text-sm text-muted-foreground">Room cleanout or multiple appliances</p>
+                <p className="text-sm text-slate-950">Room cleanout or multiple appliances</p>
               </div>
-              <div className="border rounded-lg p-4">
-                <h4 className="text-foreground mb-2 font-medium">Large Load</h4>
+              <div className="border rounded-lg p-4 bg-[f0fdf4] bg-green-50">
+                <h4 className="mb-2 font-medium text-xl text-slate-950">Large Load</h4>
                 <p className="text-2xl font-bold text-primary mb-2">$750-$950</p>
-                <p className="text-sm text-muted-foreground">Whole house cleanout or estate removal</p>
+                <p className="text-sm text-slate-950">Whole house cleanout or estate removal</p>
               </div>
             </div>
 
