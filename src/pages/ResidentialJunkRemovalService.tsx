@@ -7,6 +7,7 @@ import { Phone, CheckCircle, Clock, Shield, Heart, Star, Users, Recycle } from '
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CustomerReviews from '../components/CustomerReviews';
 import ServiceAreas from '../components/ServiceAreas';
+import BeforeAfter from '../components/BeforeAfter';
 const ResidentialJunkRemovalService: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
@@ -193,6 +194,9 @@ const ResidentialJunkRemovalService: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Before & After */}
+      <BeforeAfter />
 
       {/* How It Works */}
       <section className="py-16 md:py-20 bg-background">
