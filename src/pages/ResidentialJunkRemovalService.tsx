@@ -285,23 +285,23 @@ const ResidentialJunkRemovalService: React.FC = () => {
             </div>
             
             <div className="bg-primary/10 rounded-lg p-6 text-center mb-6 border border-green-500">
-              <p className="text-lg font-semibold text-foreground mb-2">Most residential jobs in Tampa Bay on average</p>
+              <p className="text-lg font-semibold mb-2 text-slate-950">Most residential jobs in Tampa Bay on average</p>
               <p className="text-3xl font-anton text-primary">$349-$550</p>
               <p className="text-sm mt-2 text-slate-950">depending on size and type of items</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 text-center">
-              <div className="border border-green-500 rounded-lg p-4 bg-green-50">
+              <div className="border rounded-lg p-4 bg-green-50">
                 <h4 className="mb-2 font-medium text-xl text-slate-950">Small Load</h4>
                 <p className="font-bold mb-2 text-[3] text-[#18d13d]">$95-$289</p>
                 <p className="text-sm text-slate-950">Few pieces of furniture or 1-2 appliances</p>
               </div>
-              <div className="border border-green-500 rounded-lg p-4 bg-green-50">
+              <div className="border rounded-lg p-4 bg-green-50">
                 <h4 className="mb-2 font-medium text-xl text-slate-950">Medium Load</h4>
                 <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
                 <p className="text-sm text-slate-950">Room cleanout or multiple appliances</p>
               </div>
-              <div className="border border-green-500 rounded-lg p-4 bg-[f0fdf4] bg-green-50">
+              <div className="border rounded-lg p-4 bg-[f0fdf4] bg-green-50">
                 <h4 className="mb-2 font-medium text-xl text-slate-950">Large Load</h4>
                 <p className="text-2xl font-bold text-primary mb-2">$750-$950</p>
                 <p className="text-sm text-slate-950">Whole house cleanout or estate removal</p>
@@ -309,7 +309,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
             </div>
 
             <div className="text-center mt-6">
-              <p className="text-lg font-semibold text-foreground">
+              <p className="text-lg font-semibold text-slate-950">
                 ✓ No hidden fees ✓ Upfront quotes ✓ No obligation estimates
               </p>
             </div>
