@@ -383,7 +383,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
           }].map(service => <div key={service.slug} className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                 <img src={service.image} alt={service.name} className="w-full h-48 object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-foreground">{service.name}</h3>
+                  <h3 className="text-xl mb-3 text-foreground font-medium">{service.name}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
                   <Button variant="outline" className="w-full" asChild>
                     <a href={`/services/${service.slug}/`}>
