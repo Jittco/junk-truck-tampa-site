@@ -178,8 +178,8 @@ const ResidentialJunkRemovalService: React.FC = () => {
                   </li>)}
               </ul>
             </div>
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="text-xl mb-4 text-slate-950 font-medium">We Cannot Accept:</h3>
+            <div className="border border-red-200 rounded-lg p-4 bg-red-50">
+              <h3 className="text-xl mb-4 font-medium text-slate-950">We Cannot Accept:</h3>
               <p className="text-red-800 font-medium mb-2">Hazardous Materials</p>
               <ul className="text-red-700 text-sm space-y-1">
                 <li>• Paint and chemicals</li>
