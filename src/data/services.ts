@@ -246,7 +246,7 @@ export const residentialServices: SubService[] = [
     slug: "appliance-removal",
     shortDescription: "Professional appliance removal service. We'll haul away old refrigerators, washers, dryers, and all major appliances.",
     longDescription: "Our appliance removal service handles all major appliances including refrigerators, washers, dryers, dishwashers, stoves, and more. We ensure eco-friendly disposal and recycling whenever possible. Serving all of Tampa Bay with same-day service available.",
-    heroImage: "/assets/garage-before.jpg",
+    heroImage: "/lovable-uploads/b5924327-a32f-49e2-af94-fe75d37ef1cc.png",
     metaTitle: "Appliance Removal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional appliance removal in Tampa Bay. Same-day & next-day service with eco-friendly disposal and recycling.",
     faq: [
