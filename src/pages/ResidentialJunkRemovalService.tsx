@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Phone, CheckCircle, Clock, Shield, Heart, Star, Users, Recycle } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CustomerReviews from '../components/CustomerReviews';
+import ServiceAreas from '../components/ServiceAreas';
 
 const ResidentialJunkRemovalService: React.FC = () => {
   const structuredData = {
@@ -389,51 +390,11 @@ const ResidentialJunkRemovalService: React.FC = () => {
         </div>
       </section>
 
-      {/* Service Area */}
-      <section className="py-16 md:py-20 bg-secondary/5">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
-              Serving Tampa Bay & Surrounding Communities
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              From downtown Tampa condos to suburban Brandon homes, we serve all types of residences across the greater Tampa Bay area.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {serviceAreas.map((area, index) => (
-              <div key={index} className="text-center py-2">
-                <span className="text-foreground font-medium">{area}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <p className="text-lg text-muted-foreground mb-6">
-              Don't see your neighborhood? 
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="default" asChild>
-                <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae">
-                  Book Online
-                </a>
-              </Button>
-              <Button variant="outline" asChild>
-                <a href="tel:8448586546">
-                  Call 844-858-6546
-                </a>
-              </Button>
-            </div>
-            <p className="text-sm text-muted-foreground mt-2">
-              to confirm same- or next-day availability in your area.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Customer Reviews */}
       <CustomerReviews />
+
+      {/* Service Areas */}
+      <ServiceAreas />
 
       {/* Related Services */}
       <section className="py-16 md:py-20 bg-secondary/5">
