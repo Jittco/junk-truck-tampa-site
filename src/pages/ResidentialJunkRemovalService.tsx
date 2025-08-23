@@ -280,7 +280,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
 
           <div className="rounded-lg shadow-lg p-8 mb-8 bg-gray-50">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-semibold mb-2 text-slate-950">Volume-Based Pricing</h3>
+              <h3 className="text-2xl mb-2 text-slate-950 font-medium">Volume-Based Pricing</h3>
               <p className="text-slate-950">We price by truckload, not by item or hour</p>
             </div>
             
