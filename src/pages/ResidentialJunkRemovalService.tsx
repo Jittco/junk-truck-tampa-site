@@ -267,18 +267,18 @@ const ResidentialJunkRemovalService: React.FC = () => {
       </section>
 
       {/* Pricing Transparency */}
-      <section className="py-16 md:py-20 bg-secondary/5">
+      <section className="py-16 md:py-20 bg-[#222222]">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-anton mb-6 text-slate-50">
               Transparent, Upfront Pricing
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-slate-50">
               No surprises, no hidden fees. You'll know exactly what you're paying before we start.
             </p>
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+          <div className="rounded-lg shadow-lg p-8 mb-8 bg-gray-50">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-semibold text-foreground mb-2">Volume-Based Pricing</h3>
               <p className="text-muted-foreground">We price by truckload, not by item or hour</p>
@@ -287,22 +287,22 @@ const ResidentialJunkRemovalService: React.FC = () => {
             <div className="bg-primary/10 rounded-lg p-6 text-center mb-6">
               <p className="text-lg font-semibold text-foreground mb-2">Most residential jobs in Tampa Bay on average</p>
               <p className="text-3xl font-anton text-primary">$349-$550</p>
-              <p className="text-sm text-muted-foreground mt-2">depending on size and type of items</p>
+              <p className="text-sm mt-2 text-slate-950">depending on size and type of items</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 text-center">
               <div className="border rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">Small Load</h4>
+                <h4 className="text-foreground mb-2 font-medium">Small Load</h4>
                 <p className="text-2xl font-bold text-primary mb-2">$95-$289</p>
                 <p className="text-sm text-muted-foreground">Few pieces of furniture or 1-2 appliances</p>
               </div>
               <div className="border rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">Medium Load</h4>
+                <h4 className="text-foreground mb-2 font-medium">Medium Load</h4>
                 <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
                 <p className="text-sm text-muted-foreground">Room cleanout or multiple appliances</p>
               </div>
               <div className="border rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">Large Load</h4>
+                <h4 className="text-foreground mb-2 font-medium">Large Load</h4>
                 <p className="text-2xl font-bold text-primary mb-2">$750-$950</p>
                 <p className="text-sm text-muted-foreground">Whole house cleanout or estate removal</p>
               </div>
