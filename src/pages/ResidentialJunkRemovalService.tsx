@@ -435,6 +435,60 @@ const ResidentialJunkRemovalService: React.FC = () => {
       {/* Customer Reviews */}
       <CustomerReviews />
 
+      {/* Related Services */}
+      <section className="py-16 md:py-20 bg-secondary/5">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
+              Other Services You May Need
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Complete your cleanup with our specialized removal services
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Appliance Removal",
+                slug: "appliance-removal",
+                description: "Professional removal of refrigerators, washers, dryers, and all major appliances",
+                image: "/lovable-uploads/b5924327-a32f-49e2-af94-fe75d37ef1cc.png"
+              },
+              {
+                name: "Furniture Removal", 
+                slug: "furniture-removal",
+                description: "Complete furniture removal from single pieces to entire room sets",
+                image: "/lovable-uploads/683f36db-cf67-4418-a899-c0ee94ca3ce8.png"
+              },
+              {
+                name: "Hot Tub Removal",
+                slug: "hot-tub-removal", 
+                description: "Safe disconnection and removal of hot tubs and spas",
+                image: "/lovable-uploads/c766f531-e1bc-4150-baef-3c7d0dd966bf.png"
+              }
+            ].map((service) => (
+              <div key={service.slug} className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <img 
+                  src={service.image} 
+                  alt={service.name}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-3 text-foreground">{service.name}</h3>
+                  <p className="text-muted-foreground mb-4">{service.description}</p>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href={`/services/${service.slug}/`}>
+                      Learn More
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
