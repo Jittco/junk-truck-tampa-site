@@ -284,7 +284,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
               <p className="text-muted-foreground">We price by truckload, not by item or hour</p>
             </div>
             
-            <div className="bg-primary/10 rounded-lg p-6 text-center mb-6">
+            <div className="bg-primary/10 rounded-lg p-6 text-center mb-6 border border-green-500">
               <p className="text-lg font-semibold text-foreground mb-2">Most residential jobs in Tampa Bay on average</p>
               <p className="text-3xl font-anton text-primary">$349-$550</p>
               <p className="text-sm mt-2 text-slate-950">depending on size and type of items</p>
