@@ -169,7 +169,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div>
+            <div className="bg-[t#f0fdf4] bg-green-50 rounded-lg">
               <h3 className="text-xl font-semibold mb-4 text-foreground">Common Household Items:</h3>
               <ul className="space-y-2">
                 {["Furniture (sofas, chairs, tables, dressers)", "Appliances (refrigerators, washers, dryers)", "Electronics (TVs, computers, stereos)", "Mattresses and box springs", "Exercise equipment", "General household clutter", "Books, clothing, and personal items", "Yard debris and outdoor furniture"].map((item, index) => <li key={index} className="flex items-start">
@@ -178,7 +178,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
                   </li>)}
               </ul>
             </div>
-            <div>
+            <div className="rounded-lg bg-transparent">
               <h3 className="text-xl font-semibold mb-4 text-foreground">We Cannot Accept:</h3>
               <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                 <p className="text-red-800 font-medium mb-2">Hazardous Materials</p>
