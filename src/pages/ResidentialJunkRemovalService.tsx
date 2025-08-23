@@ -104,35 +104,42 @@ const ResidentialJunkRemovalService: React.FC = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-110 contrast-110 saturate-125" 
-             style={{ backgroundImage: `url(/lovable-uploads/6a335dcb-180c-4c15-b5dd-a1ba512c588d.png)` }}>
-        </div>
-        <link rel="preload" as="image" href="/lovable-uploads/6a335dcb-180c-4c15-b5dd-a1ba512c588d.png" />
-        
-        <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-anton mb-6 leading-tight drop-shadow-lg">
-            Residential Junk Removal in Tampa Bay Made Simple
-          </h1>
-          
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium leading-relaxed">
-            Stress-free junk removal for homeowners. We handle the heavy lifting, 
-            hauling, and responsible disposal - you just point and relax.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="cta" size="lg" className="px-8 py-4 text-lg" asChild>
-              <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae">
-                Book Online Now
-              </a>
-            </Button>
-            
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white hover:bg-white hover:text-foreground" asChild>
-              <a href="tel:8448586546">
-                <Phone className="w-5 h-5 mr-2" />
-                Call 844-858-6546
-              </a>
-            </Button>
+      <section className="relative py-24 bg-gradient-to-r from-primary/10 to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-anton mb-4 text-foreground">
+                Residential Junk Removal in Tampa Bay Made Simple
+              </h1>
+              <p className="text-lg text-muted-foreground mb-6">
+                Stress-free junk removal for homeowners. We handle the heavy lifting, 
+                hauling, and responsible disposal - you just point and relax.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  size="lg" 
+                  className="cta-button"
+                  onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}
+                >
+                  Book Online Now
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  onClick={() => window.open('tel:844-858-6546', '_self')}
+                >
+                  <Phone className="w-4 h-4 mr-2" />
+                  Call 844-858-6546
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/6a335dcb-180c-4c15-b5dd-a1ba512c588d.png"
+                alt="Residential junk removal service in Tampa Bay"
+                className="rounded-lg shadow-lg w-full h-80 object-cover object-top"
+              />
+            </div>
           </div>
         </div>
       </section>
