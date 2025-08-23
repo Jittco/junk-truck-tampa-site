@@ -181,12 +181,37 @@ const ResidentialJunkRemovalService: React.FC = () => {
             <div className="border border-red-200 rounded-lg p-4 bg-red-50">
               <h3 className="text-xl mb-4 font-medium text-slate-950">We Cannot Accept:</h3>
               <p className="text-red-800 font-medium mb-2">Hazardous Materials</p>
-              <ul className="text-red-700 text-sm space-y-1">
-                <li>• Paint and chemicals</li>
-                <li>• Asbestos materials</li>
-                <li>• Medical waste</li>
-                <li>• Flammable liquids</li>
-                <li>• Batteries and propane tanks</li>
+              <ul className="text-red-700 text-sm space-y-2">
+                <li className="flex items-center">
+                  <div className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-white text-xs font-bold">×</span>
+                  </div>
+                  Paint and chemicals
+                </li>
+                <li className="flex items-center">
+                  <div className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-white text-xs font-bold">×</span>
+                  </div>
+                  Asbestos materials
+                </li>
+                <li className="flex items-center">
+                  <div className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-white text-xs font-bold">×</span>
+                  </div>
+                  Medical waste
+                </li>
+                <li className="flex items-center">
+                  <div className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-white text-xs font-bold">×</span>
+                  </div>
+                  Flammable liquids
+                </li>
+                <li className="flex items-center">
+                  <div className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-white text-xs font-bold">×</span>
+                  </div>
+                  Batteries and propane tanks
+                </li>
               </ul>
             </div>
           </div>
