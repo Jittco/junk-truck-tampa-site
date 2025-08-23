@@ -169,7 +169,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-[t#f0fdf4] bg-green-50 rounded-lg">
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
               <h3 className="text-xl font-semibold mb-4 text-foreground">Common Household Items:</h3>
               <ul className="space-y-2">
                 {["Furniture (sofas, chairs, tables, dressers)", "Appliances (refrigerators, washers, dryers)", "Electronics (TVs, computers, stereos)", "Mattresses and box springs", "Exercise equipment", "General household clutter", "Books, clothing, and personal items", "Yard debris and outdoor furniture"].map((item, index) => <li key={index} className="flex items-start">
