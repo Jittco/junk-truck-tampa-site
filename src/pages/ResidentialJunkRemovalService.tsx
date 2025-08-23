@@ -296,7 +296,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
                 <p className="font-bold mb-2 text-[3] text-[#18d13d]">$95-$289</p>
                 <p className="text-sm text-slate-950">Few pieces of furniture or 1-2 appliances</p>
               </div>
-              <div className="border rounded-lg p-4 bg-green-50">
+              <div className="border border-green-500 rounded-lg p-4 bg-green-50">
                 <h4 className="mb-2 font-medium text-xl text-slate-950">Medium Load</h4>
                 <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
                 <p className="text-sm text-slate-950">Room cleanout or multiple appliances</p>
