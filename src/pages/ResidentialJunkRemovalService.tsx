@@ -7,7 +7,6 @@ import { Phone, CheckCircle, Clock, Shield, Heart, Star, Users, Recycle } from '
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CustomerReviews from '../components/CustomerReviews';
 import ServiceAreas from '../components/ServiceAreas';
-
 const ResidentialJunkRemovalService: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
@@ -17,11 +16,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
     "url": "https://junkinthetruck.co/services/residential-junk-removal",
     "telephone": "844-858-6546",
     "priceRange": "$95-$400",
-    "areaServed": [
-      "Tampa, FL", "Brandon, FL", "Carrollwood, FL", "Riverview, FL", 
-      "Apollo Beach, FL", "St. Petersburg, FL", "Seffner, FL", "Temple Terrace, FL",
-      "Gibsonton, FL", "Valrico, FL", "Plant City, FL", "Lithia, FL"
-    ],
+    "areaServed": ["Tampa, FL", "Brandon, FL", "Carrollwood, FL", "Riverview, FL", "Apollo Beach, FL", "St. Petersburg, FL", "Seffner, FL", "Temple Terrace, FL", "Gibsonton, FL", "Valrico, FL", "Plant City, FL", "Lithia, FL"],
     "serviceType": "Residential Junk Removal",
     "provider": {
       "@type": "LocalBusiness",
@@ -33,62 +28,48 @@ const ResidentialJunkRemovalService: React.FC = () => {
       }
     }
   };
-
   const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do I need to move items outside first?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No! Our crew handles all the heavy lifting. We'll remove items from wherever they're located - attics, basements, garages, or any room in your home. You just point and we'll do the rest."
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": "What do you do with usable items?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We believe in giving items a second life. Usable furniture, clothing, and household goods are donated to local Tampa Bay charities. Items that can't be donated are recycled whenever possible, keeping them out of landfills."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you remove items from attics or upstairs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! Our experienced team safely removes items from attics, upstairs rooms, basements, and tight spaces. We have the equipment and expertise to handle challenging removals."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How soon can you schedule pickup?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We offer same-day and next-day service throughout Tampa Bay. Call us early in the day for same-day availability, or book online to secure your preferred time slot."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What forms of payment do you accept?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We accept cash, check, and all major credit cards for your convenience. Payment is due upon completion of the job, and we'll provide you with a detailed receipt."
-        }
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Do I need to move items outside first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No! Our crew handles all the heavy lifting. We'll remove items from wherever they're located - attics, basements, garages, or any room in your home. You just point and we'll do the rest."
       }
-    ]
+    }, {
+      "@type": "Question",
+      "name": "What do you do with usable items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We believe in giving items a second life. Usable furniture, clothing, and household goods are donated to local Tampa Bay charities. Items that can't be donated are recycled whenever possible, keeping them out of landfills."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Can you remove items from attics or upstairs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our experienced team safely removes items from attics, upstairs rooms, basements, and tight spaces. We have the equipment and expertise to handle challenging removals."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How soon can you schedule pickup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer same-day and next-day service throughout Tampa Bay. Call us early in the day for same-day availability, or book online to secure your preferred time slot."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What forms of payment do you accept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We accept cash, check, and all major credit cards for your convenience. Payment is due upon completion of the job, and we'll provide you with a detailed receipt."
+      }
+    }]
   };
-
-  const serviceAreas = [
-    "Tampa", "Brandon", "Carrollwood", "Riverview", "Apollo Beach", 
-    "St. Petersburg", "Seffner", "Temple Terrace", "Gibsonton", 
-    "Valrico", "Plant City", "Lithia", "Ruskin", "Sun City Center"
-  ];
-
-  return (
-    <>
+  const serviceAreas = ["Tampa", "Brandon", "Carrollwood", "Riverview", "Apollo Beach", "St. Petersburg", "Seffner", "Temple Terrace", "Gibsonton", "Valrico", "Plant City", "Lithia", "Ruskin", "Sun City Center"];
+  return <>
       <Helmet>
         <title>Residential Junk Removal Tampa Bay | Junk in the Truck Co</title>
         <meta name="description" content="Professional residential junk removal in Tampa Bay. Same-day service, upfront pricing, and eco-friendly disposal. Book online or call 844-858-6546." />
@@ -117,29 +98,17 @@ const ResidentialJunkRemovalService: React.FC = () => {
                 hauling, and responsible disposal - you just point and relax.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="cta-button"
-                  onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}
-                >
+                <Button size="lg" className="cta-button" onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}>
                   Book Online Now
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  onClick={() => window.open('tel:844-858-6546', '_self')}
-                >
+                <Button variant="outline" size="lg" onClick={() => window.open('tel:844-858-6546', '_self')}>
                   <Phone className="w-4 h-4 mr-2" />
                   Call 844-858-6546
                 </Button>
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="/lovable-uploads/6a335dcb-180c-4c15-b5dd-a1ba512c588d.png"
-                alt="Residential junk removal service in Tampa Bay"
-                className="rounded-lg shadow-lg w-full h-80 object-cover object-top"
-              />
+              <img src="/lovable-uploads/6a335dcb-180c-4c15-b5dd-a1ba512c588d.png" alt="Residential junk removal service in Tampa Bay" className="rounded-lg shadow-lg w-full h-80 object-cover object-top" />
             </div>
           </div>
         </div>
@@ -202,21 +171,10 @@ const ResidentialJunkRemovalService: React.FC = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4 text-foreground">Common Household Items:</h3>
               <ul className="space-y-2">
-                {[
-                  "Furniture (sofas, chairs, tables, dressers)",
-                  "Appliances (refrigerators, washers, dryers)",
-                  "Electronics (TVs, computers, stereos)",
-                  "Mattresses and box springs",
-                  "Exercise equipment",
-                  "General household clutter",
-                  "Books, clothing, and personal items",
-                  "Yard debris and outdoor furniture"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
+                {["Furniture (sofas, chairs, tables, dressers)", "Appliances (refrigerators, washers, dryers)", "Electronics (TVs, computers, stereos)", "Mattresses and box springs", "Exercise equipment", "General household clutter", "Books, clothing, and personal items", "Yard debris and outdoor furniture"].map((item, index) => <li key={index} className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-foreground">{item}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
             <div>
@@ -300,27 +258,25 @@ const ResidentialJunkRemovalService: React.FC = () => {
             </div>
             
             <div className="bg-primary/10 rounded-lg p-6 text-center mb-6">
-              <p className="text-lg font-semibold text-foreground mb-2">
-                Most residential jobs in Tampa Bay fall between
-              </p>
-              <p className="text-3xl font-anton text-primary">$95 - $400</p>
+              <p className="text-lg font-semibold text-foreground mb-2">Most residential jobs in Tampa Bay on average</p>
+              <p className="text-3xl font-anton text-primary">$349-$550</p>
               <p className="text-sm text-muted-foreground mt-2">depending on size and type of items</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 text-center">
               <div className="border rounded-lg p-4">
                 <h4 className="font-semibold text-foreground mb-2">Small Load</h4>
-                <p className="text-2xl font-bold text-primary mb-2">$95-$150</p>
+                <p className="text-2xl font-bold text-primary mb-2">$95-$289</p>
                 <p className="text-sm text-muted-foreground">Few pieces of furniture or 1-2 appliances</p>
               </div>
               <div className="border rounded-lg p-4">
                 <h4 className="font-semibold text-foreground mb-2">Medium Load</h4>
-                <p className="text-2xl font-bold text-primary mb-2">$150-$250</p>
+                <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
                 <p className="text-sm text-muted-foreground">Room cleanout or multiple appliances</p>
               </div>
               <div className="border rounded-lg p-4">
                 <h4 className="font-semibold text-foreground mb-2">Large Load</h4>
-                <p className="text-2xl font-bold text-primary mb-2">$250-$400</p>
+                <p className="text-2xl font-bold text-primary mb-2">$750-$950</p>
                 <p className="text-sm text-muted-foreground">Whole house cleanout or estate removal</p>
               </div>
             </div>
@@ -409,32 +365,23 @@ const ResidentialJunkRemovalService: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                name: "Appliance Removal",
-                slug: "appliance-removal",
-                description: "Professional removal of refrigerators, washers, dryers, and all major appliances",
-                image: "/lovable-uploads/b5924327-a32f-49e2-af94-fe75d37ef1cc.png"
-              },
-              {
-                name: "Furniture Removal", 
-                slug: "furniture-removal",
-                description: "Complete furniture removal from single pieces to entire room sets",
-                image: "/lovable-uploads/683f36db-cf67-4418-a899-c0ee94ca3ce8.png"
-              },
-              {
-                name: "Hot Tub Removal",
-                slug: "hot-tub-removal", 
-                description: "Safe disconnection and removal of hot tubs and spas",
-                image: "/lovable-uploads/c766f531-e1bc-4150-baef-3c7d0dd966bf.png"
-              }
-            ].map((service) => (
-              <div key={service.slug} className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <img 
-                  src={service.image} 
-                  alt={service.name}
-                  className="w-full h-48 object-cover"
-                />
+            {[{
+            name: "Appliance Removal",
+            slug: "appliance-removal",
+            description: "Professional removal of refrigerators, washers, dryers, and all major appliances",
+            image: "/lovable-uploads/b5924327-a32f-49e2-af94-fe75d37ef1cc.png"
+          }, {
+            name: "Furniture Removal",
+            slug: "furniture-removal",
+            description: "Complete furniture removal from single pieces to entire room sets",
+            image: "/lovable-uploads/683f36db-cf67-4418-a899-c0ee94ca3ce8.png"
+          }, {
+            name: "Hot Tub Removal",
+            slug: "hot-tub-removal",
+            description: "Safe disconnection and removal of hot tubs and spas",
+            image: "/lovable-uploads/c766f531-e1bc-4150-baef-3c7d0dd966bf.png"
+          }].map(service => <div key={service.slug} className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <img src={service.image} alt={service.name} className="w-full h-48 object-cover" />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3 text-foreground">{service.name}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
@@ -444,8 +391,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
                     </a>
                   </Button>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -460,37 +406,29 @@ const ResidentialJunkRemovalService: React.FC = () => {
           </div>
 
           <Accordion type="single" collapsible className="w-full space-y-4">
-            {[
-              {
-                question: "Do I need to move items outside first?",
-                answer: "No! Our crew handles all the heavy lifting. We'll remove items from wherever they're located - attics, basements, garages, or any room in your home. You just point and we'll do the rest."
-              },
-              {
-                question: "What do you do with usable items?",
-                answer: "We believe in giving items a second life. Usable furniture, clothing, and household goods are donated to local Tampa Bay charities. Items that can't be donated are recycled whenever possible, keeping them out of landfills."
-              },
-              {
-                question: "Can you remove items from attics or upstairs?",
-                answer: "Absolutely! Our experienced team safely removes items from attics, upstairs rooms, basements, and tight spaces. We have the equipment and expertise to handle challenging removals."
-              },
-              {
-                question: "How soon can you schedule pickup?",
-                answer: "We offer same-day and next-day service throughout Tampa Bay. Call us early in the day for same-day availability, or book online to secure your preferred time slot."
-              },
-              {
-                question: "What forms of payment do you accept?",
-                answer: "We accept cash, check, and all major credit cards for your convenience. Payment is due upon completion of the job, and we'll provide you with a detailed receipt."
-              }
-            ].map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border border-border rounded-lg px-6">
+            {[{
+            question: "Do I need to move items outside first?",
+            answer: "No! Our crew handles all the heavy lifting. We'll remove items from wherever they're located - attics, basements, garages, or any room in your home. You just point and we'll do the rest."
+          }, {
+            question: "What do you do with usable items?",
+            answer: "We believe in giving items a second life. Usable furniture, clothing, and household goods are donated to local Tampa Bay charities. Items that can't be donated are recycled whenever possible, keeping them out of landfills."
+          }, {
+            question: "Can you remove items from attics or upstairs?",
+            answer: "Absolutely! Our experienced team safely removes items from attics, upstairs rooms, basements, and tight spaces. We have the equipment and expertise to handle challenging removals."
+          }, {
+            question: "How soon can you schedule pickup?",
+            answer: "We offer same-day and next-day service throughout Tampa Bay. Call us early in the day for same-day availability, or book online to secure your preferred time slot."
+          }, {
+            question: "What forms of payment do you accept?",
+            answer: "We accept cash, check, and all major credit cards for your convenience. Payment is due upon completion of the job, and we'll provide you with a detailed receipt."
+          }].map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-border rounded-lg px-6">
                 <AccordionTrigger className="text-left text-foreground hover:no-underline py-6 font-normal">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-foreground pb-6 font-inter">
                   {faq.answer}
                 </AccordionContent>
-              </AccordionItem>
-            ))}
+              </AccordionItem>)}
           </Accordion>
         </div>
       </section>
@@ -524,8 +462,6 @@ const ResidentialJunkRemovalService: React.FC = () => {
       </section>
 
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default ResidentialJunkRemovalService;
