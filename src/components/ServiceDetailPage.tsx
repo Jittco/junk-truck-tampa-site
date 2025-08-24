@@ -235,7 +235,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   {whoWeServe.intro}
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  {whoWeServe.items.map((item, index) => <div key={index} className="border rounded-lg p-6 bg-green-50">
+                  {whoWeServe.items.map((item, index) => <div key={index} className="border-green-500 border rounded-lg p-6 bg-green-50">
                       <h3 className="text-lg text-foreground mb-2 font-medium">{item.category}</h3>
                       <p className="text-muted-foreground">{item.description}</p>
                     </div>)}
