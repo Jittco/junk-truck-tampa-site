@@ -8,7 +8,7 @@ const CommercialJunkRemovalService: React.FC = () => {
     slug: "commercial-junk-removal",
     shortDescription: "Professional commercial cleanouts for offices, retail spaces, warehouses, and construction sites in Tampa Bay.",
     longDescription: "Our commercial junk removal service helps businesses clear out unwanted items efficiently. Perfect for office moves, retail renovations, warehouse cleanouts, and construction debris removal.",
-    heroImage: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
+    heroImage: "/lovable-uploads/39d5fc41-5246-40fa-85e0-39c712a42e89.png",
     metaTitle: "Commercial Junk Removal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional commercial junk removal in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal.",
     faq: [
