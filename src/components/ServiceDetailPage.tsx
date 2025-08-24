@@ -169,6 +169,26 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           </div>
         </section>
 
+        {/* Appliance Removal Overview Section (only for appliance removal) */}
+        {service.slug === 'appliance-removal' && (
+          <section className="py-16">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-anton mb-6 text-center">Appliance Removal & Disposal Services in Tampa Bay</h2>
+                <h3 className="text-2xl font-semibold mb-8 text-center text-primary">Full-Service Appliance Hauling Made Simple</h3>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    The average home has more than 15 major appliances — and eventually, every one of them needs to be replaced. When bulky items like refrigerators, ovens, or washing machines reach the end of their life, the real challenge is figuring out how to safely and responsibly get rid of them.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    At Junk in the Truck Co., we make appliance removal easy. Our team handles everything from disconnecting and lifting to hauling and recycling, so you don't have to risk injury or waste time. Whether it's a single broken fridge or a full set of outdated appliances, we'll clear them out quickly and leave the area clean.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Service Details Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
