@@ -284,7 +284,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         {typesOfCleanouts && <section className="py-16">
             <div className="container mx-auto px-4 bg-[#222222]">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-anton mb-8 text-center">🏠 Types of Cleanouts We Offer</h2>
+                <h2 className="text-3xl font-anton mb-8 text-center text-white">🏠 Types of Cleanouts We Offer</h2>
                 <p className="text-lg mb-8 text-center text-muted-foreground">
                   {typesOfCleanouts.intro}
                 </p>
