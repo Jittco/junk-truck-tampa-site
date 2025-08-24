@@ -4,10 +4,10 @@ const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with preload */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-110 contrast-110 saturate-125" style={{
-      backgroundImage: `url(/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png)`
+      backgroundImage: `url(/lovable-uploads/39d5fc41-5246-40fa-85e0-39c712a42e89.png)`
     }}>
       </div>
-      <link rel="preload" as="image" href="/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png" />
+      <link rel="preload" as="image" href="/lovable-uploads/39d5fc41-5246-40fa-85e0-39c712a42e89.png" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
