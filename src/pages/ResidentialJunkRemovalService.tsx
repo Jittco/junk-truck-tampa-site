@@ -135,21 +135,21 @@ const ResidentialJunkRemovalService: React.FC = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Save Your Time</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Save Your Time</h3>
               <p className="text-muted-foreground">Skip the multiple trips to the dump. We handle everything in one visit.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Stay Safe</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Stay Safe</h3>
               <p className="text-muted-foreground">Avoid injury from lifting heavy furniture and appliances. Leave it to the pros.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Peace of Mind</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Peace of Mind</h3>
               <p className="text-muted-foreground">Licensed, insured, and committed to responsible disposal and donation.</p>
             </div>
           </div>
@@ -293,7 +293,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-4 text-center">
               <div className="border rounded-lg p-4 bg-green-50">
                 <h4 className="mb-2 font-medium text-xl text-slate-950">Small Load</h4>
-                <p className="font-bold mb-2 text-[3] text-[#18d13d]">$95-$289</p>
+                <p className="font-bold mb-2 text-[3] text-[#18d13d]">$99-$289</p>
                 <p className="text-sm text-slate-950">Few pieces of furniture or 1-2 appliances</p>
               </div>
               <div className="border rounded-lg p-4 bg-green-50">
@@ -331,42 +331,42 @@ const ResidentialJunkRemovalService: React.FC = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Locally Owned & Operated</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Locally Owned & Operated</h3>
               <p className="text-muted-foreground">Proudly serving Tampa Bay families since 2019 with faith-based, integrity-driven service.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Fully Licensed & Insured</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Fully Licensed & Insured</h3>
               <p className="text-muted-foreground">Your home and belongings are protected with comprehensive insurance coverage.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Hundreds of 5-Star Reviews</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Hundreds of 5-Star Reviews</h3>
               <p className="text-muted-foreground">Our Google reviews speak for themselves - exceptional service every time.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Trusted by Professionals</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Trusted by Professionals</h3>
               <p className="text-muted-foreground">Realtors, contractors, and property managers rely on us for their clients.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Recycle className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Eco-Friendly Disposal</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Eco-Friendly Disposal</h3>
               <p className="text-muted-foreground">We donate and recycle whenever possible, minimizing landfill waste.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Same-Day Service</h3>
+              <h3 className="text-xl mb-2 text-foreground font-medium">Same-Day Service</h3>
               <p className="text-muted-foreground">When you need it gone today, we're ready to help with prompt service.</p>
             </div>
           </div>
