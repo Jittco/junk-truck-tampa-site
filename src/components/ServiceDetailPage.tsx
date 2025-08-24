@@ -21,25 +21,13 @@ interface ServiceDetailPageProps {
     items: WhoWeServeItem[];
     closing: string;
   };
-  servicesWeOffer?: {
-    intro: string;
-    items: WhoWeServeItem[];
-    closing: string;
-  };
-  typesOfCleanouts?: {
-    intro: string;
-    items: WhoWeServeItem[];
-    closing: string;
-  };
 }
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   service,
   categoryName,
   categorySlug,
   relatedServices,
-  whoWeServe,
-  servicesWeOffer,
-  typesOfCleanouts
+  whoWeServe
 }) => {
   const currentYear = new Date().getFullYear();
   const benefits = [{
@@ -247,7 +235,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   {whoWeServe.intro}
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  {whoWeServe.items.map((item, index) => <div key={index} className="border-green-500 border rounded-lg p-6 bg-green-50">
+                  {whoWeServe.items.map((item, index) => <div key={index} className="border rounded-lg p-6 bg-green-50">
                       <h3 className="text-lg text-foreground mb-2 font-medium">{item.category}</h3>
                       <p className="text-muted-foreground">{item.description}</p>
                     </div>)}
@@ -259,50 +247,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             </div>
           </section>}
 
-        {/* Services We Offer Section */}
-        {servicesWeOffer && <section className="py-16 section-bg">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-anton mb-8 text-center">🛠 Services We Offer to Commercial Businesses</h2>
-                <p className="text-lg mb-8 text-center text-muted-foreground">
-                  {servicesWeOffer.intro}
-                </p>
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  {servicesWeOffer.items.map((item, index) => <div key={index} className="border-green-500 border rounded-lg p-6 bg-green-50">
-                      <h3 className="text-lg text-foreground mb-2 font-medium">{item.category}</h3>
-                      <p className="text-muted-foreground">{item.description}</p>
-                    </div>)}
-                </div>
-                <p className="text-center text-muted-foreground">
-                  {servicesWeOffer.closing}
-                </p>
-              </div>
-            </div>
-          </section>}
-
-        {/* Types of Cleanouts Section */}
-        {typesOfCleanouts && <section className="py-16">
-            <div className="container mx-auto px-4 bg-[#222222]">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-anton mb-8 text-center text-white">🏠 Types of Cleanouts We Offer</h2>
-                <p className="text-lg mb-8 text-center text-muted-foreground">
-                  {typesOfCleanouts.intro}
-                </p>
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  {typesOfCleanouts.items.map((item, index) => <div key={index} className="border-green-500 border rounded-lg p-6 bg-green-50">
-                      <h3 className="text-lg text-foreground mb-2 font-medium">{item.category}</h3>
-                      <p className="text-muted-foreground">{item.description}</p>
-                    </div>)}
-                </div>
-                <p className="text-center text-muted-foreground">
-                  {typesOfCleanouts.closing}
-                </p>
-              </div>
-            </div>
-          </section>}
-
         {/* Key Benefits */}
-        <section className="py-16 section-bg">
+        <section className="section-bg text-slate-50 py-[20px]">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-anton text-center mb-12">Why Choose Junk in the Truck Co?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -310,7 +256,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   <CardContent className="p-6">
                     <benefit.icon className="w-12 h-12 text-primary mx-auto mb-4" />
                     <h3 className="text-xl font-anton mb-2">{benefit.title}</h3>
-                    <p className="text-muted-foreground">{benefit.description}</p>
+                    <p className="text-slate-50">{benefit.description}</p>
                   </CardContent>
                 </Card>)}
             </div>
