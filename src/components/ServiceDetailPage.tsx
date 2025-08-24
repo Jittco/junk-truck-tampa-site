@@ -438,6 +438,37 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           </div>
         </section>
 
+        {/* Google Business Profile Map Preview */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <p className="text-lg text-muted-foreground mb-8">
+                Serving Tampa Bay & Surrounding Communities — view our location, hours and reviews on Google.
+              </p>
+              
+              {/* GBP Map Preview: Static image + Open in Google Maps button */}
+              <div className="max-w-[900px] mx-auto text-center">
+                <img 
+                  src="https://maps.gstatic.com/tactile/basepage/pegman_sherlock.png" 
+                  alt="Map preview for Junk in the Truck Co. in Tampa Bay" 
+                  className="w-[100px] h-auto opacity-75 mx-auto my-[18px]"
+                  loading="lazy"
+                />
+                <p className="my-[6px] mb-[14px] text-muted-foreground">See directions, hours and reviews on Google</p>
+
+                <a 
+                  href="https://share.google/8g6Efh9rhmdj578cp" 
+                  target="_blank" 
+                  rel="noopener"
+                  className="inline-block py-3 px-[18px] rounded-lg bg-[#1a73e8] text-white no-underline font-semibold hover:bg-[#1557b0] transition-colors"
+                >
+                  Open in Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         {service.faq.length > 0 && <section className="py-16 section-bg">
             <div className="container mx-auto px-4">
