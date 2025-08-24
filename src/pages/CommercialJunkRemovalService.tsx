@@ -24,7 +24,10 @@ const CommercialJunkRemovalService: React.FC = () => {
     order: 2
   };
 
-  const relatedServices = [...commercialServices, ...residentialServices.slice(0, 2)].slice(0, 3);
+  const cleanOut = residentialServices.find(s => s.slug === 'clean-out');
+  const relatedServices = [cleanOut!, ...commercialServices, ...residentialServices]
+    .filter((s, i, arr) => s && arr.findIndex(x => x.slug === s.slug) === i)
+    .slice(0, 3);
 
   const whoWeServe = {
     intro: "Junk in the Truck Co. provides tailored commercial junk removal services across Tampa Bay for businesses of all sizes. We deliver speed, affordability, and reliability to help your business maintain a clean, professional environment.",
