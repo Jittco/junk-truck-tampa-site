@@ -364,16 +364,28 @@ export const residentialServices: SubService[] = [
     metaDescription: "Professional garage cleanout service in Tampa Bay. Complete sorting and removal with organization assistance.",
     faq: [
       {
-        question: "Do you remove everything from my garage?",
-        answer: "We remove only what you want us to take! We'll work with you to sort through items, removing unwanted clutter while helping organize items you want to keep. You have complete control over what stays and what goes."
+        question: "How much does it cost to declutter a garage?",
+        answer: "The cost depends on the size of the garage, the amount of junk, and whether heavy or bulky items are involved. For most homes it can be a few hundred dollars, while extreme cases packed wall-to-wall may cost into the thousands."
       },
       {
-        question: "Can I keep certain items and only have you take the junk?",
-        answer: "Absolutely! Our garage cleanout service is completely customizable. We'll carefully sort through your items with you, removing only the unwanted clutter and helping organize what you decide to keep."
+        question: "How to clean out a garage full of junk?",
+        answer: "Start by sorting items into keep, donate, recycle, and dispose piles. For large volumes or heavy lifting, hire a professional garage cleanout service to handle the work safely and efficiently."
       },
       {
-        question: "Do you sweep out the garage afterward?",
-        answer: "Yes! We provide complete cleanup service including sweeping and basic cleaning to leave your garage spotless and ready to use. We take pride in leaving every space better than we found it."
+        question: "How much to clear out a garage?",
+        answer: "The price depends on how cluttered the garage is and the types of items being removed. Standard cleanouts may only take a few hours and cost a few hundred dollars, while more complex cleanouts can be higher."
+      },
+      {
+        question: "How much is junk removal for a garage?",
+        answer: "Junk removal is usually priced by the truck space used plus labor. A few bulky items might be a simple job, while a full garage cleanout with appliances or heavy equipment can run higher. Quotes are always provided upfront."
+      },
+      {
+        question: "What should I do before the crew arrives?",
+        answer: "Unlock access, clear the driveway, separate valuables and paperwork, unplug appliances, and secure pets. Label donate vs. keep piles to speed the process."
+      },
+      {
+        question: "Do you donate or recycle garage items?",
+        answer: "Yes. Usable items are donated when possible. Metals, e-waste, and cardboard are recycled, and hazardous materials are handled per local regulations."
       }
     ],
     order: 5

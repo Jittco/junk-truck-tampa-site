@@ -120,7 +120,60 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     "areaServed": "Tampa Bay, FL",
     "serviceType": service.name
   };
-  const faqStructuredData = service.faq.length > 0 ? {
+  const faqStructuredData = service.slug === 'garage-clean-out' ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does it cost to declutter a garage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Costs depend on volume, access, and item types. For most homes it is a few hundred dollars; extreme, wall-to-wall or hoarding cleanouts can reach into the thousands. An on-site quote is provided before any work begins."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to clean out a garage full of junk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use four piles: keep, donate, recycle, dispose. Create a staging area, work left-to-right and top-to-bottom, box small items, and stack large items by type. For heavy or unsafe items, book a professional cleanout for safe lifting, hauling, and compliant disposal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much to clear out a garage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It varies with how packed the space is, presence of bulky or heavy items, stairs, and any hazardous materials. Many standard cleanouts land in the few-hundred-dollar range; multi-car or very full garages can be higher."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much is junk removal for a garage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing typically reflects the truck space used plus labor and disposal. A few bulky items may be modest, while full-garage cleanouts or specialty items cost more. Providers give an upfront quote before work starts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do before the crew arrives?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlock access, clear the driveway, separate valuables and paperwork, unplug appliances, and secure pets. Label donate vs. keep piles to speed the process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you donate or recycle garage items?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Usable items are donated when possible. Metals, e-waste, and cardboard are recycled, and hazardous materials are handled per local regulations."
+        }
+      }
+    ]
+  } : service.faq.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": service.faq.map(faq => ({
@@ -389,7 +442,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         {service.faq.length > 0 && <section className="py-16 section-bg">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-anton text-center mb-12">Frequently Asked Questions</h2>
+                <h2 className="text-3xl font-anton text-center mb-12">
+                  {service.slug === 'garage-clean-out' ? '❓ Garage Cleanout FAQs' : 'Frequently Asked Questions'}
+                </h2>
                 <Accordion type="single" collapsible className="w-full">
                   {service.faq.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
                       <AccordionTrigger className="text-left text-lg font-semibold">
