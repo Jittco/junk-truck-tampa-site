@@ -377,7 +377,7 @@ export const residentialServices: SubService[] = [
     slug: "clean-out", 
     shortDescription: "Professional property cleanout service. Complete clearing of homes, apartments, offices, and commercial spaces.",
     longDescription: "Our comprehensive cleanout service handles complete clearing of any property type. Perfect for estate cleanouts, tenant turnovers, foreclosure cleanouts, and business relocations. We sort, donate, recycle, and responsibly dispose of all items.",
-    heroImage: "/lovable-uploads/f3f7ce71-ab76-47bf-a3ce-e01508b8ac04.png",
+    heroImage: "/lovable-uploads/23e7eb98-5f94-4d6c-88c9-c9bfee6ae405.png",
     metaTitle: "Property Clean Out Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional property cleanout service in Tampa Bay. Complete clearing for estates, rentals, and commercial spaces.",
     faq: [
