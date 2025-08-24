@@ -26,6 +26,11 @@ interface ServiceDetailPageProps {
     items: WhoWeServeItem[];
     closing: string;
   };
+  typesOfCleanouts?: {
+    intro: string;
+    items: WhoWeServeItem[];
+    closing: string;
+  };
 }
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   service,
@@ -33,7 +38,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   categorySlug,
   relatedServices,
   whoWeServe,
-  servicesWeOffer
+  servicesWeOffer,
+  typesOfCleanouts
 }) => {
   const currentYear = new Date().getFullYear();
   const benefits = [{
@@ -269,6 +275,27 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 </div>
                 <p className="text-center text-muted-foreground">
                   {servicesWeOffer.closing}
+                </p>
+              </div>
+            </div>
+          </section>}
+
+        {/* Types of Cleanouts Section */}
+        {typesOfCleanouts && <section className="py-16">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-anton mb-8 text-center">🏠 Types of Cleanouts We Offer</h2>
+                <p className="text-lg mb-8 text-center text-muted-foreground">
+                  {typesOfCleanouts.intro}
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  {typesOfCleanouts.items.map((item, index) => <div key={index} className="border-green-500 border rounded-lg p-6 bg-green-50">
+                      <h3 className="text-lg text-foreground mb-2 font-medium">{item.category}</h3>
+                      <p className="text-muted-foreground">{item.description}</p>
+                    </div>)}
+                </div>
+                <p className="text-center text-muted-foreground">
+                  {typesOfCleanouts.closing}
                 </p>
               </div>
             </div>
