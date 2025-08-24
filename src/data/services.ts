@@ -359,7 +359,7 @@ export const residentialServices: SubService[] = [
     slug: "garage-clean-out",
     shortDescription: "Complete garage cleanout service. We'll sort, haul away unwanted items, and leave your garage organized and clean.",
     longDescription: "Our garage cleanout service helps you reclaim your space. We'll sort through items, remove unwanted clutter, and can help organize what stays. Perfect for moving preparation or general decluttering. Serving all of Tampa Bay with same-day service available.",
-    heroImage: "/assets/garage-after.jpg",
+    heroImage: "/lovable-uploads/7afb2643-fc81-4333-ade4-387bd9bc0141.png",
     metaTitle: "Garage Clean Out Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional garage cleanout service in Tampa Bay. Complete sorting and removal with organization assistance.",
     faq: [
