@@ -26,12 +26,44 @@ const CommercialJunkRemovalService: React.FC = () => {
 
   const relatedServices = [...commercialServices, ...residentialServices.slice(0, 2)].slice(0, 3);
 
+  const whoWeServe = {
+    intro: "Junk in the Truck Co. provides tailored commercial junk removal services across Tampa Bay for businesses of all sizes. We deliver speed, affordability, and reliability to help your business maintain a clean, professional environment.",
+    items: [
+      {
+        category: "Offices",
+        description: "Removal of desks, cubicles, filing cabinets, chairs, and electronics"
+      },
+      {
+        category: "Retail Stores",
+        description: "Cleanouts of shelving, fixtures, racks, and packaging"
+      },
+      {
+        category: "Warehouses & Industrial Spaces",
+        description: "Pallets, equipment, machinery parts, and bulk debris hauling"
+      },
+      {
+        category: "Restaurants",
+        description: "Dining furniture, kitchen appliances, cooking equipment, and food-related waste"
+      },
+      {
+        category: "Property Managers & Realtors",
+        description: "Tenant junk removal, eviction cleanouts, abandoned property, and foreclosure services"
+      },
+      {
+        category: "Storage Facilities",
+        description: "Cleanouts for abandoned or unpaid storage units and lockers"
+      }
+    ],
+    closing: "We deliver reliable business junk removal services across Tampa Bay and surrounding communities."
+  };
+
   return (
     <ServiceDetailPage
       service={service}
       categoryName="Junk Removal"
       categorySlug="junk-removal"
       relatedServices={relatedServices}
+      whoWeServe={whoWeServe}
     />
   );
 };

@@ -8,18 +8,29 @@ import { SubService } from '../data/services';
 import { Clock, DollarSign, Recycle, Star, Phone, Calendar } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 
+interface WhoWeServeItem {
+  category: string;
+  description: string;
+}
+
 interface ServiceDetailPageProps {
   service: SubService;
   categoryName: string;
   categorySlug: string;
   relatedServices: SubService[];
+  whoWeServe?: {
+    intro: string;
+    items: WhoWeServeItem[];
+    closing: string;
+  };
 }
 
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   service,
   categoryName,
   categorySlug,
-  relatedServices
+  relatedServices,
+  whoWeServe
 }) => {
   const currentYear = new Date().getFullYear();
   
@@ -247,6 +258,31 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             </div>
           </div>
         </section>
+
+        {/* Who We Serve Section */}
+        {whoWeServe && (
+          <section className="py-16">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-anton mb-8 text-center">🏢 Who We Serve</h2>
+                <p className="text-lg text-muted-foreground mb-8 text-center">
+                  {whoWeServe.intro}
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  {whoWeServe.items.map((item, index) => (
+                    <div key={index} className="bg-background border rounded-lg p-6">
+                      <h3 className="text-lg font-bold text-foreground mb-2">{item.category}</h3>
+                      <p className="text-muted-foreground">{item.description}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-center text-muted-foreground">
+                  {whoWeServe.closing}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Key Benefits */}
         <section className="py-16 section-bg">
