@@ -7,12 +7,10 @@ import { Card, CardContent } from './ui/card';
 import { SubService } from '../data/services';
 import { Clock, DollarSign, Recycle, Star, Phone, Calendar } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
-
 interface WhoWeServeItem {
   category: string;
   description: string;
 }
-
 interface ServiceDetailPageProps {
   service: SubService;
   categoryName: string;
@@ -24,7 +22,6 @@ interface ServiceDetailPageProps {
     closing: string;
   };
 }
-
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   service,
   categoryName,
@@ -33,53 +30,40 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   whoWeServe
 }) => {
   const currentYear = new Date().getFullYear();
-  
-  const benefits = [
-    {
-      icon: DollarSign,
-      title: "Upfront Pricing",
-      description: "No hidden fees or surprises. We provide clear, honest pricing before we start."
-    },
-    {
-      icon: Clock,
-      title: "Same-Day Service",
-      description: "Quick response times with same-day and next-day service available."
-    },
-    {
-      icon: Recycle,
-      title: "Eco-Friendly Disposal",
-      description: "We prioritize recycling and donation to minimize environmental impact."
-    },
-    {
-      icon: Star,
-      title: "Professional Team",
-      description: "Experienced, insured team members who treat your property with respect."
-    }
-  ];
-
-  const processSteps = [
-    {
-      icon: Calendar,
-      title: "Book Online",
-      description: "Schedule your service online in 60 seconds or call us directly."
-    },
-    {
-      icon: DollarSign,
-      title: "Free Estimate",
-      description: "We'll assess your items and provide upfront, honest pricing."
-    },
-    {
-      icon: Star,
-      title: "Fast Removal",
-      description: "Our professional team quickly and safely removes your items."
-    },
-    {
-      icon: Recycle,
-      title: "Responsible Disposal",
-      description: "We donate, recycle, and dispose of items responsibly."
-    }
-  ];
-
+  const benefits = [{
+    icon: DollarSign,
+    title: "Upfront Pricing",
+    description: "No hidden fees or surprises. We provide clear, honest pricing before we start."
+  }, {
+    icon: Clock,
+    title: "Same-Day Service",
+    description: "Quick response times with same-day and next-day service available."
+  }, {
+    icon: Recycle,
+    title: "Eco-Friendly Disposal",
+    description: "We prioritize recycling and donation to minimize environmental impact."
+  }, {
+    icon: Star,
+    title: "Professional Team",
+    description: "Experienced, insured team members who treat your property with respect."
+  }];
+  const processSteps = [{
+    icon: Calendar,
+    title: "Book Online",
+    description: "Schedule your service online in 60 seconds or call us directly."
+  }, {
+    icon: DollarSign,
+    title: "Free Estimate",
+    description: "We'll assess your items and provide upfront, honest pricing."
+  }, {
+    icon: Star,
+    title: "Fast Removal",
+    description: "Our professional team quickly and safely removes your items."
+  }, {
+    icon: Recycle,
+    title: "Responsible Disposal",
+    description: "We donate, recycle, and dispose of items responsibly."
+  }];
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -102,7 +86,6 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     "areaServed": "Tampa Bay, FL",
     "serviceType": service.name
   };
-
   const faqStructuredData = service.faq.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -115,9 +98,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
       }
     }))
   } : null;
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
@@ -129,11 +110,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
-        {faqStructuredData && (
-          <script type="application/ld+json">
+        {faqStructuredData && <script type="application/ld+json">
             {JSON.stringify(faqStructuredData)}
-          </script>
-        )}
+          </script>}
       </Helmet>
 
       <Navigation />
@@ -164,29 +143,17 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   {service.shortDescription}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    size="lg" 
-                    className="cta-button"
-                    onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}
-                  >
+                  <Button size="lg" className="cta-button" onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}>
                     Book Online in 60 Seconds
                   </Button>
-                  <Button 
-                    variant="outline" 
-                    size="lg"
-                    onClick={() => window.open('tel:844-858-6546', '_self')}
-                  >
+                  <Button variant="outline" size="lg" onClick={() => window.open('tel:844-858-6546', '_self')}>
                     <Phone className="w-4 h-4 mr-2" />
                     Call 844-858-6546
                   </Button>
                 </div>
               </div>
               <div className="relative">
-                <img 
-                  src={service.heroImage} 
-                  alt={`${service.name} service in Tampa Bay`}
-                  className={`rounded-lg shadow-lg w-full h-80 object-cover ${service.slug === 'appliance-removal' ? 'object-bottom' : 'object-top'}`}
-                />
+                <img src={service.heroImage} alt={`${service.name} service in Tampa Bay`} className={`rounded-lg shadow-lg w-full h-80 object-cover ${service.slug === 'appliance-removal' ? 'object-bottom' : 'object-top'}`} />
               </div>
             </div>
           </div>
@@ -260,44 +227,38 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         </section>
 
         {/* Who We Serve Section */}
-        {whoWeServe && (
-          <section className="py-16">
-            <div className="container mx-auto px-4">
+        {whoWeServe && <section className="py-16">
+            <div className="container mx-auto px-4 bg-[t#2] bg-[#222222]">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-anton mb-8 text-center">🏢 Who We Serve</h2>
-                <p className="text-lg text-muted-foreground mb-8 text-center">
+                <h2 className="text-3xl font-anton mb-8 text-center text-slate-50">🏢 Who We Serve</h2>
+                <p className="text-lg mb-8 text-center text-slate-50">
                   {whoWeServe.intro}
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  {whoWeServe.items.map((item, index) => (
-                    <div key={index} className="bg-background border rounded-lg p-6">
-                      <h3 className="text-lg font-bold text-foreground mb-2">{item.category}</h3>
+                  {whoWeServe.items.map((item, index) => <div key={index} className="border rounded-lg p-6 bg-green-50">
+                      <h3 className="text-lg text-foreground mb-2 font-medium">{item.category}</h3>
                       <p className="text-muted-foreground">{item.description}</p>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
-                <p className="text-center text-muted-foreground">
+                <p className="text-center text-slate-50">
                   {whoWeServe.closing}
                 </p>
               </div>
             </div>
-          </section>
-        )}
+          </section>}
 
         {/* Key Benefits */}
         <section className="py-16 section-bg">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-anton text-center mb-12">Why Choose Junk in the Truck Co?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {benefits.map((benefit, index) => (
-                <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+              {benefits.map((benefit, index) => <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <benefit.icon className="w-12 h-12 text-primary mx-auto mb-4" />
                     <h3 className="text-xl font-anton mb-2">{benefit.title}</h3>
                     <p className="text-muted-foreground">{benefit.description}</p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </section>
@@ -307,8 +268,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-anton text-center mb-12">How Our {service.name} Works</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {processSteps.map((step, index) => (
-                <div key={index} className="text-center">
+              {processSteps.map((step, index) => <div key={index} className="text-center">
                   <div className="relative mb-6">
                     <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <step.icon className="w-8 h-8 text-primary-foreground" />
@@ -319,8 +279,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   </div>
                   <h3 className="text-xl font-anton mb-2">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </section>
@@ -335,14 +294,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 Our professional team is ready to help customers throughout the greater Tampa area.
               </p>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-                {[
-                  "Tampa", "Brandon", "Carrollwood", "Riverview", 
-                  "Apollo Beach", "St. Petersburg", "Seffner", "Temple Terrace"
-                ].map((city, index) => (
-                  <div key={index} className="bg-background border rounded-lg p-3">
+                {["Tampa", "Brandon", "Carrollwood", "Riverview", "Apollo Beach", "St. Petersburg", "Seffner", "Temple Terrace"].map((city, index) => <div key={index} className="bg-background border rounded-lg p-3">
                     <span className="font-semibold">{city}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               <p className="text-muted-foreground">
                 <a href="/service-areas/" className="text-primary hover:underline">
@@ -354,58 +308,42 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         </section>
 
         {/* FAQ Section */}
-        {service.faq.length > 0 && (
-          <section className="py-16 section-bg">
+        {service.faq.length > 0 && <section className="py-16 section-bg">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl font-anton text-center mb-12">Frequently Asked Questions</h2>
                 <Accordion type="single" collapsible className="w-full">
-                  {service.faq.map((faq, index) => (
-                    <AccordionItem key={index} value={`item-${index}`}>
+                  {service.faq.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
                       <AccordionTrigger className="text-left text-lg font-semibold">
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground">
                         {faq.answer}
                       </AccordionContent>
-                    </AccordionItem>
-                  ))}
+                    </AccordionItem>)}
                 </Accordion>
               </div>
             </div>
-          </section>
-        )}
+          </section>}
 
         {/* Related Services */}
-        {relatedServices.length > 0 && (
-          <section className="py-16">
+        {relatedServices.length > 0 && <section className="py-16">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-anton text-center mb-12">Related Services</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {relatedServices.slice(0, 3).map((relatedService, index) => (
-                  <Card key={index} className="hover:shadow-lg transition-shadow">
+                {relatedServices.slice(0, 3).map((relatedService, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
-                      <img 
-                        src={relatedService.heroImage} 
-                        alt={relatedService.name}
-                        className="w-full h-40 object-cover rounded-lg mb-4"
-                      />
+                      <img src={relatedService.heroImage} alt={relatedService.name} className="w-full h-40 object-cover rounded-lg mb-4" />
                       <h3 className="text-xl font-anton mb-2">{relatedService.name}</h3>
                       <p className="text-muted-foreground mb-4">{relatedService.shortDescription}</p>
-                      <Button 
-                        variant="outline" 
-                        className="w-full"
-                        onClick={() => window.location.href = `/services/${relatedService.slug}/`}
-                      >
+                      <Button variant="outline" className="w-full" onClick={() => window.location.href = `/services/${relatedService.slug}/`}>
                         Learn More
                       </Button>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </div>
-          </section>
-        )}
+          </section>}
 
         {/* Conversion Band */}
         <section className="py-16 bg-primary text-primary-foreground">
@@ -415,19 +353,10 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               Get your free estimate now and schedule your service today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="secondary"
-                onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}
-              >
+              <Button size="lg" variant="secondary" onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}>
                 Book Online in 60 Seconds
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                onClick={() => window.open('tel:844-858-6546', '_self')}
-              >
+              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => window.open('tel:844-858-6546', '_self')}>
                 <Phone className="w-4 h-4 mr-2" />
                 Call 844-858-6546
               </Button>
@@ -437,6 +366,5 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
       </main>
 
       <Footer />
-    </>
-  );
+    </>;
 };
