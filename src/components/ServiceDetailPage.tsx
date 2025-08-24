@@ -74,7 +74,31 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     title: "Responsible Disposal",
     description: "We donate, recycle, and dispose of items responsibly."
   }];
-  const structuredData = {
+  const structuredData = service.slug === 'appliance-removal' ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Appliance Removal",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Junk in the Truck Co.",
+      "image": "https://junkinthetruckco.com/logo.png",
+      "url": "https://junkinthetruckco.com/services/appliance-removal",
+      "telephone": "844-858-6546",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3810 W San Carlos Street",
+        "addressLocality": "Tampa",
+        "addressRegion": "FL",
+        "postalCode": "33629",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Tampa Bay, Brandon, Riverview, Gibsonton, Apollo Beach, Ruskin, Valrico, Carrollwood"
+    },
+    "description": "Professional appliance removal in Tampa Bay. We haul refrigerators, freezers, washers, dryers, stoves, ovens, dishwashers, AC units, and more with eco-friendly disposal."
+  } : {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": service.name,
