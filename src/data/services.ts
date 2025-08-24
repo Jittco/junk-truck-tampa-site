@@ -10,6 +10,11 @@ export interface SubService {
   metaDescription: string;
   faq: { question: string; answer: string; }[];
   order: number;
+  appliancesWeRemove?: {
+    intro: string;
+    items: string[];
+    closing: string;
+  };
 }
 
 export interface ServiceCategory {
@@ -249,6 +254,18 @@ export const residentialServices: SubService[] = [
     heroImage: "/lovable-uploads/b5924327-a32f-49e2-af94-fe75d37ef1cc.png",
     metaTitle: "Appliance Removal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional appliance removal in Tampa Bay. Same-day & next-day service with eco-friendly disposal and recycling.",
+    appliancesWeRemove: {
+      intro: "We haul away nearly all types of household and commercial appliances, including:",
+      items: [
+        "Refrigerators & Freezers",
+        "Washers & Dryers", 
+        "Ovens, Stoves & Microwaves",
+        "Dishwashers & Trash Compactors",
+        "Air Conditioners & Water Heaters",
+        "Commercial Kitchen Equipment"
+      ],
+      closing: "💡 If it's non-hazardous and fits in our truck, we'll take it. We donate and recycle whenever possible."
+    },
     faq: [
       {
         question: "Do you recycle old appliances?",

@@ -21,6 +21,16 @@ interface ServiceDetailPageProps {
     items: WhoWeServeItem[];
     closing: string;
   };
+  typesOfCleanouts?: {
+    intro: string;
+    items: { category: string; description: string; }[];
+    closing: string;
+  };
+  servicesWeOffer?: {
+    intro: string;
+    items: { category: string; description: string; }[];
+    closing: string;
+  };
 }
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   service,
@@ -206,6 +216,30 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             </div>
           </div>
         </section>
+
+        {/* Appliances We Remove Section (only for appliance removal) */}
+        {service.appliancesWeRemove && (
+          <section className="py-16 section-bg">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-anton mb-8 text-center">Appliances We Remove</h2>
+                <p className="text-lg text-muted-foreground mb-8 text-center">
+                  {service.appliancesWeRemove.intro}
+                </p>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                  {service.appliancesWeRemove.items.map((appliance, index) => (
+                    <div key={index} className="bg-background border rounded-lg p-4 text-center">
+                      <span className="font-semibold">{appliance}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-center text-muted-foreground text-lg">
+                  {service.appliancesWeRemove.closing}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Service Overview */}
         <section className="py-16 section-bg">
