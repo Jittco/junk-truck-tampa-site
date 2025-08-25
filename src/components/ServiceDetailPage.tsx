@@ -23,12 +23,18 @@ interface ServiceDetailPageProps {
   };
   typesOfCleanouts?: {
     intro: string;
-    items: { category: string; description: string; }[];
+    items: {
+      category: string;
+      description: string;
+    }[];
     closing: string;
   };
   servicesWeOffer?: {
     intro: string;
-    items: { category: string; description: string; }[];
+    items: {
+      category: string;
+      description: string;
+    }[];
     closing: string;
   };
 }
@@ -123,56 +129,49 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   const faqStructuredData = service.slug === 'garage-clean-out' ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does it cost to declutter a garage?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Costs depend on volume, access, and item types. For most homes it is a few hundred dollars; extreme, wall-to-wall or hoarding cleanouts can reach into the thousands. An on-site quote is provided before any work begins."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How to clean out a garage full of junk?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Use four piles: keep, donate, recycle, dispose. Create a staging area, work left-to-right and top-to-bottom, box small items, and stack large items by type. For heavy or unsafe items, book a professional cleanout for safe lifting, hauling, and compliant disposal."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much to clear out a garage?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It varies with how packed the space is, presence of bulky or heavy items, stairs, and any hazardous materials. Many standard cleanouts land in the few-hundred-dollar range; multi-car or very full garages can be higher."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much is junk removal for a garage?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pricing typically reflects the truck space used plus labor and disposal. A few bulky items may be modest, while full-garage cleanouts or specialty items cost more. Providers give an upfront quote before work starts."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What should I do before the crew arrives?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Unlock access, clear the driveway, separate valuables and paperwork, unplug appliances, and secure pets. Label donate vs. keep piles to speed the process."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you donate or recycle garage items?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Usable items are donated when possible. Metals, e-waste, and cardboard are recycled, and hazardous materials are handled per local regulations."
-        }
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How much does it cost to declutter a garage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Costs depend on volume, access, and item types. For most homes it is a few hundred dollars; extreme, wall-to-wall or hoarding cleanouts can reach into the thousands. An on-site quote is provided before any work begins."
       }
-    ]
+    }, {
+      "@type": "Question",
+      "name": "How to clean out a garage full of junk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use four piles: keep, donate, recycle, dispose. Create a staging area, work left-to-right and top-to-bottom, box small items, and stack large items by type. For heavy or unsafe items, book a professional cleanout for safe lifting, hauling, and compliant disposal."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How much to clear out a garage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies with how packed the space is, presence of bulky or heavy items, stairs, and any hazardous materials. Many standard cleanouts land in the few-hundred-dollar range; multi-car or very full garages can be higher."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How much is junk removal for a garage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing typically reflects the truck space used plus labor and disposal. A few bulky items may be modest, while full-garage cleanouts or specialty items cost more. Providers give an upfront quote before work starts."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What should I do before the crew arrives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlock access, clear the driveway, separate valuables and paperwork, unplug appliances, and secure pets. Label donate vs. keep piles to speed the process."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Do you donate or recycle garage items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Usable items are donated when possible. Metals, e-waste, and cardboard are recycled, and hazardous materials are handled per local regulations."
+      }
+    }]
   } : service.faq.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -247,8 +246,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         </section>
 
         {/* Appliance Removal Overview Section (only for appliance removal) */}
-        {service.slug === 'appliance-removal' && (
-          <section className="py-16">
+        {service.slug === 'appliance-removal' && <section className="py-16">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl font-anton mb-6 text-center">Appliance Removal & Disposal Services in Tampa Bay</h2>
@@ -263,8 +261,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 </div>
               </div>
             </div>
-          </section>
-        )}
+          </section>}
 
         {/* Service Details Section */}
         <section className="py-16">
@@ -315,8 +312,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         </section>
 
         {/* Appliances We Remove Section (only for appliance removal) */}
-        {service.appliancesWeRemove && (
-          <section className="py-16 section-bg">
+        {service.appliancesWeRemove && <section className="py-16 section-bg">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl font-anton mb-8 text-center">Appliances We Remove</h2>
@@ -324,19 +320,16 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   {service.appliancesWeRemove.intro}
                 </p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-                  {service.appliancesWeRemove.items.map((appliance, index) => (
-                    <div key={index} className="bg-background border rounded-lg p-4 text-center">
+                  {service.appliancesWeRemove.items.map((appliance, index) => <div key={index} className="bg-background border rounded-lg p-4 text-center">
                       <span className="font-semibold">{appliance}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
                 <p className="text-center text-muted-foreground text-lg">
                   {service.appliancesWeRemove.closing}
                 </p>
               </div>
             </div>
-          </section>
-        )}
+          </section>}
 
         {/* Service Overview */}
         <section className="py-16 section-bg">
@@ -387,7 +380,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                   <CardContent className="p-6">
                     <benefit.icon className="w-12 h-12 text-primary mx-auto mb-4" />
                     <h3 className="text-xl font-anton mb-2">{benefit.title}</h3>
-                    <p className="text-slate-50">{benefit.description}</p>
+                    <p className="text-slate-950">{benefit.description}</p>
                   </CardContent>
                 </Card>)}
             </div>
@@ -448,20 +441,10 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               
               {/* GBP Map Preview: Static image + Open in Google Maps button */}
               <div className="max-w-[900px] mx-auto text-center">
-                <img 
-                  src="https://maps.gstatic.com/tactile/basepage/pegman_sherlock.png" 
-                  alt="Map preview for Junk in the Truck Co. in Tampa Bay" 
-                  className="w-[100px] h-auto opacity-75 mx-auto my-[18px]"
-                  loading="lazy"
-                />
+                <img src="https://maps.gstatic.com/tactile/basepage/pegman_sherlock.png" alt="Map preview for Junk in the Truck Co. in Tampa Bay" className="w-[100px] h-auto opacity-75 mx-auto my-[18px]" loading="lazy" />
                 <p className="my-[6px] mb-[14px] text-muted-foreground">See directions, hours and reviews on Google</p>
 
-                <a 
-                  href="https://share.google/8g6Efh9rhmdj578cp" 
-                  target="_blank" 
-                  rel="noopener"
-                  className="inline-block py-3 px-[18px] rounded-lg bg-[#1a73e8] text-white no-underline font-semibold hover:bg-[#1557b0] transition-colors"
-                >
+                <a href="https://share.google/8g6Efh9rhmdj578cp" target="_blank" rel="noopener" className="inline-block py-3 px-[18px] rounded-lg bg-[#1a73e8] text-white no-underline font-semibold hover:bg-[#1557b0] transition-colors">
                   Open in Google Maps
                 </a>
               </div>
@@ -478,7 +461,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 </h2>
                 <Accordion type="single" collapsible className="w-full">
                   {service.faq.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
-                      <AccordionTrigger className="text-left text-lg font-semibold">
+                      <AccordionTrigger className="text-left text-lg font-medium">
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground">
