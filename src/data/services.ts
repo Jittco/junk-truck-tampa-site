@@ -335,7 +335,7 @@ export const residentialServices: SubService[] = [
     slug: "yard-waste-removal",
     shortDescription: "Complete yard waste and debris removal. Tree limbs, leaves, grass clippings, and all organic yard waste.",
     longDescription: "Our yard waste removal service handles all types of organic debris including tree limbs, leaves, grass clippings, brush, and storm debris. We ensure eco-friendly disposal through composting and recycling. Perfect for storm cleanup and seasonal yard maintenance.",
-    heroImage: "/assets/yard-after.jpg",
+    heroImage: "/lovable-uploads/a51270f5-70c7-4db2-91e1-b9c43e2f1fd7.png",
     metaTitle: "Yard Waste Removal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Professional yard waste and debris removal in Tampa Bay. Eco-friendly disposal with same-day service available.",
     faq: [
