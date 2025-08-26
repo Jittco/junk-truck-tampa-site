@@ -32,7 +32,7 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-6">
-              <a href="/junk-removal" className="nav-link">SERVICES</a>
+              <a href="/junk-removal" className="nav-link">Junk Removal</a>
               
               <a href="/demolition" className="nav-link">DEMOLITION</a>
               
