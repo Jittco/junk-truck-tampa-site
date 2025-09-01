@@ -515,6 +515,54 @@ export const residentialServices: SubService[] = [
       }
     ],
     order: 9
+  },
+  {
+    name: "Hoarder Cleanup",
+    slug: "hoarder-cleanup",
+    shortDescription: "Compassionate, discreet hoarding cleanup services. Professional team with sensitivity training.",
+    longDescription: "Our hoarder cleanup service provides compassionate, non-judgmental assistance for hoarding situations. Our trained team works with sensitivity and discretion to restore homes safely while respecting the emotional challenges involved.",
+    heroImage: "/lovable-uploads/8b5f4ced-15c4-433d-99b4-17d901e8fb67.png",
+    metaTitle: "Hoarder Cleanup Tampa Bay | Junk in the Truck Co",
+    metaDescription: "Compassionate hoarder cleanup in Tampa Bay. Discreet, professional service with sensitivity training and complete discretion.",
+    faq: [
+      {
+        question: "How do you handle sensitive hoarder cleanup situations?",
+        answer: "Our team is specially trained in compassionate communication and hoarding psychology. We work at the client's pace, maintain complete discretion, and focus on creating a safe, judgment-free environment throughout the process."
+      },
+      {
+        question: "Do you work with families or property managers?",
+        answer: "Yes, we work with family members, property managers, social workers, and healthcare professionals. We understand that hoarding cleanups often involve multiple stakeholders and coordinate accordingly."
+      },
+      {
+        question: "Can you provide same-day hoarder cleanup?",
+        answer: "While we prioritize urgent situations, hoarder cleanups typically require careful planning and may take multiple days. We can often begin within 24-48 hours and work systematically to restore the property safely."
+      }
+    ],
+    order: 10
+  },
+  {
+    name: "Homeless Encampment Cleanup",
+    slug: "homeless-encampment-cleanup", 
+    shortDescription: "Safe, respectful cleanup of abandoned homeless camps. Biohazard handling and complete sanitation.",
+    longDescription: "Our homeless encampment cleanup service provides safe, respectful removal of abandoned camp debris. We handle biohazards, provide complete sanitation, and work with municipalities and property owners to restore areas safely.",
+    heroImage: "/lovable-uploads/8b5f4ced-15c4-433d-99b4-17d901e8fb67.png",
+    metaTitle: "Homeless Encampment Cleanup Tampa Bay | Junk in the Truck Co",
+    metaDescription: "Professional homeless encampment cleanup in Tampa Bay. Safe biohazard handling and complete site restoration with discretion.",
+    faq: [
+      {
+        question: "Do you handle biohazards during camp cleanups?",
+        answer: "Yes, our team is trained and equipped to safely handle biohazards including needles, bodily fluids, and contaminated materials. We follow all OSHA guidelines and provide complete sanitation of affected areas."
+      },
+      {
+        question: "How quickly can you respond to encampment cleanup needs?",
+        answer: "We understand the urgency of these situations and typically respond within 24 hours. Emergency cleanup services are available for situations requiring immediate attention."
+      },
+      {
+        question: "Do you work with municipalities or property owners?",
+        answer: "Yes, we work with both public and private property owners, municipalities, law enforcement, and social service agencies to provide respectful, compliant cleanup services."
+      }
+    ],
+    order: 11
   }
 ];
 

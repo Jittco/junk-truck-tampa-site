@@ -83,12 +83,22 @@ const Navigation = () => {
                       Estate Clean Out
                     </a>
                   </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/services/hoarder-cleanup/" className="dropdown-nav-link">
+                      Hoarder Cleanup
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/services/homeless-encampment-cleanup/" className="dropdown-nav-link">
+                      Homeless Encampment Cleanup
+                    </a>
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               
-              <a href="/demolition" className="nav-link">DEMOLITION</a>
+              <a href="/services/demolition/" className="nav-link">DEMOLITION</a>
               
-              <a href="/dumpster-rental" className="nav-link">DUMPSTER</a>
+              <a href="/services/dumpster-rental/" className="nav-link">DUMPSTER</a>
 
               <a href="#how-it-works" className="nav-link">
                 How It Works
@@ -159,12 +169,18 @@ const Navigation = () => {
                 <a href="/services/estate-clean-out/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
                   Estate Clean Out
                 </a>
+                <a href="/services/hoarder-cleanup/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
+                  Hoarder Cleanup
+                </a>
+                <a href="/services/homeless-encampment-cleanup/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
+                  Homeless Encampment Cleanup
+                </a>
                 
-                <a href="/demolition" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                <a href="/services/demolition/" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                   Demolition
                 </a>
                 
-                <a href="/dumpster-rental" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                <a href="/services/dumpster-rental/" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                   Dumpster Rental
                 </a>
 

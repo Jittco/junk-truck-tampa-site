@@ -26,6 +26,10 @@ import FurnitureRemovalService from "./pages/FurnitureRemovalService";
 import CouchDisposalService from "./pages/CouchDisposalService";
 import HotTubRemovalService from "./pages/HotTubRemovalService";
 import YardWasteRemovalService from "./pages/YardWasteRemovalService";
+import ShedRemovalService from "./pages/ShedRemovalService";
+import PlaysetRemovalService from "./pages/PlaysetRemovalService";
+import HoarderCleanupService from "./pages/HoarderCleanupService";
+import HomelessEncampmentCleanupService from "./pages/HomelessEncampmentCleanupService";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +58,14 @@ const App = () => (
           <Route path="/services/couch-disposal/" element={<CouchDisposalService />} />
           <Route path="/services/hot-tub-removal/" element={<HotTubRemovalService />} />
           <Route path="/services/yard-waste-removal/" element={<YardWasteRemovalService />} />
+          
+          {/* Demolition Services */}
+          <Route path="/services/demolition/shed-removal/" element={<ShedRemovalService />} />
+          <Route path="/services/demolition/playset-removal/" element={<PlaysetRemovalService />} />
+          
+          {/* Specialty Cleanup Services */}
+          <Route path="/services/hoarder-cleanup/" element={<HoarderCleanupService />} />
+          <Route path="/services/homeless-encampment-cleanup/" element={<HomelessEncampmentCleanupService />} />
           
           {/* 301 Redirects from old URLs to new structure */}
           <Route path="/junk-removal-services/residential-junk-removal/" element={<RedirectComponent to="/services/residential-junk-removal/" />} />

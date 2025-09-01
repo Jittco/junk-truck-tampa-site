@@ -13,7 +13,7 @@ const DemolitionServices = () => {
         title: "Shed Removal",
         description: "Complete shed demolition and debris removal service, including foundation cleanup.",
         image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
-        link: "/services/shed-removal/"
+        link: "/services/demolition/shed-removal/"
       },
       {
         title: "Deck Removal",
@@ -25,7 +25,7 @@ const DemolitionServices = () => {
         title: "Playset Removal",
         description: "Safe dismantling and removal of playground equipment and swing sets.",
         image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
-        link: "/services/playset-removal/"
+        link: "/services/demolition/playset-removal/"
       },
       {
         title: "Interior Demolition",
