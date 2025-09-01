@@ -543,23 +543,67 @@ export const residentialServices: SubService[] = [
   {
     name: "Homeless Encampment Cleanup",
     slug: "homeless-encampment-cleanup", 
-    shortDescription: "Safe, respectful cleanup of abandoned homeless camps. Biohazard handling and complete sanitation.",
-    longDescription: "Our homeless encampment cleanup service provides safe, respectful removal of abandoned camp debris. We handle biohazards, provide complete sanitation, and work with municipalities and property owners to restore areas safely.",
+    shortDescription: "Safe, respectful cleanup of abandoned homeless camps.",
+    longDescription: `We understand that homeless encampment cleanups are about more than removing trash. They require compassion, professionalism, and strict safety standards. At Junk in the Truck Co., we provide homeless encampment cleanup services in Tampa Bay, helping property owners, businesses, and municipalities restore spaces safely and respectfully.
+
+As a faith-based, locally owned company, we approach every cleanup with a servant's heart. Our promise is simple: handle every site with dignity, follow all safety protocols, and recycle or donate whenever possible to care for our community.
+
+## Why Homeless Encampment Cleanup Matters
+
+Homeless encampments can pose risks beyond visible debris, including biohazards like needles, waste, and hazardous materials. These require trained professionals to handle safely. Our mission is to lift burdens, restore spaces, and serve Tampa Bay with integrity.
+
+## What Our Encampment Cleanup Includes
+
+- Site assessment to identify hazards
+- Removal of tents, furniture, and large debris
+- Biohazard cleanup (needles, waste, hazardous materials)
+- Sanitization of the affected area
+- Responsible disposal and recycling (Tampa Bay compliance)
+- Discreet, respectful service
+
+## Who We Serve
+
+- Commercial property owners
+- Apartment & HOA managers
+- Business owners
+- Municipalities & city agencies
+- Churches & nonprofits
+
+## Our Safe & Respectful Process
+
+1. **Free Estimate** — Book online or call for a site visit.
+2. **Hazard Assessment** — We inspect for biohazards and safety concerns.
+3. **Cleanup & Removal** — Debris, tents, and waste removed safely.
+4. **Sanitization** — Space left clean and safe to use.
+
+## Why Choose Junk in the Truck Co.
+
+- Locally owned & fully insured in Tampa Bay
+- Trained for biohazard safety & OSHA compliance
+- Faith-based values: servant's heart, integrity, compassion
+- Eco-friendly: recycle & donate whenever possible
+- Fast response: same-day or next-day service
+
+If you need homeless encampment cleanup in Tampa, Brandon, Riverview, Apollo Beach, or St. Petersburg, Junk in the Truck Co. is here to help. Book online in 60 seconds or call 844-858-6546 for safe, respectful, and professional service.`,
     heroImage: "/lovable-uploads/8b5f4ced-15c4-433d-99b4-17d901e8fb67.png",
     metaTitle: "Homeless Encampment Cleanup Tampa Bay | Junk in the Truck Co",
-    metaDescription: "Professional homeless encampment cleanup in Tampa Bay. Safe biohazard handling and complete site restoration with discretion.",
+    metaDescription: "Safe, respectful homeless encampment cleanup in Tampa Bay. We handle biohazards, debris, and sanitization with compassion and compliance. Book now.",
     faq: [
       {
-        question: "Do you handle biohazards during camp cleanups?",
-        answer: "Yes, our team is trained and equipped to safely handle biohazards including needles, bodily fluids, and contaminated materials. We follow all OSHA guidelines and provide complete sanitation of affected areas."
+        question: "Do you handle biohazards like needles or human waste?",
+        answer: "Yes. Our team is trained and equipped to safely remove biohazards including needles, bodily fluids, and hazardous materials. We follow all OSHA guidelines and provide complete sanitization of affected areas."
       },
       {
-        question: "How quickly can you respond to encampment cleanup needs?",
-        answer: "We understand the urgency of these situations and typically respond within 24 hours. Emergency cleanup services are available for situations requiring immediate attention."
+        question: "Can you work with property managers or cities?",
+        answer: "Absolutely. We regularly partner with municipalities, businesses, HOAs, and property management companies to provide professional encampment cleanup services throughout Tampa Bay."
       },
       {
-        question: "Do you work with municipalities or property owners?",
-        answer: "Yes, we work with both public and private property owners, municipalities, law enforcement, and social service agencies to provide respectful, compliant cleanup services."
+        question: "How quickly can you respond?",
+        answer: "We offer same-day or next-day cleanup in most cases. We understand the urgency of these situations and work to respond as quickly as possible while maintaining safety and quality standards."
+      },
+      {
+        question: "Is the cleanup service discreet?",
+        answer: "Yes. We handle every job with professionalism and confidentiality. Our team works respectfully and maintains discretion throughout the entire cleanup process."
       }
     ],
     order: 11
