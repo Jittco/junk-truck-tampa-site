@@ -292,20 +292,84 @@ const PlaysetRemovalService: React.FC = () => {
           </div>
         </section>
 
-        {/* Key Benefits */}
-        <section className="section-bg text-slate-50 py-[20px]">
+        {/* Why Choose Us Section */}
+        <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-anton text-center mb-12">Why Choose Junk in the Truck Co?</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {benefits.map((benefit, index) => (
-                <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6">
-                    <benefit.icon className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h3 className="text-xl font-anton mb-2">{benefit.title}</h3>
-                    <p className="text-slate-950">{benefit.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-anton text-center mb-8">Why Choose Junk in the Truck Co. for Playset Removal in Tampa Bay?</h2>
+              <p className="text-lg text-muted-foreground text-center mb-12">
+                When you're ready to remove a backyard playset or a community playground, here's why families and HOAs across Tampa Bay call us:
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="font-anton text-lg mb-1">Local & Reliable</h3>
+                      <p className="text-muted-foreground">Proudly serving Tampa, Brandon, Riverview, Apollo Beach, and St. Petersburg.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="font-anton text-lg mb-1">Residential & Commercial</h3>
+                      <p className="text-muted-foreground">From small swing sets to full HOA playgrounds.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="font-anton text-lg mb-1">Full-Service Removal</h3>
+                      <p className="text-muted-foreground">Disassembly, hauling borders, mulch, or sand, plus complete cleanup.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="font-anton text-lg mb-1">Safe & Insured</h3>
+                      <p className="text-muted-foreground">Our trained crew uses the right tools to protect your property.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="font-anton text-lg mb-1">Eco-Friendly Disposal</h3>
+                      <p className="text-muted-foreground">We recycle and donate materials whenever possible.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="font-anton text-lg mb-1">Fast Scheduling</h3>
+                      <p className="text-muted-foreground">Same-day or next-day service in most cases.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="text-center text-lg font-medium text-primary">
+                👉 Reclaim your space today with <strong>Tampa Bay playset removal by Junk in the Truck Co.</strong>
+              </p>
             </div>
           </div>
         </section>
@@ -438,6 +502,58 @@ const PlaysetRemovalService: React.FC = () => {
                 <a href="https://share.google/8g6Efh9rhmdj578cp" target="_blank" rel="noopener" className="inline-block py-3 px-[18px] rounded-lg bg-[#1a73e8] text-white no-underline font-semibold hover:bg-[#1557b0] transition-colors">
                   Open in Google Maps
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* DIY Dumpster Rental Option */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-anton text-center mb-8">Want to Tear Down Your Own Playset? We've Got You Covered.</h2>
+              <p className="text-lg text-muted-foreground text-center mb-12">
+                If you'd rather <strong>demo your playset yourself</strong>, we make cleanup easy with our <strong>20-yard dumpster rental</strong>. Perfect for swing sets, mulch, rubber borders, and wood debris, our dumpster gives you the flexibility to work at your own pace.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span className="text-muted-foreground">Flat-rate pricing with a <strong>1-ton weight limit</strong> (just $100 per ton over)</span>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span className="text-muted-foreground">Affordable rates starting at <strong>$350 for a 20-yard dumpster</strong></span>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span className="text-muted-foreground">Easy driveway delivery and pickup</span>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span className="text-muted-foreground">Plenty of space for playset parts, borders, mulch, and yard debris</span>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="text-center text-lg text-primary mb-8">
+                👉 Want to learn more? Visit our <strong>Dumpster Rental page</strong> for full details.
+              </p>
+              
+              <div className="text-center">
+                <Button 
+                  size="lg" 
+                  className="cta-button"
+                  onClick={() => window.location.href = '/services/dumpster-rental/'}
+                >
+                  Learn More About Dumpster Rental
+                </Button>
               </div>
             </div>
           </div>
