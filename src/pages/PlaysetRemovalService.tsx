@@ -77,18 +77,108 @@ const PlaysetRemovalService: React.FC = () => {
     "serviceType": service.name
   };
 
-  const faqStructuredData = service.faq.length > 0 ? {
+  const faqData = [
+    {
+      category: "Playset Removal Costs",
+      questions: [
+        {
+          question: "How much does it cost to remove a playset?",
+          answer: "In Tampa Bay, residential playset removal typically ranges from $275 to $850 depending on size, condition, and access. Commercial playset removal usually costs $1,000 to $3,500, depending on the scope of the project."
+        },
+        {
+          question: "How much does it cost to move a swing set?",
+          answer: "Moving a swing set costs about the same as removal — usually $275 to $850 for residential playsets. Larger commercial playsets may be higher due to disassembly and reassembly."
+        }
+      ]
+    },
+    {
+      category: "Playset Removal & Disposal",
+      questions: [
+        {
+          question: "How to get rid of an old playset?",
+          answer: "Hire a professional junk removal or demolition company like Junk in the Truck Co. We safely dismantle, haul away, and dispose of old playsets — recycling or donating materials when possible."
+        },
+        {
+          question: "How to dispose of a playset?",
+          answer: "You can donate it if it's still usable, recycle the parts, or schedule professional removal. If the playset is unsafe or broken, removal and eco-friendly disposal are best."
+        },
+        {
+          question: "What to do with an old playset?",
+          answer: "Options include selling, donating, or recycling it. If it's damaged or unsafe, call Junk in the Truck Co. for fast, responsible removal."
+        }
+      ]
+    },
+    {
+      category: "Safety & Dismantling",
+      questions: [
+        {
+          question: "How do I move an assembled playset?",
+          answer: "Large playsets should be disassembled first for safety. Moving a fully assembled set risks injury or damage. Our team provides safe disassembly and hauling."
+        },
+        {
+          question: "How to tear down a playset?",
+          answer: "Remove swings and slides first, then dismantle the frame piece by piece. We recommend professional help for safety and disposal."
+        },
+        {
+          question: "How to take down a play yard?",
+          answer: "Play yards can be disassembled panel by panel. Our crew can break it down quickly and safely, then haul away all materials."
+        },
+        {
+          question: "Can you burn swing set wood?",
+          answer: "We don't recommend it. Many playsets are treated or painted, releasing harmful chemicals if burned. Recycling or disposal is safer."
+        }
+      ]
+    },
+    {
+      category: "HOA Rules & Home Value",
+      questions: [
+        {
+          question: "Does a playset increase home value?",
+          answer: "Not usually. While it may appeal to families with young children, many buyers prefer a clear yard. Removing a playset can improve curb appeal before selling."
+        },
+        {
+          question: "Do you need HOA approval for playset?",
+          answer: "Most HOAs require approval before installing a playset. Removal typically does not require approval, but it's best to check your community's rules."
+        },
+        {
+          question: "What happens if I do something without HOA approval?",
+          answer: "Your HOA may fine you or require you to remove the playset. Always review HOA guidelines first."
+        },
+        {
+          question: "Can you just refuse to join an HOA?",
+          answer: "If you purchase a home in an HOA community, membership is usually mandatory. Opting out isn't typically an option."
+        },
+        {
+          question: "Is a swing set a structure?",
+          answer: "Yes. Most HOAs and zoning laws consider swing sets as temporary structures, which may be subject to regulations."
+        }
+      ]
+    },
+    {
+      category: "Children & Playsets",
+      questions: [
+        {
+          question: "At what age do kids stop playing on playsets?",
+          answer: "Most children outgrow backyard playsets around ages 10 to 12. Many families remove or replace playsets once kids have moved on to other activities."
+        }
+      ]
+    }
+  ];
+
+  const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": service.faq.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  } : null;
+    "mainEntity": faqData.flatMap(category => 
+      category.questions.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    )
+  };
 
   return (
     <>
@@ -103,11 +193,9 @@ const PlaysetRemovalService: React.FC = () => {
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
-        {faqStructuredData && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqStructuredData)}
-          </script>
-        )}
+        <script type="application/ld+json">
+          {JSON.stringify(faqStructuredData)}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -356,27 +444,46 @@ const PlaysetRemovalService: React.FC = () => {
         </section>
 
         {/* FAQ Section */}
-        {service.faq.length > 0 && (
-          <section className="py-16">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-anton text-center mb-12">Frequently Asked Questions</h2>
-                <Accordion type="single" collapsible className="w-full">
-                  {service.faq.map((faq, index) => (
-                    <AccordionItem key={index} value={`item-${index}`}>
-                      <AccordionTrigger className="text-left text-lg font-medium">
-                        {faq.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-anton text-center mb-12">Frequently Asked Questions About Playset Removal</h2>
+              
+              {faqData.map((category, categoryIndex) => (
+                <div key={categoryIndex} className="mb-12">
+                  <h3 className="text-2xl font-anton mb-6 text-primary">{category.category}</h3>
+                  <Accordion type="single" collapsible className="w-full">
+                    {category.questions.map((faq, faqIndex) => (
+                      <AccordionItem key={`${categoryIndex}-${faqIndex}`} value={`category-${categoryIndex}-item-${faqIndex}`}>
+                        <AccordionTrigger className="text-left text-lg font-medium">
+                          {faq.question}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground">
+                          {faq.answer}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
+              ))}
+              
+              {/* CTA after FAQs */}
+              <div className="text-center mt-12 pt-8 border-t">
+                <h3 className="text-xl font-anton mb-4">Ready for Your Playset Removal?</h3>
+                <p className="text-muted-foreground mb-6">Get your free estimate in under 60 seconds</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button size="lg" className="cta-button" onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}>
+                    Get a Free Estimate
+                  </Button>
+                  <Button variant="outline" size="lg" onClick={() => window.open('tel:844-858-6546', '_self')}>
+                    <Phone className="w-4 h-4 mr-2" />
+                    Call Now
+                  </Button>
+                </div>
               </div>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
 
         {/* Related Services */}
         {relatedServices.length > 0 && (
