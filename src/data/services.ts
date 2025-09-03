@@ -113,7 +113,7 @@ export const serviceCategories: ServiceCategory[] = [
         slug: "playset-removal",
         shortDescription: "Safe playset and swing set demolition and removal. Complete cleanup included.",
         longDescription: "Our playset removal service safely dismantles and removes old swing sets, playsets, and playground equipment. We handle all the heavy lifting and ensure complete cleanup.",
-        heroImage: "/assets/yard-before.jpg",
+        heroImage: "/lovable-uploads/c5282b46-4fdb-4be2-8afc-a87f9c36f464.png",
         metaTitle: "Playset Removal Tampa Bay | Junk in the Truck Co",
         metaDescription: "Professional playset and swing set removal in Tampa Bay. Safe demolition with complete cleanup included.",
         faq: [
