@@ -332,23 +332,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           </section>}
 
         {/* Service Overview */}
-        <section className="py-16 section-bg">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-anton mb-8 text-center">Service Overview</h2>
-              <div className="prose prose-lg max-w-none">
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.longDescription}
-                </p>
-                <p className="text-muted-foreground leading-relaxed mt-4">
-                  <a href="/services/" className="text-primary hover:underline">
-                    View all our services
-                  </a> or contact us today for your free estimate.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Who We Serve Section */}
         {whoWeServe && <section className="py-16">
