@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { ChevronDown, Menu, X, Phone, ChevronRight } from "lucide-react";
+import { serviceCategories } from "@/data/services";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
-  const services = ["Junk Removal", "Demolition", "Property Cleanouts", "Curbside Pickup"];
+  const [isDemolitionDropdownOpen, setIsDemolitionDropdownOpen] = useState(false);
+  
+  const demolitionCategory = serviceCategories.find(cat => cat.slug === 'demolition');
+  const demolitionServices = demolitionCategory?.services?.sort((a, b) => a.order - b.order) || [];
   const aboutItems = ["Our Story", "FAQs", "Reviews"];
   return <>
       {/* Two-Tier Navigation */}
@@ -96,7 +100,26 @@ const Navigation = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
               
-              <a href="/services/demolition/" className="nav-link">DEMOLITION</a>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="nav-link bg-transparent border-none hover:bg-transparent focus:ring-0 focus:outline-none" aria-haspopup="true" aria-expanded="false">
+                  DEMOLITION
+                  <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="dropdown-content w-64">
+                  <DropdownMenuItem asChild>
+                    <a href="/services/demolition/" className="dropdown-nav-link font-semibold border-b border-gray-100 mb-1">
+                      All Demolition Services
+                    </a>
+                  </DropdownMenuItem>
+                  {demolitionServices.map(service => (
+                    <DropdownMenuItem key={service.slug} asChild>
+                      <a href={`/services/demolition/${service.slug}/`} className="dropdown-nav-link">
+                        {service.name}
+                      </a>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
               
               <a href="/services/dumpster-rental/" className="nav-link">DUMPSTER</a>
 
@@ -176,9 +199,24 @@ const Navigation = () => {
                   Homeless Encampment Cleanup
                 </a>
                 
-                <a href="/services/demolition/" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
-                  Demolition
-                </a>
+                <div className="py-3 px-4">
+                  <button className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2" onClick={() => setIsDemolitionDropdownOpen(!isDemolitionDropdownOpen)} aria-haspopup="true" aria-expanded={isDemolitionDropdownOpen}>
+                    Demolition
+                    <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${isDemolitionDropdownOpen ? 'rotate-90' : ''}`} />
+                  </button>
+                  {isDemolitionDropdownOpen && (
+                    <div className="pl-4 space-y-2 mt-2">
+                      <a href="/services/demolition/" className="block py-2 text-foreground font-inter hover:bg-muted rounded font-semibold" onClick={() => setIsMenuOpen(false)}>
+                        All Demolition Services
+                      </a>
+                      {demolitionServices.map(service => (
+                        <a key={service.slug} href={`/services/demolition/${service.slug}/`} className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                          {service.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
                 
                 <a href="/services/dumpster-rental/" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                   Dumpster Rental
