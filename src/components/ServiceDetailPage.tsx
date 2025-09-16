@@ -37,13 +37,19 @@ interface ServiceDetailPageProps {
     }[];
     closing: string;
   };
+  customSections?: {
+    afterHowItWorks?: React.ReactNode;
+  };
 }
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   service,
   categoryName,
   categorySlug,
   relatedServices,
-  whoWeServe
+  whoWeServe,
+  typesOfCleanouts,
+  servicesWeOffer,
+  customSections
 }) => {
   const currentYear = new Date().getFullYear();
   const benefits = [{
@@ -391,6 +397,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             </div>
           </div>
         </section>
+
+        {/* Custom Section After How It Works */}
+        {customSections?.afterHowItWorks}
 
         {/* Service Area Section */}
         <section className="py-16 section-bg">

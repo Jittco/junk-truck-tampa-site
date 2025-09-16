@@ -80,15 +80,15 @@ const GarageCleanOutService: React.FC = () => {
   );
 
   return (
-    <>
-      <ServiceDetailPage
-        service={service}
-        categoryName="Junk Removal"
-        categorySlug="junk-removal"
-        relatedServices={relatedServices}
-      />
-      <ExpertTipsSection />
-    </>
+    <ServiceDetailPage
+      service={service}
+      categoryName="Junk Removal"
+      categorySlug="junk-removal"
+      relatedServices={relatedServices}
+      customSections={{
+        afterHowItWorks: <ExpertTipsSection />
+      }}
+    />
   );
 };
 
