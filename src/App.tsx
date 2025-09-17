@@ -31,6 +31,14 @@ import PlaysetRemovalService from "./pages/PlaysetRemovalService";
 import HoarderCleanupService from "./pages/HoarderCleanupService";
 import HomelessEncampmentCleanupService from "./pages/HomelessEncampmentCleanupService";
 
+// Service Area pages
+import ServiceAreaHub from "./pages/ServiceAreaHub";
+import BrandonFL from "./pages/serviceAreas/BrandonFL";
+import CarrollwoodFL from "./pages/serviceAreas/CarrollwoodFL";
+import TempleTerraceFL from "./pages/serviceAreas/TempleTerraceFL";
+import SouthTampaFL from "./pages/serviceAreas/SouthTampaFL";
+import TownNCountryFL from "./pages/serviceAreas/TownNCountryFL";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -66,6 +74,14 @@ const App = () => (
           {/* Specialty Cleanup Services */}
           <Route path="/services/hoarder-cleanup/" element={<HoarderCleanupService />} />
           <Route path="/services/homeless-encampment-cleanup/" element={<HomelessEncampmentCleanupService />} />
+
+          {/* Service Area pages */}
+          <Route path="/service-areas/" element={<ServiceAreaHub />} />
+          <Route path="/service-areas/brandon-fl/" element={<BrandonFL />} />
+          <Route path="/service-areas/carrollwood-fl/" element={<CarrollwoodFL />} />
+          <Route path="/service-areas/temple-terrace-fl/" element={<TempleTerraceFL />} />
+          <Route path="/service-areas/south-tampa-fl/" element={<SouthTampaFL />} />
+          <Route path="/service-areas/town-n-country-fl/" element={<TownNCountryFL />} />
           
           {/* 301 Redirects from old URLs to new structure */}
           <Route path="/junk-removal-services/residential-junk-removal/" element={<RedirectComponent to="/services/residential-junk-removal/" />} />
