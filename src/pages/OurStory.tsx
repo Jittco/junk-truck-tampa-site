@@ -51,7 +51,7 @@ const OurStory = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
+      <section className="relative py-20 md:py-32 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h1 className="text-4xl md:text-6xl font-anton mb-6 text-foreground">
             More Than Junk Removal —<br />
