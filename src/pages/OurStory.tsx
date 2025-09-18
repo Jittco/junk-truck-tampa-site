@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { CheckCircle, Heart, Users, Star, MapPin, Phone, Mail } from "lucide-react";
+import carlosHeadshot from "@/assets/carlos-headshot.jpg";
 import { serviceCategories } from "@/data/services";
 import { serviceAreas } from "@/data/serviceAreas";
 import Navigation from "@/components/Navigation";
@@ -137,8 +138,12 @@ const OurStory = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl p-8 lg:p-12 text-center">
-              <div className="w-32 h-32 mx-auto mb-6 bg-primary/20 rounded-full flex items-center justify-center">
-                <Users className="w-16 h-16 text-primary" />
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20">
+                <img 
+                  src={carlosHeadshot} 
+                  alt="Carlos Diaz, Founder of Junk in the Truck Co." 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl font-anton mb-4 text-foreground">Carlos Diaz</h3>
               <p className="text-lg font-semibold text-primary mb-2">Founder & Owner</p>
