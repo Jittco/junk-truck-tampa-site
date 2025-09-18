@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { CheckCircle, Heart, Users, Star, MapPin, Phone, Mail, Linkedin } from "lucide-react";
 import carlosHeadshot from "@/assets/carlos-headshot.jpg";
+import s10Pickup from "@/assets/s10-pickup.jpg";
 import { serviceCategories } from "@/data/services";
 import { serviceAreas } from "@/data/serviceAreas";
 import Navigation from "@/components/Navigation";
@@ -101,6 +102,13 @@ const OurStory = () => {
               </div>
             </div>
             <div className="space-y-6">
+              <div className="rounded-xl overflow-hidden">
+                <img 
+                  src={s10Pickup} 
+                  alt="The original Chevy S10 pickup truck with trailer that started Junk in the Truck Co." 
+                  className="w-full h-64 object-cover"
+                />
+              </div>
               <Card className="p-6 border-l-4 border-l-primary">
                 <div className="flex items-center gap-3 mb-3">
                   <Heart className="w-6 h-6 text-primary" />
