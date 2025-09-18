@@ -93,7 +93,7 @@ export const serviceCategories: ServiceCategory[] = [
         slug: "shed-removal",
         shortDescription: "Complete shed demolition and removal service. We'll tear down and haul away your old shed safely and efficiently.",
         longDescription: "Our shed removal service includes complete demolition and cleanup. We'll safely tear down your old shed, remove all debris, and leave your yard clean and ready for your next project.",
-        heroImage: "/assets/shed-before.jpg",
+        heroImage: "/assets/shed-demolition-hero.png",
         metaTitle: "Shed Removal Tampa Bay | Junk in the Truck Co",
         metaDescription: "Professional shed removal and demolition in Tampa Bay. Same-day & next-day service with complete cleanup included.",
         faq: [
