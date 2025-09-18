@@ -210,7 +210,7 @@ const OurStory = () => {
               <Card key={index} className="p-4 text-center hover:shadow-md transition-shadow">
                 <CardContent className="p-2">
                   <CheckCircle className="w-8 h-8 text-primary mx-auto mb-3" />
-                  <h3 className="font-semibold text-foreground">{service}</h3>
+                  <h3 className="font-medium text-foreground">{service}</h3>
                 </CardContent>
               </Card>
             ))}
