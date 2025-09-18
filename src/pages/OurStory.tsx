@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { CheckCircle, Heart, Users, Star, MapPin, Phone, Mail } from "lucide-react";
+import { CheckCircle, Heart, Users, Star, MapPin, Phone, Mail, Linkedin } from "lucide-react";
 import carlosHeadshot from "@/assets/carlos-headshot.jpg";
 import { serviceCategories } from "@/data/services";
 import { serviceAreas } from "@/data/serviceAreas";
@@ -147,7 +147,16 @@ const OurStory = () => {
               </div>
               <h3 className="text-2xl font-anton mb-4 text-foreground">Carlos Diaz</h3>
               <p className="text-lg font-semibold text-primary mb-2">Founder & Owner</p>
-              <p className="text-muted-foreground">Tampa Native • Plant High School Graduate</p>
+              <p className="text-muted-foreground mb-4">Tampa Native • Plant High School Graduate</p>
+              <a 
+                href="https://www.linkedin.com/in/carlos-diaz-abba0a180/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span className="text-sm font-medium">Connect with me on LinkedIn</span>
+              </a>
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
