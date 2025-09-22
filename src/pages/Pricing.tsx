@@ -562,7 +562,7 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-slate-50 font-medium">Save yourself the hassle and let us deliver your donations — and handle the rest if they aren't accepted.</span>
+                  <span className="text-slate-950 font-medium">Save yourself the hassle and let us deliver your donations — and handle the rest if they aren't accepted.</span>
                 </div>
               </div>
 
