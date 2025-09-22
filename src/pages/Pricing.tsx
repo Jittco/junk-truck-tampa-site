@@ -402,7 +402,7 @@ const Pricing = () => {
             </div>
 
             <div className="text-center bg-primary/5 rounded-lg p-8 border max-w-3xl mx-auto">
-              <p className="text-lg text-foreground mb-6">
+              <p className="text-lg text-slate-50 mb-6">
                 👉 Book online now or give us a call to schedule your on-site appointment or free estimate today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -534,14 +534,14 @@ const Pricing = () => {
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-6">
                 <Heart className="h-8 w-8 text-primary" />
-                <h2 className="text-3xl md:text-4xl font-anton text-foreground">
+                <h2 className="text-3xl md:text-4xl font-anton text-slate-50">
                   Fee-Based Donation Pickup Service
                 </h2>
               </div>
-              <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-8">
+              <p className="text-lg text-slate-50 max-w-4xl mx-auto mb-8">
                 Sometimes donating items isn't as simple as it sounds. Many donation centers are too far away, have limited pickup options, or simply don't have the manpower to come get your items. That's where Junk in the Truck Co. comes in.
               </p>
-              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+              <p className="text-lg text-slate-50 max-w-4xl mx-auto">
                 With our fee-based donation pickup service, we handle the entire process for you:
               </p>
             </div>
@@ -550,24 +550,24 @@ const Pricing = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-foreground font-medium">Perfect for people who are limited on time or transportation.</span>
+                  <span className="text-slate-50 font-medium">Perfect for people who are limited on time or transportation.</span>
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-foreground font-medium">If donation centers can't accept your items, we include the disposal cost so nothing is left behind.</span>
+                  <span className="text-slate-50 font-medium">If donation centers can't accept your items, we include the disposal cost so nothing is left behind.</span>
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-foreground font-medium">Upon request, we can provide you with a donation receipt for accepted items.</span>
+                  <span className="text-slate-50 font-medium">Upon request, we can provide you with a donation receipt for accepted items.</span>
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-foreground font-medium">Save yourself the hassle and let us deliver your donations — and handle the rest if they aren't accepted.</span>
+                  <span className="text-slate-50 font-medium">Save yourself the hassle and let us deliver your donations — and handle the rest if they aren't accepted.</span>
                 </div>
               </div>
 
               <div className="text-center bg-primary/5 rounded-lg p-8 border">
-                <p className="text-lg text-foreground mb-6">
+                <p className="text-lg text-slate-50 mb-6">
                   👉 Book your donation pickup online or call us at 844-858-6546 to schedule today.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
