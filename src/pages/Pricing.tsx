@@ -554,7 +554,7 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-slate-50 font-medium">If donation centers can't accept your items, we include the disposal cost so nothing is left behind.</span>
+                  <span className="text-slate-950 font-medium">If donation centers can't accept your items, we include the disposal cost so nothing is left behind.</span>
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
