@@ -529,7 +529,7 @@ const Pricing = () => {
         </section>
 
         {/* Fee-Based Donation Pickup Service */}
-        <section className="py-16 lg:py-20 bg-background">
+        <section className="py-16 lg:py-20 bg-[#222222]">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-6">
