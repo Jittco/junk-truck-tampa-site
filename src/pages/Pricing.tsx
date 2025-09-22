@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import TruckVolumeEstimator from "@/components/TruckVolumeEstimator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Phone, Check, MapPin, Truck, Package, Heart, Sofa } from "lucide-react";
+import { Phone, Check, MapPin, Truck, Package, Heart, Sofa, DollarSign } from "lucide-react";
 const Pricing = () => {
   const tierCards = [{
     name: "Minimum / Single Item",
@@ -107,6 +107,91 @@ const Pricing = () => {
                   <Phone className="h-5 w-5" />
                   Call 844-858-6546
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Transparent, Upfront Pricing */}
+        <section className="py-16 lg:py-20 bg-muted/30">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <DollarSign className="h-8 w-8 text-primary" />
+                <h2 className="text-3xl md:text-4xl font-anton text-foreground">
+                  Transparent, Upfront Pricing
+                </h2>
+              </div>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                At Junk in the Truck Co, we believe in honest, transparent pricing with no surprises. You'll know exactly what you're paying before we start any work.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-lg border p-8 mb-8 max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-anton mb-4 text-foreground">How Our Pricing Works:</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">We charge by truck space used — you only pay for what we haul</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Free, accurate on-site estimates with no hidden fees</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Our truck measures 8' × 12' × 6' (equivalent to 8 pickup truck loads)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Pricing includes labor, disposal, and cleanup</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">No fuel surcharges or extra fees</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-anton mb-4 text-foreground">Our Promise:</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">Upfront estimates confirmed before we start</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">No hidden costs or surprise charges</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">Transparent pricing structure</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">Professional service at fair rates</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="mt-8 pt-6 border-t border-border">
+                <p className="text-center text-muted-foreground mb-6">
+                  Whether you need a single item removed or a full truck load, we provide clear, competitive pricing that fits your budget.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
+                    Get Free Estimate
+                  </a>
+                  <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors text-lg">
+                    <Phone className="h-5 w-5" />
+                    Call for Pricing
+                  </a>
+                </div>
               </div>
             </div>
           </div>
