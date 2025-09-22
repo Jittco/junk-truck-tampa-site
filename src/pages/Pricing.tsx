@@ -558,7 +558,7 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-slate-50 font-medium">Upon request, we can provide you with a donation receipt for accepted items.</span>
+                  <span className="text-slate-950 font-medium">Upon request, we can provide you with a donation receipt for accepted items.</span>
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
