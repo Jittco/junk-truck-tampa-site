@@ -163,6 +163,58 @@ const Pricing = () => {
           </div>
         </section>
 
+        {/* What You Can Expect */}
+        <section className="py-16 lg:py-20 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
+                What You Can Expect from Junk in the Truck Co.
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+                See how our team makes junk removal simple, stress-free, and affordable. From start to finish, we handle everything — so you can relax knowing the job's done right.
+              </p>
+            </div>
+
+            {/* YouTube Video Embed */}
+            <div className="mb-12">
+              <div className="relative w-full max-w-2xl mx-auto bg-card rounded-lg overflow-hidden shadow-lg">
+                <div className="aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/vnm7MOY1jKw"
+                    title="Junk in the Truck Co. Service Video"
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            {/* Bulleted List */}
+            <div className="space-y-4 max-w-2xl mx-auto">
+              <div className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                <p className="text-lg text-foreground">Fast, reliable service tailored to your schedule</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                <p className="text-lg text-foreground">Upfront pricing with no surprises</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                <p className="text-lg text-foreground">Professional team that respects your home and property</p>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-lg font-medium text-foreground">
+                Experience the difference with Junk in the Truck Co. — we make junk removal easy!
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* How Pricing Works */}
         <section className="py-16 lg:py-20 bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
