@@ -550,7 +550,7 @@ const Pricing = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-slate-50 font-medium">Perfect for people who are limited on time or transportation.</span>
+                  <span className="text-slate-950 font-medium">Perfect for people who are limited on time or transportation.</span>
                 </div>
                 <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
