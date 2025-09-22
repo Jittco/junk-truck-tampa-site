@@ -82,9 +82,7 @@ const Pricing = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-anton mb-6 text-foreground">
                 Junk Removal Pricing in Tampa Bay
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto">
-                Pay only for the space you use in our truck. Visual estimator helps you see your truck fraction—no guesswork.
-              </p>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto">Pay only for the space you use in our truck. Visual estimator helps you see your truck fraction, no guesswork.</p>
               
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full text-sm">
