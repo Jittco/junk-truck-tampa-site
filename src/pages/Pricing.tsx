@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import TruckVolumeEstimator from "@/components/TruckVolumeEstimator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Phone, Check, MapPin, Truck, Package } from "lucide-react";
+import { Phone, Check, MapPin, Truck, Package, Heart } from "lucide-react";
 const Pricing = () => {
   const tierCards = [{
     name: "Minimum / Single Item",
@@ -439,6 +439,62 @@ const Pricing = () => {
             <p className="text-sm text-muted-foreground text-center">
               Don't see your city? Call 844-858-6546 to check availability.
             </p>
+          </div>
+        </section>
+
+        {/* Fee-Based Donation Pickup Service */}
+        <section className="py-16 lg:py-20 bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <Heart className="h-8 w-8 text-primary" />
+                <h2 className="text-3xl md:text-4xl font-anton text-foreground">
+                  Fee-Based Donation Pickup Service
+                </h2>
+              </div>
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-8">
+                Sometimes donating items isn't as simple as it sounds. Many donation centers are too far away, have limited pickup options, or simply don't have the manpower to come get your items. That's where Junk in the Truck Co. comes in.
+              </p>
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+                With our fee-based donation pickup service, we handle the entire process for you:
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-foreground font-medium">Perfect for people who are limited on time or transportation.</span>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-foreground font-medium">If donation centers can't accept your items, we include the disposal cost so nothing is left behind.</span>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-foreground font-medium">Upon request, we can provide you with a donation receipt for accepted items.</span>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-foreground font-medium">Save yourself the hassle and let us deliver your donations — and handle the rest if they aren't accepted.</span>
+                </div>
+              </div>
+
+              <div className="text-center bg-primary/5 rounded-lg p-8 border">
+                <p className="text-lg text-foreground mb-6">
+                  👉 Book your donation pickup online or call us at 844-858-6546 to schedule today.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
+                    Book Now
+                  </a>
+                  <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors text-lg">
+                    <Phone className="h-5 w-5" />
+                    Call Us
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
