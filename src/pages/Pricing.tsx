@@ -402,7 +402,7 @@ const Pricing = () => {
             </div>
 
             <div className="text-center bg-primary/5 rounded-lg p-8 border max-w-3xl mx-auto">
-              <p className="text-lg text-slate-50 mb-6">
+              <p className="text-lg text-muted-foreground mb-6">
                 👉 Book online now or give us a call to schedule your on-site appointment or free estimate today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
