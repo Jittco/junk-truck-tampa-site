@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import TruckVolumeEstimator from "@/components/TruckVolumeEstimator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Phone, Check, MapPin, Truck, Package } from "lucide-react";
+import { Phone, Check, MapPin, Truck, Package, Heart, Sofa, DollarSign } from "lucide-react";
 const Pricing = () => {
   const tierCards = [{
     name: "Minimum / Single Item",
@@ -108,6 +108,109 @@ const Pricing = () => {
                   Call 844-858-6546
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Transparency */}
+        <section className="py-16 md:py-20 bg-[#222222]">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-anton mb-6 text-slate-50">
+                Transparent, Upfront Pricing
+              </h2>
+              <p className="text-lg text-slate-50">
+                No surprises, no hidden fees. You'll know exactly what you're paying before we start.
+              </p>
+            </div>
+
+            <div className="rounded-lg shadow-lg p-8 mb-8 bg-gray-50">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl mb-2 text-slate-950 font-medium">Volume-Based Pricing</h3>
+                <p className="text-slate-950">We price by truckload, not by item or hour</p>
+              </div>
+              
+              <div className="bg-primary/10 rounded-lg p-6 text-center mb-6 border border-green-500">
+                <p className="text-lg font-semibold mb-2 text-slate-950">Most residential jobs in Tampa Bay on average</p>
+                <p className="text-3xl font-anton text-primary">$349-$550</p>
+                <p className="text-sm mt-2 text-slate-950">depending on size and type of items</p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-4 text-center">
+                <div className="border rounded-lg p-4 bg-green-50">
+                  <h4 className="mb-2 font-medium text-xl text-slate-950">Small Load</h4>
+                  <p className="font-bold mb-2 text-2xl text-[#18d13d]">$99-$289</p>
+                  <p className="text-sm text-slate-950">Few pieces of furniture or 1-2 appliances</p>
+                </div>
+                <div className="border rounded-lg p-4 bg-green-50">
+                  <h4 className="mb-2 font-medium text-xl text-slate-950">Medium Load</h4>
+                  <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
+                  <p className="text-sm text-slate-950">Room cleanout or multiple appliances</p>
+                </div>
+                <div className="border rounded-lg p-4 bg-green-50">
+                  <h4 className="mb-2 font-medium text-xl text-slate-950">Large Load</h4>
+                  <p className="text-2xl font-bold text-primary mb-2">$750-$950</p>
+                  <p className="text-sm text-slate-950">Whole house cleanout or estate removal</p>
+                </div>
+              </div>
+
+              <div className="text-center mt-6">
+                <p className="text-lg font-semibold text-slate-950">
+                  ✓ No hidden fees ✓ Upfront quotes ✓ No obligation estimates
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What You Can Expect */}
+        <section className="py-16 lg:py-20 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
+                What You Can Expect from Junk in the Truck Co.
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+                See how our team makes junk removal simple, stress-free, and affordable. From start to finish, we handle everything — so you can relax knowing the job's done right.
+              </p>
+            </div>
+
+            {/* YouTube Video Embed */}
+            <div className="mb-12">
+              <div className="relative w-full max-w-2xl mx-auto bg-card rounded-lg overflow-hidden shadow-lg">
+                <div className="aspect-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/vnm7MOY1jKw"
+                    title="Junk in the Truck Co. Service Video"
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            {/* Bulleted List */}
+            <div className="space-y-4 max-w-2xl mx-auto">
+              <div className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                <p className="text-lg text-foreground">Fast, reliable service tailored to your schedule</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                <p className="text-lg text-foreground">Upfront pricing with no surprises</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                <p className="text-lg text-foreground">Professional team that respects your home and property</p>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-lg font-medium text-foreground">
+                Experience the difference with Junk in the Truck Co. — we make junk removal easy!
+              </p>
             </div>
           </div>
         </section>
@@ -216,7 +319,7 @@ const Pricing = () => {
                       <Check className="h-4 w-4 text-primary" />
                       Best For
                     </h4>
-                    
+                    <p className="text-muted-foreground text-sm">Ongoing projects, renovations, DIY cleanouts, roofing debris, yard work</p>
                   </div>
                   
                   <div>
@@ -332,6 +435,41 @@ const Pricing = () => {
           </div>
         </section>
 
+        {/* Small Load & Single Item Pickups */}
+        <section className="py-16 lg:py-20 bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <Sofa className="h-8 w-8 text-primary" />
+                <h2 className="text-3xl md:text-4xl font-anton text-foreground">
+                  Small Load & Single Item Pickups
+                </h2>
+              </div>
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-6">
+                Not every job is a full truckload — and that's okay! At Junk in the Truck Co., we pick up small loads, too. Whether it's a single piece of furniture, an old mattress, or just a few items, our team is here to make removal fast and hassle-free.
+              </p>
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-8">
+                We also offer fee-based donation pickups so that gently used items can find a second home instead of heading straight to the landfill.
+              </p>
+            </div>
+
+            <div className="text-center bg-primary/5 rounded-lg p-8 border max-w-3xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-6">
+                👉 Book online now or give us a call to schedule your on-site appointment or free estimate today.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
+                  Book Now
+                </a>
+                <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors text-lg">
+                  <Phone className="h-5 w-5" />
+                  Call Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Visual Estimator */}
         <section className="py-16 lg:py-20 bg-gray-50">
           <div className="container mx-auto px-4 max-w-6xl">
@@ -439,6 +577,62 @@ const Pricing = () => {
             <p className="text-sm text-muted-foreground text-center">
               Don't see your city? Call 844-858-6546 to check availability.
             </p>
+          </div>
+        </section>
+
+        {/* Fee-Based Donation Pickup Service */}
+        <section className="py-16 lg:py-20 bg-[#222222]">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <Heart className="h-8 w-8 text-primary" />
+                <h2 className="text-3xl md:text-4xl font-anton text-slate-50">
+                  Fee-Based Donation Pickup Service
+                </h2>
+              </div>
+              <p className="text-lg text-slate-50 max-w-4xl mx-auto mb-8">
+                Sometimes donating items isn't as simple as it sounds. Many donation centers are too far away, have limited pickup options, or simply don't have the manpower to come get your items. That's where Junk in the Truck Co. comes in.
+              </p>
+              <p className="text-lg text-slate-50 max-w-4xl mx-auto">
+                With our fee-based donation pickup service, we handle the entire process for you:
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-slate-950 font-medium">Perfect for people who are limited on time or transportation.</span>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-slate-950 font-medium">If donation centers can't accept your items, we include the disposal cost so nothing is left behind.</span>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-slate-950 font-medium">Upon request, we can provide you with a donation receipt for accepted items.</span>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-card rounded-lg border">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-slate-950 font-medium">Save yourself the hassle and let us deliver your donations — and handle the rest if they aren't accepted.</span>
+                </div>
+              </div>
+
+              <div className="text-center bg-primary/5 rounded-lg p-8 border">
+                <p className="text-lg text-slate-50 mb-6">
+                  👉 Book your donation pickup online or call us at 844-858-6546 to schedule today.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
+                    Book Now
+                  </a>
+                  <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors text-lg">
+                    <Phone className="h-5 w-5" />
+                    Call Us
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
