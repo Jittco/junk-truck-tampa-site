@@ -112,86 +112,52 @@ const Pricing = () => {
           </div>
         </section>
 
-        {/* Transparent, Upfront Pricing */}
-        <section className="py-16 lg:py-20 bg-muted/30">
-          <div className="container mx-auto px-4 max-w-6xl">
+        {/* Pricing Transparency */}
+        <section className="py-16 md:py-20 bg-[#222222]">
+          <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <DollarSign className="h-8 w-8 text-primary" />
-                <h2 className="text-3xl md:text-4xl font-anton text-foreground">
-                  Transparent, Upfront Pricing
-                </h2>
-              </div>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                At Junk in the Truck Co, we believe in honest, transparent pricing with no surprises. You'll know exactly what you're paying before we start any work.
+              <h2 className="text-3xl md:text-4xl font-anton mb-6 text-slate-50">
+                Transparent, Upfront Pricing
+              </h2>
+              <p className="text-lg text-slate-50">
+                No surprises, no hidden fees. You'll know exactly what you're paying before we start.
               </p>
             </div>
 
-            <div className="bg-card rounded-lg border p-8 mb-8 max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-anton mb-4 text-foreground">How Our Pricing Works:</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">We charge by truck space used — you only pay for what we haul</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">Free, accurate on-site estimates with no hidden fees</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">Our truck measures 8' × 12' × 6' (equivalent to 8 pickup truck loads)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">Pricing includes labor, disposal, and cleanup</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">No fuel surcharges or extra fees</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-anton mb-4 text-foreground">Our Promise:</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Upfront estimates confirmed before we start</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">No hidden costs or surprise charges</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Transparent pricing structure</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">Professional service at fair rates</span>
-                    </li>
-                  </ul>
-                </div>
+            <div className="rounded-lg shadow-lg p-8 mb-8 bg-gray-50">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl mb-2 text-slate-950 font-medium">Volume-Based Pricing</h3>
+                <p className="text-slate-950">We price by truckload, not by item or hour</p>
               </div>
               
-              <div className="mt-8 pt-6 border-t border-border">
-                <p className="text-center text-muted-foreground mb-6">
-                  Whether you need a single item removed or a full truck load, we provide clear, competitive pricing that fits your budget.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
-                    Get Free Estimate
-                  </a>
-                  <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors text-lg">
-                    <Phone className="h-5 w-5" />
-                    Call for Pricing
-                  </a>
+              <div className="bg-primary/10 rounded-lg p-6 text-center mb-6 border border-green-500">
+                <p className="text-lg font-semibold mb-2 text-slate-950">Most residential jobs in Tampa Bay on average</p>
+                <p className="text-3xl font-anton text-primary">$349-$550</p>
+                <p className="text-sm mt-2 text-slate-950">depending on size and type of items</p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-4 text-center">
+                <div className="border rounded-lg p-4 bg-green-50">
+                  <h4 className="mb-2 font-medium text-xl text-slate-950">Small Load</h4>
+                  <p className="font-bold mb-2 text-2xl text-[#18d13d]">$99-$289</p>
+                  <p className="text-sm text-slate-950">Few pieces of furniture or 1-2 appliances</p>
                 </div>
+                <div className="border rounded-lg p-4 bg-green-50">
+                  <h4 className="mb-2 font-medium text-xl text-slate-950">Medium Load</h4>
+                  <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
+                  <p className="text-sm text-slate-950">Room cleanout or multiple appliances</p>
+                </div>
+                <div className="border rounded-lg p-4 bg-green-50">
+                  <h4 className="mb-2 font-medium text-xl text-slate-950">Large Load</h4>
+                  <p className="text-2xl font-bold text-primary mb-2">$750-$950</p>
+                  <p className="text-sm text-slate-950">Whole house cleanout or estate removal</p>
+                </div>
+              </div>
+
+              <div className="text-center mt-6">
+                <p className="text-lg font-semibold text-slate-950">
+                  ✓ No hidden fees ✓ Upfront quotes ✓ No obligation estimates
+                </p>
               </div>
             </div>
           </div>
