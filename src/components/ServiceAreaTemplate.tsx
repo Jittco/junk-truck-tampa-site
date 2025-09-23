@@ -69,7 +69,7 @@ const ServiceAreaTemplate = ({ area }: ServiceAreaTemplateProps) => {
               "addressRegion": area.state,
               "addressCountry": "US"
             },
-            "telephone": "(813) 777-0193",
+            "telephone": "(813) 536-6298",
             "url": `https://junkinthetruck.co/service-areas/${area.slug}-${area.state.toLowerCase()}/`,
             "serviceArea": {
               "@type": "GeoCircle",
@@ -131,8 +131,8 @@ const ServiceAreaTemplate = ({ area }: ServiceAreaTemplateProps) => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4">
-                  <a href="tel:(813) 777-0193">
-                    Call (813) 777-0193
+                  <a href="tel:(813) 536-6298">
+                    Call (813) 536-6298
                   </a>
                 </Button>
               </div>
@@ -310,9 +310,9 @@ const ServiceAreaTemplate = ({ area }: ServiceAreaTemplateProps) => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/20 text-white hover:bg-white/20">
-                  <a href="tel:(813) 777-0193">
+                  <a href="tel:(813) 536-6298">
                     <Phone className="mr-2 h-5 w-5" />
-                    Call (813) 777-0193
+                    Call (813) 536-6298
                   </a>
                 </Button>
               </div>

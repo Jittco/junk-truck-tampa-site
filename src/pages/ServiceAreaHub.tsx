@@ -23,7 +23,7 @@ const ServiceAreaHub = () => {
             "@type": "LocalBusiness",
             "name": "Junk in the Truck Co",
             "description": "Professional junk removal services throughout Tampa Bay",
-            "telephone": "(813) 777-0193",
+            "telephone": "(813) 536-6298",
             "url": "https://junkinthetruck.co",
             "serviceArea": serviceAreas.map(area => ({
               "@type": "City",
@@ -77,8 +77,8 @@ const ServiceAreaHub = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4">
-                  <a href="tel:(813) 777-0193">
-                    Call (813) 777-0193
+                  <a href="tel:(813) 536-6298">
+                    Call (813) 536-6298
                   </a>
                 </Button>
               </div>
@@ -158,7 +158,7 @@ const ServiceAreaHub = () => {
                 </p>
                 
                 <Button asChild variant="outline">
-                  <a href="tel:(813) 777-0193">
+                  <a href="tel:(813) 536-6298">
                     Call to Check Your Area
                   </a>
                 </Button>
@@ -236,9 +236,9 @@ const ServiceAreaHub = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/20 text-white hover:bg-white/20">
-                  <a href="tel:(813) 777-0193">
+                  <a href="tel:(813) 536-6298">
                     <Phone className="mr-2 h-5 w-5" />
-                    Call (813) 777-0193
+                    Call (813) 536-6298
                   </a>
                 </Button>
               </div>
