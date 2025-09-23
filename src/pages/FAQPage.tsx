@@ -152,13 +152,13 @@ const FAQPage = () => {
       <main className="min-h-screen bg-background">
         <div className="pt-20">
           {/* Header Section */}
-          <section className="py-16 md:py-20 bg-primary text-primary-foreground">
+          <section className="py-16 md:py-20 section-bg">
             <div className="container mx-auto px-4 max-w-4xl">
               <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl font-anton mb-6 text-primary-foreground">
+                <h1 className="text-4xl md:text-5xl font-anton mb-6 text-foreground">
                   Junk Removal FAQs – Junk in the Truck Co.
                 </h1>
-                <p className="text-lg text-primary-foreground/80 leading-relaxed max-w-3xl mx-auto">
+                <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                   Have questions about junk removal in Tampa Bay? You're not alone. We've collected the most common questions from our customers across Hillsborough and Pinellas counties to make booking easy and stress-free. From pricing and scheduling to donations and disposal, here's everything you need to know.
                 </p>
               </div>
