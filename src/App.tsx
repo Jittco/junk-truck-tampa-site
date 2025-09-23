@@ -39,6 +39,7 @@ import TempleTerraceFL from "./pages/serviceAreas/TempleTerraceFL";
 import SouthTampaFL from "./pages/serviceAreas/SouthTampaFL";
 import TownNCountryFL from "./pages/serviceAreas/TownNCountryFL";
 import OurStory from "./pages/OurStory";
+import FAQPage from "./pages/FAQPage";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/our-story" element={<OurStory />} />
+          <Route path="/faq" element={<FAQPage />} />
           <Route path="/services" element={<ServicesHub />} />
           <Route path="/services/demolition/" element={<DemolitionServices />} />
           <Route path="/services/dumpster-rental/" element={<DumpsterRental />} />
