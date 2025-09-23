@@ -152,7 +152,7 @@ const FAQPage = () => {
       <main className="min-h-screen bg-background">
         <div className="pt-20">
           {/* Header Section */}
-          <section className="py-16 md:py-20 section-bg">
+          <section className="py-16 md:py-20 trust-accent">
             <div className="container mx-auto px-4 max-w-4xl">
               <div className="text-center mb-12">
                 <h1 className="text-4xl md:text-5xl font-anton mb-6 text-foreground">
