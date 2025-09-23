@@ -13,41 +13,22 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 // Sample services for quick display
-const featuredServices = [
-  "Furniture Removal",
-  "Appliance Hauling", 
-  "Garage & Attic Cleanouts",
-  "Demolition Debris Removal",
-  "Yard Waste Pickup",
-  "Estate Cleanouts",
-  "Commercial Cleanouts",
-  "Construction Debris"
-];
+const featuredServices = ["Furniture Removal", "Appliance Hauling", "Garage & Attic Cleanouts", "Demolition Debris Removal", "Yard Waste Pickup", "Estate Cleanouts", "Commercial Cleanouts", "Construction Debris"];
 
 // Sample service areas for quick display
-const featuredAreas = [
-  "Tampa", "Brandon", "Riverview", "Gibsonton", 
-  "South Tampa", "St. Petersburg", "Clearwater", "Wesley Chapel"
-];
-
-const faqData = [
-  {
-    question: "What items do you take?",
-    answer: "We remove almost everything including furniture, appliances, electronics, yard waste, construction debris, and general household items. We cannot remove hazardous materials like paint, chemicals, or asbestos."
-  },
-  {
-    question: "Do you recycle or donate items?",
-    answer: "Yes! We prioritize donation and recycling whenever possible. Items in good condition go to local charities, and we ensure eco-friendly disposal of everything else."
-  },
-  {
-    question: "How much does junk removal cost?",
-    answer: "Our pricing is based on volume and provided upfront with no hidden fees. We offer free estimates and competitive rates throughout the Tampa Bay area."
-  }
-];
-
+const featuredAreas = ["Tampa", "Brandon", "Riverview", "Gibsonton", "South Tampa", "St. Petersburg", "Clearwater", "Wesley Chapel"];
+const faqData = [{
+  question: "What items do you take?",
+  answer: "We remove almost everything including furniture, appliances, electronics, yard waste, construction debris, and general household items. We cannot remove hazardous materials like paint, chemicals, or asbestos."
+}, {
+  question: "Do you recycle or donate items?",
+  answer: "Yes! We prioritize donation and recycling whenever possible. Items in good condition go to local charities, and we ensure eco-friendly disposal of everything else."
+}, {
+  question: "How much does junk removal cost?",
+  answer: "Our pricing is based on volume and provided upfront with no hidden fees. We offer free estimates and competitive rates throughout the Tampa Bay area."
+}];
 const OurStory = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -103,16 +84,12 @@ const OurStory = () => {
             </div>
             <div className="space-y-6">
               <div className="rounded-xl overflow-hidden">
-                <img 
-                  src={s10Pickup} 
-                  alt="The original Chevy S10 pickup truck with trailer that started Junk in the Truck Co." 
-                  className="w-full h-64 object-cover"
-                />
+                <img src={s10Pickup} alt="The original Chevy S10 pickup truck with trailer that started Junk in the Truck Co." className="w-full h-64 object-cover" />
               </div>
               <Card className="p-6 border-l-4 border-l-primary">
                 <div className="flex items-center gap-3 mb-3">
                   <Heart className="w-6 h-6 text-primary" />
-                  <h3 className="font-semibold text-foreground">Our Heart</h3>
+                  <h3 className="text-foreground font-medium">Our Heart</h3>
                 </div>
                 <p className="text-muted-foreground">
                   Serving with integrity, praying for people, and honoring God through excellent work.
@@ -121,7 +98,7 @@ const OurStory = () => {
               <Card className="p-6 border-l-4 border-l-primary">
                 <div className="flex items-center gap-3 mb-3">
                   <Users className="w-6 h-6 text-primary" />
-                  <h3 className="font-semibold text-foreground">Our Values</h3>
+                  <h3 className="text-foreground font-medium">Our Values</h3>
                 </div>
                 <p className="text-muted-foreground">
                   Faith-centered, family-oriented, and committed to serving our Tampa Bay community.
@@ -130,7 +107,7 @@ const OurStory = () => {
               <Card className="p-6 border-l-4 border-l-primary">
                 <div className="flex items-center gap-3 mb-3">
                   <Star className="w-6 h-6 text-primary" />
-                  <h3 className="font-semibold text-foreground">Our Mission</h3>
+                  <h3 className="text-foreground font-medium">Our Mission</h3>
                 </div>
                 <p className="text-muted-foreground">
                   Boldly serving Christ through junk removal — making a difference one truck at a time.
@@ -147,21 +124,12 @@ const OurStory = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl p-8 lg:p-12 text-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20">
-                <img 
-                  src={carlosHeadshot} 
-                  alt="Carlos Diaz, Founder of Junk in the Truck Co." 
-                  className="w-full h-full object-cover"
-                />
+                <img src={carlosHeadshot} alt="Carlos Diaz, Founder of Junk in the Truck Co." className="w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl font-anton mb-4 text-foreground">Carlos Diaz</h3>
               <p className="text-lg font-semibold text-primary mb-2">Founder & Owner</p>
               <p className="text-muted-foreground mb-4">Tampa Native • Plant High School Graduate</p>
-              <a 
-                href="https://www.linkedin.com/in/carlos-diaz-abba0a180/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
-              >
+              <a href="https://www.linkedin.com/in/carlos-diaz-abba0a180/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
                 <Linkedin className="w-5 h-5" />
                 <span className="text-sm font-medium">Connect with me on LinkedIn</span>
               </a>
@@ -206,14 +174,12 @@ const OurStory = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {featuredServices.map((service, index) => (
-              <Card key={index} className="p-4 text-center hover:shadow-md transition-shadow">
+            {featuredServices.map((service, index) => <Card key={index} className="p-4 text-center hover:shadow-md transition-shadow">
                 <CardContent className="p-2">
                   <CheckCircle className="w-8 h-8 text-primary mx-auto mb-3" />
                   <h3 className="font-medium text-foreground">{service}</h3>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="text-center">
@@ -238,14 +204,12 @@ const OurStory = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-            {featuredAreas.map((area, index) => (
-              <Card key={index} className="p-4 text-center hover:shadow-md transition-shadow">
+            {featuredAreas.map((area, index) => <Card key={index} className="p-4 text-center hover:shadow-md transition-shadow">
                 <CardContent className="p-2">
                   <MapPin className="w-6 h-6 text-primary mx-auto mb-2" />
                   <h3 className="font-medium text-foreground">{area}</h3>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="text-center">
@@ -270,16 +234,14 @@ const OurStory = () => {
           </div>
 
           <Accordion type="single" collapsible className="w-full space-y-4 mb-8">
-            {faqData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border border-border rounded-lg px-6">
+            {faqData.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-border rounded-lg px-6">
                 <AccordionTrigger className="text-left text-foreground hover:no-underline py-6 font-normal">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-6">
                   {faq.answer}
                 </AccordionContent>
-              </AccordionItem>
-            ))}
+              </AccordionItem>)}
           </Accordion>
 
           <div className="text-center">
@@ -323,11 +285,7 @@ const OurStory = () => {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell us about your junk removal needs..." 
-                    rows={4}
-                  />
+                  <Textarea id="message" placeholder="Tell us about your junk removal needs..." rows={4} />
                 </div>
                 <Button size="lg" className="w-full">
                   Send Message
@@ -345,10 +303,7 @@ const OurStory = () => {
                       <Phone className="w-5 h-5 text-primary" />
                       <div>
                         <p className="font-medium text-foreground">Call Us Now</p>
-                        <a 
-                          href="tel:844-858-6546" 
-                          className="text-primary hover:underline text-lg font-semibold"
-                        >
+                        <a href="tel:844-858-6546" className="text-primary hover:underline text-lg font-semibold">
                           844-858-6546
                         </a>
                       </div>
@@ -392,8 +347,6 @@ const OurStory = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default OurStory;
