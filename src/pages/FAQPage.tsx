@@ -133,16 +133,160 @@ const FAQPage = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": faqCategories.flatMap(category => 
-              category.questions.map(faq => ({
+            "mainEntity": [
+              {
                 "@type": "Question",
-                "name": faq.question,
+                "name": "How much does junk removal cost in Tampa Bay?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": faq.answer
+                  "text": "Pricing is volume-based and depends on how much space your items take in our truck. We provide upfront quotes with no hidden fees and free, no-obligation estimates."
                 }
-              }))
-            )
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer free, no-obligation estimates?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We can visit onsite, review your items, and provide a free, no-obligation estimate before any work begins."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are there any hidden fees?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Our upfront quotes include labor, taxes, and disposal so there are no surprises."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How quickly can I book a junk pickup?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most appointments can be scheduled for the same day or next day, depending on availability. You can book online 24/7 or call us."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you work on Sundays?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. We do not operate on Sundays. We're available Monday through Saturday with flexible scheduling, including select evenings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What should I expect on junk removal day?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our crew will call when they're on the way, confirm a firm price after seeing the items in person, then handle all lifting, loading, and cleanup once you approve."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you remove single items or small loads?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We pick up small loads and single items like couches, mattresses, appliances, or just a few bags of junk."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you take heavy furniture, appliances, or construction debris?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Our team is trained and equipped to remove heavy furniture, appliances, and light demolition or construction debris."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are there any items you can't haul away?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For safety and legal reasons we cannot take hazardous waste such as chemicals, paint, propane tanks, or asbestos."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer donation pickups?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We offer donation pickups, including a fee-based service for time-limited customers or when charities can't pick up. If items are accepted, we can request a donation receipt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens if the donation center won't accept my items?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "With our fee-based donation pickup, if a charity declines your items, responsible disposal is included so nothing is left behind."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I get a donation receipt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Upon request we can provide a donation receipt from the organization that accepts your items."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide junk removal in my area?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We serve Hillsborough and Pinellas Counties, including Tampa, Brandon, Riverview, Clearwater, St. Petersburg, Apollo Beach, Gibsonton, and more."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I find you on Google Maps?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "View our reviews, service info, and directions on our Google Business Profile: https://g.page/r/Ca8e1x8VZL6vEB0"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are you licensed and insured?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Junk in the Truck Co. is fully licensed and insured for your peace of mind."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide upfront pricing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We provide transparent, upfront pricing before any work begins."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I book an appointment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Book online at https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae or call 844-858-6546."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why choose Junk in the Truck Co. over a national brand?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We're a local, faith-driven team focused on integrity, personalized service, and fair pricing—backed by great reviews from Tampa Bay customers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I learn more about your company?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Read our story here: https://junkinthetruckco.com/our-story"
+                }
+              }
+            ]
           })}
         </script>
       </Helmet>
