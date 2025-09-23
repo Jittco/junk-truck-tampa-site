@@ -179,14 +179,7 @@ const Pricing = () => {
             <div className="mb-12">
               <div className="relative w-full max-w-2xl mx-auto bg-card rounded-lg overflow-hidden shadow-lg">
                 <div className="aspect-video">
-                  <iframe
-                    src="https://www.youtube.com/embed/vnm7MOY1jKw"
-                    title="Junk in the Truck Co. Service Video"
-                    className="w-full h-full"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <iframe src="https://www.youtube.com/embed/vnm7MOY1jKw" title="Junk in the Truck Co. Service Video" className="w-full h-full" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
               </div>
             </div>
@@ -471,20 +464,7 @@ const Pricing = () => {
         </section>
 
         {/* Visual Estimator */}
-        <section className="py-16 lg:py-20 bg-gray-50">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-anton mb-6 text-foreground">
-                See How Much Space Your Items Will Fill
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Use this visual-only tool to estimate your truck fraction. No prices are displayed.
-              </p>
-            </div>
-
-            <TruckVolumeEstimator />
-          </div>
-        </section>
+        
 
         {/* What's Included */}
         <section className="py-16 lg:py-20 bg-background">
