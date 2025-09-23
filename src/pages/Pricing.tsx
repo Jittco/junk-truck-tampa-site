@@ -140,17 +140,19 @@ const Pricing = () => {
                 <div className="border rounded-lg p-4 bg-green-50">
                   <h4 className="mb-2 font-medium text-xl text-slate-950">Small Load</h4>
                   <p className="font-bold mb-2 text-2xl text-[#18d13d]">$99-$289</p>
-                  <p className="text-sm text-slate-950">Few pieces of furniture or 1-2 appliances</p>
+                  <p className="text-sm text-slate-950">Single item or a few items
+min</p>
                 </div>
                 <div className="border rounded-lg p-4 bg-green-50">
                   <h4 className="mb-2 font-medium text-xl text-slate-950">Medium Load</h4>
                   <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
-                  <p className="text-sm text-slate-950">Room cleanout or multiple appliances</p>
+                  <p className="text-sm text-slate-950">Few items or bulky stuff
+1/4--</p>
                 </div>
                 <div className="border rounded-lg p-4 bg-green-50">
                   <h4 className="mb-2 font-medium text-xl text-slate-950">Large Load</h4>
                   <p className="text-2xl font-bold text-primary mb-2">$750-$950</p>
-                  <p className="text-sm text-slate-950">Whole house cleanout or estate removal</p>
+                  <p className="text-sm text-slate-950">1 Full Truck Load</p>
                 </div>
               </div>
 
