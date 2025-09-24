@@ -32,16 +32,22 @@ const Navigation = () => {
             {/* Logo */}
             <a href="/" className="nav-logo">
                   <picture>
-                    <source srcSet="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.webp" type="image/webp" />
+                    <source 
+                      srcSet="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.webp 96w"
+                      sizes="96px"
+                      type="image/webp" 
+                    />
                     <img 
                       src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" 
+                      srcSet="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png 96w"
+                      sizes="96px"
                       alt="Junk in the Truck Co Logo" 
                       className="h-24 w-auto font-bold"
                       width="96"
                       height="96"
                       loading="eager"
                       decoding="async"
-                      style={{ maxWidth: '96px', maxHeight: '96px', objectFit: 'contain' }}
+                      style={{ maxWidth: '96px', maxHeight: '96px', objectFit: 'contain', width: 'auto', height: '96px' }}
                     />
                   </picture>
             </a>

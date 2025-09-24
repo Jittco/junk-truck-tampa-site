@@ -69,16 +69,25 @@ export default function HowItWorks({
           {steps.map((step, idx) => <li key={idx} className="flex flex-col items-center text-center">
               <div className="rounded-full overflow-hidden shadow-sm ring-1 ring-border/20 mb-6">
                 <div className="h-[104px] w-[104px] lg:h-32 lg:w-32">
-                  <img 
-                    src={step.img} 
-                    alt={step.title} 
-                    className="h-full w-full object-cover" 
-                    loading={idx > 1 ? "lazy" : "eager"} 
-                    decoding="async"
-                    width="104"
-                    height="104"
-                    style={{ maxWidth: '104px', maxHeight: '104px' }}
-                  />
+                  <picture>
+                    <source 
+                      srcSet={`${step.img.replace(/\.(jpg|jpeg|png)$/i, '.webp')} 104w`}
+                      sizes="104px"
+                      type="image/webp"
+                    />
+                    <img 
+                      src={step.img} 
+                      srcSet={`${step.img} 104w`}
+                      sizes="104px"
+                      alt={step.title} 
+                      className="h-full w-full object-cover" 
+                      loading={idx > 1 ? "lazy" : "eager"} 
+                      decoding="async"
+                      width="104"
+                      height="104"
+                      style={{ maxWidth: '104px', maxHeight: '104px', aspectRatio: '1/1' }}
+                    />
+                  </picture>
                 </div>
               </div>
 

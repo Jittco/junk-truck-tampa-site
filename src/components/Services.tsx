@@ -46,17 +46,22 @@ const Services = () => {
           return <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-card border-0 shadow-lg">
                 <div className="relative overflow-hidden">
                   <picture>
-                    <source srcSet={service.image.replace(/\.(png|jpg|jpeg)$/i, '.webp')} type="image/webp" />
+                    <source 
+                      srcSet={`${service.image.replace(/\.(png|jpg|jpeg)$/i, '.webp')} 300w, ${service.image.replace(/\.(png|jpg|jpeg)$/i, '.webp')} 600w`}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      type="image/webp" 
+                    />
                     <img 
                       src={service.image} 
+                      srcSet={`${service.image} 300w, ${service.image} 600w`}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       alt={service.title} 
                       className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" 
                       loading="lazy" 
                       decoding="async" 
                       width="300" 
                       height="192"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      style={{ aspectRatio: '300/192' }}
+                      style={{ aspectRatio: '300/192', maxWidth: '100%', height: 'auto' }}
                     />
                   </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
