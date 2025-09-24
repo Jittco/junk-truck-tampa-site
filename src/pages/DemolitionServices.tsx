@@ -1,5 +1,7 @@
 import ServiceCategoryHub from "@/components/ServiceCategoryHub";
 import pergolaRemovalImage from "@/assets/pergola-removal.jpg";
+import drivewayDemolitionImage from "@/assets/driveway-demolition.jpg";
+import poolRemovalImage from "@/assets/pool-removal.jpg";
 
 const DemolitionServices = () => {
   const categoryData = {
@@ -48,8 +50,8 @@ const DemolitionServices = () => {
       {
         title: "Driveway Demo",
         description: "Professional concrete and asphalt driveway removal with proper disposal.",
-        image: "/assets/garage-after.jpg",
-        heroImage: "/assets/garage-after.jpg",
+        image: drivewayDemolitionImage,
+        heroImage: drivewayDemolitionImage,
         link: "/services/driveway-demo/"
       },
       {
@@ -62,8 +64,8 @@ const DemolitionServices = () => {
       {
         title: "Pool Removal",
         description: "Above-ground pool dismantling and removal with site restoration.",
-        image: "/assets/cluttered-garage.jpg",
-        heroImage: "/assets/cluttered-garage.jpg",
+        image: poolRemovalImage,
+        heroImage: poolRemovalImage,
         link: "/services/pool-removal/"
       }
     ],
