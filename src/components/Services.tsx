@@ -9,7 +9,7 @@ const services = [{
   icon: Home,
   title: "Residential Junk Removal",
   description: "Complete home cleanouts, furniture removal, and residential debris disposal with same-day service.",
-  image: "/lovable-uploads/812a66d7-30b4-4162-9526-ed4e886f6d4c.png",
+  image: "/lovable-uploads/residential-junk-removal-new.png",
   link: "/services/residential-junk-removal/"
 }, {
   icon: Package,
