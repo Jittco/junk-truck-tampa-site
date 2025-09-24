@@ -15,6 +15,21 @@
 
     <!-- Chat Widget -->
     <script id="housecall-pro-chat-bubble" src="https://chat.housecallpro.com/proChat.js" type="text/javascript" data-color="#e98922" data-organization="e9b73418-f0b6-473e-8d7b-2461d902a47b" defer></script>
+    
+    <!-- Position chat widget in middle right -->
+    <style>
+      #housecall-pro-chat-bubble, 
+      [id*="housecall"], 
+      [class*="housecall"], 
+      [data-organization="e9b73418-f0b6-473e-8d7b-2461d902a47b"] {
+        position: fixed !important;
+        right: 20px !important;
+        bottom: auto !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        z-index: 1000 !important;
+      }
+    </style>
 
     <meta property="og:title" content="Junk in the Truck Co - Tampa Bay Junk Removal & Demolition" />
     <meta property="og:description" content="Fast, affordable junk removal & light demolition in Tampa Bay. Same-day service available." />
