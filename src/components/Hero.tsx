@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet";
+import heroMainImage from "@/assets/hero-main.png";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
         <link 
           rel="preload" 
           as="image" 
-          href="/lovable-uploads/39d5fc41-5246-40fa-85e0-39c712a42e89.png"
+          href={heroMainImage}
           fetchPriority="high"
         />
       </Helmet>
@@ -20,7 +21,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-110 contrast-110 saturate-125" 
           style={{
-            backgroundImage: `url(/lovable-uploads/39d5fc41-5246-40fa-85e0-39c712a42e89.png)`,
+            backgroundImage: `url(${heroMainImage})`,
             willChange: 'transform'
           }}
         />
