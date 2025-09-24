@@ -31,16 +31,19 @@ const Navigation = () => {
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <a href="/" className="nav-logo">
-              <img 
-                src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" 
-                alt="Junk in the Truck Co Logo" 
-                className="h-24 w-auto font-bold"
-                width="96"
-                height="96"
-                loading="eager"
-                decoding="async"
-                style={{ maxWidth: '96px', maxHeight: '96px', objectFit: 'contain' }}
-              />
+                  <picture>
+                    <source srcSet="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.webp" type="image/webp" />
+                    <img 
+                      src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" 
+                      alt="Junk in the Truck Co Logo" 
+                      className="h-24 w-auto font-bold"
+                      width="96"
+                      height="96"
+                      loading="eager"
+                      decoding="async"
+                      style={{ maxWidth: '96px', maxHeight: '96px', objectFit: 'contain' }}
+                    />
+                  </picture>
             </a>
 
             {/* Desktop Navigation */}

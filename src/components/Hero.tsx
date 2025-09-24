@@ -10,17 +10,20 @@ const Hero = () => {
       </Helmet>
       
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Optimized hero image for better LCP */}
-        <img 
-          src={heroMainImage}
-          alt="Tampa Bay junk removal truck and team"
-          className="absolute inset-0 w-full h-full object-cover object-center brightness-110 contrast-110 saturate-125"
-          fetchPriority="high"
-          loading="eager"
-          style={{
-            willChange: 'transform'
-          }}
-        />
+        {/* Optimized hero image for better LCP with WebP support */}
+        <picture>
+          <source srcSet={heroMainImage.replace('.png', '.webp')} type="image/webp" />
+          <img 
+            src={heroMainImage}
+            alt="Tampa Bay junk removal truck and team"
+            className="absolute inset-0 w-full h-full object-cover object-center brightness-110 contrast-110 saturate-125"
+            fetchPriority="high"
+            loading="eager"
+            style={{
+              willChange: 'transform'
+            }}
+          />
+        </picture>
         
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
