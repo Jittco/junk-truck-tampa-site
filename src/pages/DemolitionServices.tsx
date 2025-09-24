@@ -19,8 +19,8 @@ const DemolitionServices = () => {
       {
         title: "Deck Removal",
         description: "Professional deck demolition and material disposal, including railings and stairs.",
-        image: "/assets/garage-before.jpg",
-        heroImage: "/assets/garage-before.jpg",
+        image: "/assets/deck-removal-hero.png",
+        heroImage: "/assets/deck-removal-hero.png",
         link: "/services/deck-removal/"
       },
       {
