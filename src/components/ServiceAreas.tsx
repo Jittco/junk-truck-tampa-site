@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 const ServiceAreas = () => {
   const serviceAreas = ["Tampa", "St. Petersburg", "Brandon", "Riverview", "Clearwater", "Wesley Chapel", "Valrico", "Plant City", "Apollo Beach", "Gibsonton"];
   return <section className="py-20 bg-primary">
@@ -27,9 +28,9 @@ const ServiceAreas = () => {
             Don't see your city? Call us at <a href="tel:844-858-6546" className="text-foreground font-semibold hover:text-primary transition-colors">844-858-6546</a> — chances are we're already nearby.
           </p>
           <Button size="lg" className="bg-white hover:bg-gray-100 text-black font-semibold" asChild>
-            <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer">
+            <Link to="/services">
               👉 Book Now
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
