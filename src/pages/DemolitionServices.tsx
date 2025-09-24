@@ -1,4 +1,5 @@
 import ServiceCategoryHub from "@/components/ServiceCategoryHub";
+import pergolaRemovalImage from "@/assets/pergola-removal.jpg";
 
 const DemolitionServices = () => {
   const categoryData = {
@@ -40,8 +41,8 @@ const DemolitionServices = () => {
       {
         title: "Pergola Demolition",
         description: "Expert removal of pergolas and outdoor structures with complete cleanup.",
-        image: "/assets/yard-after.jpg",
-        heroImage: "/assets/yard-after.jpg",
+        image: pergolaRemovalImage,
+        heroImage: pergolaRemovalImage,
         link: "/services/pergola-demolition/"
       },
       {
