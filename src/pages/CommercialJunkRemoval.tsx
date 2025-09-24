@@ -1,4 +1,5 @@
 import ServiceCategoryHub from "@/components/ServiceCategoryHub";
+import CommercialServicesGrid from "@/components/CommercialServicesGrid";
 
 const CommercialJunkRemoval = () => {
   const categoryData = {
@@ -68,7 +69,12 @@ const CommercialJunkRemoval = () => {
     ]
   };
 
-  return <ServiceCategoryHub data={categoryData} />;
+  return (
+    <>
+      <ServiceCategoryHub data={categoryData} />
+      <CommercialServicesGrid />
+    </>
+  );
 };
 
 export default CommercialJunkRemoval;
