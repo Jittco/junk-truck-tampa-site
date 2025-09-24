@@ -4,6 +4,21 @@ const Footer = () => {
   return (
     <footer className="bg-[#222222] text-[#f9f9f9] py-16 md:py-20">
       <div className="container mx-auto px-4 max-w-6xl">
+        {/* Verse of the Day */}
+        <div className="text-center mb-12 pb-8 border-b border-[#444444]">
+          <div className="font-inter text-sm text-[#f9f9f9] max-w-md mx-auto">
+            <strong className="text-[#18d13d] block mb-3">Verse of the Day:</strong>
+            <iframe 
+              src="https://www.bible.com/verse-of-the-day" 
+              width="100%" 
+              height="60" 
+              style={{border: 'none', overflow: 'hidden'}} 
+              scrolling="no"
+              className="rounded-md bg-white/5"
+            />
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           
           {/* Business NAP with Schema Markup */}
