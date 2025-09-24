@@ -6,7 +6,6 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isDemolitionDropdownOpen, setIsDemolitionDropdownOpen] = useState(false);
-  
   const demolitionCategory = serviceCategories.find(cat => cat.slug === 'demolition');
   const demolitionServices = demolitionCategory?.services?.sort((a, b) => a.order - b.order) || [];
   const aboutItems = ["Our Story", "FAQs", "Reviews"];
@@ -111,21 +110,17 @@ const Navigation = () => {
                       All Demolition Services
                     </a>
                   </DropdownMenuItem>
-                  {demolitionServices.map(service => (
-                    <DropdownMenuItem key={service.slug} asChild>
+                  {demolitionServices.map(service => <DropdownMenuItem key={service.slug} asChild>
                       <a href={`/services/demolition/${service.slug}/`} className="dropdown-nav-link">
                         {service.name}
                       </a>
-                    </DropdownMenuItem>
-                  ))}
+                    </DropdownMenuItem>)}
                 </DropdownMenuContent>
               </DropdownMenu>
               
               <a href="/services/dumpster-rental/" className="nav-link">DUMPSTER</a>
 
-              <a href="#how-it-works" className="nav-link">
-                How It Works
-              </a>
+              
 
               <a href="/pricing" className="nav-link">
                 Pricing
@@ -204,18 +199,14 @@ const Navigation = () => {
                     Demolition
                     <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${isDemolitionDropdownOpen ? 'rotate-90' : ''}`} />
                   </button>
-                  {isDemolitionDropdownOpen && (
-                    <div className="pl-4 space-y-2 mt-2">
+                  {isDemolitionDropdownOpen && <div className="pl-4 space-y-2 mt-2">
                       <a href="/services/demolition/" className="block py-2 text-foreground font-inter hover:bg-muted rounded font-semibold" onClick={() => setIsMenuOpen(false)}>
                         All Demolition Services
                       </a>
-                      {demolitionServices.map(service => (
-                        <a key={service.slug} href={`/services/demolition/${service.slug}/`} className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      {demolitionServices.map(service => <a key={service.slug} href={`/services/demolition/${service.slug}/`} className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                           {service.name}
-                        </a>
-                      ))}
-                    </div>
-                  )}
+                        </a>)}
+                    </div>}
                 </div>
                 
                 <a href="/services/dumpster-rental/" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
