@@ -226,10 +226,6 @@ const Navigation = () => {
                 <a href="/service-areas" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                   Service Areas
                 </a>
-
-                <a href="#how-it-works" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
-                  How It Works
-                </a>
                 
                 <div className="py-3 px-4">
                   <button className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2" onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}>
