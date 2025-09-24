@@ -55,25 +55,15 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
           {/* Before Image */}
           <div className="relative group">
             <div className="relative overflow-hidden rounded-lg">
-              <picture>
-                <source 
-                  srcSet={`${transformation.beforeImage.replace(/\.(jpg|jpeg|png)$/i, '.webp')} 400w`}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  type="image/webp"
-                />
-                <img
-                  src={transformation.beforeImage}
-                  srcSet={`${transformation.beforeImage} 400w`}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  alt={`Before: ${transformation.beforeCaption}`}
-                  className="w-full h-64 object-cover"
-                  loading="lazy"
-                  decoding="async"
-                  width="400"
-                  height="256"
-                  style={{ aspectRatio: '400/256', maxWidth: '100%', height: 'auto' }}
-                />
-              </picture>
+              <img
+                src={transformation.beforeImage}
+                alt={`Before: ${transformation.beforeCaption}`}
+                className="w-full h-64 object-cover"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="256"
+              />
               <div className="absolute top-4 left-4 bg-muted px-3 py-1 rounded-md">
                 <span className="text-sm font-semibold text-foreground">Before</span>
               </div>
@@ -84,25 +74,15 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
           {/* After Image */}
           <div className="relative group">
             <div className="relative overflow-hidden rounded-lg">
-              <picture>
-                <source 
-                  srcSet={`${transformation.afterImage.replace(/\.(jpg|jpeg|png)$/i, '.webp')} 400w`}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  type="image/webp"
-                />
-                <img
-                  src={transformation.afterImage}
-                  srcSet={`${transformation.afterImage} 400w`}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  alt={`After: ${transformation.afterCaption}`}
-                  className="w-full h-64 object-cover"
-                  loading="lazy"
-                  decoding="async"
-                  width="400"
-                  height="256"
-                  style={{ aspectRatio: '400/256', maxWidth: '100%', height: 'auto' }}
-                />
-              </picture>
+              <img
+                src={transformation.afterImage}
+                alt={`After: ${transformation.afterCaption}`}
+                className="w-full h-64 object-cover"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="256"
+              />
               <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-md">
                 <span className="text-sm font-semibold text-black">After</span>
               </div>

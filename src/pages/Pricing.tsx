@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import TruckVolumeEstimator from "@/components/TruckVolumeEstimator";
-import YouTubeFacade from "@/components/YouTubeFacade";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Phone, Check, MapPin, Truck, Package, Heart, Sofa, DollarSign } from "lucide-react";
@@ -178,14 +177,12 @@ min</p>
               </p>
             </div>
 
-            {/* YouTube Video Facade */}
+            {/* YouTube Video Embed */}
             <div className="mb-12">
-              <div className="max-w-2xl mx-auto">
-                <YouTubeFacade
-                  videoId="vnm7MOY1jKw"
-                  title="Junk in the Truck Co. Service Video"
-                  className="rounded-lg shadow-lg overflow-hidden"
-                />
+              <div className="relative w-full max-w-2xl mx-auto bg-card rounded-lg overflow-hidden shadow-lg">
+                <div className="aspect-video">
+                  <iframe src="https://www.youtube.com/embed/vnm7MOY1jKw" title="Junk in the Truck Co. Service Video" className="w-full h-full" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
               </div>
             </div>
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ChevronUp } from 'lucide-react';
@@ -12,20 +12,6 @@ interface CommercialService {
 
 const CommercialServicesGrid = () => {
   const [expandedCards, setExpandedCards] = useState<Set<string>>(new Set());
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-
-  useEffect(() => {
-    // Check reduced motion preference once on mount to avoid repeated queries
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setPrefersReducedMotion(mediaQuery.matches);
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setPrefersReducedMotion(e.matches);
-    };
-
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
 
   const services: CommercialService[] = [
     {
@@ -132,13 +118,15 @@ const CommercialServicesGrid = () => {
                     
                     <div
                       id={`details-${service.id}`}
-                      className={`overflow-hidden ${
-                        isExpanded ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'
-                      } ${
-                        prefersReducedMotion 
-                          ? 'transition-opacity duration-300 ease-out' 
-                          : 'transition-all duration-300 ease-out'
+                      className={`transition-all duration-300 overflow-hidden ${
+                        isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                       }`}
+                      style={{
+                        transform: isExpanded ? 'translateY(0)' : 'translateY(-10px)',
+                        transition: window.matchMedia('(prefers-reduced-motion: reduce)').matches 
+                          ? 'opacity 0.3s ease-out' 
+                          : 'all 0.3s ease-out'
+                      }}
                     >
                       <div className="pt-4 border-t border-border/50 space-y-4">
                         <p className="text-muted-foreground leading-relaxed">
