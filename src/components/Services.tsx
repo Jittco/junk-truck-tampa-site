@@ -45,15 +45,7 @@ const Services = () => {
           const Icon = service.icon;
           return <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-card border-0 shadow-lg">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
-                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" 
-                    loading="lazy"
-                    decoding="async"
-                    width="300"
-                    height="192"
-                  />
+                  <img src={service.image} alt={service.title} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async" width="300" height="192" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute top-4 right-4 w-12 h-12 bg-primary/90 rounded-full flex items-center justify-center backdrop-blur-sm">
                     <Icon className="w-6 h-6 text-primary-foreground" />
@@ -77,7 +69,7 @@ const Services = () => {
         </div>
         
         <div className="text-center">
-          <h3 className="text-2xl md:text-3xl font-anton text-primary mb-4">Get $25 Off when you book online!</h3>
+          <h3 className="text-2xl md:text-3xl font-anton mb-4 text-[#ff0000] text-center">Get $25 Off when you book online!</h3>
         </div>
       </div>
     </section>;
