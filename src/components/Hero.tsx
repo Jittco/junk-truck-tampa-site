@@ -43,10 +43,10 @@ const Hero = () => {
               <a href="https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae">Book Online in 60 Seconds</a>
             </Button>
             
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white" asChild>
+            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white" style={{ textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000' }} asChild>
               <a href="tel:+18133639727">
-                <Phone className="mr-2 h-5 w-5" />
-                (813) 363-9727
+                <Phone className="mr-2 h-5 w-5" style={{ filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)' }} />
+                <span style={{ textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000' }}>(813) 363-9727</span>
               </a>
             </Button>
           </div>
