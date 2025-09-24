@@ -341,7 +341,7 @@ const DumpsterRental = () => {
 
             <div className="flex items-center gap-4 p-6 bg-background rounded-lg shadow-sm">
               <Hammer className="h-8 w-8 text-primary" />
-              <span className="font-medium text-foreground">Roofing shingles</span>
+              <span className="font-medium text-foreground">Metal Recycling</span>
             </div>
 
             <div className="flex items-center gap-4 p-6 bg-background rounded-lg shadow-sm">
