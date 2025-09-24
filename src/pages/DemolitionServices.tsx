@@ -12,49 +12,57 @@ const DemolitionServices = () => {
       {
         title: "Shed Removal",
         description: "Complete shed demolition and debris removal service, including foundation cleanup.",
-        image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+        image: "/assets/shed-demolition-hero.png",
+        heroImage: "/assets/shed-demolition-hero.png",
         link: "/services/demolition/shed-removal/"
       },
       {
         title: "Deck Removal",
         description: "Professional deck demolition and material disposal, including railings and stairs.",
-        image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+        image: "/assets/garage-before.jpg",
+        heroImage: "/assets/garage-before.jpg",
         link: "/services/deck-removal/"
       },
       {
         title: "Playset Removal",
         description: "Safe dismantling and removal of playground equipment and swing sets.",
-        image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+        image: "/lovable-uploads/c5282b46-4fdb-4be2-8afc-a87f9c36f464.png",
+        heroImage: "/lovable-uploads/c5282b46-4fdb-4be2-8afc-a87f9c36f464.png",
         link: "/services/demolition/playset-removal/"
       },
       {
         title: "Interior Demolition",
         description: "Controlled demolition for renovation and remodeling projects, walls to floors.",
-        image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+        image: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
+        heroImage: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
         link: "/services/interior-demolition/"
       },
       {
         title: "Pergola Demolition",
         description: "Expert removal of pergolas and outdoor structures with complete cleanup.",
-        image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+        image: "/assets/yard-after.jpg",
+        heroImage: "/assets/yard-after.jpg",
         link: "/services/pergola-demolition/"
       },
       {
         title: "Driveway Demo",
         description: "Professional concrete and asphalt driveway removal with proper disposal.",
-        image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+        image: "/assets/garage-after.jpg",
+        heroImage: "/assets/garage-after.jpg",
         link: "/services/driveway-demo/"
       },
       {
         title: "Fence Removal",
         description: "Complete fence removal including posts, panels, and foundation cleanup.",
-        image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+        image: "/assets/yard-before.jpg",
+        heroImage: "/assets/yard-before.jpg",
         link: "/services/fence-removal/"
       },
       {
         title: "Pool Removal",
         description: "Above-ground pool dismantling and removal with site restoration.",
-        image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
+        image: "/assets/cluttered-garage.jpg",
+        heroImage: "/assets/cluttered-garage.jpg",
         link: "/services/pool-removal/"
       }
     ],
