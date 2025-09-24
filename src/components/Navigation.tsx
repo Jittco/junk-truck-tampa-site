@@ -120,7 +120,7 @@ const Navigation = () => {
               
               <a href="/services/dumpster-rental/" className="nav-link">DUMPSTER</a>
 
-              
+              <a href="/service-areas" className="nav-link">SERVICE AREAS</a>
 
               <a href="/pricing" className="nav-link">
                 Pricing
@@ -211,6 +211,10 @@ const Navigation = () => {
                 
                 <a href="/services/dumpster-rental/" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                   Dumpster Rental
+                </a>
+
+                <a href="/service-areas" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                  Service Areas
                 </a>
 
                 <a href="#how-it-works" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
