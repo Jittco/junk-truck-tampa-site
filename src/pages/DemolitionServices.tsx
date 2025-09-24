@@ -54,8 +54,8 @@ const DemolitionServices = () => {
       {
         title: "Fence Removal",
         description: "Complete fence removal including posts, panels, and foundation cleanup.",
-        image: "/assets/yard-before.jpg",
-        heroImage: "/assets/yard-before.jpg",
+        image: "/assets/fence-removal-hero.png",
+        heroImage: "/assets/fence-removal-hero.png",
         link: "/services/fence-removal/"
       },
       {
