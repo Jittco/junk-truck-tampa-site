@@ -97,8 +97,10 @@ const CommercialJunkRemovalService: React.FC = () => {
         relatedServices={relatedServices}
         whoWeServe={whoWeServe}
         servicesWeOffer={servicesWeOffer}
+        customSections={{
+          beforeWhoWeServe: <CommercialServicesGrid />
+        }}
       />
-      <CommercialServicesGrid />
     </>
   );
 };

@@ -39,6 +39,7 @@ interface ServiceDetailPageProps {
   };
   customSections?: {
     afterHowItWorks?: React.ReactNode;
+    beforeWhoWeServe?: React.ReactNode;
   };
 }
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
@@ -340,6 +341,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         {/* Service Overview */}
         
 
+        {/* Custom Section Before Who We Serve */}
+        {customSections?.beforeWhoWeServe}
+        
         {/* Who We Serve Section */}
         {whoWeServe && <section className="py-16">
             <div className="container mx-auto px-4 bg-[t#2] bg-[#222222]">
