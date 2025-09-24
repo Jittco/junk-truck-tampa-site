@@ -6,6 +6,7 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isDemolitionDropdownOpen, setIsDemolitionDropdownOpen] = useState(false);
+  const [isJunkRemovalDropdownOpen, setIsJunkRemovalDropdownOpen] = useState(false);
   const demolitionCategory = serviceCategories.find(cat => cat.slug === 'demolition');
   const demolitionServices = demolitionCategory?.services?.sort((a, b) => a.order - b.order) || [];
   const aboutItems = ["Our Story", "FAQs", "Reviews", "Pricing"];
@@ -161,39 +162,47 @@ const Navigation = () => {
           {/* Mobile Navigation */}
           {isMenuOpen && <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg max-h-[70vh] overflow-y-auto z-50">
               <div className="px-4 py-4 space-y-2 max-w-7xl mx-auto">
-                <a href="/services" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded font-semibold" onClick={() => setIsMenuOpen(false)}>
-                  Junk Removal
-                </a>
-                <a href="/services/residential-junk-removal/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Residential Junk Removal
-                </a>
-                <a href="/services/commercial-junk-removal/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Commercial Junk Removal
-                </a>
-                <a href="/services/appliance-removal/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Appliance Removal
-                </a>
-                <a href="/services/furniture-removal/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Furniture Removal
-                </a>
-                <a href="/services/hot-tub-removal/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Hot Tub Removal
-                </a>
-                <a href="/services/yard-waste-removal/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Yard Waste Removal
-                </a>
-                <a href="/services/garage-clean-out/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Garage Clean Out
-                </a>
-                <a href="/services/estate-clean-out/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Estate Clean Out
-                </a>
-                <a href="/services/hoarder-cleanup/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Hoarder Cleanup
-                </a>
-                <a href="/services/homeless-encampment-cleanup/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
-                  Homeless Encampment Cleanup
-                </a>
+                <div className="py-3 px-4">
+                  <button className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2" onClick={() => setIsJunkRemovalDropdownOpen(!isJunkRemovalDropdownOpen)} aria-haspopup="true" aria-expanded={isJunkRemovalDropdownOpen}>
+                    Junk Removal
+                    <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${isJunkRemovalDropdownOpen ? 'rotate-90' : ''}`} />
+                  </button>
+                  {isJunkRemovalDropdownOpen && <div className="pl-4 space-y-2 mt-2">
+                      <a href="/services" className="block py-2 text-foreground font-inter hover:bg-muted rounded font-semibold" onClick={() => setIsMenuOpen(false)}>
+                        All Services
+                      </a>
+                      <a href="/services/residential-junk-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Residential Junk Removal
+                      </a>
+                      <a href="/services/commercial-junk-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Commercial Junk Removal
+                      </a>
+                      <a href="/services/appliance-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Appliance Removal
+                      </a>
+                      <a href="/services/furniture-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Furniture Removal
+                      </a>
+                      <a href="/services/hot-tub-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Hot Tub Removal
+                      </a>
+                      <a href="/services/yard-waste-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Yard Waste Removal
+                      </a>
+                      <a href="/services/garage-clean-out/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Garage Clean Out
+                      </a>
+                      <a href="/services/estate-clean-out/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Estate Clean Out
+                      </a>
+                      <a href="/services/hoarder-cleanup/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Hoarder Cleanup
+                      </a>
+                      <a href="/services/homeless-encampment-cleanup/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                        Homeless Encampment Cleanup
+                      </a>
+                    </div>}
+                </div>
                 
                 <div className="py-3 px-4">
                   <button className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2" onClick={() => setIsDemolitionDropdownOpen(!isDemolitionDropdownOpen)} aria-haspopup="true" aria-expanded={isDemolitionDropdownOpen}>
