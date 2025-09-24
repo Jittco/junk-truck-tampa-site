@@ -1,5 +1,6 @@
 import React from 'react';
 import { ServiceDetailPage } from '../components/ServiceDetailPage';
+import CommercialServicesGrid from '../components/CommercialServicesGrid';
 import { commercialServices, residentialServices } from '../data/services';
 
 const CommercialJunkRemovalService: React.FC = () => {
@@ -88,14 +89,17 @@ const CommercialJunkRemovalService: React.FC = () => {
   };
 
   return (
-    <ServiceDetailPage
-      service={service}
-      categoryName="Junk Removal"
-      categorySlug="junk-removal"
-      relatedServices={relatedServices}
-      whoWeServe={whoWeServe}
-      servicesWeOffer={servicesWeOffer}
-    />
+    <>
+      <ServiceDetailPage
+        service={service}
+        categoryName="Junk Removal"
+        categorySlug="junk-removal"
+        relatedServices={relatedServices}
+        whoWeServe={whoWeServe}
+        servicesWeOffer={servicesWeOffer}
+      />
+      <CommercialServicesGrid />
+    </>
   );
 };
 
