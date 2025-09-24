@@ -544,10 +544,7 @@ const DumpsterRental = () => {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold" asChild>
-              <a href={`tel:${PHONE.replace(/[^0-9]/g, "")}`}>
-                <Phone className="mr-2 h-5 w-5" />
-                Call {PHONE}
-              </a>
+              
             </Button>
           </div>
         </div>
