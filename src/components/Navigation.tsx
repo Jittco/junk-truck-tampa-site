@@ -162,7 +162,7 @@ const Navigation = () => {
           {isMenuOpen && <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg max-h-[70vh] overflow-y-auto z-50">
               <div className="px-4 py-4 space-y-2 max-w-7xl mx-auto">
                 <a href="/services" className="block py-3 px-4 text-foreground font-inter hover:bg-muted rounded font-semibold" onClick={() => setIsMenuOpen(false)}>
-                  All Services
+                  Junk Removal
                 </a>
                 <a href="/services/residential-junk-removal/" className="block py-2 px-8 text-foreground font-inter hover:bg-muted rounded text-sm" onClick={() => setIsMenuOpen(false)}>
                   Residential Junk Removal
