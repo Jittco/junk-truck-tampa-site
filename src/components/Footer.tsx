@@ -53,6 +53,7 @@ const Footer = () => {
               <a href="/" className="font-inter block hover:text-[#18d13d] transition-colors">Home</a>
               <a href="#services" className="font-inter block hover:text-[#18d13d] transition-colors">Services</a>
               <a href="#about" className="font-inter block hover:text-[#18d13d] transition-colors">About</a>
+              <a href="/service-areas" className="font-inter block hover:text-[#18d13d] transition-colors">Service Areas</a>
               <a href="#christian-values" className="font-inter block hover:text-[#18d13d] transition-colors">Our Values</a>
               <a href="#contact" className="font-inter block hover:text-[#18d13d] transition-colors">Contact</a>
             </nav>
