@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet";
-import heroMainImage from "@/assets/hero-main.png";
+import heroMainImage from "@/assets/hero-main-new.png";
 const Hero = () => {
   return <>
       {/* Critical resource preloading in document head for LCP optimization */}
