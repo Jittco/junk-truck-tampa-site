@@ -26,7 +26,7 @@ const ServiceAreas = () => {
           <p className="mb-6 text-lg text-slate-50">
             Don't see your city? Call us at <a href="tel:844-858-6546" className="text-foreground font-semibold hover:text-primary transition-colors">844-858-6546</a> — chances are we're already nearby.
           </p>
-          <Button size="lg" className="bg-cta-green hover:bg-cta-green-hover text-white font-semibold" asChild>
+          <Button size="lg" className="bg-white hover:bg-gray-100 text-black font-semibold" asChild>
             <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer">
               👉 Book Now
             </a>
