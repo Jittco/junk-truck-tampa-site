@@ -1,23 +1,16 @@
 import { Phone, MapPin, ExternalLink, Facebook, Instagram, Building } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-[#222222] text-[#f9f9f9] py-16 md:py-20">
+  return <footer className="bg-[#222222] text-[#f9f9f9] py-16 md:py-20">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Verse of the Day */}
         <div className="text-center mb-12 pb-8 border-b border-[#444444]">
           <div className="font-inter text-sm text-[#f9f9f9] max-w-lg mx-auto">
             <strong className="text-[#18d13d] block mb-4 text-base">Verse of the Day:</strong>
-            <iframe 
-              src="https://www.bible.com/verse-of-the-day" 
-              width="100%" 
-              height="120" 
-              style={{border: 'none', overflow: 'hidden', minHeight: '120px'}} 
-              scrolling="no"
-              className="rounded-md bg-white/10 border border-white/20"
-              title="Verse of the Day"
-              loading="lazy"
-            />
+            <iframe src="https://www.bible.com/verse-of-the-day" width="100%" height="120" style={{
+            border: 'none',
+            overflow: 'hidden',
+            minHeight: '120px'
+          }} scrolling="no" className="rounded-md bg-white/10 border border-white/20" title="Verse of the Day" loading="lazy" />
             <noscript>
               <div className="text-center p-4 bg-white/10 rounded-md border border-white/20">
                 Visit <a href="https://www.bible.com" className="text-[#18d13d] hover:underline" target="_blank" rel="noopener noreferrer">Bible.com</a> for the Verse of the Day
@@ -33,7 +26,7 @@ const Footer = () => {
             <h3 className="font-anton text-xl mb-6 text-[#f9f9f9]">Business Information</h3>
             <div className="space-y-3">
               <div>
-                <span itemProp="name" className="font-inter font-semibold block">Junk in the Truck Co</span>
+                <span itemProp="name" className="font-inter font-semibold block">Junk in the Truck Co Junk Removal</span>
               </div>
               
               <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress" className="flex items-start gap-2">
@@ -46,22 +39,14 @@ const Footer = () => {
               
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#18d13d]" />
-                <a 
-                  href="tel:+18448586546" 
-                  itemProp="telephone"
-                  className="font-inter font-bold text-lg hover:text-[#18d13d] transition-colors"
-                >
+                <a href="tel:+18448586546" itemProp="telephone" className="font-inter font-bold text-lg hover:text-[#18d13d] transition-colors">
                   844-858-6546
                 </a>
               </div>
               
               <div className="flex items-center gap-2">
                 <ExternalLink className="w-4 h-4 text-[#18d13d]" />
-                <a 
-                  href="https://junkinthetruckco.com" 
-                  itemProp="url"
-                  className="font-inter hover:text-[#18d13d] transition-colors"
-                >
+                <a href="https://junkinthetruckco.com" itemProp="url" className="font-inter hover:text-[#18d13d] transition-colors">
                   junkinthetruckco.com
                 </a>
               </div>
@@ -85,33 +70,15 @@ const Footer = () => {
           <div>
             <h3 className="font-anton text-xl mb-6 text-[#f9f9f9]">Follow Us</h3>
             <div className="flex gap-4">
-              <a 
-                href="https://www.facebook.com/Junkinthetruckco/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#18d13d] rounded-full flex items-center justify-center hover:bg-[#20e847] transition-colors"
-                aria-label="Follow us on Facebook"
-              >
+              <a href="https://www.facebook.com/Junkinthetruckco/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#18d13d] rounded-full flex items-center justify-center hover:bg-[#20e847] transition-colors" aria-label="Follow us on Facebook">
                 <Facebook className="w-5 h-5 text-white" />
               </a>
               
-              <a 
-                href="https://www.instagram.com/junkinthetruckco/?hl=en" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#18d13d] rounded-full flex items-center justify-center hover:bg-[#20e847] transition-colors"
-                aria-label="Follow us on Instagram"
-              >
+              <a href="https://www.instagram.com/junkinthetruckco/?hl=en" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#18d13d] rounded-full flex items-center justify-center hover:bg-[#20e847] transition-colors" aria-label="Follow us on Instagram">
                 <Instagram className="w-5 h-5 text-white" />
               </a>
               
-              <a 
-                href="https://share.google/C4jLaacQJcHnbd5h5" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#18d13d] rounded-full flex items-center justify-center hover:bg-[#20e847] transition-colors"
-                aria-label="Visit our Google Business Profile"
-              >
+              <a href="https://share.google/C4jLaacQJcHnbd5h5" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#18d13d] rounded-full flex items-center justify-center hover:bg-[#20e847] transition-colors" aria-label="Visit our Google Business Profile">
                 <Building className="w-5 h-5 text-white" />
               </a>
             </div>
@@ -125,8 +92,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
