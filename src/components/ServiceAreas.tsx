@@ -28,7 +28,7 @@ const ServiceAreas = () => {
             Don't see your city? Call us at <a href="tel:844-858-6546" className="text-foreground font-semibold hover:text-primary transition-colors">844-858-6546</a> — chances are we're already nearby.
           </p>
           <Button size="lg" className="bg-white hover:bg-gray-100 text-black font-semibold" asChild>
-            <Link to="/services">👉 AREAS WE COVER</Link>
+            <Link to="/service-areas">👉 AREAS WE COVER</Link>
           </Button>
         </div>
       </div>
