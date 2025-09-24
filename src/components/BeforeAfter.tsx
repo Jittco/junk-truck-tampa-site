@@ -63,6 +63,7 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
                 decoding="async"
                 width="400"
                 height="256"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute top-4 left-4 bg-muted px-3 py-1 rounded-md">
                 <span className="text-sm font-semibold text-foreground">Before</span>
@@ -82,6 +83,7 @@ const BeforeAfterItem = ({ transformation }: { transformation: typeof transforma
                 decoding="async"
                 width="400"
                 height="256"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute top-4 left-4 bg-white px-3 py-1 rounded-md">
                 <span className="text-sm font-semibold text-black">After</span>
