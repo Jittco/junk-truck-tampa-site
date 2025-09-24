@@ -33,8 +33,8 @@ const DemolitionServices = () => {
       {
         title: "Interior Demolition",
         description: "Controlled demolition for renovation and remodeling projects, walls to floors.",
-        image: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
-        heroImage: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
+        image: "/assets/interior-demolition-hero.png",
+        heroImage: "/assets/interior-demolition-hero.png",
         link: "/services/interior-demolition/"
       },
       {
