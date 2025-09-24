@@ -1,24 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
-import { Helmet } from "react-helmet";
 import heroMainImage from "@/assets/hero-main.png";
 const Hero = () => {
-  return <>
-      {/* Critical resource preloading in document head for LCP optimization */}
-      <Helmet>
-        <link rel="preload" as="image" href={heroMainImage} fetchPriority="high" />
-      </Helmet>
-      
+  return <>      
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Optimized hero image for better LCP with WebP support */}
         <picture>
-          <source srcSet={heroMainImage.replace('.png', '.webp')} type="image/webp" />
+          <source 
+            srcSet={heroMainImage.replace('.png', '.webp')}
+            type="image/webp"
+          />
           <img 
             src={heroMainImage}
             alt="Tampa Bay junk removal truck and team"
             className="absolute inset-0 w-full h-full object-cover object-center brightness-110 contrast-110 saturate-125"
             fetchPriority="high"
             loading="eager"
+            decoding="sync"
+            width="1920"
+            height="1080"
             style={{
               willChange: 'transform'
             }}
@@ -49,7 +49,10 @@ const Hero = () => {
             <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white" style={{
             textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
           }} asChild>
-              
+              <a href="tel:+18448586546">
+                <Phone className="w-5 h-5 mr-2" />
+                Call (844) 858-6546
+              </a>
             </Button>
           </div>
         </div>
