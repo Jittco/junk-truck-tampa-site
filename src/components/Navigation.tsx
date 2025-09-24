@@ -8,7 +8,7 @@ const Navigation = () => {
   const [isDemolitionDropdownOpen, setIsDemolitionDropdownOpen] = useState(false);
   const demolitionCategory = serviceCategories.find(cat => cat.slug === 'demolition');
   const demolitionServices = demolitionCategory?.services?.sort((a, b) => a.order - b.order) || [];
-  const aboutItems = ["Our Story", "FAQs", "Reviews"];
+  const aboutItems = ["Our Story", "FAQs", "Reviews", "Pricing"];
   return <>
       {/* Two-Tier Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white">
@@ -133,7 +133,7 @@ const Navigation = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="dropdown-content">
                   {aboutItems.map(item => <DropdownMenuItem key={item} asChild>
-                      <a href="#about" className="dropdown-nav-link">
+                      <a href={item === "Pricing" ? "/pricing" : "#about"} className="dropdown-nav-link">
                         {item}
                       </a>
                     </DropdownMenuItem>)}
@@ -227,7 +227,7 @@ const Navigation = () => {
                     <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-90' : ''}`} />
                   </button>
                   {isAboutDropdownOpen && <div className="pl-4 space-y-2 mt-2">
-                      {aboutItems.map(item => <a key={item} href="#about" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      {aboutItems.map(item => <a key={item} href={item === "Pricing" ? "/pricing" : "#about"} className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                           {item}
                         </a>)}
                     </div>}
