@@ -24,6 +24,7 @@ const BrandStory = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
+              loading="lazy"
             ></iframe>
           </div>
         </div>

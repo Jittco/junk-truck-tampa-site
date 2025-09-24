@@ -181,7 +181,7 @@ min</p>
             <div className="mb-12">
               <div className="relative w-full max-w-2xl mx-auto bg-card rounded-lg overflow-hidden shadow-lg">
                 <div className="aspect-video">
-                  <iframe src="https://www.youtube.com/embed/vnm7MOY1jKw" title="Junk in the Truck Co. Service Video" className="w-full h-full" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  <iframe src="https://www.youtube.com/embed/vnm7MOY1jKw" title="Junk in the Truck Co. Service Video" className="w-full h-full" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy"></iframe>
                 </div>
               </div>
             </div>

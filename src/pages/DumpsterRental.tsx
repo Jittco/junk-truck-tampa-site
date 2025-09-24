@@ -265,7 +265,7 @@ const DumpsterRental = () => {
           {/* YouTube Video */}
           <div className="max-w-4xl mx-auto mb-12">
             <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-              <iframe src="https://www.youtube.com/embed/Ri3ZM6FCOBQ" title="How Dumpster Rental Works" className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/Ri3ZM6FCOBQ" title="How Dumpster Rental Works" className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" />
             </div>
           </div>
 
