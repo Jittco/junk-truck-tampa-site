@@ -7,6 +7,7 @@ import { Card, CardContent } from '../components/ui/card';
 import { serviceCategories } from '../data/services';
 import { Clock, DollarSign, Recycle, Star, Phone, Calendar } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
+import YouTubeFacade from '../components/YouTubeFacade';
 
 const PlaysetRemovalService: React.FC = () => {
   const demolitionCategory = serviceCategories.find(cat => cat.slug === 'demolition');
@@ -410,19 +411,12 @@ const PlaysetRemovalService: React.FC = () => {
                 {/* Residential Playset Removal */}
                 <div className="text-center">
                   <h3 className="text-2xl font-anton mb-4">Residential Playset Removal</h3>
-                  <div className="relative w-full aspect-[9/16] mb-4 rounded-lg overflow-hidden shadow-lg">
-                    <iframe
-                      width="100%" 
-                      height="100%"
-                      src="https://www.youtube.com/embed/903IN2vnf0Y"
-                      title="Residential Playset Removal in Tampa Bay backyard"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      loading="lazy"
-                      className="rounded-lg"
-                    ></iframe>
-                  </div>
+                  <YouTubeFacade
+                    videoId="903IN2vnf0Y"
+                    title="Residential Playset Removal in Tampa Bay backyard"
+                    aspectRatio="9/16"
+                    className="mb-4 rounded-lg shadow-lg overflow-hidden"
+                  />
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     In this short video, we complete a residential playset removal in Tampa Bay, safely dismantling and hauling away an old wooden swing set. Our team handles all the heavy lifting and eco-friendly disposal so families in Tampa, Riverview, Brandon, and Apollo Beach can enjoy clutter-free backyards again.
                   </p>
@@ -431,19 +425,12 @@ const PlaysetRemovalService: React.FC = () => {
                 {/* Commercial Playset Removal */}
                 <div className="text-center">
                   <h3 className="text-2xl font-anton mb-4">Commercial Playset Removal</h3>
-                  <div className="relative w-full aspect-[9/16] mb-4 rounded-lg overflow-hidden shadow-lg">
-                    <iframe
-                      width="100%" 
-                      height="100%"
-                      src="https://www.youtube.com/embed/2W4BoiBaI7M"
-                      title="Commercial Playset Removal in Tampa Bay playground"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      loading="lazy"
-                      className="rounded-lg"
-                    ></iframe>
-                  </div>
+                  <YouTubeFacade
+                    videoId="2W4BoiBaI7M"
+                    title="Commercial Playset Removal in Tampa Bay playground"
+                    aspectRatio="9/16"
+                    className="mb-4 rounded-lg shadow-lg overflow-hidden"
+                  />
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     Here you'll see a commercial playset removal in Tampa Bay, where our crew safely took down a large play structure for a local property. From schools and churches to parks and HOAs, Junk in the Truck Co. provides professional, fully insured removal services for playsets of all sizes across St. Petersburg, Carrollwood, and the greater Tampa Bay area.
                   </p>
