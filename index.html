@@ -7,13 +7,17 @@
     <meta name="description" content="Fast, affordable junk removal & light demolition in Tampa Bay. Same-day service available. Professional, eco-friendly disposal." />
     <meta name="author" content="Junk in the Truck Co" />
     
-    <!-- Resource Hints -->
+    <!-- Critical Resource Hints for FCP -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    
-    <!-- Google Fonts with optimized loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical resources -->
+    <link rel="modulepreload" href="/src/main.tsx">
+    <link rel="modulepreload" href="/src/App.tsx">
+    
+    <!-- Google Fonts with optimized loading -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Inter:wght@400;500;600&family=Changa+One:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Inter:wght@400;500;600&family=Changa+One:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
@@ -29,6 +33,6 @@
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" defer></script>
   </body>
 </html>

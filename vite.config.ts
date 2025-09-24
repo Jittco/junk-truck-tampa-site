@@ -11,7 +11,15 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     target: ['es2020', 'chrome80', 'firefox78', 'safari14'],
-    cssTarget: 'es2020'
+    cssTarget: 'es2020',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          ui: ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu']
+        }
+      }
+    }
   },
   plugins: [
     react(),
