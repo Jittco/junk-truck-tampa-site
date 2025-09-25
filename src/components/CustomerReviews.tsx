@@ -13,7 +13,7 @@ const CustomerReviews = () => {
           <script 
             defer 
             async 
-            src="https://cdn.trustindex.io/loader.js?eebdd2152344226b7d7635171a0"
+            src="https://cdn.trustindex.io/loader.js?ad799af54562474f8957f26a85"
             onLoad={() => {}}
           ></script>
         </div>
