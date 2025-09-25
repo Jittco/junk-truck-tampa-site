@@ -110,6 +110,9 @@ const App = () => (
           {/* Demolition Services redirects */}
           <Route path="/demolition-services/" element={<RedirectComponent to="/services/demolition/" />} />
           
+          {/* Service Areas redirects */}
+          <Route path="/services-areas/junk-removal-south-tampa/" element={<RedirectComponent to="/service-areas/south-tampa-fl/" />} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
