@@ -24,7 +24,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg" style={{
           textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
         }}>
-            Affordable Junk Removal in Tampa Bay<br />
+            Professional Junk Removal in Tampa Bay<br />
             <span className="text-primary" style={{
             textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
           }}>Take Back Your Space.</span>
