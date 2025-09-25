@@ -16,6 +16,9 @@ const Hero = () => {
         willChange: 'transform'
       }} />
         
+        {/* Transparent black overlay */}
+        <div className="absolute inset-0 bg-black/20" />
+        
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg" style={{
