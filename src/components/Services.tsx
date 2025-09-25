@@ -15,7 +15,7 @@ const services = [{
   icon: Package,
   title: "Commercial Junk Removal",
   description: "Professional cleanouts for offices, retail spaces, and commercial properties with flexible scheduling.",
-  image: "/lovable-uploads/74e95ef8-072b-429a-a10f-f573ae6084d2.png",
+  image: "/lovable-uploads/commercial-junk-removal-new.png",
   link: "/services/commercial-junk-removal/"
 }, {
   icon: Hammer,
