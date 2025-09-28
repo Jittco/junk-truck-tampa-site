@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     sourcemap: true,
-    target: "es2019"
+    target: "es2020"
   },
   plugins: [
     react(),
