@@ -9,6 +9,10 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  build: {
+    sourcemap: true,
+    target: "es2019"
+  },
   plugins: [
     react(),
     mode === 'development' &&

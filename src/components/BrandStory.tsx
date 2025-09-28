@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import YouTubeLite from './YouTubeLite';
 
 const BrandStory = () => {
   return (
@@ -16,16 +17,11 @@ const BrandStory = () => {
 
         {/* YouTube Video Embed */}
         <div className="mb-12 max-w-4xl mx-auto">
-          <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/e52h_dQO0R4"
-              title="Junk in the Truck Co. Brand Story"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <YouTubeLite 
+            id="e52h_dQO0R4" 
+            title="Junk in the Truck Co — Overview" 
+            thumbnail="/images/yt/e52h_dQO0R4.jpg"
+          />
         </div>
 
         {/* Story Excerpt */}

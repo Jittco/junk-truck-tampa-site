@@ -7,6 +7,7 @@ import { Phone, Calendar, DollarSign, Truck, CheckCircle, Home, Hammer, TreePine
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceAreaMap from "@/components/ServiceAreaMap";
+import YouTubeLite from "../components/YouTubeLite";
 const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
 const PHONE = "844-858-6546";
 const DumpsterRental = () => {
@@ -264,9 +265,10 @@ const DumpsterRental = () => {
 
           {/* YouTube Video */}
           <div className="max-w-4xl mx-auto mb-12">
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-              <iframe src="https://www.youtube.com/embed/Ri3ZM6FCOBQ" title="How Dumpster Rental Works" className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-            </div>
+            <YouTubeLite 
+              id="Ri3ZM6FCOBQ" 
+              title="How Dumpster Rental Works"
+            />
           </div>
 
           <ol className="grid md:grid-cols-3 gap-8 mb-12">
