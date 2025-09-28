@@ -20,7 +20,6 @@ const BrandStory = () => {
           <YouTubeLite 
             id="e52h_dQO0R4" 
             title="Junk in the Truck Co — Overview" 
-            thumbnail="/images/yt/e52h_dQO0R4.jpg"
           />
         </div>
 
