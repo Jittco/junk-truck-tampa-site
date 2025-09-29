@@ -6,6 +6,7 @@ import heroTruck from "@/assets/hero-truck.jpg";
 import shedAfter from "@/assets/shed-after.jpg";
 import yardAfter from "@/assets/yard-after.jpg";
 import residentialJunkRemoval from "@/assets/residential-junk-removal-new.webp";
+import commercialJunkRemoval from "@/assets/commercial-junk-removal-new.webp";
 const services = [{
   icon: Home,
   title: "Residential Junk Removal",
@@ -16,7 +17,7 @@ const services = [{
   icon: Package,
   title: "Commercial Junk Removal",
   description: "Professional cleanouts for offices, retail spaces, and commercial properties with flexible scheduling.",
-  image: "/lovable-uploads/commercial-junk-removal-new.png",
+  image: commercialJunkRemoval,
   link: "/services/commercial-junk-removal/"
 }, {
   icon: Hammer,
