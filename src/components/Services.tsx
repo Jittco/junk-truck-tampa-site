@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 import heroTruck from "@/assets/hero-truck.jpg";
 import shedAfter from "@/assets/shed-after.jpg";
 import yardAfter from "@/assets/yard-after.jpg";
+import residentialJunkRemoval from "@/assets/residential-junk-removal-new.webp";
 const services = [{
   icon: Home,
   title: "Residential Junk Removal",
   description: "Complete home cleanouts, furniture removal, and residential debris disposal with same-day service.",
-  image: "/lovable-uploads/residential-junk-removal-new.png",
+  image: residentialJunkRemoval,
   link: "/services/residential-junk-removal/"
 }, {
   icon: Package,
