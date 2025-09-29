@@ -8,6 +8,7 @@ import yardAfter from "@/assets/yard-after.jpg";
 import residentialJunkRemoval from "@/assets/residential-junk-removal-new.webp";
 import commercialJunkRemoval from "@/assets/commercial-junk-removal-new.webp";
 import demolitionServices from "@/assets/demolition-services-new.webp";
+import dumpsterRental from "@/assets/dumpster-rental-new.webp";
 const services = [{
   icon: Home,
   title: "Residential Junk Removal",
@@ -30,7 +31,7 @@ const services = [{
   icon: Truck,
   title: "Dumpster Rental",
   description: "20-yard roll-off dumpsters delivered to your location for renovation and cleanout projects.",
-  image: "/lovable-uploads/8cc552ae-7f45-4fce-9ab9-57252c36303f.png",
+  image: dumpsterRental,
   link: "/services/dumpster-rental/"
 }];
 const Services = () => {
