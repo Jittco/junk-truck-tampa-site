@@ -1,14 +1,18 @@
+User-agent: *
+Disallow: /seo-dashboard
+
 User-agent: Googlebot
 Allow: /
+Disallow: /seo-dashboard
 
 User-agent: Bingbot
 Allow: /
+Disallow: /seo-dashboard
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /seo-dashboard
 
 User-agent: facebookexternalhit
 Allow: /
-
-User-agent: *
-Allow: /
+Disallow: /seo-dashboard
