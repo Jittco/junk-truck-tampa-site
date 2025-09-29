@@ -10,8 +10,15 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
+    target: "es2020",
     sourcemap: true,
-    target: "es2020"
+    cssCodeSplit: true,
+    modulePreload: true,
+    minify: "esbuild"
+  },
+  esbuild: {
+    target: "es2020",
+    drop: mode === "production" ? ["console", "debugger"] : []
   },
   plugins: [
     react(),

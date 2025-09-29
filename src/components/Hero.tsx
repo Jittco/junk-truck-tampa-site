@@ -10,11 +10,26 @@ const Hero = () => {
       </Helmet>
       
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image optimized for LCP */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-110 contrast-110 saturate-125" style={{
-        backgroundImage: `url(${heroMainImage})`,
-        willChange: 'transform'
-      }} />
+        {/* Background Image optimized for LCP - using <img> for better discovery */}
+        <div className="absolute inset-0 -z-10">
+          <picture>
+            <source 
+              type="image/webp" 
+              srcSet={heroMainImage}
+              sizes="100vw" 
+            />
+            <img
+              src={heroMainImage}
+              alt="Junk in the Truck Co. professional junk removal crew at work in Tampa Bay"
+              className="h-full w-full object-cover brightness-110 contrast-110 saturate-125"
+              width="1920"
+              height="1080"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
+          </picture>
+        </div>
         
         {/* Transparent black overlay */}
         <div className="absolute inset-0 bg-black/20" />
