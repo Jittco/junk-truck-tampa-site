@@ -7,6 +7,7 @@ import shedAfter from "@/assets/shed-after.jpg";
 import yardAfter from "@/assets/yard-after.jpg";
 import residentialJunkRemoval from "@/assets/residential-junk-removal-new.webp";
 import commercialJunkRemoval from "@/assets/commercial-junk-removal-new.webp";
+import demolitionServices from "@/assets/demolition-services-new.webp";
 const services = [{
   icon: Home,
   title: "Residential Junk Removal",
@@ -23,7 +24,7 @@ const services = [{
   icon: Hammer,
   title: "Demolition Services",
   description: "Light demolition for home renovations, deck removal, and property improvements with proper disposal.",
-  image: "/lovable-uploads/83002140-5f76-41b6-b916-a3beec2589d8.png",
+  image: demolitionServices,
   link: "/services/demolition/"
 }, {
   icon: Truck,
