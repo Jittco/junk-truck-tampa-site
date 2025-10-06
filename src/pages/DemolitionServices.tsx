@@ -24,7 +24,7 @@ const DemolitionServices = () => {
         description: "Professional deck demolition and material disposal, including railings and stairs.",
         image: "/assets/deck-removal-hero.png",
         heroImage: "/assets/deck-removal-hero.png",
-        link: "/services/deck-removal/"
+        link: "/services/demolition/deck-removal/"
       },
       {
         title: "Playset Removal",
@@ -38,35 +38,35 @@ const DemolitionServices = () => {
         description: "Controlled demolition for renovation and remodeling projects, walls to floors.",
         image: "/assets/interior-demolition-hero.png",
         heroImage: "/assets/interior-demolition-hero.png",
-        link: "/services/interior-demolition/"
+        link: "/services/demolition/interior-demolition/"
       },
       {
-        title: "Pergola Demolition",
+        title: "Pergola Removal",
         description: "Expert removal of pergolas and outdoor structures with complete cleanup.",
         image: pergolaRemovalImage,
         heroImage: pergolaRemovalImage,
-        link: "/services/pergola-demolition/"
+        link: "/services/demolition/pergola-removal/"
       },
       {
-        title: "Driveway Demo",
+        title: "Driveway Demolition",
         description: "Professional concrete and asphalt driveway removal with proper disposal.",
         image: drivewayDemolitionImage,
         heroImage: drivewayDemolitionImage,
-        link: "/services/driveway-demo/"
+        link: "/services/demolition/driveway-demolition/"
       },
       {
         title: "Fence Removal",
         description: "Complete fence removal including posts, panels, and foundation cleanup.",
         image: "/assets/fence-removal-hero.png",
         heroImage: "/assets/fence-removal-hero.png",
-        link: "/services/fence-removal/"
+        link: "/services/demolition/fence-removal/"
       },
       {
         title: "Pool Removal",
         description: "Above-ground pool dismantling and removal with site restoration.",
         image: poolRemovalImage,
         heroImage: poolRemovalImage,
-        link: "/services/pool-removal/"
+        link: "/services/demolition/pool-removal/"
       }
     ],
     relatedCategories: [

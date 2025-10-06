@@ -111,21 +111,57 @@
   <!-- Demolition Services -->
   <url>
     <loc>https://junkinthetruckco.com/services/demolition/</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2025-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://junkinthetruckco.com/services/demolition/shed-removal/</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2025-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://junkinthetruckco.com/services/demolition/playset-removal/</loc>
-    <lastmod>2024-12-19</lastmod>
+    <lastmod>2025-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://junkinthetruckco.com/services/demolition/deck-removal/</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://junkinthetruckco.com/services/demolition/pergola-removal/</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://junkinthetruckco.com/services/demolition/driveway-demolition/</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://junkinthetruckco.com/services/demolition/interior-demolition/</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://junkinthetruckco.com/services/demolition/fence-removal/</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://junkinthetruckco.com/services/demolition/pool-removal/</loc>
+    <lastmod>2025-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- Specialty Cleanup Services - Removed (moved to Junk Removal category) -->

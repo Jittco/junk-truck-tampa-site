@@ -77,6 +77,7 @@ const App = () => (
           {/* Demolition Services */}
           <Route path="/services/demolition/shed-removal/" element={<ShedRemovalService />} />
           <Route path="/services/demolition/playset-removal/" element={<PlaysetRemovalService />} />
+          {/* Additional demolition services will use generic service detail pages until custom pages are created */}
           
           {/* Service Area pages */}
           <Route path="/service-areas/" element={<ServiceAreaHub />} />
@@ -130,6 +131,21 @@ const App = () => (
           <Route path="/demolition-services/" element={<RedirectComponent to="/services/demolition/" />} />
           <Route path="/demolition-services/playset-removal/" element={<RedirectComponent to="/services/demolition/playset-removal/" />} />
           <Route path="/demolition-services/shed-removal/" element={<RedirectComponent to="/services/demolition/shed-removal/" />} />
+          <Route path="/demolition-services/pergola-demolition/" element={<RedirectComponent to="/services/demolition/pergola-removal/" />} />
+          <Route path="/demolition-services/driveway-demolition/" element={<RedirectComponent to="/services/demolition/driveway-demolition/" />} />
+          <Route path="/demolition-services/interior-demolition/" element={<RedirectComponent to="/services/demolition/interior-demolition/" />} />
+          <Route path="/demolition-services/deck-removal/" element={<RedirectComponent to="/services/demolition/deck-removal/" />} />
+          <Route path="/demolition-services/fence-removal/" element={<RedirectComponent to="/services/demolition/fence-removal/" />} />
+          <Route path="/demolition-services/pool-removal/" element={<RedirectComponent to="/services/demolition/pool-removal/" />} />
+          
+          {/* Legacy demolition URLs (various old formats) */}
+          <Route path="/services/deck-removal/" element={<RedirectComponent to="/services/demolition/deck-removal/" />} />
+          <Route path="/services/interior-demolition/" element={<RedirectComponent to="/services/demolition/interior-demolition/" />} />
+          <Route path="/services/pergola-demolition/" element={<RedirectComponent to="/services/demolition/pergola-removal/" />} />
+          <Route path="/services/driveway-demo/" element={<RedirectComponent to="/services/demolition/driveway-demolition/" />} />
+          <Route path="/services/driveway-demolition/" element={<RedirectComponent to="/services/demolition/driveway-demolition/" />} />
+          <Route path="/services/fence-removal/" element={<RedirectComponent to="/services/demolition/fence-removal/" />} />
+          <Route path="/services/pool-removal/" element={<RedirectComponent to="/services/demolition/pool-removal/" />} />
           
           {/* Service Areas redirects */}
           <Route path="/services-areas/junk-removal-south-tampa/" element={<RedirectComponent to="/service-areas/south-tampa-fl/" />} />

@@ -189,8 +189,8 @@ const PlaysetRemovalService: React.FC = () => {
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:image" content={service.heroImage} />
-        <meta property="og:url" content={`https://junkinthetruckco.com/services/${service.slug}/`} />
-        <link rel="canonical" href={`https://junkinthetruckco.com/services/${service.slug}/`} />
+        <meta property="og:url" content={`https://junkinthetruckco.com/services/demolition/${service.slug}/`} />
+        <link rel="canonical" href={`https://junkinthetruckco.com/services/demolition/${service.slug}/`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
