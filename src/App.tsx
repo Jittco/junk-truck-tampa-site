@@ -128,6 +128,8 @@ const App = () => (
           
           {/* Demolition Services redirects */}
           <Route path="/demolition-services/" element={<RedirectComponent to="/services/demolition/" />} />
+          <Route path="/demolition-services/playset-removal/" element={<RedirectComponent to="/services/demolition/playset-removal/" />} />
+          <Route path="/demolition-services/shed-removal/" element={<RedirectComponent to="/services/demolition/shed-removal/" />} />
           
           {/* Service Areas redirects */}
           <Route path="/services-areas/junk-removal-south-tampa/" element={<RedirectComponent to="/service-areas/south-tampa-fl/" />} />
