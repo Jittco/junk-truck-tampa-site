@@ -13,13 +13,13 @@ const ServicesHub: React.FC = () => {
       title: "Residential Junk Removal",
       description: "Complete home cleanouts and junk removal for Tampa Bay residents.",
       image: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
-      link: "/services/residential-junk-removal/"
+      link: "/services/junk-removal/residential/"
     },
     {
       title: "Commercial Junk Removal", 
       description: "Professional commercial cleanouts for offices, retail, and warehouses.",
       image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-      link: "/services/commercial-junk-removal/"
+      link: "/services/junk-removal/commercial/"
     },
     {
       title: "Demolition Services",

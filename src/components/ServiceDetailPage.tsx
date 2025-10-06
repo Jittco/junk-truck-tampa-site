@@ -95,7 +95,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
       "@type": "LocalBusiness",
       "name": "Junk in the Truck Co.",
       "image": "https://junkinthetruckco.com/logo.png",
-      "url": "https://junkinthetruckco.com/services/appliance-removal",
+      "url": "https://junkinthetruckco.com/services/junk-removal/appliance-removal",
       "telephone": "844-858-6546",
       "address": {
         "@type": "PostalAddress",
@@ -198,8 +198,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:image" content={service.heroImage} />
-        <meta property="og:url" content={`https://junkinthetruckco.com/services/${service.slug}/`} />
-        <link rel="canonical" href={`https://junkinthetruckco.com/services/${service.slug}/`} />
+        <meta property="og:url" content={`https://junkinthetruckco.com/services/${categorySlug}/${service.slug}/`} />
+        <link rel="canonical" href={`https://junkinthetruckco.com/services/${categorySlug}/${service.slug}/`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
@@ -218,6 +218,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               <li><a href="/" className="hover:text-primary">Home</a></li>
               <li>›</li>
               <li><a href="/services" className="hover:text-primary">Services</a></li>
+              <li>›</li>
+              <li><a href={`/services/${categorySlug}/`} className="hover:text-primary">{categoryName}</a></li>
               <li>›</li>
               <li className="text-foreground">{service.name}</li>
             </ol>

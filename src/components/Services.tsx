@@ -14,13 +14,13 @@ const services = [{
   title: "Residential Junk Removal",
   description: "Complete home cleanouts, furniture removal, and residential debris disposal with same-day service.",
   image: residentialJunkRemoval,
-  link: "/services/residential-junk-removal/"
+  link: "/services/junk-removal/residential/"
 }, {
   icon: Package,
   title: "Commercial Junk Removal",
   description: "Professional cleanouts for offices, retail spaces, and commercial properties with flexible scheduling.",
   image: commercialJunkRemoval,
-  link: "/services/commercial-junk-removal/"
+  link: "/services/junk-removal/commercial/"
 }, {
   icon: Hammer,
   title: "Demolition Services",

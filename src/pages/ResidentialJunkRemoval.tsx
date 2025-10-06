@@ -13,31 +13,31 @@ const ResidentialJunkRemoval = () => {
         title: "Appliance Removal",
         description: "Safe removal and eco-friendly disposal of all household appliances including refrigerators, washers, and dryers.",
         image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-        link: "/services/appliance-removal/"
+        link: "/services/junk-removal/appliance-removal/"
       },
       {
         title: "Furniture Removal",
         description: "Quick pickup and responsible disposal of unwanted furniture, from couches to bedroom sets.",
         image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-        link: "/services/furniture-removal/"
+        link: "/services/junk-removal/furniture-removal/"
       },
       {
         title: "Hot Tub Removal",
         description: "We handle the cutting, lifting, and eco-friendly disposal of your old hot tub.",
         image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-        link: "/services/hot-tub-removal/"
+        link: "/services/junk-removal/hot-tub-removal/"
       },
       {
         title: "Yard Waste Removal",
         description: "Clear your outdoor space of debris, branches, leaves, and other yard waste.",
         image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-        link: "/services/yard-waste-removal/"
+        link: "/services/junk-removal/yard-waste-removal/"
       },
       {
         title: "Garage Clean Out",
         description: "Transform your garage from cluttered storage to organized, usable space.",
         image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-        link: "/services/garage-clean-out/"
+        link: "/services/junk-removal/garage-cleanout/"
       },
       {
         title: "Apartment Clean Out",
@@ -57,7 +57,7 @@ const ResidentialJunkRemoval = () => {
         title: "Commercial Junk Removal",
         description: "Professional cleanouts for offices and retail spaces",
         image: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
-        link: "/services/commercial-junk-removal/"
+        link: "/services/junk-removal/commercial/"
       },
       {
         title: "Demolition Services",

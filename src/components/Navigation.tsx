@@ -48,52 +48,52 @@ const Navigation = () => {
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/residential-junk-removal/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/residential/" className="dropdown-nav-link">
                       Residential Junk Removal
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/commercial-junk-removal/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/commercial/" className="dropdown-nav-link">
                       Commercial Junk Removal
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/appliance-removal/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/appliance-removal/" className="dropdown-nav-link">
                       Appliance Removal
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/furniture-removal/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/furniture-removal/" className="dropdown-nav-link">
                       Furniture Removal
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/hot-tub-removal/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/hot-tub-removal/" className="dropdown-nav-link">
                       Hot Tub Removal
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/yard-waste-removal/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/yard-waste-removal/" className="dropdown-nav-link">
                       Yard Waste Removal
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/garage-clean-out/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/garage-cleanout/" className="dropdown-nav-link">
                       Garage Clean Out
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/estate-clean-out/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/estate-cleanout/" className="dropdown-nav-link">
                       Estate Clean Out
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/hoarder-cleanup/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/hoarder-cleanup/" className="dropdown-nav-link">
                       Hoarder Cleanup
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <a href="/services/homeless-encampment-cleanup/" className="dropdown-nav-link">
+                    <a href="/services/junk-removal/homeless-encampment-cleanup/" className="dropdown-nav-link">
                       Homeless Encampment Cleanup
                     </a>
                   </DropdownMenuItem>
@@ -171,34 +171,34 @@ const Navigation = () => {
                       <a href="/services" className="block py-2 text-foreground font-inter hover:bg-muted rounded font-semibold" onClick={() => setIsMenuOpen(false)}>
                         All Services
                       </a>
-                      <a href="/services/residential-junk-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/residential/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Residential Junk Removal
                       </a>
-                      <a href="/services/commercial-junk-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/commercial/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Commercial Junk Removal
                       </a>
-                      <a href="/services/appliance-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/appliance-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Appliance Removal
                       </a>
-                      <a href="/services/furniture-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/furniture-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Furniture Removal
                       </a>
-                      <a href="/services/hot-tub-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/hot-tub-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Hot Tub Removal
                       </a>
-                      <a href="/services/yard-waste-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/yard-waste-removal/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Yard Waste Removal
                       </a>
-                      <a href="/services/garage-clean-out/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/garage-cleanout/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Garage Clean Out
                       </a>
-                      <a href="/services/estate-clean-out/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/estate-cleanout/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Estate Clean Out
                       </a>
-                      <a href="/services/hoarder-cleanup/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/hoarder-cleanup/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Hoarder Cleanup
                       </a>
-                      <a href="/services/homeless-encampment-cleanup/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
+                      <a href="/services/junk-removal/homeless-encampment-cleanup/" className="block py-2 text-foreground font-inter hover:bg-muted rounded" onClick={() => setIsMenuOpen(false)}>
                         Homeless Encampment Cleanup
                       </a>
                     </div>}

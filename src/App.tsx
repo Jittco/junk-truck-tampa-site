@@ -30,6 +30,7 @@ import ShedRemovalService from "./pages/ShedRemovalService";
 import PlaysetRemovalService from "./pages/PlaysetRemovalService";
 import HoarderCleanupService from "./pages/HoarderCleanupService";
 import HomelessEncampmentCleanupService from "./pages/HomelessEncampmentCleanupService";
+import JunkRemovalHub from "./pages/JunkRemovalHub";
 
 // Service Area pages
 import ServiceAreaHub from "./pages/ServiceAreaHub";
@@ -55,30 +56,28 @@ const App = () => (
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/services" element={<ServicesHub />} />
+          <Route path="/services/junk-removal/" element={<JunkRemovalHub />} />
           <Route path="/services/demolition/" element={<DemolitionServices />} />
           <Route path="/services/dumpster-rental/" element={<DumpsterRental />} />
           <Route path="/pricing" element={<Pricing />} />
           
-          {/* New individual service pages with clean URLs */}
-          <Route path="/services/residential-junk-removal/" element={<ResidentialJunkRemovalService />} />
-          <Route path="/services/commercial-junk-removal/" element={<CommercialJunkRemovalService />} />
-          <Route path="/services/appliance-removal/" element={<ApplianceRemovalService />} />
-          <Route path="/services/clean-out/" element={<CleanOutService />} />
-          <Route path="/services/garage-clean-out/" element={<GarageCleanOutService />} />
-          <Route path="/services/estate-clean-out/" element={<EstateCleanOutService />} />
-          <Route path="/services/furniture-removal/" element={<FurnitureRemovalService />} />
-          <Route path="/services/couch-disposal/" element={<CouchDisposalService />} />
-          <Route path="/services/hot-tub-removal/" element={<HotTubRemovalService />} />
-          <Route path="/services/yard-waste-removal/" element={<YardWasteRemovalService />} />
+          {/* Junk Removal Services - New Structure */}
+          <Route path="/services/junk-removal/residential/" element={<ResidentialJunkRemovalService />} />
+          <Route path="/services/junk-removal/commercial/" element={<CommercialJunkRemovalService />} />
+          <Route path="/services/junk-removal/appliance-removal/" element={<ApplianceRemovalService />} />
+          <Route path="/services/junk-removal/clean-outs/" element={<CleanOutService />} />
+          <Route path="/services/junk-removal/garage-cleanout/" element={<GarageCleanOutService />} />
+          <Route path="/services/junk-removal/estate-cleanout/" element={<EstateCleanOutService />} />
+          <Route path="/services/junk-removal/furniture-removal/" element={<FurnitureRemovalService />} />
+          <Route path="/services/junk-removal/hot-tub-removal/" element={<HotTubRemovalService />} />
+          <Route path="/services/junk-removal/yard-waste-removal/" element={<YardWasteRemovalService />} />
+          <Route path="/services/junk-removal/hoarder-cleanup/" element={<HoarderCleanupService />} />
+          <Route path="/services/junk-removal/homeless-encampment-cleanup/" element={<HomelessEncampmentCleanupService />} />
           
           {/* Demolition Services */}
           <Route path="/services/demolition/shed-removal/" element={<ShedRemovalService />} />
           <Route path="/services/demolition/playset-removal/" element={<PlaysetRemovalService />} />
           
-          {/* Specialty Cleanup Services */}
-          <Route path="/services/hoarder-cleanup/" element={<HoarderCleanupService />} />
-          <Route path="/services/homeless-encampment-cleanup/" element={<HomelessEncampmentCleanupService />} />
-
           {/* Service Area pages */}
           <Route path="/service-areas/" element={<ServiceAreaHub />} />
           <Route path="/service-areas/brandon-fl/" element={<BrandonFL />} />
@@ -87,25 +86,45 @@ const App = () => (
           <Route path="/service-areas/south-tampa-fl/" element={<SouthTampaFL />} />
           <Route path="/service-areas/town-n-country-fl/" element={<TownNCountryFL />} />
           
-          {/* 301 Redirects from old URLs to new structure */}
-          <Route path="/junk-removal-services/residential-junk-removal/" element={<RedirectComponent to="/services/residential-junk-removal/" />} />
-          <Route path="/junk-removal-services/commercial-junk-removal/" element={<RedirectComponent to="/services/commercial-junk-removal/" />} />
-          <Route path="/junk-removal-services/appliance-removal/" element={<RedirectComponent to="/services/appliance-removal/" />} />
-          <Route path="/junk-removal-services/clean-out/" element={<RedirectComponent to="/services/clean-out/" />} />
-          <Route path="/junk-removal-services/garage-clean-out/" element={<RedirectComponent to="/services/garage-clean-out/" />} />
-          <Route path="/junk-removal-services/estate-clean-out/" element={<RedirectComponent to="/services/estate-clean-out/" />} />
-          <Route path="/junk-removal-services/furniture-removal/" element={<RedirectComponent to="/services/furniture-removal/" />} />
-          <Route path="/junk-removal-services/couch-disposal/" element={<RedirectComponent to="/services/couch-disposal/" />} />
-          <Route path="/junk-removal-services/hot-tub-removal/" element={<RedirectComponent to="/services/hot-tub-removal/" />} />
-          <Route path="/junk-removal-services/yard-waste-removal/" element={<RedirectComponent to="/services/yard-waste-removal/" />} />
+          {/* 301 Redirects from old /services/{slug}/ to new /services/junk-removal/{slug}/ */}
+          <Route path="/services/residential-junk-removal/" element={<RedirectComponent to="/services/junk-removal/residential/" />} />
+          <Route path="/services/commercial-junk-removal/" element={<RedirectComponent to="/services/junk-removal/commercial/" />} />
+          <Route path="/services/appliance-removal/" element={<RedirectComponent to="/services/junk-removal/appliance-removal/" />} />
+          <Route path="/services/clean-out/" element={<RedirectComponent to="/services/junk-removal/clean-outs/" />} />
+          <Route path="/services/garage-clean-out/" element={<RedirectComponent to="/services/junk-removal/garage-cleanout/" />} />
+          <Route path="/services/estate-clean-out/" element={<RedirectComponent to="/services/junk-removal/estate-cleanout/" />} />
+          <Route path="/services/furniture-removal/" element={<RedirectComponent to="/services/junk-removal/furniture-removal/" />} />
+          <Route path="/services/couch-disposal/" element={<RedirectComponent to="/services/junk-removal/furniture-removal/" />} />
+          <Route path="/services/hot-tub-removal/" element={<RedirectComponent to="/services/junk-removal/hot-tub-removal/" />} />
+          <Route path="/services/yard-waste-removal/" element={<RedirectComponent to="/services/junk-removal/yard-waste-removal/" />} />
+          <Route path="/services/hoarder-cleanup/" element={<RedirectComponent to="/services/junk-removal/hoarder-cleanup/" />} />
+          <Route path="/services/homeless-encampment-cleanup/" element={<RedirectComponent to="/services/junk-removal/homeless-encampment-cleanup/" />} />
           
-          {/* Additional legacy URL patterns */}
-          <Route path="/service/residential-junk-removal-services/" element={<RedirectComponent to="/services/residential-junk-removal/" />} />
-          <Route path="/service/commercial-junk-removal-services/" element={<RedirectComponent to="/services/commercial-junk-removal/" />} />
-          <Route path="/service/appliance-removal-services/" element={<RedirectComponent to="/services/appliance-removal/" />} />
-          <Route path="/service/furniture-removal-services/" element={<RedirectComponent to="/services/furniture-removal/" />} />
-          <Route path="/service/hot-tub-removal-services/" element={<RedirectComponent to="/services/hot-tub-removal/" />} />
-          <Route path="/service/yard-waste-removal-services/" element={<RedirectComponent to="/services/yard-waste-removal/" />} />
+          {/* 301 Redirects from legacy /junk-removal-services/ URLs */}
+          <Route path="/junk-removal-services/residential-junk-removal/" element={<RedirectComponent to="/services/junk-removal/residential/" />} />
+          <Route path="/junk-removal-services/commercial-junk-removal/" element={<RedirectComponent to="/services/junk-removal/commercial/" />} />
+          <Route path="/junk-removal-services/appliance-removal/" element={<RedirectComponent to="/services/junk-removal/appliance-removal/" />} />
+          <Route path="/junk-removal-services/clean-out/" element={<RedirectComponent to="/services/junk-removal/clean-outs/" />} />
+          <Route path="/junk-removal-services/clean-outs/" element={<RedirectComponent to="/services/junk-removal/clean-outs/" />} />
+          <Route path="/junk-removal-services/garage-clean-out/" element={<RedirectComponent to="/services/junk-removal/garage-cleanout/" />} />
+          <Route path="/junk-removal-services/garage-cleanout/" element={<RedirectComponent to="/services/junk-removal/garage-cleanout/" />} />
+          <Route path="/junk-removal-services/estate-clean-out/" element={<RedirectComponent to="/services/junk-removal/estate-cleanout/" />} />
+          <Route path="/junk-removal-services/estate-cleanout/" element={<RedirectComponent to="/services/junk-removal/estate-cleanout/" />} />
+          <Route path="/junk-removal-services/furniture-removal/" element={<RedirectComponent to="/services/junk-removal/furniture-removal/" />} />
+          <Route path="/junk-removal-services/furniture-removal/couch-disposal/" element={<RedirectComponent to="/services/junk-removal/furniture-removal/" />} />
+          <Route path="/junk-removal-services/couch-disposal/" element={<RedirectComponent to="/services/junk-removal/furniture-removal/" />} />
+          <Route path="/junk-removal-services/hot-tub-removal/" element={<RedirectComponent to="/services/junk-removal/hot-tub-removal/" />} />
+          <Route path="/junk-removal-services/hot-tub-removal-2/" element={<RedirectComponent to="/services/junk-removal/hot-tub-removal/" />} />
+          <Route path="/junk-removal-services/yard-waste-removal/" element={<RedirectComponent to="/services/junk-removal/yard-waste-removal/" />} />
+          <Route path="/junk-removal-services/hoarder-cleanup/" element={<RedirectComponent to="/services/junk-removal/hoarder-cleanup/" />} />
+          
+          {/* 301 Redirects from legacy /service/ URLs */}
+          <Route path="/service/residential-junk-removal-services/" element={<RedirectComponent to="/services/junk-removal/residential/" />} />
+          <Route path="/service/commercial-junk-removal-services/" element={<RedirectComponent to="/services/junk-removal/commercial/" />} />
+          <Route path="/service/appliance-removal-services/" element={<RedirectComponent to="/services/junk-removal/appliance-removal/" />} />
+          <Route path="/service/furniture-removal-services/" element={<RedirectComponent to="/services/junk-removal/furniture-removal/" />} />
+          <Route path="/service/hot-tub-removal-services/" element={<RedirectComponent to="/services/junk-removal/hot-tub-removal/" />} />
+          <Route path="/service/yard-waste-removal-services/" element={<RedirectComponent to="/services/junk-removal/yard-waste-removal/" />} />
           
           {/* Demolition Services redirects */}
           <Route path="/demolition-services/" element={<RedirectComponent to="/services/demolition/" />} />

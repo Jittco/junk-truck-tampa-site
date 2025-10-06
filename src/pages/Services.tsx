@@ -10,13 +10,13 @@ const Services = () => {
       title: "Residential Junk Removal",
       description: "From old furniture to household clutter, we'll clear your home fast with upfront pricing and eco-friendly disposal.",
       image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-      link: "/services/residential-junk-removal/"
+      link: "/services/junk-removal/residential/"
     },
     {
       title: "Commercial Junk Removal",
       description: "Professional junk hauling for offices, retail spaces, and warehouses. Same-day and next-day availability to keep your business running smoothly.",
       image: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
-      link: "/services/commercial-junk-removal/"
+      link: "/services/junk-removal/commercial/"
     },
     {
       title: "Demolition Services",

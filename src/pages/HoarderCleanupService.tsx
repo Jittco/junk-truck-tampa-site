@@ -9,8 +9,8 @@ const HoarderCleanupService: React.FC = () => {
   return (
     <ServiceDetailPage
       service={service}
-      categoryName="Specialty Cleanup"
-      categorySlug="specialty-cleanup"
+      categoryName="Junk Removal"
+      categorySlug="junk-removal"
       relatedServices={relatedServices}
     />
   );

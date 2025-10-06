@@ -52,7 +52,7 @@ const CommercialJunkRemoval = () => {
         title: "Residential Junk Removal",
         description: "Home cleanouts and furniture removal services",
         image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-        link: "/services/residential-junk-removal/"
+        link: "/services/junk-removal/residential/"
       },
       {
         title: "Demolition Services",

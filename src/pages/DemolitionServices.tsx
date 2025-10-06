@@ -74,13 +74,13 @@ const DemolitionServices = () => {
         title: "Residential Junk Removal",
         description: "Home cleanouts and furniture removal services",
         image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-        link: "/services/residential-junk-removal/"
+        link: "/services/junk-removal/residential/"
       },
       {
         title: "Commercial Junk Removal",
         description: "Professional cleanouts for businesses",
         image: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
-        link: "/services/commercial-junk-removal/"
+        link: "/services/junk-removal/commercial/"
       },
       {
         title: "Dumpster Rental",
