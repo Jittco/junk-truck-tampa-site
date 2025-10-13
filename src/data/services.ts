@@ -41,8 +41,8 @@ export const serviceCategories: ServiceCategory[] = [
         shortDescription: "Complete home cleanouts and junk removal for Tampa Bay residents. From single items to whole house cleanouts.",
         longDescription: "Our residential junk removal service handles everything from single item pickups to complete estate cleanouts. We'll remove furniture, appliances, electronics, and any unwanted items from your home quickly and responsibly.",
         heroImage: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
-        metaTitle: "Residential Junk Removal Tampa Bay | Junk in the Truck Co",
-        metaDescription: "Professional residential junk removal in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal.",
+        metaTitle: "Residential Junk Removal Tampa Bay | Same-Day Pickup Available",
+        metaDescription: "Get rid of unwanted junk fast! Same-day residential junk removal in Tampa Bay. Upfront pricing, eco-friendly disposal. Book online in 60 seconds or call 844-858-6546.",
         faq: [
           {
             question: "What items can you remove from my home?",
@@ -65,8 +65,8 @@ export const serviceCategories: ServiceCategory[] = [
         shortDescription: "Professional commercial cleanouts for offices, retail spaces, warehouses, and construction sites in Tampa Bay.",
         longDescription: "Our commercial junk removal service helps businesses clear out unwanted items efficiently. Perfect for office moves, retail renovations, warehouse cleanouts, and construction debris removal.",
         heroImage: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
-        metaTitle: "Commercial Junk Removal Tampa Bay | Junk in the Truck Co",
-        metaDescription: "Professional commercial junk removal in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal.",
+        metaTitle: "Commercial Junk Removal Tampa Bay | Fast Business Cleanouts",
+        metaDescription: "Professional commercial junk removal for offices, retail, warehouses. Flexible scheduling, same-day service, upfront pricing. Free estimate: 844-858-6546.",
         faq: [
           {
             question: "Do you work with businesses of all sizes?",
@@ -94,8 +94,8 @@ export const serviceCategories: ServiceCategory[] = [
         shortDescription: "Complete shed demolition and removal service. We'll tear down and haul away your old shed safely and efficiently.",
         longDescription: "Our shed removal service includes complete demolition and cleanup. We'll safely tear down your old shed, remove all debris, and leave your yard clean and ready for your next project.",
         heroImage: "/assets/shed-demolition-hero.png",
-        metaTitle: "Shed Removal Tampa Bay | Junk in the Truck Co",
-        metaDescription: "Professional shed removal and demolition in Tampa Bay. Same-day & next-day service with complete cleanup included.",
+        metaTitle: "Shed Removal Tampa Bay | Complete Demolition & Cleanup $200-$2000",
+        metaDescription: "Professional shed removal & demolition in Tampa Bay. We tear down, haul away & clean up. Free estimate, same-day service available. Call 844-858-6546 now.",
         faq: [
           {
             question: "Do you need permits for shed removal?",
@@ -252,8 +252,8 @@ export const residentialServices: SubService[] = [
     shortDescription: "Professional appliance removal service. We'll haul away old refrigerators, washers, dryers, and all major appliances.",
     longDescription: "Our appliance removal service handles all major appliances including refrigerators, washers, dryers, dishwashers, stoves, and more. We ensure eco-friendly disposal and recycling whenever possible. Serving all of Tampa Bay with same-day service available.",
     heroImage: "/lovable-uploads/b5924327-a32f-49e2-af94-fe75d37ef1cc.png",
-    metaTitle: "Appliance Removal Tampa Bay | Junk in the Truck Co.",
-    metaDescription: "Fast, affordable appliance removal in Tampa Bay. We haul refrigerators, washers, dryers & more. Book online today or call for a free estimate.",
+    metaTitle: "Appliance Removal Tampa Bay | Free Refrigerator & Washer Pickup",
+    metaDescription: "Need old appliances removed? We haul refrigerators, washers, dryers & more with eco-friendly recycling. Same-day service. Free estimate: 844-858-6546.",
     appliancesWeRemove: {
       intro: "We haul away nearly all types of household and commercial appliances, including:",
       items: [
@@ -360,8 +360,8 @@ export const residentialServices: SubService[] = [
     shortDescription: "Complete garage cleanout service. We'll sort, haul away unwanted items, and leave your garage organized and clean.",
     longDescription: "Our garage cleanout service helps you reclaim your space. We'll sort through items, remove unwanted clutter, and can help organize what stays. Perfect for moving preparation or general decluttering. Serving all of Tampa Bay with same-day service available.",
     heroImage: "/lovable-uploads/7afb2643-fc81-4333-ade4-387bd9bc0141.png",
-    metaTitle: "Garage Clean Out Tampa Bay | Junk in the Truck Co",
-    metaDescription: "Professional garage cleanout service in Tampa Bay. Complete sorting and removal with organization assistance.",
+    metaTitle: "Garage Cleanout Tampa Bay | Reclaim Your Space Today",
+    metaDescription: "Transform your cluttered garage into organized space. Full-service garage cleanout with sorting, hauling & disposal. Same-day service. Book now: 844-858-6546.",
     faq: [
       {
         question: "How much does it cost to declutter a garage?",

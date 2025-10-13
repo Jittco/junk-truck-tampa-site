@@ -7,6 +7,8 @@ import { Card, CardContent } from './ui/card';
 import { SubService } from '../data/services';
 import { Clock, DollarSign, Recycle, Star, Phone, Calendar } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
+import LocalBusinessSchema from './LocalBusinessSchema';
+import { Link } from 'react-router-dom';
 interface WhoWeServeItem {
   category: string;
   description: string;
@@ -192,6 +194,11 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     }))
   } : null;
   return <>
+      <LocalBusinessSchema 
+        serviceName={service.name}
+        serviceDescription={service.metaDescription}
+        serviceUrl={`https://junkinthetruckco.com/services/${categorySlug}/${service.slug}/`}
+      />
       <Helmet>
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
@@ -472,21 +479,33 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             </div>
           </section>}
 
-        {/* Related Services */}
-        {relatedServices.length > 0 && <section className="py-16">
+        {/* Related Services - Enhanced with better linking */}
+        {relatedServices.length > 0 && <section className="py-16 bg-muted/30">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-anton text-center mb-12">Related Services</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {relatedServices.slice(0, 3).map((relatedService, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
-                    <CardContent className="p-6">
-                      <img src={relatedService.heroImage} alt={relatedService.name} className="w-full h-40 object-cover rounded-lg mb-4" />
-                      <h3 className="text-xl font-anton mb-2">{relatedService.name}</h3>
-                      <p className="text-muted-foreground mb-4">{relatedService.shortDescription}</p>
-                      <Button variant="outline" className="w-full" onClick={() => window.location.href = `/services/${relatedService.slug}/`}>
-                        Learn More
-                      </Button>
-                    </CardContent>
-                  </Card>)}
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-anton text-center mb-4">Related {categoryName}</h2>
+                <p className="text-center text-muted-foreground mb-12">
+                  Explore our other {categoryName.toLowerCase()} options in Tampa Bay
+                </p>
+                <div className="grid md:grid-cols-3 gap-6">
+                  {relatedServices.slice(0, 3).map((relatedService, index) => <Card key={index} className="hover:shadow-lg transition-all hover:scale-105">
+                      <CardContent className="p-6">
+                        <img src={relatedService.heroImage} alt={`${relatedService.name} in Tampa Bay`} className="w-full h-40 object-cover rounded-lg mb-4" loading="lazy" />
+                        <h3 className="text-xl font-anton mb-2">{relatedService.name}</h3>
+                        <p className="text-muted-foreground mb-4 line-clamp-2">{relatedService.shortDescription}</p>
+                        <Link to={`/services/${categorySlug}/${relatedService.slug}/`} className="inline-flex items-center text-primary hover:underline font-medium">
+                          Learn More →
+                        </Link>
+                      </CardContent>
+                    </Card>)}
+                </div>
+                <div className="text-center mt-8">
+                  <Link to={`/services/${categorySlug}/`}>
+                    <Button variant="outline" size="lg">
+                      View All {categoryName}
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </section>}

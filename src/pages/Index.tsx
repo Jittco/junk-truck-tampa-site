@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import QuickFAQ from "@/components/QuickFAQ";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 
 // Import How It Works images
 import scheduleImg from "@/assets/how-it-works-schedule.jpg";
@@ -30,6 +31,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <LocalBusinessSchema />
       <Navigation />
       <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
