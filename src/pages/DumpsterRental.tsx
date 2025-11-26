@@ -163,7 +163,7 @@ const DumpsterRental = () => {
             <Card className="border-2 border-primary">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-anton text-foreground">1–3 Days</CardTitle>
-                <div className="text-4xl font-bold text-primary">$300</div>
+                <div className="text-4xl font-bold text-primary">$325</div>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-muted-foreground mb-4">Perfect for quick cleanouts</p>
@@ -178,12 +178,12 @@ const DumpsterRental = () => {
             <Card>
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-anton text-foreground">4–7 Days</CardTitle>
-                <div className="text-4xl font-bold text-primary">$350</div>
+                <div className="text-4xl font-bold text-primary">$450</div>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-muted-foreground mb-4">Great for bigger projects</p>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• 1 ton included</li>
+                  <li>• 2 ton included</li>
                   <li>• $0.08 per lb after first ton</li>
                   <li>• Flexible timeline</li>
                 </ul>
@@ -265,10 +265,7 @@ const DumpsterRental = () => {
 
           {/* YouTube Video */}
           <div className="max-w-4xl mx-auto mb-12">
-            <YouTubeLite 
-              id="Ri3ZM6FCOBQ" 
-              title="How Dumpster Rental Works"
-            />
+            <YouTubeLite id="Ri3ZM6FCOBQ" title="How Dumpster Rental Works" />
           </div>
 
           <ol className="grid md:grid-cols-3 gap-8 mb-12">
