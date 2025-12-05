@@ -34,10 +34,7 @@ const Hero = () => {
             </p>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium leading-relaxed">
-            Fast, affordable junk removal & light demolition in Tampa Bay. 
-            Same-day and next-day service available.
-          </p>
+          
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="cta" size="lg" className="px-8 py-4 text-lg" asChild>
