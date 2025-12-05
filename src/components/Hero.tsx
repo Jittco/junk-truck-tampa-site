@@ -43,14 +43,14 @@ const Hero = () => {
             }}
           >
             Your Local Junk Removal Experts in Tampa, FL<br />
-            <span 
+            <p 
               className="text-primary" 
               style={{
                 textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
               }}
             >
               If You've Got Junk That's Gotta Go, Call Junk in the Truck Co.
-            </span>
+            </p>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium leading-relaxed">
