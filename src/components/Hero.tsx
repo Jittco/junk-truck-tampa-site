@@ -22,30 +22,24 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/20" />
         
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg text-left" style={{
-          textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
-        }}>
-            Your Local Junk Removal Experts in Tampa, FL<br />
-            <p style={{
+        <div className="relative z-10 container mx-auto px-4 text-white">
+          <div className="max-w-xl">
+            <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg text-left" style={{
             textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
-          }} className="text-primary text-lg mt-4 text-left">
-              If You've Got Junk That's Gotta Go, Call Junk in the Truck Co.
-            </p>
-          </h1>
-          
-          
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="cta" size="lg" className="px-8 py-4 text-lg" asChild>
-              <a href="https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae">​Get Rid Of Your Junk!            </a>
-            </Button>
+          }}>
+              Your Local Junk Removal Experts in Tampa, FL<br />
+              <p style={{
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
+            }} className="text-primary text-lg mt-4 text-left">
+                If You've Got Junk That's Gotta Go, Call Junk in the Truck Co.
+              </p>
+            </h1>
             
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white" style={{
-            textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-          }} asChild>
-              
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
+              <Button variant="cta" size="lg" className="px-8 py-4 text-lg" asChild>
+                <a href="https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae">​Get Rid Of Your Junk!</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
