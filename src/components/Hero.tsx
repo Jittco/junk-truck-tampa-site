@@ -41,7 +41,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="cta" size="lg" className="px-8 py-4 text-lg" asChild>
-              <a href="https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae">Book Online in 60 Seconds</a>
+              <a href="https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae">​Get Rid Of Your Junk!            </a>
             </Button>
             
             <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white text-white" style={{
