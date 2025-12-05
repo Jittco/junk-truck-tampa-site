@@ -13,21 +13,8 @@ const Hero = () => {
         {/* Background Image optimized for LCP - using <img> for better discovery */}
         <div className="absolute inset-0 -z-10">
           <picture>
-            <source 
-              type="image/webp" 
-              srcSet={heroMainImage}
-              sizes="100vw" 
-            />
-            <img
-              src={heroMainImage}
-              alt="Junk in the Truck Co. professional junk removal crew at work in Tampa Bay"
-              className="h-full w-full object-cover brightness-110 contrast-110 saturate-125"
-              width="1920"
-              height="1080"
-              loading="eager"
-              decoding="async"
-              fetchPriority="high"
-            />
+            <source type="image/webp" srcSet={heroMainImage} sizes="100vw" />
+            <img src={heroMainImage} alt="Junk in the Truck Co. professional junk removal crew at work in Tampa Bay" className="h-full w-full object-cover brightness-110 contrast-110 saturate-125" width="1920" height="1080" loading="eager" decoding="async" fetchPriority="high" />
           </picture>
         </div>
         
@@ -36,19 +23,13 @@ const Hero = () => {
         
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 
-            className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg" 
-            style={{
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
-            }}
-          >
+          <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg" style={{
+          textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
+        }}>
             Your Local Junk Removal Experts in Tampa, FL<br />
-            <p 
-              className="text-primary" 
-              style={{
-                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
-              }}
-            >
+            <p style={{
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
+          }} className="text-primary text-lg mx-0">
               If You've Got Junk That's Gotta Go, Call Junk in the Truck Co.
             </p>
           </h1>
