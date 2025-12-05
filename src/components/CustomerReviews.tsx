@@ -4,7 +4,7 @@ const CustomerReviews = () => {
   useEffect(() => {
     // Create and load the TrustIndex script
     const script = document.createElement('script');
-    script.src = 'https://cdn.trustindex.io/loader.js?ad799af54562474f8957f26a85';
+    script.src = 'https://cdn.trustindex.io/loader.js?70ae7c528dd947220a166ea296a';
     script.defer = true;
     script.async = true;
     document.head.appendChild(script);
