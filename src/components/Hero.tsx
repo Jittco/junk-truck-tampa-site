@@ -23,7 +23,7 @@ const Hero = () => {
         
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg" style={{
+          <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg text-left" style={{
           textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
         }}>
             Your Local Junk Removal Experts in Tampa, FL<br />
