@@ -36,13 +36,21 @@ const Hero = () => {
         
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg" style={{
-          textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
-        }}>
-            Professional Junk Removal in Tampa Bay<br />
-            <span className="text-primary" style={{
-            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
-          }}>Take Back Your Space.</span>
+          <h1 
+            className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg" 
+            style={{
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
+            }}
+          >
+            Your Local Junk Removal Experts in Tampa, FL<br />
+            <span 
+              className="text-primary" 
+              style={{
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
+              }}
+            >
+              If You've Got Junk That's Gotta Go, Call Junk in the Truck Co.
+            </span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium leading-relaxed">
