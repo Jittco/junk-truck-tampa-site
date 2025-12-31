@@ -88,8 +88,8 @@ const Hero = () => {
                 <div className="flex-1 h-px bg-border" />
               </div>
 
-              {/* Lead Capture Form */}
-              <div className="w-full">
+              {/* Lead Capture Form - Hidden on mobile */}
+              <div className="hidden md:block w-full">
                 <iframe 
                   style={{ border: 'none', width: '100%', minHeight: '400px' }}
                   id="hcp-lead-iframe"
