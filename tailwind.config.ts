@@ -111,7 +111,8 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'breathe-3s': 'breathe 1s ease-in-out 0s 3',
-				'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite'
+				'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite',
+				'shake-subtle': 'shake 0.5s ease-in-out'
 			}
 		}
 	},
