@@ -15,7 +15,7 @@ const Contact = () => {
           
           {/* Sticky CTA Button */}
           <Button size="lg" className="bg-cta-green hover:bg-cta-green-hover text-white font-semibold mb-8" asChild>
-            
+            <a href="#hcp-lead-iframe">📅 Request a Free Quote</a>
           </Button>
         </div>
 

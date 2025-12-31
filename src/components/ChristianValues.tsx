@@ -33,7 +33,7 @@ const ChristianValues = () => {
         </div>
 
         <Button asChild className="bg-[#18d13d] hover:bg-[#15b835] text-white font-semibold px-8 py-3 rounded-lg text-lg">
-          
+          <a href="tel:8448586546">📞 Call a Local Junk Removal Team</a>
         </Button>
       </div>
     </section>;
