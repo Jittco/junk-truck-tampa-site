@@ -142,8 +142,8 @@ const Navigation = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button" aria-label="Book junk removal and demolition">
-                Book Now
+              <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button" aria-label="Get a free quote for junk removal and demolition">
+                Get Free Quote
               </a>
             </div>
 
@@ -251,8 +251,8 @@ const Navigation = () => {
       {/* Mobile Sticky Buttons */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 p-4 bg-white border-t">
         <div className="flex gap-3">
-          <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button flex-1 justify-center" aria-label="Book junk removal and demolition">
-            Book Now
+          <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button flex-1 justify-center" aria-label="Get a free quote for junk removal and demolition">
+            Get Free Quote
           </a>
           <a href="tel:813-536-6298" className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold flex-1">
             <Phone className="h-4 w-4" />
