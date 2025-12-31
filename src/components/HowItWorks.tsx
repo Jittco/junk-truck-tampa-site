@@ -53,7 +53,7 @@ export default function HowItWorks({
           </h2>
 
           <p className="font-inter text-lg text-foreground/80 max-w-2xl mx-auto">
-            From residential cleanouts in South Tampa to commercial hauling in Clearwater, Junk in the Truck Co. makes clearing clutter fast and stress-free. Our local crews provide reliable, eco-conscious hauling on your schedule.
+            From residential cleanouts to commercial hauling across the Tampa Bay area, Junk in the Truck Co makes clearing clutter fast and stress-free. Our local crews provide reliable, eco-conscious junk removal on your schedule.
           </p>
         </div>
 
