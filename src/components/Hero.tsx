@@ -68,9 +68,9 @@ const Hero = () => {
             </div>
 
             {/* Desktop-Only Conversion Box */}
-            <div className="hidden lg:block w-full max-w-md bg-white rounded-3xl shadow-2xl p-8 border border-gray-200">
+            <div className="hidden lg:block w-full max-w-md bg-background/98 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-border/50">
               {/* Header */}
-              <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">
+              <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-6 tracking-tight">
                 Get Your Free Quote
               </h2>
               
