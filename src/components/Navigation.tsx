@@ -23,7 +23,7 @@ const Navigation = () => {
             <div className="flex items-center">
               <a
                 href="tel:8448586546"
-                className="inline-flex items-center gap-2 bg-white text-primary font-bold px-5 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 animate-pulse-subtle text-base"
+                className="inline-flex items-center gap-2 bg-white text-primary font-bold px-5 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 animate-shake-subtle text-base"
               >
                 <Phone className="w-5 h-5" />
                 Call Now
