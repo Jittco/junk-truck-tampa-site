@@ -38,7 +38,6 @@ const Index = () => {
           <CustomerReviews />
         </Suspense>
         <Services />
-        <QuickFAQ />
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <HowItWorks 
             step1Img={scheduleImg}
@@ -46,6 +45,7 @@ const Index = () => {
             step3Img={haulImg}
           />
         </Suspense>
+        <QuickFAQ />
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <WhatWeTake />
         </Suspense>
