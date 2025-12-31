@@ -70,7 +70,12 @@ const Hero = () => {
             {/* Desktop-Only Conversion Box */}
             <div className="hidden lg:block w-full max-w-md bg-background/98 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-border/50">
               {/* Header */}
-              <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-6 tracking-tight">
+              <h2 
+                className="text-3xl font-extrabold text-white text-center mb-8 tracking-wide"
+                style={{
+                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                }}
+              >
                 Get Your Free Quote
               </h2>
               
