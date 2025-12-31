@@ -20,7 +20,7 @@ const FAQ = () => {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-anton mb-6 text-foreground">
-            Frequently Asked Questions
+            Tampa Bay Junk Removal FAQs
           </h2>
         </div>
 
