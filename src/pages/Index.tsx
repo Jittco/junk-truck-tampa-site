@@ -35,6 +35,9 @@ const Index = () => {
       <Navigation />
       <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
+        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
+          <CustomerReviews />
+        </Suspense>
         <Services />
         <QuickFAQ />
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
@@ -53,9 +56,6 @@ const Index = () => {
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <WhoWeHelp />
-        </Suspense>
-        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
-          <CustomerReviews />
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <DumpsterVsJunkRemoval />
