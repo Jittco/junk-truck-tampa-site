@@ -2,22 +2,6 @@ import { Phone, MapPin, ExternalLink, Facebook, Instagram, Building } from "luci
 const Footer = () => {
   return <footer className="bg-[#222222] text-[#f9f9f9] py-16 md:py-20">
       <div className="container mx-auto px-4 max-w-6xl">
-        {/* Verse of the Day */}
-        <div className="text-center mb-12 pb-8 border-b border-[#444444]">
-          <div className="font-inter text-sm text-[#f9f9f9] max-w-lg mx-auto">
-            <strong className="text-[#18d13d] block mb-4 text-base">Verse of the Day:</strong>
-            <iframe src="https://www.bible.com/verse-of-the-day" width="100%" height="120" style={{
-            border: 'none',
-            overflow: 'hidden',
-            minHeight: '120px'
-          }} scrolling="no" className="rounded-md bg-white/10 border border-white/20" title="Verse of the Day" loading="lazy" />
-            <noscript>
-              <div className="text-center p-4 bg-white/10 rounded-md border border-white/20">
-                Visit <a href="https://www.bible.com" className="text-[#18d13d] hover:underline" target="_blank" rel="noopener noreferrer">Bible.com</a> for the Verse of the Day
-              </div>
-            </noscript>
-          </div>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           
