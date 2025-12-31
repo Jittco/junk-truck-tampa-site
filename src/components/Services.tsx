@@ -38,9 +38,9 @@ const Services = () => {
   return <section className="py-20 section-bg bg-[t#] bg-transparent rounded-none">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-anton mb-6">Our Services</h2>
+          <h2 className="text-4xl md:text-5xl font-anton mb-6">Junk Removal Services in Tampa Bay</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            From single items to full property cleanouts, we handle it all with professionalism and care.
+            From single-item pickups to full property cleanouts, Junk in the Truck Co provides fast, reliable junk removal services for homes and businesses throughout Tampa Bay.
           </p>
         </div>
         
