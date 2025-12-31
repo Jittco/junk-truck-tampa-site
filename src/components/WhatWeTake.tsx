@@ -1,6 +1,15 @@
 import { Check, X } from "lucide-react";
+
 const WhatWeTake = () => {
-  const itemsWeRemove = ["Household junk & clutter", "Furniture & mattresses", "Appliances (non-hazardous)", "Yard waste & debris", "Construction & renovation debris", "Electronics (small quantities)", "Office & commercial junk"];
+  const itemsWeRemove = [
+    { text: "Household junk & clutter", bold: "Household junk" },
+    { text: "Old Furniture Removal – couches, mattresses & more", bold: "Old Furniture Removal" },
+    { text: "Appliance Recycling – fridges, washers & dryers", bold: "Appliance Recycling" },
+    { text: "Yard waste & debris removal", bold: "Yard waste" },
+    { text: "Construction Debris Hauling – renovation & remodel waste", bold: "Construction Debris Hauling" },
+    { text: "Electronics disposal (small quantities)", bold: "Electronics disposal" },
+    { text: "Office & commercial junk removal", bold: "commercial junk removal" }
+  ];
   const itemsWeDont = ["Hazardous waste & toxic materials", "Paints, stains & solvents", "Oils, fuels & flammable liquids", "Asbestos or contaminated items", "Tires & large auto parts", "Batteries & chemicals", "Medical waste & sharps", "Propane tanks & pressurized containers"];
   return <section className="py-16 bg-[#222222]">
       <div className="container mx-auto px-4">
@@ -22,10 +31,17 @@ const WhatWeTake = () => {
             </div>
             
             <ul className="space-y-3">
-              {itemsWeRemove.map((item, index) => <li key={index} className="flex items-start">
-                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-green-700">{item}</span>
-                </li>)}
+              {itemsWeRemove.map((item, index) => {
+                const parts = item.text.split(item.bold);
+                return (
+                  <li key={index} className="flex items-start">
+                    <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-green-700">
+                      {parts[0]}<strong>{item.bold}</strong>{parts[1] || ''}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
