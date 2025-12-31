@@ -72,9 +72,6 @@ const Services = () => {
         })}
         </div>
         
-        <div className="text-center">
-          <h3 className="text-2xl md:text-3xl font-anton mb-4 text-[#ff0000] text-center">Get $25 Off when you book online!</h3>
-        </div>
       </div>
     </section>;
 };
