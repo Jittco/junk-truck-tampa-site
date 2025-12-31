@@ -13,15 +13,30 @@ const Navigation = () => {
   return <>
       {/* Two-Tier Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white">
-        {/* Utility Bar */}
-        <div className="utility-bar">
+        {/* Desktop Sticky Call Bar */}
+        <div className="utility-bar hidden lg:block">
           <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
+            <div className="flex flex-col">
+              <span className="text-sm font-bold text-white">Junk That's Got to Go?</span>
+              <span className="text-xs text-white/80">We'll Handle It Today</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="text-xs text-white/80">844-858-6546 · Mon–Sat: 8am–6pm</span>
+              <a
+                href="tel:8448586546"
+                className="inline-flex items-center gap-2 bg-white text-primary font-bold px-4 py-1.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 animate-pulse-subtle"
+              >
+                <Phone className="w-4 h-4" />
+                Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* Mobile Utility Bar */}
+        <div className="utility-bar lg:hidden">
+          <div className="flex items-center justify-center w-full max-w-7xl mx-auto">
             <div className="text-sm">
               Same-Day / Next-Day Service Available
-            </div>
-            <div className="hidden sm:flex items-center gap-2 text-sm">
-              <Phone className="h-3 w-3" />
-              844-858-6546 · Mon–Sat: 8am–6pm
             </div>
           </div>
         </div>

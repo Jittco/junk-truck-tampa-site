@@ -101,12 +101,17 @@ export default {
 				'breathe': {
 					'0%, 100%': { transform: 'scale(1)' },
 					'50%': { transform: 'scale(1.05)' }
+				},
+				'pulse-subtle': {
+					'0%, 100%': { boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.4)' },
+					'50%': { boxShadow: '0 0 0 8px rgba(255, 255, 255, 0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'breathe-3s': 'breathe 1s ease-in-out 0s 3'
+				'breathe-3s': 'breathe 1s ease-in-out 0s 3',
+				'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite'
 			}
 		}
 	},
