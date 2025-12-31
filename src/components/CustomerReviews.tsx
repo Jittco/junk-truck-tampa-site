@@ -4,25 +4,34 @@ const CustomerReviews = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Remove any existing TrustIndex scripts first
-    const existingScripts = document.querySelectorAll('script[src*="trustindex.io"]');
-    existingScripts.forEach(script => script.remove());
+    const container = containerRef.current;
+    if (!container) return;
 
-    // Create and load the TrustIndex script
+    const scriptSrc = 'https://cdn.trustindex.io/loader.js?70ae7c528dd947220a166ea296a';
+
+    // Prevent duplicate loads (React StrictMode / remounts)
+    if (container.querySelector(`script[src="${scriptSrc}"]`)) return;
+
     const script = document.createElement('script');
-    script.src = 'https://cdn.trustindex.io/loader.js?70ae7c528dd947220a166ea296a';
+    script.src = scriptSrc;
     script.defer = true;
     script.async = true;
-    
-    // Append to the container div instead of head
-    if (containerRef.current) {
-      containerRef.current.appendChild(script);
-    }
 
-    // Cleanup function to remove script when component unmounts
+    script.onload = () => {
+      console.debug('[TrustIndex] loader loaded');
+    };
+
+    script.onerror = () => {
+      console.error('[TrustIndex] loader failed to load');
+    };
+
+    // Small delay improves reliability when the section is near the top of the page
+    const timer = window.setTimeout(() => {
+      container.appendChild(script);
+    }, 250);
+
     return () => {
-      const scripts = document.querySelectorAll('script[src*="trustindex.io"]');
-      scripts.forEach(s => s.remove());
+      window.clearTimeout(timer);
     };
   }, []);
 
@@ -36,7 +45,7 @@ const CustomerReviews = () => {
           Real reviews from Tampa Bay homeowners, contractors, and businesses we've helped.
         </p>
         
-        <div ref={containerRef} className="max-w-4xl mx-auto">
+        <div ref={containerRef} className="max-w-4xl mx-auto" id="trustindex-widget">
           {/* TrustIndex widget will be loaded here */}
         </div>
       </div>
