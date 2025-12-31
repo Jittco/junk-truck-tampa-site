@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+import { MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
 const ServiceAreaSection = () => {
   const serviceAreas = [
     "Tampa",
@@ -55,6 +59,16 @@ const ServiceAreaSection = () => {
               ))}
             </ul>
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-10">
+          <Button asChild size="lg" className="font-inter">
+            <Link to="/service-areas">
+              <MapPin className="mr-2 h-5 w-5" />
+              View All Service Areas
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
