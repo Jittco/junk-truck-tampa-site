@@ -120,6 +120,13 @@ All colors MUST be HSL.
   padding: 0 32px;
 }
 
+@media (min-width: 1024px) {
+  .utility-bar {
+    background-color: hsl(var(--primary));
+    color: white;
+  }
+}
+
 @media (min-width: 1280px) {
   .utility-bar {
     padding: 0 40px;
