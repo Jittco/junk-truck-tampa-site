@@ -21,8 +21,6 @@ const CustomerReviews = lazy(() => import("@/components/CustomerReviews"));
 const DumpsterVsJunkRemoval = lazy(() => import("@/components/DumpsterVsJunkRemoval"));
 const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs"));
 const BrandStory = lazy(() => import("@/components/BrandStory"));
-const Testimonial = lazy(() => import("@/components/Testimonial"));
-const About = lazy(() => import("@/components/About"));
 const ChristianValues = lazy(() => import("@/components/ChristianValues"));
 const FAQ = lazy(() => import("@/components/FAQ"));
 const Contact = lazy(() => import("@/components/Contact"));
@@ -68,12 +66,6 @@ const Index = () => {
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <BrandStory />
-        </Suspense>
-        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
-          <Testimonial />
-        </Suspense>
-        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
-          <About />
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <ChristianValues />
