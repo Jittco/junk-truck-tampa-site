@@ -17,7 +17,7 @@ const Navigation = () => {
         <div className="utility-bar hidden lg:block">
           <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
             <div className="flex flex-col">
-              <span className="text-base font-bold text-white tracking-wide">Junk That's Got to Go?</span>
+              <span className="text-base font-bold text-white tracking-wide">Junk Gotta Go?</span>
               <span className="text-sm text-white/90">We'll Handle It Today</span>
             </div>
             <div className="flex items-center">
