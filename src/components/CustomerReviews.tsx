@@ -1,20 +1,28 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const CustomerReviews = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
+    // Remove any existing TrustIndex scripts first
+    const existingScripts = document.querySelectorAll('script[src*="trustindex.io"]');
+    existingScripts.forEach(script => script.remove());
+
     // Create and load the TrustIndex script
     const script = document.createElement('script');
     script.src = 'https://cdn.trustindex.io/loader.js?70ae7c528dd947220a166ea296a';
     script.defer = true;
     script.async = true;
-    document.head.appendChild(script);
+    
+    // Append to the container div instead of head
+    if (containerRef.current) {
+      containerRef.current.appendChild(script);
+    }
 
     // Cleanup function to remove script when component unmounts
     return () => {
-      const existingScript = document.querySelector('script[src*="trustindex.io"]');
-      if (existingScript) {
-        existingScript.remove();
-      }
+      const scripts = document.querySelectorAll('script[src*="trustindex.io"]');
+      scripts.forEach(s => s.remove());
     };
   }, []);
 
@@ -28,7 +36,7 @@ const CustomerReviews = () => {
           Real reviews from Tampa Bay homeowners, contractors, and businesses we've helped.
         </p>
         
-        <div className="max-w-4xl mx-auto" id="trustindex-widget">
+        <div ref={containerRef} className="max-w-4xl mx-auto">
           {/* TrustIndex widget will be loaded here */}
         </div>
       </div>
