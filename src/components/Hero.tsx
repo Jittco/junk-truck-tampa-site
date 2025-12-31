@@ -68,30 +68,42 @@ const Hero = () => {
             </div>
 
             {/* Right Column - Conversion Box */}
-            <div className="w-full max-w-md bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 lg:p-8">
+            <div className="w-full max-w-md bg-background/98 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-border/50">
+              {/* Header */}
+              <h2 className="text-2xl font-bold text-foreground text-center mb-6">
+                Get Your Free Quote
+              </h2>
+              
               {/* Primary Call CTA */}
               <a 
                 href="tel:8448586546"
-                className="flex items-center justify-center gap-3 w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
+                className="group flex items-center justify-center gap-3 w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-2xl py-6 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] ring-4 ring-primary/20"
               >
-                <Phone className="h-6 w-6" />
-                <span>📞 Call Now</span>
+                <Phone className="h-7 w-7 group-hover:animate-pulse" />
+                <span>Call Now</span>
               </a>
-              <p className="text-center text-sm text-muted-foreground mt-3 font-medium">
-                Same-Day Service Available
-              </p>
+              
+              {/* Trust Indicators */}
+              <div className="flex items-center justify-center gap-4 mt-4 text-sm text-muted-foreground">
+                <span className="flex items-center gap-1">
+                  <span className="text-primary">✓</span> Same-Day Service
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="text-primary">✓</span> Free Estimates
+                </span>
+              </div>
 
               {/* Divider */}
-              <div className="flex items-center gap-4 my-6">
+              <div className="flex items-center gap-4 my-8">
                 <div className="flex-1 h-px bg-border" />
-                <span className="text-sm text-muted-foreground whitespace-nowrap">Or request a quick estimate</span>
+                <span className="text-sm text-muted-foreground whitespace-nowrap font-medium">Or request online</span>
                 <div className="flex-1 h-px bg-border" />
               </div>
 
               {/* Lead Capture Form */}
-              <div className="w-full">
+              <div className="w-full -mx-2">
                 <iframe 
-                  style={{ border: 'none', width: '100%', minHeight: '400px' }}
+                  style={{ border: 'none', width: 'calc(100% + 16px)', minHeight: '380px' }}
                   id="hcp-lead-iframe"
                   src="https://book.housecallpro.com/lead-form/Junk-in-the-Truck-Co-Junk-Removal/b44873c13a744f49a3fa39fa83e5fa88"
                   title="Request a free estimate"
