@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import QuickFAQ from "@/components/QuickFAQ";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
-import StickyCallBar from "@/components/StickyCallBar";
 
 // Import How It Works images
 import scheduleImg from "@/assets/how-it-works-schedule.jpg";
@@ -89,7 +88,6 @@ const Index = () => {
           <Footer />
         </Suspense>
       </div>
-      <StickyCallBar />
     </div>
   );
 };
