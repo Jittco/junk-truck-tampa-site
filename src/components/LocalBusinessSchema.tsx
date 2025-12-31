@@ -15,11 +15,11 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
     "image": "https://junkinthetruckco.com/lovable-uploads/logo-favicon.png",
     "logo": "https://junkinthetruckco.com/lovable-uploads/logo-favicon.png",
     "url": "https://junkinthetruckco.com",
-    "telephone": "+18448586546",
+    "telephone": "+1-844-858-6546",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "3810 W San Carlos Street",
+      "streetAddress": "3810 W San Carlos St",
       "addressLocality": "Tampa",
       "addressRegion": "FL",
       "postalCode": "33629",
@@ -27,9 +27,10 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 27.9506,
-      "longitude": -82.4572
+      "latitude": 27.9232938,
+      "longitude": -82.5066304
     },
+    "hasMap": "https://www.google.com/maps/place/Junk+in+the+Truck+Co+Junk+Removal/@27.9232938,-82.5066304",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -45,10 +46,16 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
       "bestRating": "5",
       "worstRating": "1"
     },
-    "areaServed": {
-      "@type": "State",
-      "name": "Florida"
-    },
+    "areaServed": [
+      { "@type": "City", "name": "Tampa, FL" },
+      { "@type": "Neighborhood", "name": "South Tampa" },
+      { "@type": "City", "name": "St. Petersburg, FL" },
+      { "@type": "City", "name": "Clearwater, FL" },
+      { "@type": "City", "name": "Brandon, FL" },
+      { "@type": "City", "name": "Riverview, FL" },
+      { "@type": "Neighborhood", "name": "Town 'n' Country, FL" },
+      { "@type": "Neighborhood", "name": "Westchase, FL" }
+    ],
     "sameAs": [
       "https://www.facebook.com/Junkinthetruckco/",
       "https://www.instagram.com/junkinthetruckco/?hl=en",

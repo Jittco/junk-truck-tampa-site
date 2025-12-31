@@ -13,6 +13,7 @@ import haulImg from "@/assets/how-it-works-haul.jpg";
 
 // Lazy load components below the fold
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
+const ServiceAreaSection = lazy(() => import("@/components/ServiceAreaSection"));
 const WhatWeTake = lazy(() => import("@/components/WhatWeTake"));
 const BeforeAfter = lazy(() => import("@/components/BeforeAfter"));
 const WhoWeHelp = lazy(() => import("@/components/WhoWeHelp"));
@@ -46,6 +47,9 @@ const Index = () => {
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <CustomerReviews />
+        </Suspense>
+        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
+          <ServiceAreaSection />
         </Suspense>
         <QuickFAQ />
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
