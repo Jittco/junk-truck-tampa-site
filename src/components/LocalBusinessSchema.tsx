@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
 interface LocalBusinessSchemaProps {
   serviceName?: string;
@@ -7,6 +8,60 @@ interface LocalBusinessSchemaProps {
 }
 
 const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: LocalBusinessSchemaProps) => {
+  // Remove duplicate LocalBusiness schemas injected by third-party widgets
+  useEffect(() => {
+    const removeDuplicateSchemas = () => {
+      const scripts = document.querySelectorAll('script[type="application/ld+json"]');
+      let foundPrimary = false;
+      
+      scripts.forEach((script) => {
+        try {
+          const content = script.textContent;
+          if (!content) return;
+          
+          const data = JSON.parse(content);
+          const schemas = Array.isArray(data) ? data : [data];
+          
+          schemas.forEach((schema) => {
+            // Check if this is a LocalBusiness schema
+            if (schema['@type'] === 'LocalBusiness') {
+              // Keep our primary schema (identified by our specific @id)
+              if (schema['@id'] === 'https://junkinthetruckco.com/#organization') {
+                foundPrimary = true;
+              } else if (foundPrimary) {
+                // Remove duplicate LocalBusiness schemas from third-party sources
+                script.remove();
+                console.debug('[Schema] Removed duplicate LocalBusiness schema from third-party source');
+              }
+            }
+          });
+        } catch (e) {
+          // Not valid JSON, skip
+        }
+      });
+    };
+
+    // Initial cleanup
+    removeDuplicateSchemas();
+
+    // Watch for dynamically injected schemas from widgets
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node instanceof HTMLScriptElement && node.type === 'application/ld+json') {
+            // Delay to allow script content to be set
+            setTimeout(removeDuplicateSchemas, 100);
+          }
+        });
+      });
+    });
+
+    observer.observe(document.head, { childList: true, subtree: true });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    return () => observer.disconnect();
+  }, []);
+
   const baseSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
