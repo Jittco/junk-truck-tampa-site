@@ -42,7 +42,7 @@ const CustomerReviews = () => {
           5-Star Junk Removal in Tampa Bay — Verified Customer Reviews
         </h2>
         <p className="font-inter text-lg mb-12 max-w-3xl mx-auto" style={{ color: '#444444' }}>
-          Real reviews from Homeowners, Referral Partners, and Businesses across Tampa Bay.
+          Real reviews from homeowners, contractors, and businesses across Tampa Bay.
         </p>
         
         <div ref={containerRef} className="max-w-4xl mx-auto" id="trustindex-widget">
