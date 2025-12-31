@@ -70,7 +70,7 @@ const Hero = () => {
             {/* Right Column - Conversion Box */}
             <div className="w-full max-w-md bg-background/98 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-border/50">
               {/* Header */}
-              <h2 className="text-2xl font-bold text-foreground text-center mb-6">
+              <h2 className="text-2xl font-bold text-white text-center mb-6">
                 Get Your Free Quote
               </h2>
               
@@ -84,7 +84,7 @@ const Hero = () => {
               </a>
               
               {/* Trust Indicators */}
-              <div className="flex items-center justify-center gap-4 mt-4 text-sm text-muted-foreground">
+              <div className="flex items-center justify-center gap-4 mt-4 text-sm text-white/90">
                 <span className="flex items-center gap-1">
                   <span className="text-primary">✓</span> Same-Day Service
                 </span>
@@ -95,9 +95,9 @@ const Hero = () => {
 
               {/* Divider */}
               <div className="flex items-center gap-4 my-8">
-                <div className="flex-1 h-px bg-border" />
-                <span className="text-sm text-muted-foreground whitespace-nowrap font-medium">Or request online</span>
-                <div className="flex-1 h-px bg-border" />
+                <div className="flex-1 h-px bg-white/30" />
+                <span className="text-sm text-white/90 whitespace-nowrap font-medium">Or request online</span>
+                <div className="flex-1 h-px bg-white/30" />
               </div>
 
               {/* Lead Capture Form */}
