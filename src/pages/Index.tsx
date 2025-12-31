@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import TrustStrip from "@/components/TrustStrip";
 import Services from "@/components/Services";
 import QuickFAQ from "@/components/QuickFAQ";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
@@ -34,9 +35,7 @@ const Index = () => {
       <Navigation />
       <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
-        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
-          <CustomerReviews />
-        </Suspense>
+        <TrustStrip />
         <Services />
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <HowItWorks 
@@ -44,6 +43,9 @@ const Index = () => {
             step2Img={estimateImg}
             step3Img={haulImg}
           />
+        </Suspense>
+        <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
+          <CustomerReviews />
         </Suspense>
         <QuickFAQ />
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
