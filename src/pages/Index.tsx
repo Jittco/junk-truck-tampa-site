@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
 import Services from "@/components/Services";
-import QuickFAQ from "@/components/QuickFAQ";
+
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 
 // Import How It Works images
@@ -51,7 +51,7 @@ const Index = () => {
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <ServiceAreaSection />
         </Suspense>
-        <QuickFAQ />
+        
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <WhatWeTake />
         </Suspense>
