@@ -46,7 +46,7 @@ const Hero = () => {
         
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center lg:justify-start gap-8 lg:gap-12">
+          <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:gap-12">
             {/* Hero Text - Full width on desktop, shared on mobile */}
             <div className="max-w-xl text-white lg:max-w-2xl">
               <h1 
@@ -67,24 +67,24 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Mobile-Only Conversion Box */}
-            <div className="w-full max-w-md bg-background/98 backdrop-blur-md rounded-3xl shadow-2xl p-6 border border-border/50 lg:hidden">
+            {/* Desktop-Only Conversion Box */}
+            <div className="hidden lg:block w-full max-w-md bg-background/98 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-border/50">
               {/* Header */}
-              <h2 className="text-xl font-bold text-foreground text-center mb-4">
+              <h2 className="text-2xl font-bold text-foreground text-center mb-6">
                 Get Your Free Quote
               </h2>
               
               {/* Primary Call CTA */}
               <a 
                 href="tel:8448586546"
-                className="group flex items-center justify-center gap-3 w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl py-5 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] ring-4 ring-primary/20"
+                className="group flex items-center justify-center gap-3 w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-2xl py-6 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] ring-4 ring-primary/20"
               >
-                <Phone className="h-6 w-6 group-hover:animate-pulse" />
-                <span>📞 Call Now — 844-858-6546</span>
+                <Phone className="h-7 w-7 group-hover:animate-pulse" />
+                <span>Call Now</span>
               </a>
               
               {/* Trust Indicators */}
-              <div className="flex items-center justify-center gap-4 mt-3 text-xs text-muted-foreground">
+              <div className="flex items-center justify-center gap-4 mt-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1">
                   <span className="text-primary">✓</span> Same-Day Service
                 </span>
@@ -94,25 +94,22 @@ const Hero = () => {
               </div>
 
               {/* Divider */}
-              <div className="flex items-center gap-4 my-4">
+              <div className="flex items-center gap-4 my-8">
                 <div className="flex-1 h-px bg-border" />
-                <span className="text-xs text-muted-foreground whitespace-nowrap font-medium">Or request online</span>
+                <span className="text-sm text-muted-foreground whitespace-nowrap font-medium">Or request online</span>
                 <div className="flex-1 h-px bg-border" />
               </div>
 
-              {/* Scroll hint */}
-              <p className="text-xs text-muted-foreground text-center mb-2">Scroll to complete the form</p>
-
               {/* Scrollable Lead Capture Form Container */}
               <div 
-                className="w-full overflow-y-auto overflow-x-hidden"
+                className="w-full overflow-y-auto overflow-x-hidden -mx-2"
                 style={{ 
-                  maxHeight: '400px',
+                  maxHeight: '380px',
                   WebkitOverflowScrolling: 'touch'
                 }}
               >
                 <iframe 
-                  style={{ border: 'none', width: '100%', minHeight: '450px' }}
+                  style={{ border: 'none', width: 'calc(100% + 16px)', minHeight: '450px' }}
                   id="hcp-lead-iframe"
                   src="https://book.housecallpro.com/lead-form/Junk-in-the-Truck-Co-Junk-Removal/b44873c13a744f49a3fa39fa83e5fa88"
                   title="Request a free estimate"
