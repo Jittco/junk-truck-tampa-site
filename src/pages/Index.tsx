@@ -5,6 +5,7 @@ import TrustStrip from "@/components/TrustStrip";
 import Services from "@/components/Services";
 
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import FAQPageSchema from "@/components/FAQPageSchema";
 
 // Import How It Works images
 import scheduleImg from "@/assets/how-it-works-schedule.jpg";
@@ -30,6 +31,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <LocalBusinessSchema />
+      <FAQPageSchema />
       <Navigation />
       <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
