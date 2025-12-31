@@ -9,7 +9,6 @@ import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import scheduleImg from "@/assets/how-it-works-schedule.jpg";
 import estimateImg from "@/assets/how-it-works-estimate.jpg";
 import haulImg from "@/assets/how-it-works-haul.jpg";
-import cleanImg from "@/assets/how-it-works-clean.jpg";
 
 // Lazy load components below the fold
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
@@ -45,7 +44,6 @@ const Index = () => {
             step1Img={scheduleImg}
             step2Img={estimateImg}
             step3Img={haulImg}
-            step4Img={cleanImg}
           />
         </Suspense>
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
