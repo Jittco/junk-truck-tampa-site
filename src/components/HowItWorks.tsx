@@ -76,15 +76,18 @@ export default function HowItWorks({
 
         <div className="text-center">
           <p className="font-anton text-xl md:text-2xl text-foreground mb-6">
-            Ready to reclaim your space?
+            Ready to get rid of your junk today?
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-4">
-            <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
-              <a href={`tel:${PHONE.replace(/[^0-9]/g, "")}`}>
-                📞 Call {PHONE} (Get a Quote in 60 Seconds)
-              </a>
-            </Button>
-            <Button asChild size="lg" className="w-full sm:w-auto">
+            <div className="flex flex-col items-center">
+              <Button asChild size="lg" className="w-full sm:w-auto">
+                <a href={`tel:${PHONE.replace(/[^0-9]/g, "")}`}>
+                  📞 Call Now Get a Quote in 60 Seconds
+                </a>
+              </Button>
+              <span className="font-inter text-xs text-foreground/60 mt-1">Fast response • No obligation</span>
+            </div>
+            <Button variant="outline" asChild size="lg" className="w-full sm:w-auto">
               <a href={BOOK_URL} target="_blank" rel="noopener noreferrer">📅 Request Your Free Quote Online</a>
             </Button>
           </div>
