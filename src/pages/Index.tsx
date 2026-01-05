@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import FAQPageSchema from "@/components/FAQPageSchema";
+import FacebookPixel from "@/components/FacebookPixel";
 
 // Import How It Works images
 import scheduleImg from "@/assets/how-it-works-schedule.jpg";
@@ -32,6 +33,7 @@ const Index = () => {
     <div className="min-h-screen">
       <LocalBusinessSchema />
       <FAQPageSchema />
+      <FacebookPixel />
       <Navigation />
       <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
