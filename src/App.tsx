@@ -50,6 +50,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <Suspense fallback={<div className="min-h-screen" />}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/our-story" element={<OurStory />} />
