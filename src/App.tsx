@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -5,42 +6,40 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
-import Services from "./pages/Services";
-import ServicesHub from "./pages/ServicesHub";
-import ResidentialJunkRemoval from "./pages/ResidentialJunkRemoval";
-import CommercialJunkRemoval from "./pages/CommercialJunkRemoval";
-import DemolitionServices from "./pages/DemolitionServices";
-import DumpsterRental from "./pages/DumpsterRental";
-import Pricing from "./pages/Pricing";
-import NotFound from "./pages/NotFound";
 import RedirectComponent from "./components/RedirectComponent";
 
-// New individual service pages
-import ResidentialJunkRemovalService from "./pages/ResidentialJunkRemovalService";
-import CommercialJunkRemovalService from "./pages/CommercialJunkRemovalService";
-import ApplianceRemovalService from "./pages/ApplianceRemovalService";
-import CleanOutService from "./pages/CleanOutService";
-import GarageCleanOutService from "./pages/GarageCleanOutService";
-import EstateCleanOutService from "./pages/EstateCleanOutService";
-import FurnitureRemovalService from "./pages/FurnitureRemovalService";
-import CouchDisposalService from "./pages/CouchDisposalService";
-import HotTubRemovalService from "./pages/HotTubRemovalService";
-import YardWasteRemovalService from "./pages/YardWasteRemovalService";
-import ShedRemovalService from "./pages/ShedRemovalService";
-import PlaysetRemovalService from "./pages/PlaysetRemovalService";
-import HoarderCleanupService from "./pages/HoarderCleanupService";
-import HomelessEncampmentCleanupService from "./pages/HomelessEncampmentCleanupService";
-import JunkRemovalHub from "./pages/JunkRemovalHub";
-
-// Service Area pages
-import ServiceAreaHub from "./pages/ServiceAreaHub";
-import BrandonFL from "./pages/serviceAreas/BrandonFL";
-import CarrollwoodFL from "./pages/serviceAreas/CarrollwoodFL";
-import TempleTerraceFL from "./pages/serviceAreas/TempleTerraceFL";
-import SouthTampaFL from "./pages/serviceAreas/SouthTampaFL";
-import TownNCountryFL from "./pages/serviceAreas/TownNCountryFL";
-import OurStory from "./pages/OurStory";
-import FAQPage from "./pages/FAQPage";
+// Lazy-load all non-homepage routes for code splitting
+const Services = lazy(() => import("./pages/Services"));
+const ServicesHub = lazy(() => import("./pages/ServicesHub"));
+const ResidentialJunkRemoval = lazy(() => import("./pages/ResidentialJunkRemoval"));
+const CommercialJunkRemoval = lazy(() => import("./pages/CommercialJunkRemoval"));
+const DemolitionServices = lazy(() => import("./pages/DemolitionServices"));
+const DumpsterRental = lazy(() => import("./pages/DumpsterRental"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const ResidentialJunkRemovalService = lazy(() => import("./pages/ResidentialJunkRemovalService"));
+const CommercialJunkRemovalService = lazy(() => import("./pages/CommercialJunkRemovalService"));
+const ApplianceRemovalService = lazy(() => import("./pages/ApplianceRemovalService"));
+const CleanOutService = lazy(() => import("./pages/CleanOutService"));
+const GarageCleanOutService = lazy(() => import("./pages/GarageCleanOutService"));
+const EstateCleanOutService = lazy(() => import("./pages/EstateCleanOutService"));
+const FurnitureRemovalService = lazy(() => import("./pages/FurnitureRemovalService"));
+const CouchDisposalService = lazy(() => import("./pages/CouchDisposalService"));
+const HotTubRemovalService = lazy(() => import("./pages/HotTubRemovalService"));
+const YardWasteRemovalService = lazy(() => import("./pages/YardWasteRemovalService"));
+const ShedRemovalService = lazy(() => import("./pages/ShedRemovalService"));
+const PlaysetRemovalService = lazy(() => import("./pages/PlaysetRemovalService"));
+const HoarderCleanupService = lazy(() => import("./pages/HoarderCleanupService"));
+const HomelessEncampmentCleanupService = lazy(() => import("./pages/HomelessEncampmentCleanupService"));
+const JunkRemovalHub = lazy(() => import("./pages/JunkRemovalHub"));
+const ServiceAreaHub = lazy(() => import("./pages/ServiceAreaHub"));
+const BrandonFL = lazy(() => import("./pages/serviceAreas/BrandonFL"));
+const CarrollwoodFL = lazy(() => import("./pages/serviceAreas/CarrollwoodFL"));
+const TempleTerraceFL = lazy(() => import("./pages/serviceAreas/TempleTerraceFL"));
+const SouthTampaFL = lazy(() => import("./pages/serviceAreas/SouthTampaFL"));
+const TownNCountryFL = lazy(() => import("./pages/serviceAreas/TownNCountryFL"));
+const OurStory = lazy(() => import("./pages/OurStory"));
+const FAQPage = lazy(() => import("./pages/FAQPage"));
 
 const queryClient = new QueryClient();
 
@@ -51,6 +50,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <Suspense fallback={<div className="min-h-screen" />}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/our-story" element={<OurStory />} />
@@ -153,6 +153,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
