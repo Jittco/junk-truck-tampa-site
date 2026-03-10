@@ -1,30 +1,15 @@
 import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet";
-import { useEffect } from "react";
 import heroMainImage from "@/assets/hero-main-page.webp";
 
 const Hero = () => {
-  useEffect(() => {
-    // Load Housecall Pro script
-    const script = document.createElement('script');
-    script.src = 'https://online-booking.housecallpro.com/script.js?token=b44873c13a744f49a3fa39fa83e5fa88&orgName=Junk-in-the-Truck-Co-Junk-Removal';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
-      {/* Critical resource preloading in document head for LCP optimization */}
       <Helmet>
         <link rel="preload" as="image" href={heroMainImage} fetchPriority="high" />
       </Helmet>
       
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image optimized for LCP - using <img> for better discovery */}
         <div className="absolute inset-0 -z-10">
           <picture>
             <source type="image/webp" srcSet={heroMainImage} sizes="100vw" />
@@ -41,13 +26,10 @@ const Hero = () => {
           </picture>
         </div>
         
-        {/* Transparent black overlay */}
         <div className="absolute inset-0 bg-black/20" />
         
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:gap-12">
-            {/* Hero Text - Full width on desktop, shared on mobile */}
+          <div className="flex flex-col items-center lg:items-start gap-8">
             <div className="max-w-xl text-white lg:max-w-2xl">
               <h1 
                 className="text-5xl md:text-7xl font-anton mb-6 leading-tight drop-shadow-lg text-left"
@@ -61,64 +43,26 @@ const Hero = () => {
                 style={{
                   textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
                 }} 
-                className="text-primary text-xl md:text-3xl text-left font-semibold"
+                className="text-primary text-xl md:text-3xl text-left font-semibold mb-8"
               >
                 If You've Got Junk That's Gotta Go, Call Junk in the Truck Co.
               </p>
-            </div>
-
-            {/* Desktop-Only Conversion Box */}
-            <div className="hidden lg:block w-full max-w-md bg-background/98 backdrop-blur-md rounded-3xl shadow-2xl p-8 border border-border/50">
-              {/* Header */}
-              <h2 
-                className="text-3xl font-extrabold text-white text-center mb-8 tracking-wide"
-                style={{
-                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-                }}
-              >
-                Get Your Free Quote
-              </h2>
               
-              {/* Primary Call CTA */}
               <a 
                 href="tel:8448586546"
-                className="group flex items-center justify-center gap-3 w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-2xl py-6 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] ring-4 ring-primary/20"
+                className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-2xl py-6 px-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] ring-4 ring-primary/20"
               >
                 <Phone className="h-7 w-7 group-hover:animate-pulse" />
-                <span>Call Now</span>
+                <span>Call Now for a Free Quote</span>
               </a>
               
-              {/* Trust Indicators */}
-              <div className="flex items-center justify-center gap-4 mt-4 text-sm text-muted-foreground">
+              <div className="flex items-center gap-4 mt-4 text-sm text-white/80">
                 <span className="flex items-center gap-1">
                   <span className="text-primary">✓</span> Same-Day Service
                 </span>
                 <span className="flex items-center gap-1">
                   <span className="text-primary">✓</span> Free Estimates
                 </span>
-              </div>
-
-              {/* Divider */}
-              <div className="flex items-center gap-4 my-8">
-                <div className="flex-1 h-px bg-border" />
-                <span className="text-sm text-muted-foreground whitespace-nowrap font-medium">Or request online</span>
-                <div className="flex-1 h-px bg-border" />
-              </div>
-
-              {/* Scrollable Lead Capture Form Container */}
-              <div 
-                className="w-full overflow-y-auto overflow-x-hidden -mx-2"
-                style={{ 
-                  maxHeight: '380px',
-                  WebkitOverflowScrolling: 'touch'
-                }}
-              >
-                <iframe 
-                  style={{ border: 'none', width: 'calc(100% + 16px)', minHeight: '450px' }}
-                  id="hcp-lead-iframe"
-                  src="https://book.housecallpro.com/lead-form/Junk-in-the-Truck-Co-Junk-Removal/b44873c13a744f49a3fa39fa83e5fa88"
-                  title="Request a free estimate"
-                />
               </div>
             </div>
           </div>
