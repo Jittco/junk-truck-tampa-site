@@ -70,7 +70,12 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-[#444444] text-center">
+        <div className="mt-12 pt-8 border-t border-[#444444] text-center space-y-3">
+          <div className="flex justify-center gap-4 text-sm">
+            <a href="/privacy-policy" className="font-inter hover:text-[#18d13d] transition-colors opacity-70 hover:opacity-100">Privacy Policy</a>
+            <span className="opacity-40">|</span>
+            <a href="/terms-of-service" className="font-inter hover:text-[#18d13d] transition-colors opacity-70 hover:opacity-100">Terms of Service</a>
+          </div>
           <p className="font-inter text-sm opacity-70">
             © Junk in the Truck Co 2025. All rights reserved.
           </p>

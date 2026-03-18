@@ -40,6 +40,8 @@ const SouthTampaFL = lazy(() => import("./pages/serviceAreas/SouthTampaFL"));
 const TownNCountryFL = lazy(() => import("./pages/serviceAreas/TownNCountryFL"));
 const OurStory = lazy(() => import("./pages/OurStory"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 
 const queryClient = new QueryClient();
 
@@ -55,6 +57,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/services" element={<ServicesHub />} />
           <Route path="/services/junk-removal/" element={<JunkRemovalHub />} />
           <Route path="/services/demolition/" element={<DemolitionServices />} />
