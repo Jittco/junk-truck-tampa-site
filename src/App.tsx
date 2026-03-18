@@ -40,6 +40,8 @@ const SouthTampaFL = lazy(() => import("./pages/serviceAreas/SouthTampaFL"));
 const TownNCountryFL = lazy(() => import("./pages/serviceAreas/TownNCountryFL"));
 const OurStory = lazy(() => import("./pages/OurStory"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 
 const queryClient = new QueryClient();
 
