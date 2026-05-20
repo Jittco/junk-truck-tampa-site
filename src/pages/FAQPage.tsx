@@ -117,16 +117,16 @@ const FAQPage = () => {
         <title>Junk Removal FAQs – Junk in the Truck Co.</title>
         <meta 
           name="description" 
-          content="Get answers to the most common junk removal questions in Tampa Bay. Learn about pricing, scheduling, what we take, donations, and our service areas across Hillsborough and Pinellas Counties." 
+          content="Answers to common Tampa Bay junk removal questions — pricing, scheduling, what we take, donations, and our Hillsborough & Pinellas service areas." 
         />
         <meta name="keywords" content="junk removal FAQ, Tampa Bay junk removal questions, pricing, scheduling, donations, service areas" />
-        <link rel="canonical" href="https://junkinthetruck.com/faq" />
+        <link rel="canonical" href="https://junkinthetruckco.com/faq" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Junk Removal FAQs – Junk in the Truck Co." />
-        <meta property="og:description" content="Get answers to the most common junk removal questions in Tampa Bay. Learn about pricing, scheduling, what we take, donations, and our service areas." />
+        <meta property="og:description" content="Answers to common Tampa Bay junk removal questions — pricing, scheduling, what we take, donations, and service areas." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://junkinthetruck.com/faq" />
+        <meta property="og:url" content="https://junkinthetruckco.com/faq" />
         
         {/* Schema Markup */}
         <script type="application/ld+json">

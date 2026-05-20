@@ -1,11 +1,21 @@
 import Navigation from "@/components/Navigation";
 import { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Terms of Service – Junk in the Truck Co.</title>
+        <meta name="description" content="The terms governing your use of Junk in the Truck Co. services in Tampa Bay — junk removal, demolition, and dumpster rental." />
+        <link rel="canonical" href="https://junkinthetruckco.com/terms-of-service" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://junkinthetruckco.com/terms-of-service" />
+        <meta property="og:title" content="Terms of Service – Junk in the Truck Co." />
+        <meta property="og:description" content="Terms governing your use of our junk removal, demolition, and dumpster rental services." />
+      </Helmet>
       <Navigation />
       <div className="pt-32 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">

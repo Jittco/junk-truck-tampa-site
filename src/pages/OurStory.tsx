@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -29,6 +30,33 @@ const faqData = [{
 }];
 const OurStory = () => {
   return <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Our Story | Faith, Family & Service – Junk in the Truck Co.</title>
+        <meta name="description" content="Meet the family behind Junk in the Truck Co. — a Tampa Bay junk removal company built on faith, hard work, and serving our community with integrity." />
+        <link rel="canonical" href="https://junkinthetruckco.com/our-story" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://junkinthetruckco.com/our-story" />
+        <meta property="og:title" content="Our Story – Junk in the Truck Co." />
+        <meta property="og:description" content="The family-owned Tampa Bay junk removal team built on faith, hard work, and community service." />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Junk in the Truck Co",
+          "url": "https://junkinthetruckco.com/",
+          "telephone": "+1-844-858-6546",
+          "areaServed": "Tampa Bay, FL",
+          "sameAs": ["https://junkinthetruckco.com/"]
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqData.map(f => ({
+            "@type": "Question",
+            "name": f.question,
+            "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+          }))
+        })}</script>
+      </Helmet>
       <Navigation />
       
       {/* Hero Section */}
