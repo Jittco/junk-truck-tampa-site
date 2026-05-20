@@ -83,7 +83,7 @@ const Index = () => {
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <Footer />
         </Suspense>
-      </div>
+      </main>
     </div>
   );
 };
