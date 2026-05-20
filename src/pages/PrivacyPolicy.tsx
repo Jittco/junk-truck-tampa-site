@@ -1,11 +1,21 @@
 import Navigation from "@/components/Navigation";
 import { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Privacy Policy – Junk in the Truck Co.</title>
+        <meta name="description" content="How Junk in the Truck Co. collects, uses, and protects your information when you request junk removal, demolition, or dumpster rental in Tampa Bay." />
+        <link rel="canonical" href="https://junkinthetruckco.com/privacy-policy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://junkinthetruckco.com/privacy-policy" />
+        <meta property="og:title" content="Privacy Policy – Junk in the Truck Co." />
+        <meta property="og:description" content="How we collect, use, and protect your information." />
+      </Helmet>
       <Navigation />
       <div className="pt-32 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
