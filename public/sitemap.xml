@@ -2,226 +2,190 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://junkinthetruckco.com/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/our-story</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/our-story</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/faq</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/faq</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/pricing</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/pricing</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Junk Removal Hub -->
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Junk Removal Service Pages -->
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/residential/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/residential/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/commercial/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/commercial/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/appliance-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/appliance-removal/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/clean-outs/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/clean-outs/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/garage-cleanout/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/garage-cleanout/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/estate-cleanout/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/estate-cleanout/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/furniture-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/furniture-removal/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/hot-tub-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/hot-tub-removal/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/yard-waste-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/yard-waste-removal/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/hoarder-cleanup/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/hoarder-cleanup/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/junk-removal/homeless-encampment-cleanup/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/junk-removal/homeless-encampment-cleanup/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- Demolition Services -->
   <url>
-    <loc>https://junkinthetruckco.com/services/demolition/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/demolition/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/demolition/shed-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/demolition/shed-removal/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/services/demolition/playset-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/demolition/playset-removal/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://junkinthetruckco.com/services/demolition/deck-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://junkinthetruckco.com/services/demolition/pergola-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://junkinthetruckco.com/services/demolition/driveway-demolition/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://junkinthetruckco.com/services/demolition/interior-demolition/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://junkinthetruckco.com/services/demolition/fence-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://junkinthetruckco.com/services/demolition/pool-removal/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <!-- Specialty Cleanup Services - Removed (moved to Junk Removal category) -->
 
   <!-- Other Services -->
   <url>
-    <loc>https://junkinthetruckco.com/services/dumpster-rental/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/services/dumpster-rental/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Legal Pages -->
   <url>
-    <loc>https://junkinthetruckco.com/privacy-policy</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/privacy-policy</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/terms-of-service</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/terms-of-service</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- Service Areas -->
   <url>
-    <loc>https://junkinthetruckco.com/service-areas/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/service-areas/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/service-areas/brandon-fl/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/service-areas/brandon-fl/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/service-areas/carrollwood-fl/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/service-areas/carrollwood-fl/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/service-areas/temple-terrace-fl/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/service-areas/temple-terrace-fl/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/service-areas/south-tampa-fl/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/service-areas/south-tampa-fl/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://junkinthetruckco.com/service-areas/town-n-country-fl/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://junk-truck-tampa-site.lovable.app/service-areas/town-n-country-fl/</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

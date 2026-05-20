@@ -35,7 +35,7 @@ const Index = () => {
       <FAQPageSchema />
       <FacebookPixel />
       <Navigation />
-      <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
+      <main className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
         <TrustStrip />
         <Services />
@@ -83,7 +83,7 @@ const Index = () => {
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
           <Footer />
         </Suspense>
-      </div>
+      </main>
     </div>
   );
 };
