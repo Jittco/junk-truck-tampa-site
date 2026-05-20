@@ -35,7 +35,7 @@ const Index = () => {
       <FAQPageSchema />
       <FacebookPixel />
       <Navigation />
-      <div className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
+      <main className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
         <Hero />
         <TrustStrip />
         <Services />
