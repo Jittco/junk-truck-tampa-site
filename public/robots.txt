@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://junkinthetruckco.com/sitemap.xml
+Sitemap: https://junk-truck-tampa-site.lovable.app/sitemap.xml
