@@ -413,6 +413,9 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
           </div>
         </section>
 
+        {/* Service Areas internal links */}
+        <ServiceAreasLinks serviceName={data.categoryName} />
+
         {/* Conversion Band */}
         <section className="py-16 bg-primary text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-hover"></div>
