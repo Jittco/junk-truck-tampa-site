@@ -54,12 +54,15 @@ const ServiceAreaSection = () => {
               Areas We Serve
             </h3>
             <ul className="font-inter text-base text-muted-foreground space-y-2">
-              {serviceAreas.map((area, index) => (
-                <li key={index} className="flex items-center gap-2">
+              {serviceAreas.map((area) => (
+                <li key={area.href} className="flex items-center gap-2">
                   <span className="text-primary">•</span>
-                  <span>{area}</span>
+                  <Link to={area.href} className="hover:text-primary hover:underline transition-colors">
+                    {area.name}
+                  </Link>
                 </li>
               ))}
+
             </ul>
           </div>
         </div>
