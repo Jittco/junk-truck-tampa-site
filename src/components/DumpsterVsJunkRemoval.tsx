@@ -48,9 +48,10 @@ const DumpsterVsJunkRemoval = () => {
             </div>
 
             <a href="/dumpster-rental" className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold transition-colors">
-              👉 Learn more about our Dumpster Rentals
+              View Tampa Bay Dumpster Rental Options
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
+
           </div>
 
           {/* Junk Removal Column */}

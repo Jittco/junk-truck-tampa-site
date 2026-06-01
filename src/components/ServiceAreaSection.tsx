@@ -3,16 +3,19 @@ import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ServiceAreaSection = () => {
-  const serviceAreas = [
-    "Tampa",
-    "South Tampa",
-    "St. Petersburg",
-    "Clearwater",
-    "Brandon",
-    "Riverview",
-    "Town 'n' Country",
-    "Westchase",
+  const serviceAreas: { name: string; href: string }[] = [
+    { name: "South Tampa", href: "/service-areas/south-tampa-fl/" },
+    { name: "Clearwater", href: "/service-areas/clearwater-fl/" },
+    { name: "Carrollwood", href: "/service-areas/carrollwood-fl/" },
+    { name: "Davis Island", href: "/service-areas/davis-islands-fl/" },
+    { name: "Temple Terrace", href: "/service-areas/temple-terrace-fl/" },
+    { name: "Citrus Park", href: "/service-areas/citrus-park-fl/" },
+    { name: "Tampa Palms", href: "/service-areas/tampa-palms-fl/" },
+    { name: "Pinellas Park", href: "/service-areas/pinellas-park-fl/" },
+    { name: "Riverview", href: "/service-areas/riverview-fl/" },
+    { name: "Bloomingdale", href: "/service-areas/bloomingdale-fl/" },
   ];
+
 
   return (
     <section className="py-16 md:py-20 bg-background">
@@ -51,12 +54,15 @@ const ServiceAreaSection = () => {
               Areas We Serve
             </h3>
             <ul className="font-inter text-base text-muted-foreground space-y-2">
-              {serviceAreas.map((area, index) => (
-                <li key={index} className="flex items-center gap-2">
+              {serviceAreas.map((area) => (
+                <li key={area.href} className="flex items-center gap-2">
                   <span className="text-primary">•</span>
-                  <span>{area}</span>
+                  <Link to={area.href} className="hover:text-primary hover:underline transition-colors">
+                    {area.name}
+                  </Link>
                 </li>
               ))}
+
             </ul>
           </div>
         </div>
