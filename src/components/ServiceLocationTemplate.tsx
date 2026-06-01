@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RelatedContent from "@/components/RelatedContent";
 import { ServiceLocation } from "@/data/serviceLocations";
 
 interface Props {
@@ -243,32 +244,8 @@ const ServiceLocationTemplate = ({ data: s }: Props) => {
         </div>
       </section>
 
-      {/* Related links */}
-      <section className="py-12 bg-muted/30 border-b border-border">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-xl font-bold mb-4">Related</h2>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              to={s.serviceHref}
-              className="px-4 py-2 rounded-full bg-background border border-border hover:border-primary hover:text-primary text-sm"
-            >
-              All {s.serviceName} services
-            </Link>
-            <Link
-              to={s.cityHref}
-              className="px-4 py-2 rounded-full bg-background border border-border hover:border-primary hover:text-primary text-sm"
-            >
-              {s.cityName} service area
-            </Link>
-            <Link
-              to="/services"
-              className="px-4 py-2 rounded-full bg-background border border-border hover:border-primary hover:text-primary text-sm"
-            >
-              All services
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Auto cross-links */}
+      <RelatedContent citySlug={s.citySlug} servicePath={s.servicePath} />
 
       {/* Final CTA */}
       <section className="py-16 bg-primary text-primary-foreground">

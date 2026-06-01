@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RelatedContent from "@/components/RelatedContent";
 import { Neighborhood } from "@/data/neighborhoods";
 
 interface Props {
@@ -324,6 +325,11 @@ const NeighborhoodTemplate = ({ neighborhood: n }: Props) => {
           </div>
         </section>
       </main>
+
+      <RelatedContent
+        neighborhoodSlug={n.slug}
+        parentCitySlug={n.parentSlug.replace(/-fl$/, "")}
+      />
 
       <Footer />
     </>
