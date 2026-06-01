@@ -11,6 +11,10 @@ const DemolitionServices = () => {
     heroImage: "/lovable-uploads/e1659d55-3e7c-4e9e-91b7-01af90f4ed00.png",
     metaTitle: "Demolition Services Tampa Bay | Junk in the Truck Co",
     metaDescription: "Affordable Demolition Services in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal for all structures.",
+    quickAnswer: {
+      question: "What demolition services does Junk in the Truck Co offer in Tampa Bay?",
+      answer: "We provide light residential and light commercial demolition across Tampa Bay — including shed removal, deck demolition, pergola removal, playset teardown, fence removal, driveway demolition, pool removal, and interior demolition. Every job includes the tear-down, full debris haul-away, and site cleanup, with upfront pricing and same-day or next-day availability throughout Hillsborough and Pinellas counties.",
+    },
     subServices: [
       {
         title: "Shed Removal",

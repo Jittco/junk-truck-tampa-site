@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Calendar, Truck, Recycle, Phone, Shield, Clock, Leaf, ChevronRight, Home, DollarSign, Check } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
+import ServiceAreasLinks from "@/components/ServiceAreasLinks";
+import QuickAnswer from "@/components/QuickAnswer";
 
 interface SubService {
   title: string;
@@ -29,6 +32,8 @@ interface ServiceCategoryData {
   relatedCategories: RelatedCategory[];
   metaTitle: string;
   metaDescription: string;
+  /** Optional Quick Answer block for AEO/AI-overview optimization */
+  quickAnswer?: { question: string; answer: string };
 }
 
 interface ServiceCategoryHubProps {
@@ -36,6 +41,8 @@ interface ServiceCategoryHubProps {
 }
 
 const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
+  const location = useLocation();
+  const canonicalUrl = `https://www.junkinthetruckco.com${location.pathname}`;
   const whyChooseFeatures = [
     {
       icon: Shield,
@@ -109,6 +116,11 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
       <Helmet>
         <title>{data.metaTitle}</title>
         <meta name="description" content={data.metaDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={data.metaTitle} />
+        <meta property="og:description" content={data.metaDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
@@ -162,6 +174,14 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
           </div>
         </section>
 
+        {/* Quick Answer (AEO/AI overview) */}
+        {data.quickAnswer && (
+          <QuickAnswer
+            question={data.quickAnswer.question}
+            answer={data.quickAnswer.answer}
+          />
+        )}
+
         {/* Sub-Services Grid */}
         <section className="py-16 md:py-20 section-bg">
           <div className="container mx-auto px-4">
@@ -193,7 +213,7 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
                     </p>
                     <Button variant="outline" size="sm" className="w-full" asChild>
                       <a href={service.link}>
-                        Learn More
+                        Explore {service.title}
                       </a>
                     </Button>
                   </CardContent>
@@ -383,7 +403,7 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
                     </p>
                     <Button variant="outline" size="sm" className="w-full" asChild>
                       <a href={category.link}>
-                        View Services
+                        Learn About {category.title}
                       </a>
                     </Button>
                   </CardContent>
@@ -392,6 +412,9 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
             </div>
           </div>
         </section>
+
+        {/* Service Areas internal links */}
+        <ServiceAreasLinks serviceName={data.categoryName} />
 
         {/* Conversion Band */}
         <section className="py-16 bg-primary text-white relative overflow-hidden">
