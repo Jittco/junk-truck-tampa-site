@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RelatedContent from "@/components/RelatedContent";
 import { ServiceLocation } from "@/data/serviceLocations";
 
 interface Props {
