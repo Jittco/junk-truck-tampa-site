@@ -31,13 +31,13 @@ const faqData = [{
 const OurStory = () => {
   return <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Our Story | Faith, Family & Service – Junk in the Truck Co.</title>
-        <meta name="description" content="Meet the family behind Junk in the Truck Co. — a Tampa Bay junk removal company built on faith, hard work, and serving our community with integrity." />
+        <title>About Junk in the Truck Co | Christian-Owned Tampa Bay Junk Removal</title>
+        <meta name="description" content="Junk in the Truck Co is a locally owned, Christian-based junk removal company serving Tampa Bay. Based in South Tampa. Licensed, insured, 5-star rated with 450+ reviews. Not a franchise." />
         <link rel="canonical" href="https://junkinthetruckco.com/our-story" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://junkinthetruckco.com/our-story" />
-        <meta property="og:title" content="Our Story – Junk in the Truck Co." />
-        <meta property="og:description" content="The family-owned Tampa Bay junk removal team built on faith, hard work, and community service." />
+        <meta property="og:title" content="About Junk in the Truck Co | Christian-Owned Tampa Bay Junk Removal" />
+        <meta property="og:description" content="Locally owned, Christian-based Tampa Bay junk removal. Based in South Tampa. Licensed, insured, 5-star rated with 450+ reviews. Not a franchise." />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
