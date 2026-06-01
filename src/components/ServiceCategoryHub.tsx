@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Calendar, Truck, Recycle, Phone, Shield, Clock, Leaf, ChevronRight, Home, DollarSign, Check } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
+import ServiceAreasLinks from "@/components/ServiceAreasLinks";
+import QuickAnswer from "@/components/QuickAnswer";
 
 interface SubService {
   title: string;
@@ -29,6 +32,8 @@ interface ServiceCategoryData {
   relatedCategories: RelatedCategory[];
   metaTitle: string;
   metaDescription: string;
+  /** Optional Quick Answer block for AEO/AI-overview optimization */
+  quickAnswer?: { question: string; answer: string };
 }
 
 interface ServiceCategoryHubProps {
