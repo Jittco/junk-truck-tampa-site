@@ -9,6 +9,10 @@ const CommercialJunkRemoval = () => {
     heroImage: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
     metaTitle: "Commercial Junk Removal Tampa Bay | Junk in the Truck Co",
     metaDescription: "Affordable Commercial Junk Removal in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal for businesses.",
+    quickAnswer: {
+      question: "What commercial junk removal services do you offer in Tampa Bay?",
+      answer: "We handle office cleanouts, retail and restaurant cleanouts, warehouse and industrial debris, post-construction cleanup, medical facility cleanouts, and recurring property-management hauling across Tampa Bay. Service is flexible to your business hours with upfront pricing, fully-insured crews, and same-day or next-day availability throughout Hillsborough and Pinellas counties.",
+    },
     subServices: [
       {
         title: "Office Cleanouts",
