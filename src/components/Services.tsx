@@ -14,26 +14,31 @@ const services = [{
   title: "Residential Junk Removal",
   description: "Complete home cleanouts, furniture removal, and residential debris disposal with same-day service.",
   image: residentialJunkRemoval,
-  link: "/services/junk-removal/residential/"
+  link: "/services/junk-removal/residential/",
+  cta: "View Residential Junk Removal"
 }, {
   icon: Package,
   title: "Commercial Junk Removal",
   description: "Professional cleanouts for offices, retail spaces, and commercial properties with flexible scheduling.",
   image: commercialJunkRemoval,
-  link: "/services/junk-removal/commercial/"
+  link: "/services/junk-removal/commercial/",
+  cta: "View Commercial Junk Removal"
 }, {
   icon: Hammer,
   title: "Demolition Services",
   description: "Light demolition for home renovations, deck removal, and property improvements with proper disposal.",
   image: demolitionServices,
-  link: "/services/demolition/"
+  link: "/services/demolition/",
+  cta: "View Demolition Services"
 }, {
   icon: Truck,
   title: "Dumpster Rental",
   description: "20-yard roll-off dumpsters delivered to your location for renovation and cleanout projects.",
   image: dumpsterRental,
-  link: "/services/dumpster-rental/"
+  link: "/services/dumpster-rental/",
+  cta: "View Dumpster Rental Options"
 }];
+
 const Services = () => {
   return <section className="py-20 section-bg bg-[t#] bg-transparent rounded-none">
       <div className="container mx-auto px-4">
