@@ -114,6 +114,14 @@ const App = () => (
           <Route path="/service-areas/south-tampa/palma-ceia" element={<PalmaCeia />} />
           <Route path="/service-areas/south-tampa/davis-islands" element={<DavisIslands />} />
           <Route path="/service-areas/south-tampa/sunset-park" element={<SunsetPark />} />
+
+          {/* Service × Location combo pages (Batch 3) */}
+          <Route path="/services/junk-removal/hot-tub-removal/south-tampa/" element={<HotTubRemovalSouthTampa />} />
+          <Route path="/services/junk-removal/estate-cleanout/south-tampa/" element={<EstateCleanoutSouthTampa />} />
+          <Route path="/services/junk-removal/garage-cleanout/brandon/" element={<GarageCleanoutBrandon />} />
+          <Route path="/services/demolition/shed-removal/riverview/" element={<ShedRemovalRiverview />} />
+          <Route path="/services/junk-removal/appliance-removal/south-tampa/" element={<ApplianceRemovalSouthTampa />} />
+          <Route path="/services/junk-removal/hoarder-cleanup/tampa/" element={<HoarderCleanupTampa />} />
           
           {/* 301 Redirects from old /services/{slug}/ to new /services/junk-removal/{slug}/ */}
           <Route path="/services/residential-junk-removal/" element={<RedirectComponent to="/services/junk-removal/residential/" />} />
