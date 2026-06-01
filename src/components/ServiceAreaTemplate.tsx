@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RelatedContent from "@/components/RelatedContent";
 import { ServiceArea } from "@/data/serviceAreas";
 import { residentialServices } from "@/data/services";
 
