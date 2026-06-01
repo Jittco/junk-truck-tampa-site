@@ -240,4 +240,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Service × Location pages (Batch 3) -->
+  <url><loc>https://junkinthetruckco.com/services/junk-removal/hot-tub-removal/south-tampa/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://junkinthetruckco.com/services/junk-removal/estate-cleanout/south-tampa/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://junkinthetruckco.com/services/junk-removal/garage-cleanout/brandon/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://junkinthetruckco.com/services/demolition/shed-removal/riverview/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://junkinthetruckco.com/services/junk-removal/appliance-removal/south-tampa/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://junkinthetruckco.com/services/junk-removal/hoarder-cleanup/tampa/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 </urlset>
