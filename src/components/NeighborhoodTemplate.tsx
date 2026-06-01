@@ -326,6 +326,11 @@ const NeighborhoodTemplate = ({ neighborhood: n }: Props) => {
         </section>
       </main>
 
+      <RelatedContent
+        neighborhoodSlug={n.slug}
+        parentCitySlug={n.parentSlug.replace(/-fl$/, "")}
+      />
+
       <Footer />
     </>
   );

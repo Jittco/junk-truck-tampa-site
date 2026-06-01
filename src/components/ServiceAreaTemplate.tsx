@@ -403,6 +403,8 @@ const ServiceAreaTemplate = ({ area }: ServiceAreaTemplateProps) => {
         </section>
       </main>
 
+      <RelatedContent citySlug={area.slug} />
+
       <Footer />
     </>
   );
