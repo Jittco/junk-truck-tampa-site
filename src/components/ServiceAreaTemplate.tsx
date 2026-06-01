@@ -160,6 +160,17 @@ const ServiceAreaTemplate = ({ area, customHead }: ServiceAreaTemplateProps) => 
           </div>
         </section>
 
+        {/* Tampa Bay positioning */}
+        {area.slug !== "south-tampa" && (
+          <section className="py-10 bg-background border-b border-border">
+            <div className="container mx-auto px-4 max-w-4xl">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Junk in the Truck Co serves {area.name} as part of our growing Tampa Bay service area. Based in South Tampa, our team brings the same 5-star, same-day junk removal service to {area.name} that our home community has come to trust.
+              </p>
+            </div>
+          </section>
+        )}
+
         {/* About this area */}
         {area.whatMakesItUnique && (
           <section className="py-16">
