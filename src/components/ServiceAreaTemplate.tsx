@@ -12,14 +12,16 @@ import { residentialServices } from "@/data/services";
 
 interface ServiceAreaTemplateProps {
   area: ServiceArea;
+  customHead?: React.ReactNode;
 }
+
 
 const PHONE = "844-858-6546";
 const PHONE_TEL = "tel:+18448586546";
 const BOOK_URL =
   "https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae";
 
-const ServiceAreaTemplate = ({ area }: ServiceAreaTemplateProps) => {
+const ServiceAreaTemplate = ({ area, customHead }: ServiceAreaTemplateProps) => {
   const url = `https://www.junkinthetruckco.com/service-areas/${area.slug}-${area.state.toLowerCase()}/`;
   const pageTitle = area.metaTitle ?? `Junk Removal in ${area.name}, ${area.state}`;
   const metaDescription =
@@ -90,18 +92,21 @@ const ServiceAreaTemplate = ({ area }: ServiceAreaTemplateProps) => {
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle} | Junk in the Truck Co</title>
-        <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={url} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={url} />
-        <meta property="og:type" content="website" />
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
-      </Helmet>
+      {customHead ?? (
+        <Helmet>
+          <title>{pageTitle} | Junk in the Truck Co</title>
+          <meta name="description" content={metaDescription} />
+          <link rel="canonical" href={url} />
+          <meta property="og:title" content={pageTitle} />
+          <meta property="og:description" content={metaDescription} />
+          <meta property="og:url" content={url} />
+          <meta property="og:type" content="website" />
+          <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+          <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+        </Helmet>
+      )}
+
 
       <Navigation />
 
