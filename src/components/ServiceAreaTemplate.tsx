@@ -12,7 +12,9 @@ import { residentialServices } from "@/data/services";
 
 interface ServiceAreaTemplateProps {
   area: ServiceArea;
+  customHead?: React.ReactNode;
 }
+
 
 const PHONE = "844-858-6546";
 const PHONE_TEL = "tel:+18448586546";
