@@ -41,6 +41,8 @@ interface ServiceCategoryHubProps {
 }
 
 const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
+  const location = useLocation();
+  const canonicalUrl = `https://www.junkinthetruckco.com${location.pathname}`;
   const whyChooseFeatures = [
     {
       icon: Shield,
@@ -114,6 +116,11 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
       <Helmet>
         <title>{data.metaTitle}</title>
         <meta name="description" content={data.metaDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={data.metaTitle} />
+        <meta property="og:description" content={data.metaDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
@@ -198,7 +205,7 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
                     </p>
                     <Button variant="outline" size="sm" className="w-full" asChild>
                       <a href={service.link}>
-                        Learn More
+                        Explore {service.title}
                       </a>
                     </Button>
                   </CardContent>
@@ -388,7 +395,7 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
                     </p>
                     <Button variant="outline" size="sm" className="w-full" asChild>
                       <a href={category.link}>
-                        View Services
+                        Learn About {category.title}
                       </a>
                     </Button>
                   </CardContent>
