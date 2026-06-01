@@ -8,6 +8,7 @@ import { SubService } from '../data/services';
 import { Clock, DollarSign, Recycle, Star, Phone, Calendar } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import LocalBusinessSchema from './LocalBusinessSchema';
+import ServiceAreasLinks from './ServiceAreasLinks';
 import { Link } from 'react-router-dom';
 interface WhoWeServeItem {
   category: string;
@@ -509,6 +510,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               </div>
             </div>
           </section>}
+
+        {/* Service Areas internal links */}
+        <ServiceAreasLinks serviceName={service.name} />
 
         {/* Conversion Band */}
         <section className="py-16 bg-primary text-primary-foreground">
