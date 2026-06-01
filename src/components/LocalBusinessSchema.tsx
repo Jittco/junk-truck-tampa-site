@@ -67,6 +67,7 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
     "@type": "LocalBusiness",
     "@id": "https://junkinthetruckco.com/#organization",
     "name": "Junk in the Truck Co",
+    "description": "Junk in the Truck Co is a Christian-based, locally owned junk removal company serving the greater Tampa Bay area. Based in South Tampa, FL, we offer same-day junk removal, demolition, appliance removal, and commercial cleanouts with upfront pricing and 5-star service across Hillsborough and Pinellas counties.",
     "image": "https://junkinthetruckco.com/lovable-uploads/logo-favicon.png",
     "logo": "https://junkinthetruckco.com/lovable-uploads/logo-favicon.png",
     "url": "https://junkinthetruckco.com",
