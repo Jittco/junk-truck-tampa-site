@@ -88,25 +88,13 @@ const OurStory = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  It all started in 2019 when our founder Carlos Diaz was working at Barnes & Noble 
-                  off Kennedy and Dale Mabry. What began as a simple side hustle — picking up furniture 
-                  in a Chevy S10 with a trailer and reselling on Facebook Marketplace — would grow into 
-                  something much bigger.
+                  Junk in the Truck Co is a locally owned and operated junk removal company proudly serving Tampa Bay. Based in South Tampa, we have built our reputation one job at a time across Hillsborough and Pinellas counties. We are a Christian-based business built on the belief that how you serve others reflects who you are at your core.
                 </p>
                 <p>
-                  Friends and family kept asking about "that junk in the truck," and the phrase stuck. 
-                  As word spread through Facebook advertising, more customers began reaching out for 
-                  junk removal services. What started as one truck soon expanded into multiple trucks 
-                  and a dedicated team.
+                  Our mission is simple: make junk removal stress-free, honest, and fast — while treating every customer like family. We are not a franchise. Every job is handled by our own trained, uniformed team members who show up on time, work hard, and leave your space cleaner than they found it.
                 </p>
                 <p>
-                  But 2018 marked a turning point. When Carlos encountered God, everything changed. 
-                  This divine encounter inspired our bold mission: <strong>"Serving Christ through Junk Removal."</strong>
-                </p>
-                <p>
-                  Today, we approach every job with a heart posture of service — working with integrity, 
-                  praying for our customers, striving for excellence, and honoring the Lord through our work. 
-                  We're not just removing junk; we're serving our community and making a difference, one truck at a time.
+                  We currently serve South Tampa, Hyde Park, Palma Ceia, Davis Islands, Bayshore Beautiful, Carrollwood, Temple Terrace, Clearwater, Riverview, and surrounding communities — with more areas coming soon.
                 </p>
               </div>
             </div>
