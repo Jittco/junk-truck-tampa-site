@@ -174,6 +174,14 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
           </div>
         </section>
 
+        {/* Quick Answer (AEO/AI overview) */}
+        {data.quickAnswer && (
+          <QuickAnswer
+            question={data.quickAnswer.question}
+            answer={data.quickAnswer.answer}
+          />
+        )}
+
         {/* Sub-Services Grid */}
         <section className="py-16 md:py-20 section-bg">
           <div className="container mx-auto px-4">
