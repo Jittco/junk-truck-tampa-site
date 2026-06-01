@@ -69,8 +69,9 @@ const Services = () => {
                   </p>
                   <Button asChild className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300" variant="outline">
                     <Link to={service.link}>
-                      View Category
+                      {service.cta}
                     </Link>
+
                   </Button>
                 </CardContent>
               </Card>;
