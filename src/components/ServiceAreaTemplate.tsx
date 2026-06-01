@@ -21,7 +21,7 @@ const PHONE_TEL = "tel:+18448586546";
 const BOOK_URL =
   "https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae";
 
-const ServiceAreaTemplate = ({ area }: ServiceAreaTemplateProps) => {
+const ServiceAreaTemplate = ({ area, customHead }: ServiceAreaTemplateProps) => {
   const url = `https://www.junkinthetruckco.com/service-areas/${area.slug}-${area.state.toLowerCase()}/`;
   const pageTitle = area.metaTitle ?? `Junk Removal in ${area.name}, ${area.state}`;
   const metaDescription =
