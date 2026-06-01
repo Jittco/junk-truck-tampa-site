@@ -92,18 +92,21 @@ const ServiceAreaTemplate = ({ area, customHead }: ServiceAreaTemplateProps) => 
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle} | Junk in the Truck Co</title>
-        <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={url} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={url} />
-        <meta property="og:type" content="website" />
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
-      </Helmet>
+      {customHead ?? (
+        <Helmet>
+          <title>{pageTitle} | Junk in the Truck Co</title>
+          <meta name="description" content={metaDescription} />
+          <link rel="canonical" href={url} />
+          <meta property="og:title" content={pageTitle} />
+          <meta property="og:description" content={metaDescription} />
+          <meta property="og:url" content={url} />
+          <meta property="og:type" content="website" />
+          <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+          <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+        </Helmet>
+      )}
+
 
       <Navigation />
 
