@@ -38,6 +38,11 @@ const CarrollwoodFL = lazy(() => import("./pages/serviceAreas/CarrollwoodFL"));
 const TempleTerraceFL = lazy(() => import("./pages/serviceAreas/TempleTerraceFL"));
 const SouthTampaFL = lazy(() => import("./pages/serviceAreas/SouthTampaFL"));
 const TownNCountryFL = lazy(() => import("./pages/serviceAreas/TownNCountryFL"));
+const HydePark = lazy(() => import("./pages/neighborhoods/HydePark"));
+const BeachPark = lazy(() => import("./pages/neighborhoods/BeachPark"));
+const PalmaCeia = lazy(() => import("./pages/neighborhoods/PalmaCeia"));
+const DavisIslands = lazy(() => import("./pages/neighborhoods/DavisIslands"));
+const SunsetPark = lazy(() => import("./pages/neighborhoods/SunsetPark"));
 const OurStory = lazy(() => import("./pages/OurStory"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
@@ -90,6 +95,13 @@ const App = () => (
           <Route path="/service-areas/temple-terrace-fl/" element={<TempleTerraceFL />} />
           <Route path="/service-areas/south-tampa-fl/" element={<SouthTampaFL />} />
           <Route path="/service-areas/town-n-country-fl/" element={<TownNCountryFL />} />
+
+          {/* South Tampa neighborhood pages */}
+          <Route path="/service-areas/south-tampa/hyde-park" element={<HydePark />} />
+          <Route path="/service-areas/south-tampa/beach-park" element={<BeachPark />} />
+          <Route path="/service-areas/south-tampa/palma-ceia" element={<PalmaCeia />} />
+          <Route path="/service-areas/south-tampa/davis-islands" element={<DavisIslands />} />
+          <Route path="/service-areas/south-tampa/sunset-park" element={<SunsetPark />} />
           
           {/* 301 Redirects from old /services/{slug}/ to new /services/junk-removal/{slug}/ */}
           <Route path="/services/residential-junk-removal/" element={<RedirectComponent to="/services/junk-removal/residential/" />} />
