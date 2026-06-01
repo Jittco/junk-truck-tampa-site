@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const _link = Link;
 import { Phone, ChevronRight, CheckCircle, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
