@@ -167,14 +167,14 @@ const Navigation = () => {
                 <Phone className="h-4 w-4" />
                 844-858-6546
               </a>
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-foreground hover:text-primary p-2" aria-label="Open menu">
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-foreground hover:text-primary p-2 min-h-11 min-w-11 inline-flex items-center justify-center" aria-label={isMenuOpen ? "Close menu" : "Open menu"} aria-expanded={isMenuOpen} aria-controls="mobile-nav">
+                {isMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
               </button>
             </div>
           </div>
 
           {/* Mobile Navigation */}
-          {isMenuOpen && <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg max-h-[70vh] overflow-y-auto z-50">
+          {isMenuOpen && <div id="mobile-nav" className="lg:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg max-h-[70vh] overflow-y-auto z-50">
               <div className="px-4 py-4 space-y-2 max-w-7xl mx-auto">
                 <div className="py-3 px-4">
                   <button className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2" onClick={() => setIsJunkRemovalDropdownOpen(!isJunkRemovalDropdownOpen)} aria-haspopup="true" aria-expanded={isJunkRemovalDropdownOpen}>
@@ -242,7 +242,7 @@ const Navigation = () => {
                 </a>
                 
                 <div className="py-3 px-4">
-                  <button className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2" onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}>
+                  <button className="flex items-center justify-between w-full text-foreground font-medium font-inter hover:bg-muted rounded py-2" onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)} aria-haspopup="true" aria-expanded={isAboutDropdownOpen}>
                     About Us
                     <ChevronRight className={`h-4 w-4 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-90' : ''}`} />
                   </button>
