@@ -120,13 +120,13 @@ const FAQPage = () => {
           content="Answers to common Tampa Bay junk removal questions — pricing, scheduling, what we take, donations, and our Hillsborough & Pinellas service areas." 
         />
         <meta name="keywords" content="junk removal FAQ, Tampa Bay junk removal questions, pricing, scheduling, donations, service areas" />
-        <link rel="canonical" href="https://junkinthetruckco.com/faq" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/faq" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Junk Removal FAQs – Junk in the Truck Co." />
         <meta property="og:description" content="Answers to common Tampa Bay junk removal questions — pricing, scheduling, what we take, donations, and service areas." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://junkinthetruckco.com/faq" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/faq" />
         
         {/* Schema Markup */}
         <script type="application/ld+json">
@@ -283,7 +283,7 @@ const FAQPage = () => {
                 "name": "Where can I learn more about your company?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Read our story here: https://junkinthetruckco.com/our-story"
+                  "text": "Read our story here: https://www.junkinthetruckco.com/our-story"
                 }
               }
             ]

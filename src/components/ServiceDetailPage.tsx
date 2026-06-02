@@ -97,8 +97,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     "provider": {
       "@type": "LocalBusiness",
       "name": "Junk in the Truck Co.",
-      "image": "https://junkinthetruckco.com/logo.png",
-      "url": "https://junkinthetruckco.com/services/junk-removal/appliance-removal",
+      "image": "https://www.junkinthetruckco.com/logo.png",
+      "url": "https://www.junkinthetruckco.com/services/junk-removal/appliance-removal",
       "telephone": "844-858-6546",
       "address": {
         "@type": "PostalAddress",
@@ -131,7 +131,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         "addressCountry": "US"
       },
       "telephone": "844-858-6546",
-      "url": "https://junkinthetruckco.com"
+      "url": "https://www.junkinthetruckco.com"
     },
     "areaServed": "Tampa Bay, FL",
     "serviceType": service.name
@@ -198,7 +198,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
       <LocalBusinessSchema 
         serviceName={service.name}
         serviceDescription={service.metaDescription}
-        serviceUrl={`https://junkinthetruckco.com/services/${categorySlug}/${service.slug}/`}
+        serviceUrl={`https://www.junkinthetruckco.com/services/${categorySlug}/${service.slug}/`}
       />
       <Helmet>
         <title>{service.metaTitle}</title>
@@ -206,8 +206,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:image" content={service.heroImage} />
-        <meta property="og:url" content={`https://junkinthetruckco.com/services/${categorySlug}/${service.slug}/`} />
-        <link rel="canonical" href={`https://junkinthetruckco.com/services/${categorySlug}/${service.slug}/`} />
+        <meta property="og:url" content={`https://www.junkinthetruckco.com/services/${categorySlug}/${service.slug}/`} />
+        <link rel="canonical" href={`https://www.junkinthetruckco.com/services/${categorySlug}/${service.slug}/`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

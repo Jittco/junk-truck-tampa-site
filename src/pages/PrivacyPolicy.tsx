@@ -10,9 +10,9 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy – Junk in the Truck Co.</title>
         <meta name="description" content="How Junk in the Truck Co. collects, uses, and protects your information when you request junk removal, demolition, or dumpster rental in Tampa Bay." />
-        <link rel="canonical" href="https://junkinthetruckco.com/privacy-policy" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/privacy-policy" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://junkinthetruckco.com/privacy-policy" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/privacy-policy" />
         <meta property="og:title" content="Privacy Policy – Junk in the Truck Co." />
         <meta property="og:description" content="How we collect, use, and protect your information." />
       </Helmet>
@@ -76,7 +76,7 @@ const PrivacyPolicy = () => {
                 <strong>Junk in the Truck Co Junk Removal</strong><br />
                 3810 W San Carlos Street, Tampa, FL 33629<br />
                 Phone: <a href="tel:+18448586546" className="text-[#18d13d] hover:underline">844-858-6546</a><br />
-                Website: <a href="https://junkinthetruckco.com" className="text-[#18d13d] hover:underline">junkinthetruckco.com</a>
+                Website: <a href="https://www.junkinthetruckco.com" className="text-[#18d13d] hover:underline">junkinthetruckco.com</a>
               </p>
             </section>
           </div>

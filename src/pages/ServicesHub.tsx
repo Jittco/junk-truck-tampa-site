@@ -46,7 +46,7 @@ const ServicesHub: React.FC = () => {
         "@type": "ListItem",
         "position": categoryIndex * 10 + serviceIndex + 1,
         "name": service.name,
-        "url": `https://junkinthetruckco.com/services/${category.category}/${service.slug}/`
+        "url": `https://www.junkinthetruckco.com/services/${category.category}/${service.slug}/`
       }))
     )
   };
@@ -58,8 +58,8 @@ const ServicesHub: React.FC = () => {
         <meta name="description" content="Explore residential & commercial junk removal, demolition, and dumpster rentals in Tampa Bay. Upfront pricing and same-day/next-day service." />
         <meta property="og:title" content="Services | Junk in the Truck Co (Tampa Bay)" />
         <meta property="og:description" content="Explore residential & commercial junk removal, demolition, and dumpster rentals in Tampa Bay. Upfront pricing and same-day/next-day service." />
-        <meta property="og:url" content="https://junkinthetruckco.com/services/" />
-        <link rel="canonical" href="https://junkinthetruckco.com/services/" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/services/" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/services/" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

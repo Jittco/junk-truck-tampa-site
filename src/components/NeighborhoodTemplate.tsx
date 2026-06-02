@@ -47,7 +47,7 @@ const NeighborhoodTemplate = ({ neighborhood: n }: Props) => {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Junk Removal",
-    provider: { "@id": "https://junkinthetruckco.com/#organization" },
+    provider: { "@id": "https://www.junkinthetruckco.com/#organization" },
     areaServed: {
       "@type": "Place",
       name: `${n.name}, ${n.parentCity}, Tampa, FL`,

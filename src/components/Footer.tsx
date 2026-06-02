@@ -30,7 +30,7 @@ const Footer = () => {
               
               <div className="flex items-center gap-2">
                 <ExternalLink className="w-4 h-4 text-[#18d13d]" />
-                <a href="https://junkinthetruckco.com" itemProp="url" className="font-inter hover:text-[#18d13d] transition-colors">
+                <a href="https://www.junkinthetruckco.com" itemProp="url" className="font-inter hover:text-[#18d13d] transition-colors">
                   junkinthetruckco.com
                 </a>
               </div>

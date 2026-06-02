@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
@@ -31,6 +32,9 @@ const Footer = lazy(() => import("@/components/Footer"));
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://www.junkinthetruckco.com/" />
+      </Helmet>
       <LocalBusinessSchema />
       <FAQPageSchema />
       <FacebookPixel />
