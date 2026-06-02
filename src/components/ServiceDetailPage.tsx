@@ -216,6 +216,14 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             {JSON.stringify(faqStructuredData)}
           </script>}
       </Helmet>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: categoryName, url: `/services/${categorySlug}/` },
+          { name: service.title, url: `/services/${categorySlug}/${service.slug}/` },
+        ]}
+      />
 
       <Navigation />
 
