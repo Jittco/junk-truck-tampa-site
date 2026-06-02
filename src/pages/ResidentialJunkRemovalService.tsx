@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
 import { Button } from '@/components/ui/button';
 import { Phone, CheckCircle, Clock, Shield, Heart, Star, Users, Recycle } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -9,26 +10,6 @@ import CustomerReviews from '../components/CustomerReviews';
 import ServiceAreas from '../components/ServiceAreas';
 import BeforeAfter from '../components/BeforeAfter';
 const ResidentialJunkRemovalService: React.FC = () => {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Service"],
-    "name": "Junk in the Truck Co - Residential Junk Removal",
-    "description": "Professional residential junk removal services in Tampa Bay. We handle furniture, appliances, electronics, and household clutter with same-day service available.",
-    "url": "https://www.junkinthetruckco.com/services/junk-removal/residential/",
-    "telephone": "844-858-6546",
-    "priceRange": "$95-$400",
-    "areaServed": ["Tampa, FL", "Brandon, FL", "Carrollwood, FL", "Riverview, FL", "Apollo Beach, FL", "St. Petersburg, FL", "Seffner, FL", "Temple Terrace, FL", "Gibsonton, FL", "Valrico, FL", "Plant City, FL", "Lithia, FL"],
-    "serviceType": "Residential Junk Removal",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Junk in the Truck Co",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "FL",
-        "addressLocality": "Tampa Bay"
-      }
-    }
-  };
   const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -81,12 +62,14 @@ const ResidentialJunkRemovalService: React.FC = () => {
         <meta property="og:url" content="https://www.junkinthetruckco.com/services/junk-removal/residential/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-        <script type="application/ld+json">
           {JSON.stringify(faqStructuredData)}
         </script>
       </Helmet>
+      <LocalBusinessSchema
+        serviceName="Residential Junk Removal"
+        serviceDescription="Professional residential junk removal services in Tampa Bay. We handle furniture, appliances, electronics, and household clutter with same-day service available."
+        serviceUrl="https://www.junkinthetruckco.com/services/junk-removal/residential/"
+      />
 
       <Navigation />
 
