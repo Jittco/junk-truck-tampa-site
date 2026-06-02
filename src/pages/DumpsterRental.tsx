@@ -58,7 +58,7 @@ const DumpsterRental = () => {
           {JSON.stringify(jsonLd)}
         </script>
       </Helmet>
-      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Services",url:"/services"},{name:"Dumpster Rental",url:"/services/dumpster-rental/"}]} />
+      
 
       <Navigation />
       <Breadcrumbs items={[
