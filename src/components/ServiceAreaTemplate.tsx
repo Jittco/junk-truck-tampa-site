@@ -320,7 +320,7 @@ const ServiceAreaTemplate = ({ area, customHead }: ServiceAreaTemplateProps) => 
                       <h3 className="text-xl font-anton text-heading-color mb-3">{service.name}</h3>
                       <p className="text-muted-foreground mb-4 leading-relaxed">{service.shortDescription}</p>
                       <Button asChild variant="outline" className="w-full">
-                        <Link to={`/services/${service.slug}/`}>Learn More</Link>
+                        <Link to={`/services/${service.slug}/`}>{`View ${service.name} Services`}</Link>
                       </Button>
                     </CardContent>
                   </Card>
