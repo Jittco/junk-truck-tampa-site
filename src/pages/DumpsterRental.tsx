@@ -44,7 +44,7 @@ const DumpsterRental = () => {
       <Helmet>
         <title>Dumpster Rental Tampa Bay | 18-Yard Roll-Off | Same-Day Delivery</title>
         <meta name="description" content="Affordable 18-yard dumpster rentals in Tampa Bay. Same-day delivery, flat-rate pricing, 1 ton included. Serving Hillsborough & Pinellas. Book online in minutes." />
-        <link rel="canonical" href="/dumpster-rental-tampa" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/services/dumpster-rental/" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
