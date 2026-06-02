@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { serviceAreas } from "@/data/serviceAreas";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const ServiceAreaHub = () => {
   return (
@@ -53,6 +54,7 @@ const ServiceAreaHub = () => {
           })}
         </script>
       </Helmet>
+      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Service Areas",url:"/service-areas/"}]} />
 
       <Navigation />
 

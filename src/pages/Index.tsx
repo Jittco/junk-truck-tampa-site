@@ -30,10 +30,19 @@ const Contact = lazy(() => import("@/components/Contact"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const Index = () => {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Junk in the Truck Co",
+    url: "https://www.junkinthetruckco.com/",
+    publisher: { "@id": "https://www.junkinthetruckco.com/#organization" },
+  };
+
   return (
     <div className="min-h-screen">
       <Helmet>
         <link rel="canonical" href="https://www.junkinthetruckco.com/" />
+        <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
       <LocalBusinessSchema />
       <FAQPageSchema />

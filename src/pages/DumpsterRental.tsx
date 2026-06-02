@@ -8,6 +8,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceAreaMap from "@/components/ServiceAreaMap";
 import YouTubeLite from "../components/YouTubeLite";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
 const PHONE = "844-858-6546";
 const DumpsterRental = () => {
@@ -57,6 +58,7 @@ const DumpsterRental = () => {
           {JSON.stringify(jsonLd)}
         </script>
       </Helmet>
+      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Services",url:"/services"},{name:"Dumpster Rental",url:"/services/dumpster-rental/"}]} />
 
       <Navigation />
 

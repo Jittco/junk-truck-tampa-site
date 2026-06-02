@@ -8,6 +8,7 @@ import { SubService } from '../data/services';
 import { Clock, DollarSign, Recycle, Star, Phone, Calendar } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import LocalBusinessSchema from './LocalBusinessSchema';
+import BreadcrumbSchema from './BreadcrumbSchema';
 import ServiceAreasLinks from './ServiceAreasLinks';
 import { Link } from 'react-router-dom';
 interface WhoWeServeItem {
@@ -215,6 +216,14 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             {JSON.stringify(faqStructuredData)}
           </script>}
       </Helmet>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: categoryName, url: `/services/${categorySlug}/` },
+          { name: service.name, url: `/services/${categorySlug}/${service.slug}/` },
+        ]}
+      />
 
       <Navigation />
 

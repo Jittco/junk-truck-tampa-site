@@ -12,6 +12,7 @@ import { serviceCategories } from "@/data/services";
 import { serviceAreas } from "@/data/serviceAreas";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 // Sample services for quick display
 const featuredServices = ["Furniture Removal", "Appliance Hauling", "Garage & Attic Cleanouts", "Demolition Debris Removal", "Yard Waste Pickup", "Estate Cleanouts", "Commercial Cleanouts", "Construction Debris"];
@@ -58,6 +59,7 @@ const OurStory = () => {
           }))
         })}</script>
       </Helmet>
+      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Our Story",url:"/our-story"}]} />
       <Navigation />
       
       {/* Hero Section */}
