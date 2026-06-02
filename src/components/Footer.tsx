@@ -123,7 +123,18 @@ const Footer = () => {
             {/* Trust badges */}
             <ul className="space-y-2 mb-6 text-sm font-inter">
               <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-[#18d13d]" aria-hidden="true" /> Licensed &amp; Insured</li>
-              <li className="flex items-center gap-2"><Award className="w-4 h-4 text-[#18d13d]" aria-hidden="true" /> 5-Star Rated &middot; 150+ Reviews</li>
+              <li className="flex items-center gap-2">
+                <Award className="w-4 h-4 text-[#18d13d] flex-shrink-0" aria-hidden="true" />
+                <a
+                  href="https://share.google/xjuAIoxw48qL7Oky7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#18d13d] transition-colors underline-offset-4 hover:underline"
+                  aria-label="Read our 450+ five-star Google reviews"
+                >
+                  5-Star Rated &middot; 450+ Google Reviews
+                </a>
+              </li>
               <li className="flex items-center gap-2"><Leaf className="w-4 h-4 text-[#18d13d]" aria-hidden="true" /> Eco-Friendly Disposal</li>
             </ul>
 
