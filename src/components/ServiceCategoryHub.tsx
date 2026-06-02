@@ -126,6 +126,13 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: data.categoryName, url: location.pathname },
+        ]}
+      />
       
       <Navigation />
       <div className="pt-32">
