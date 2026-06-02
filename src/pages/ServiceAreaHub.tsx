@@ -24,7 +24,7 @@ const ServiceAreaHub = () => {
             "name": "Junk in the Truck Co",
             "description": "Professional junk removal services throughout Tampa Bay",
             "telephone": "(813) 536-6298",
-            "url": "https://junkinthetruck.co",
+            "url": "https://www.junkinthetruckco.com",
             "serviceArea": serviceAreas.map(area => ({
               "@type": "City",
               "name": `${area.name}, ${area.state}`
