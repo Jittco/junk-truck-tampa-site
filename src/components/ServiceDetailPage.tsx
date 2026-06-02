@@ -504,7 +504,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                         <h3 className="text-xl font-anton mb-2">{relatedService.name}</h3>
                         <p className="text-muted-foreground mb-4 line-clamp-2">{relatedService.shortDescription}</p>
                         <Link to={`/services/${categorySlug}/${relatedService.slug}/`} className="inline-flex items-center text-primary hover:underline font-medium">
-                          Learn More →
+                          {`View ${relatedService.name} →`}
                         </Link>
                       </CardContent>
                     </Card>)}

@@ -67,6 +67,15 @@ const Pricing = () => {
     question: "Do you offer same-day service?",
     answer: "Often yes! Call 844-858-6546 to confirm same-day availability in your area."
   }];
+  const pricingFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(f => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
   return <>
       <Helmet>
         <title>Junk Removal Pricing | Pay by Truck Space | Tampa Bay</title>
@@ -76,6 +85,7 @@ const Pricing = () => {
         <meta property="og:url" content="https://www.junkinthetruckco.com/pricing" />
         <meta property="og:title" content="Junk Removal Pricing | Pay by Truck Space | Tampa Bay" />
         <meta property="og:description" content="Transparent junk removal pricing in Tampa Bay. Pay only for the truck space you use — no hidden fees." />
+        <script type="application/ld+json">{JSON.stringify(pricingFaqSchema)}</script>
       </Helmet>
 
       <Navigation />
@@ -111,7 +121,7 @@ const Pricing = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
-                  se book online
+                  Book Online Now
                 </a>
                 <a href="tel:844-858-6546" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors text-lg">
                   <Phone className="h-5 w-5" />

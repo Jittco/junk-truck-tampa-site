@@ -206,7 +206,7 @@ export const CategoryHubPage: React.FC<CategoryHubPageProps> = ({
                       className="w-full group"
                       onClick={() => window.location.href = `/services/${category.slug}/${service.slug}/`}
                     >
-                      Learn More
+                      View {service.name}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </CardContent>
