@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import ServiceAreasLinks from "@/components/ServiceAreasLinks";
 import QuickAnswer from "@/components/QuickAnswer";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 interface SubService {
   title: string;
