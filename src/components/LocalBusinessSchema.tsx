@@ -98,7 +98,7 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "150",
+      "reviewCount": "450",
       "bestRating": "5",
       "worstRating": "1"
     },
