@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
