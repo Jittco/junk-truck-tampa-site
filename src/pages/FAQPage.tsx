@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar } from "lucide-react";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const faqCategories = [
   {
@@ -294,9 +294,13 @@ const FAQPage = () => {
       <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"FAQ",url:"/faq"}]} />
 
       <Navigation />
-      
+      <Breadcrumbs items={[
+        { name: "Home", url: "/" },
+        { name: "FAQ", url: "/faq/" },
+      ]} />
+
       <main className="min-h-screen bg-background">
-        <div className="pt-20">
+        <div className="pt-4">
           {/* Header Section */}
           <section className="py-16 md:py-20 trust-accent">
             <div className="container mx-auto px-4 max-w-4xl">

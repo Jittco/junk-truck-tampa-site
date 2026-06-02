@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { serviceAreas } from "@/data/serviceAreas";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const ServiceAreaHub = () => {
   return (
@@ -57,6 +57,10 @@ const ServiceAreaHub = () => {
       <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Service Areas",url:"/service-areas/"}]} />
 
       <Navigation />
+      <Breadcrumbs items={[
+        { name: "Home", url: "/" },
+        { name: "Service Areas", url: "/service-areas/" },
+      ]} />
 
       <main className="min-h-screen bg-background">
         {/* Hero Section */}

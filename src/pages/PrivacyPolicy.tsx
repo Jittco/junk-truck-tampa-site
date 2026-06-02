@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 
@@ -17,7 +18,11 @@ const PrivacyPolicy = () => {
         <meta property="og:description" content="How we collect, use, and protect your information." />
       </Helmet>
       <Navigation />
-      <div className="pt-32 pb-16">
+      <Breadcrumbs items={[
+        { name: "Home", url: "/" },
+        { name: "Privacy Policy", url: "/privacy-policy/" },
+      ]} />
+      <div className="pt-8 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <h1 className="font-anton text-4xl md:text-5xl mb-8 text-foreground">Privacy Policy</h1>
           <p className="text-muted-foreground mb-8">Last updated: March 18, 2026</p>

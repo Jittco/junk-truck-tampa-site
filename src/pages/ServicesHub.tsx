@@ -6,7 +6,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { serviceCategories, getAllServices } from '../data/services';
 import { ArrowRight, Phone } from 'lucide-react';
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const ServicesHub: React.FC = () => {
   const primaryServices = [
@@ -68,6 +68,10 @@ const ServicesHub: React.FC = () => {
       <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Services",url:"/services"}]} />
 
       <Navigation />
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services/' },
+      ]} />
 
       <main>
         {/* Hero Section */}

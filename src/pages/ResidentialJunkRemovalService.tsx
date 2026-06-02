@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Navigation from '../components/Navigation';
+import Breadcrumbs from '../components/Breadcrumbs';
 import Footer from '../components/Footer';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
 import { Button } from '@/components/ui/button';
@@ -72,9 +73,14 @@ const ResidentialJunkRemovalService: React.FC = () => {
       />
 
       <Navigation />
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services/' },
+        { name: 'Residential Junk Removal', url: '/services/junk-removal/residential-junk-removal/' },
+      ]} />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 bg-gradient-to-r from-primary/10 to-primary/5">
+      <section className="relative pt-12 pb-24 bg-gradient-to-r from-primary/10 to-primary/5">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>

@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -76,7 +77,11 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <div className="pt-32">
+      <Breadcrumbs items={[
+        { name: "Home", url: "/" },
+        { name: "Services", url: "/services/" },
+      ]} />
+      <div className="pt-4">
         {/* Hero Section */}
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
           <div 
