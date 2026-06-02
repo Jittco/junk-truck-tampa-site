@@ -115,6 +115,10 @@ const JunkRemovalHub: React.FC = () => {
                         src={service.heroImage} 
                         alt={service.name}
                         className="w-full h-48 object-cover rounded-lg mb-4"
+                        width="400"
+                        height="192"
+                        loading="lazy"
+                        decoding="async"
                       />
                     )}
                     <h3 className="text-xl font-anton mb-2">{service.name}</h3>

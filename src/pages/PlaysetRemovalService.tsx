@@ -239,7 +239,7 @@ const PlaysetRemovalService: React.FC = () => {
                 </div>
               </div>
               <div className="relative">
-                <img src={service.heroImage} alt={`${service.name} service in Tampa Bay`} className="rounded-lg shadow-lg w-full h-80 object-cover object-top" />
+                <img src={service.heroImage} alt={`${service.name} service in Tampa Bay`} className="rounded-lg shadow-lg w-full h-80 object-cover object-top" width="800" height="500" loading="eager" decoding="async" fetchPriority="high" />
               </div>
             </div>
           </div>
@@ -601,7 +601,7 @@ const PlaysetRemovalService: React.FC = () => {
                 {relatedServices.slice(0, 3).map((relatedService, index) => (
                   <Card key={index} className="hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
-                      <img src={relatedService.heroImage} alt={relatedService.name} className="w-full h-40 object-cover rounded-lg mb-4" />
+                      <img src={relatedService.heroImage} alt={relatedService.name} className="w-full h-40 object-cover rounded-lg mb-4" width="400" height="160" loading="lazy" decoding="async" />
                       <h3 className="text-xl font-anton mb-2">{relatedService.name}</h3>
                       <p className="text-muted-foreground mb-4">{relatedService.shortDescription}</p>
                       <Button variant="outline" className="w-full" onClick={() => window.location.href = `/services/${relatedService.slug}/`}>

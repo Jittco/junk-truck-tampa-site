@@ -210,6 +210,10 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
                       src={service.heroImage || service.image} 
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width="600"
+                      height="338"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <CardContent className="p-4">
@@ -400,6 +404,10 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
                       src={category.image} 
                       alt={category.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width="600"
+                      height="338"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <CardContent className="p-4">

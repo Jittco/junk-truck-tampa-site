@@ -110,7 +110,7 @@ const DumpsterRental = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image Column */}
             <div className="order-2 md:order-1">
-              <img src="/lovable-uploads/a1ded288-114d-471e-b0e5-4999c577601c.png" alt="Junk in the Truck Co team member with dumpster" className="w-full h-auto rounded-lg shadow-lg" />
+              <img src="/lovable-uploads/a1ded288-114d-471e-b0e5-4999c577601c.png" alt="Junk in the Truck Co team member with dumpster" className="w-full h-auto rounded-lg shadow-lg" width="800" height="600" loading="eager" decoding="async" fetchPriority="high" />
             </div>
 
             {/* Benefits Column */}

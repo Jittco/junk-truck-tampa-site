@@ -103,6 +103,10 @@ const ServicesHub: React.FC = () => {
                       src={service.image} 
                       alt={service.title}
                       className="w-full h-48 object-cover rounded-lg mb-4"
+                      width="600"
+                      height="192"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <h2 className="text-2xl font-anton mb-2">{service.title}</h2>
                     <p className="text-muted-foreground mb-4">{service.description}</p>

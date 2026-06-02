@@ -45,7 +45,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <a href="/" className="nav-logo">
-              <img src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" alt="Junk in the Truck Co Logo" className="h-24 w-auto font-bold" />
+              <img src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" alt="Junk in the Truck Co Logo" className="h-24 w-auto font-bold" width="240" height="96" loading="eager" decoding="async" fetchPriority="high" />
             </a>
 
             {/* Desktop Navigation */}
