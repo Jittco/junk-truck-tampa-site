@@ -8,7 +8,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceAreaMap from "@/components/ServiceAreaMap";
 import YouTubeLite from "../components/YouTubeLite";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumbs from "@/components/Breadcrumbs";
 const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
 const PHONE = "844-858-6546";
 const DumpsterRental = () => {
@@ -58,12 +58,17 @@ const DumpsterRental = () => {
           {JSON.stringify(jsonLd)}
         </script>
       </Helmet>
-      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Services",url:"/services"},{name:"Dumpster Rental",url:"/services/dumpster-rental/"}]} />
+      
 
       <Navigation />
+      <Breadcrumbs items={[
+        { name: "Home", url: "/" },
+        { name: "Services", url: "/services/" },
+        { name: "Dumpster Rental", url: "/dumpster-rental/" },
+      ]} />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-32" style={{
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-8" style={{
       backgroundImage: `url('/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png')`
     }}>
         <div className="absolute inset-0 bg-black/40"></div>

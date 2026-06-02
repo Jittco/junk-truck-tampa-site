@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Phone, Check, MapPin, Truck, Package, Heart, Sofa, DollarSign } from "lucide-react";
 import YouTubeLite from "../components/YouTubeLite";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumbs from "@/components/Breadcrumbs";
 const Pricing = () => {
   const tierCards = [{
     name: "Minimum / Single Item",
@@ -77,9 +77,12 @@ const Pricing = () => {
         <meta property="og:title" content="Junk Removal Pricing | Pay by Truck Space | Tampa Bay" />
         <meta property="og:description" content="Transparent junk removal pricing in Tampa Bay. Pay only for the truck space you use — no hidden fees." />
       </Helmet>
-      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Pricing",url:"/pricing"}]} />
 
       <Navigation />
+      <Breadcrumbs items={[
+        { name: "Home", url: "/" },
+        { name: "Pricing", url: "/pricing/" },
+      ]} />
 
       <main className="min-h-screen bg-background">
         {/* Hero Section */}

@@ -12,7 +12,7 @@ import { serviceCategories } from "@/data/services";
 import { serviceAreas } from "@/data/serviceAreas";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 // Sample services for quick display
 const featuredServices = ["Furniture Removal", "Appliance Hauling", "Garage & Attic Cleanouts", "Demolition Debris Removal", "Yard Waste Pickup", "Estate Cleanouts", "Commercial Cleanouts", "Construction Debris"];
@@ -59,11 +59,14 @@ const OurStory = () => {
           }))
         })}</script>
       </Helmet>
-      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Our Story",url:"/our-story"}]} />
       <Navigation />
-      
+      <Breadcrumbs items={[
+        { name: "Home", url: "/" },
+        { name: "Our Story", url: "/our-story/" },
+      ]} />
+
       {/* Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-40 md:pb-32 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
+      <section className="relative pt-12 pb-20 md:pt-16 md:pb-32 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h1 className="text-4xl md:text-6xl font-anton mb-6 text-foreground">
             More Than Junk Removal —<br />
