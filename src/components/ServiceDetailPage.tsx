@@ -221,7 +221,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           { name: "Home", url: "/" },
           { name: "Services", url: "/services" },
           { name: categoryName, url: `/services/${categorySlug}/` },
-          { name: service.title, url: `/services/${categorySlug}/${service.slug}/` },
+          { name: service.name, url: `/services/${categorySlug}/${service.slug}/` },
         ]}
       />
 
