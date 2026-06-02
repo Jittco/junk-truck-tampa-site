@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar } from "lucide-react";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const faqCategories = [
   {
@@ -290,6 +291,7 @@ const FAQPage = () => {
           })}
         </script>
       </Helmet>
+      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"FAQ",url:"/faq"}]} />
 
       <Navigation />
       

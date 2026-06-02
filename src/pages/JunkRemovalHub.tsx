@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { residentialServices } from '../data/services';
 import { Phone } from 'lucide-react';
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const JunkRemovalHub: React.FC = () => {
   // Get all junk removal services
@@ -59,6 +60,7 @@ const JunkRemovalHub: React.FC = () => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
+      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Services",url:"/services"},{name:"Junk Removal",url:"/services/junk-removal/"}]} />
 
       <Navigation />
 
