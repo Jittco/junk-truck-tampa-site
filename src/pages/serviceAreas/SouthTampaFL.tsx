@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const PAGE_URL = "https://junkinthetruckco.com/service-areas/south-tampa-fl/";
+const PAGE_URL = "https://www.junkinthetruckco.com/service-areas/south-tampa-fl/";
 const PAGE_TITLE =
   "Junk Removal South Tampa FL | Same-Day Service | Junk in the Truck Co";
 const PAGE_DESCRIPTION =
@@ -40,9 +40,9 @@ const southTampaSchema = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://junkinthetruckco.com/#business",
+      "@id": "https://www.junkinthetruckco.com/#business",
       name: "Junk in the Truck Co",
-      url: "https://junkinthetruckco.com",
+      url: "https://www.junkinthetruckco.com",
       telephone: "844-858-6546",
       address: {
         "@type": "PostalAddress",

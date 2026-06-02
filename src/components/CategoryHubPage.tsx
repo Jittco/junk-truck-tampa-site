@@ -77,7 +77,7 @@ export const CategoryHubPage: React.FC<CategoryHubPageProps> = ({
         "addressCountry": "US"
       },
       "telephone": "844-858-6546",
-      "url": "https://junkinthetruckco.com"
+      "url": "https://www.junkinthetruckco.com"
     },
     "areaServed": "Tampa Bay, FL",
     "hasOfferCatalog": {
@@ -87,7 +87,7 @@ export const CategoryHubPage: React.FC<CategoryHubPageProps> = ({
         "@type": "Offer",
         "name": service.name,
         "description": service.shortDescription,
-        "url": `https://junkinthetruckco.com/services/${category.slug}/${service.slug}/`
+        "url": `https://www.junkinthetruckco.com/services/${category.slug}/${service.slug}/`
       }))
     }
   };
@@ -99,7 +99,7 @@ export const CategoryHubPage: React.FC<CategoryHubPageProps> = ({
       "@type": "ListItem",
       "position": index + 1,
       "name": service.name,
-      "url": `https://junkinthetruckco.com/services/${category.slug}/${service.slug}/`
+      "url": `https://www.junkinthetruckco.com/services/${category.slug}/${service.slug}/`
     }))
   };
 
@@ -111,8 +111,8 @@ export const CategoryHubPage: React.FC<CategoryHubPageProps> = ({
         <meta property="og:title" content={`${category.name} Tampa Bay | Junk in the Truck Co`} />
         <meta property="og:description" content={`Professional ${category.name.toLowerCase()} services in Tampa Bay. Same-day & next-day service with upfront pricing and eco-friendly disposal.`} />
         <meta property="og:image" content={category.heroImage} />
-        <meta property="og:url" content={`https://junkinthetruckco.com/services/${category.slug}/`} />
-        <link rel="canonical" href={`https://junkinthetruckco.com/services/${category.slug}/`} />
+        <meta property="og:url" content={`https://www.junkinthetruckco.com/services/${category.slug}/`} />
+        <link rel="canonical" href={`https://www.junkinthetruckco.com/services/${category.slug}/`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

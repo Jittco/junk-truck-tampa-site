@@ -27,7 +27,7 @@ const DumpsterRental = () => {
         "addressCountry": "US"
       },
       "telephone": PHONE,
-      "url": "https://junkinthetruckco.com"
+      "url": "https://www.junkinthetruckco.com"
     },
     "areaServed": [{
       "@type": "State",

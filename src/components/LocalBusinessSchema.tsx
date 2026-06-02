@@ -26,7 +26,7 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
             // Check if this is a LocalBusiness schema
             if (schema['@type'] === 'LocalBusiness') {
               // Keep our primary schema (identified by our specific @id)
-              if (schema['@id'] === 'https://junkinthetruckco.com/#organization') {
+              if (schema['@id'] === 'https://www.junkinthetruckco.com/#organization') {
                 foundPrimary = true;
               } else if (foundPrimary) {
                 // Remove duplicate LocalBusiness schemas from third-party sources
@@ -65,12 +65,12 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
   const baseSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://junkinthetruckco.com/#organization",
+    "@id": "https://www.junkinthetruckco.com/#organization",
     "name": "Junk in the Truck Co",
     "description": "Junk in the Truck Co is a Christian-based, locally owned junk removal company serving the greater Tampa Bay area. Based in South Tampa, FL, we offer same-day junk removal, demolition, appliance removal, and commercial cleanouts with upfront pricing and 5-star service across Hillsborough and Pinellas counties.",
-    "image": "https://junkinthetruckco.com/lovable-uploads/logo-favicon.png",
-    "logo": "https://junkinthetruckco.com/lovable-uploads/logo-favicon.png",
-    "url": "https://junkinthetruckco.com",
+    "image": "https://www.junkinthetruckco.com/lovable-uploads/logo-favicon.png",
+    "logo": "https://www.junkinthetruckco.com/lovable-uploads/logo-favicon.png",
+    "url": "https://www.junkinthetruckco.com",
     "telephone": "+1-844-858-6546",
     "priceRange": "$$",
     "address": {
@@ -129,7 +129,7 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
       "serviceType": serviceName,
       "description": serviceDescription,
       "provider": {
-        "@id": "https://junkinthetruckco.com/#organization"
+        "@id": "https://www.junkinthetruckco.com/#organization"
       },
       "areaServed": {
         "@type": "State",

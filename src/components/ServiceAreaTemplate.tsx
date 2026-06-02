@@ -63,7 +63,7 @@ const ServiceAreaTemplate = ({ area, customHead }: ServiceAreaTemplateProps) => 
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Junk Removal",
-    provider: { "@id": "https://junkinthetruckco.com/#organization" },
+    provider: { "@id": "https://www.junkinthetruckco.com/#organization" },
     areaServed: {
       "@type": "Place",
       name: `${area.name}, ${area.state}`,

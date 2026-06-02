@@ -10,9 +10,9 @@ const TermsOfService = () => {
       <Helmet>
         <title>Terms of Service – Junk in the Truck Co.</title>
         <meta name="description" content="The terms governing your use of Junk in the Truck Co. services in Tampa Bay — junk removal, demolition, and dumpster rental." />
-        <link rel="canonical" href="https://junkinthetruckco.com/terms-of-service" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/terms-of-service" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://junkinthetruckco.com/terms-of-service" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/terms-of-service" />
         <meta property="og:title" content="Terms of Service – Junk in the Truck Co." />
         <meta property="og:description" content="Terms governing your use of our junk removal, demolition, and dumpster rental services." />
       </Helmet>
@@ -83,7 +83,7 @@ const TermsOfService = () => {
                 <strong>Junk in the Truck Co Junk Removal</strong><br />
                 3810 W San Carlos Street, Tampa, FL 33629<br />
                 Phone: <a href="tel:+18448586546" className="text-[#18d13d] hover:underline">844-858-6546</a><br />
-                Website: <a href="https://junkinthetruckco.com" className="text-[#18d13d] hover:underline">junkinthetruckco.com</a>
+                Website: <a href="https://www.junkinthetruckco.com" className="text-[#18d13d] hover:underline">junkinthetruckco.com</a>
               </p>
             </section>
           </div>

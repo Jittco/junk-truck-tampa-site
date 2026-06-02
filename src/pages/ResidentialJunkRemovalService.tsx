@@ -14,7 +14,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
     "@type": ["LocalBusiness", "Service"],
     "name": "Junk in the Truck Co - Residential Junk Removal",
     "description": "Professional residential junk removal services in Tampa Bay. We handle furniture, appliances, electronics, and household clutter with same-day service available.",
-    "url": "https://junkinthetruckco.com/services/junk-removal/residential/",
+    "url": "https://www.junkinthetruckco.com/services/junk-removal/residential/",
     "telephone": "844-858-6546",
     "priceRange": "$95-$400",
     "areaServed": ["Tampa, FL", "Brandon, FL", "Carrollwood, FL", "Riverview, FL", "Apollo Beach, FL", "St. Petersburg, FL", "Seffner, FL", "Temple Terrace, FL", "Gibsonton, FL", "Valrico, FL", "Plant City, FL", "Lithia, FL"],
@@ -75,10 +75,10 @@ const ResidentialJunkRemovalService: React.FC = () => {
         <title>Residential Junk Removal Tampa Bay | Junk in the Truck Co</title>
         <meta name="description" content="Professional residential junk removal in Tampa Bay. Same-day service, upfront pricing, and eco-friendly disposal. Book online or call 844-858-6546." />
         <meta name="keywords" content="residential junk removal Tampa, junk removal services Tampa Bay, furniture removal Tampa, appliance removal Tampa Bay" />
-        <link rel="canonical" href="https://junkinthetruckco.com/services/junk-removal/residential/" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/services/junk-removal/residential/" />
         <meta property="og:title" content="Residential Junk Removal Tampa Bay | Junk in the Truck Co" />
         <meta property="og:description" content="Professional residential junk removal in Tampa Bay. Same-day service, upfront pricing, and eco-friendly disposal." />
-        <meta property="og:url" content="https://junkinthetruckco.com/services/junk-removal/residential/" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/services/junk-removal/residential/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}

@@ -53,8 +53,8 @@ const JunkRemovalHub: React.FC = () => {
         <meta name="description" content="Professional junk removal in Tampa Bay. Residential & commercial services with same-day pickup, upfront pricing, and eco-friendly disposal. Book online or call 844-858-6546." />
         <meta property="og:title" content="Junk Removal Services Tampa Bay | Junk in the Truck Co" />
         <meta property="og:description" content="Professional junk removal in Tampa Bay. Same-day service with upfront pricing and eco-friendly disposal." />
-        <meta property="og:url" content="https://junkinthetruckco.com/services/junk-removal/" />
-        <link rel="canonical" href="https://junkinthetruckco.com/services/junk-removal/" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/services/junk-removal/" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/services/junk-removal/" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

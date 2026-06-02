@@ -70,9 +70,9 @@ const Pricing = () => {
       <Helmet>
         <title>Junk Removal Pricing | Pay by Truck Space | Tampa Bay</title>
         <meta name="description" content="Transparent junk removal pricing in Tampa Bay. See how much space your items take in the truck. 1 full truck = 8 pickup loads. Book online in minutes." />
-        <link rel="canonical" href="https://junkinthetruckco.com/pricing" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/pricing" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://junkinthetruckco.com/pricing" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/pricing" />
         <meta property="og:title" content="Junk Removal Pricing | Pay by Truck Space | Tampa Bay" />
         <meta property="og:description" content="Transparent junk removal pricing in Tampa Bay. Pay only for the truck space you use — no hidden fees." />
       </Helmet>

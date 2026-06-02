@@ -51,7 +51,7 @@ const ServiceLocationTemplate = ({ data: s }: Props) => {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: s.serviceName,
-    provider: { "@id": "https://junkinthetruckco.com/#organization" },
+    provider: { "@id": "https://www.junkinthetruckco.com/#organization" },
     areaServed: {
       "@type": "Place",
       name: `${s.cityName}, FL`,

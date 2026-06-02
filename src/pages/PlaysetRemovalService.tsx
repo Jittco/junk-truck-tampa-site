@@ -72,7 +72,7 @@ const PlaysetRemovalService: React.FC = () => {
         "addressCountry": "US"
       },
       "telephone": "844-858-6546",
-      "url": "https://junkinthetruckco.com"
+      "url": "https://www.junkinthetruckco.com"
     },
     "areaServed": "Tampa Bay, FL",
     "serviceType": service.name
@@ -189,8 +189,8 @@ const PlaysetRemovalService: React.FC = () => {
         <meta property="og:title" content={service.metaTitle} />
         <meta property="og:description" content={service.metaDescription} />
         <meta property="og:image" content={service.heroImage} />
-        <meta property="og:url" content={`https://junkinthetruckco.com/services/demolition/${service.slug}/`} />
-        <link rel="canonical" href={`https://junkinthetruckco.com/services/demolition/${service.slug}/`} />
+        <meta property="og:url" content={`https://www.junkinthetruckco.com/services/demolition/${service.slug}/`} />
+        <link rel="canonical" href={`https://www.junkinthetruckco.com/services/demolition/${service.slug}/`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

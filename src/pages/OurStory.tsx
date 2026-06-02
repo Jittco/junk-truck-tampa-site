@@ -33,9 +33,9 @@ const OurStory = () => {
       <Helmet>
         <title>About Junk in the Truck Co | Christian-Owned Tampa Bay Junk Removal</title>
         <meta name="description" content="Junk in the Truck Co is a locally owned, Christian-based junk removal company serving Tampa Bay. Based in South Tampa. Licensed, insured, 5-star rated with 450+ reviews. Not a franchise." />
-        <link rel="canonical" href="https://junkinthetruckco.com/our-story" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/our-story" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://junkinthetruckco.com/our-story" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/our-story" />
         <meta property="og:title" content="About Junk in the Truck Co | Christian-Owned Tampa Bay Junk Removal" />
         <meta property="og:description" content="Locally owned, Christian-based Tampa Bay junk removal. Based in South Tampa. Licensed, insured, 5-star rated with 450+ reviews. Not a franchise." />
         <script type="application/ld+json">{JSON.stringify({
@@ -43,10 +43,10 @@ const OurStory = () => {
           "@type": "Organization",
           "name": "Junk in the Truck Co",
           "description": "Junk in the Truck Co is a Christian-based, locally owned junk removal company serving the greater Tampa Bay area. Based in South Tampa, FL, we offer same-day junk removal, demolition, appliance removal, and commercial cleanouts with upfront pricing and 5-star service across Hillsborough and Pinellas counties.",
-          "url": "https://junkinthetruckco.com/",
+          "url": "https://www.junkinthetruckco.com/",
           "telephone": "+1-844-858-6546",
           "areaServed": "Tampa Bay, FL",
-          "sameAs": ["https://junkinthetruckco.com/"]
+          "sameAs": ["https://www.junkinthetruckco.com/"]
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

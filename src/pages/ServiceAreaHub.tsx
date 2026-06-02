@@ -14,7 +14,7 @@ const ServiceAreaHub = () => {
         <title>Service Areas | Junk in the Truck Co | Tampa Bay Junk Removal</title>
         <meta name="description" content="Junk removal service areas throughout Tampa Bay. We serve Brandon, Carrollwood, Temple Terrace, South Tampa, Town 'n' Country and more." />
         <meta name="keywords" content="junk removal service areas, Tampa Bay junk removal, Brandon, Carrollwood, Temple Terrace, South Tampa" />
-        <link rel="canonical" href="https://junkinthetruck.co/service-areas/" />
+        <link rel="canonical" href="https://www.junkinthetruckco.com/service-areas/" />
 
         {/* Schema for Service Areas */}
         <script type="application/ld+json">
