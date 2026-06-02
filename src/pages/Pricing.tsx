@@ -77,7 +77,6 @@ const Pricing = () => {
         <meta property="og:title" content="Junk Removal Pricing | Pay by Truck Space | Tampa Bay" />
         <meta property="og:description" content="Transparent junk removal pricing in Tampa Bay. Pay only for the truck space you use — no hidden fees." />
       </Helmet>
-      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Pricing",url:"/pricing"}]} />
 
       <Navigation />
       <Breadcrumbs items={[

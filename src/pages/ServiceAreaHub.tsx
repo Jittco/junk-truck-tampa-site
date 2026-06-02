@@ -54,7 +54,6 @@ const ServiceAreaHub = () => {
           })}
         </script>
       </Helmet>
-      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Service Areas",url:"/service-areas/"}]} />
 
       <Navigation />
       <Breadcrumbs items={[

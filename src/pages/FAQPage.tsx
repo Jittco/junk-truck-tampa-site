@@ -291,7 +291,6 @@ const FAQPage = () => {
           })}
         </script>
       </Helmet>
-      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"FAQ",url:"/faq"}]} />
 
       <Navigation />
       <Breadcrumbs items={[

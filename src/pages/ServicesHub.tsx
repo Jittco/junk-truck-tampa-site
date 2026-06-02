@@ -65,7 +65,6 @@ const ServicesHub: React.FC = () => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
-      <BreadcrumbSchema items={[{name:"Home",url:"/"},{name:"Services",url:"/services"}]} />
 
       <Navigation />
       <Breadcrumbs items={[
