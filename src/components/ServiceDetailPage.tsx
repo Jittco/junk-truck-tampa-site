@@ -265,7 +265,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                 </div>
               </div>
               <div className="relative">
-                <img src={service.heroImage} alt={`${service.name} service in Tampa Bay`} className={`rounded-lg shadow-lg w-full h-80 object-cover ${service.slug === 'appliance-removal' ? 'object-bottom' : 'object-top'}`} />
+                <img src={service.heroImage} alt={`${service.name} service in Tampa Bay`} className={`rounded-lg shadow-lg w-full h-80 object-cover ${service.slug === 'appliance-removal' ? 'object-bottom' : 'object-top'}`} width="800" height="500" loading="eager" decoding="async" fetchPriority="high" />
               </div>
             </div>
           </div>

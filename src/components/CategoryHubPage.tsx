@@ -171,6 +171,11 @@ export const CategoryHubPage: React.FC<CategoryHubPageProps> = ({
                   src={category.heroImage} 
                   alt={`${category.name} services in Tampa Bay`}
                   className="rounded-lg shadow-lg w-full h-80 object-cover"
+                  width="800"
+                  height="500"
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
                 />
               </div>
             </div>
@@ -189,6 +194,10 @@ export const CategoryHubPage: React.FC<CategoryHubPageProps> = ({
                       src={service.heroImage} 
                       alt={service.name}
                       className="w-full h-40 object-cover rounded-lg mb-4"
+                      width="400"
+                      height="160"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <h3 className="text-xl font-anton mb-2">{service.name}</h3>
                     <p className="text-muted-foreground mb-4">{service.shortDescription}</p>
@@ -258,6 +267,10 @@ export const CategoryHubPage: React.FC<CategoryHubPageProps> = ({
                       src={relatedCategory.heroImage} 
                       alt={relatedCategory.name}
                       className="w-full h-40 object-cover rounded-lg mb-4"
+                      width="400"
+                      height="160"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <h3 className="text-xl font-anton mb-2">{relatedCategory.name}</h3>
                     <p className="text-muted-foreground mb-4">{relatedCategory.intro}</p>

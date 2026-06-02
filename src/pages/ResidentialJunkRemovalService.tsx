@@ -113,7 +113,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
               </div>
             </div>
             <div className="relative">
-              <img src="/lovable-uploads/6a335dcb-180c-4c15-b5dd-a1ba512c588d.png" alt="Residential junk removal service in Tampa Bay" className="rounded-lg shadow-lg w-full h-80 object-cover object-top" />
+              <img src="/lovable-uploads/6a335dcb-180c-4c15-b5dd-a1ba512c588d.png" alt="Residential junk removal service in Tampa Bay" className="rounded-lg shadow-lg w-full h-80 object-cover object-top" width="800" height="500" loading="eager" decoding="async" fetchPriority="high" />
             </div>
           </div>
         </div>
@@ -412,7 +412,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
             description: "Safe disconnection and removal of hot tubs and spas",
             image: "/lovable-uploads/c766f531-e1bc-4150-baef-3c7d0dd966bf.png"
           }].map(service => <div key={service.slug} className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <img src={service.image} alt={service.name} className="w-full h-48 object-cover" />
+                <img src={service.image} alt={service.name} className="w-full h-48 object-cover" width="400" height="192" loading="lazy" decoding="async" />
                 <div className="p-6">
                   <h3 className="text-xl mb-3 text-foreground font-medium">{service.name}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>

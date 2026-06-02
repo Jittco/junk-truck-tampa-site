@@ -103,7 +103,7 @@ const OurStory = () => {
             </div>
             <div className="space-y-6">
               <div className="rounded-xl overflow-hidden">
-                <img src={s10Pickup} alt="The original Chevy S10 pickup truck with trailer that started Junk in the Truck Co." className="w-full h-64 object-cover" />
+                <img src={s10Pickup} alt="The original Chevy S10 pickup truck with trailer that started Junk in the Truck Co." className="w-full h-64 object-cover" width="800" height="400" loading="lazy" decoding="async" />
               </div>
               <Card className="p-6 border-l-4 border-l-primary">
                 <div className="flex items-center gap-3 mb-3">
@@ -143,7 +143,7 @@ const OurStory = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl p-8 lg:p-12 text-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20">
-                <img src={carlosHeadshot} alt="Carlos Diaz, Founder of Junk in the Truck Co." className="w-full h-full object-cover" />
+                <img src={carlosHeadshot} alt="Carlos Diaz, Founder of Junk in the Truck Co." className="w-full h-full object-cover" width="600" height="600" loading="lazy" decoding="async" />
               </div>
               <h3 className="text-2xl font-anton mb-4 text-foreground">Carlos Diaz</h3>
               <p className="text-lg font-semibold text-primary mb-2">Founder & Owner</p>

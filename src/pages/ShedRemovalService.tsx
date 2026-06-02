@@ -113,6 +113,10 @@ const ShedRemovalService: React.FC = () => {
                     src={shedBeforeNew} 
                     alt="Old, rotting shed before removal" 
                     className="rounded-lg shadow-lg w-full h-64 object-cover mb-4"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <h3 className="text-xl font-semibold mb-2">Before</h3>
                   <p className="text-muted-foreground">Old, rotting sheds taking up valuable yard space.</p>
@@ -122,6 +126,10 @@ const ShedRemovalService: React.FC = () => {
                     src={shedAfterNew} 
                     alt="Clean cleared area after shed removal" 
                     className="rounded-lg shadow-lg w-full h-64 object-cover mb-4"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <h3 className="text-xl font-semibold mb-2">After</h3>
                   <p className="text-muted-foreground">A wide-open, cleared area ready for your next project, garden, or brand-new shed.</p>

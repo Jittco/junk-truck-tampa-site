@@ -63,7 +63,7 @@ const GarageCleanOutService: React.FC = () => {
           
           <div className="lg:order-2">
             <div className="relative rounded-lg overflow-hidden shadow-xl">
-              <img src={clutteredGarage} alt="Cluttered garage filled with boxes, furniture and items needing professional junk removal services" className="w-full h-auto object-cover" loading="lazy" />
+              <img src={clutteredGarage} alt="Cluttered garage filled with boxes, furniture and items needing professional junk removal services" className="w-full h-auto object-cover" width="800" height="600" loading="eager" decoding="async" fetchPriority="high" />
             </div>
           </div>
         </div>
