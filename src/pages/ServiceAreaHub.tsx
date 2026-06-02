@@ -16,6 +16,13 @@ const ServiceAreaHub = () => {
         <meta name="keywords" content="junk removal service areas, Tampa Bay junk removal, Brandon, Carrollwood, Temple Terrace, South Tampa" />
         <link rel="canonical" href="https://www.junkinthetruckco.com/service-areas/" />
 
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.junkinthetruckco.com/service-areas/" />
+        <meta property="og:title" content="Service Areas | Junk in the Truck Co | Tampa Bay Junk Removal" />
+        <meta property="og:description" content="Junk removal service areas throughout Tampa Bay. We serve Brandon, Carrollwood, Temple Terrace, South Tampa, Town 'n' Country and more." />
+        <meta property="og:site_name" content="Junk in the Truck Co" />
+
         {/* Schema for Service Areas */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -23,7 +30,7 @@ const ServiceAreaHub = () => {
             "@type": "LocalBusiness",
             "name": "Junk in the Truck Co",
             "description": "Professional junk removal services throughout Tampa Bay",
-            "telephone": "(813) 536-6298",
+            "telephone": "+1-844-858-6546",
             "url": "https://www.junkinthetruckco.com",
             "serviceArea": serviceAreas.map(area => ({
               "@type": "City",
