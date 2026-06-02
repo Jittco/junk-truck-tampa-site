@@ -32,6 +32,9 @@ const Footer = lazy(() => import("@/components/Footer"));
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://www.junkinthetruckco.com/" />
+      </Helmet>
       <LocalBusinessSchema />
       <FAQPageSchema />
       <FacebookPixel />
