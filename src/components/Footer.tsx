@@ -42,11 +42,11 @@ const Footer = () => {
             <h3 className="font-anton text-xl mb-6 text-[#f9f9f9]">Quick Links</h3>
             <nav className="space-y-3">
               <a href="/" className="font-inter block hover:text-[#18d13d] transition-colors">Home</a>
-              <a href="#services" className="font-inter block hover:text-[#18d13d] transition-colors">Services</a>
-              <a href="#about" className="font-inter block hover:text-[#18d13d] transition-colors">About</a>
-              <a href="/service-areas" className="font-inter block hover:text-[#18d13d] transition-colors">Service Areas</a>
+              <a href="/services" className="font-inter block hover:text-[#18d13d] transition-colors">Services</a>
+              <a href="/service-areas/" className="font-inter block hover:text-[#18d13d] transition-colors">Service Areas</a>
+              <a href="/pricing" className="font-inter block hover:text-[#18d13d] transition-colors">Pricing</a>
               <a href="/our-story" className="font-inter block hover:text-[#18d13d] transition-colors">Our Story</a>
-              <a href="#contact" className="font-inter block hover:text-[#18d13d] transition-colors">Contact</a>
+              <a href="/faq" className="font-inter block hover:text-[#18d13d] transition-colors">FAQ</a>
             </nav>
           </div>
 
@@ -77,7 +77,7 @@ const Footer = () => {
             <a href="/terms-of-service" className="font-inter hover:text-[#18d13d] transition-colors opacity-70 hover:opacity-100">Terms of Service</a>
           </div>
           <p className="font-inter text-sm opacity-70">
-            © Junk in the Truck Co 2025. All rights reserved.
+            © Junk in the Truck Co {new Date().getFullYear()}. All rights reserved.
           </p>
         </div>
       </div>
