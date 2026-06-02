@@ -42,11 +42,11 @@ const Footer = () => {
             <h3 className="font-anton text-xl mb-6 text-[#f9f9f9]">Quick Links</h3>
             <nav className="space-y-3">
               <a href="/" className="font-inter block hover:text-[#18d13d] transition-colors">Home</a>
-              <a href="#services" className="font-inter block hover:text-[#18d13d] transition-colors">Services</a>
-              <a href="#about" className="font-inter block hover:text-[#18d13d] transition-colors">About</a>
-              <a href="/service-areas" className="font-inter block hover:text-[#18d13d] transition-colors">Service Areas</a>
+              <a href="/services" className="font-inter block hover:text-[#18d13d] transition-colors">Services</a>
+              <a href="/service-areas/" className="font-inter block hover:text-[#18d13d] transition-colors">Service Areas</a>
+              <a href="/pricing" className="font-inter block hover:text-[#18d13d] transition-colors">Pricing</a>
               <a href="/our-story" className="font-inter block hover:text-[#18d13d] transition-colors">Our Story</a>
-              <a href="#contact" className="font-inter block hover:text-[#18d13d] transition-colors">Contact</a>
+              <a href="/faq" className="font-inter block hover:text-[#18d13d] transition-colors">FAQ</a>
             </nav>
           </div>
 
