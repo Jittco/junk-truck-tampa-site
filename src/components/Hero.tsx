@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+
 import { Helmet } from "react-helmet";
 import heroMainImage from "@/assets/hero-main-page.webp";
 
