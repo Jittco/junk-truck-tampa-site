@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+
 import { Helmet } from "react-helmet";
 import heroMainImage from "@/assets/hero-main-page.webp";
 
@@ -39,31 +39,6 @@ const Hero = () => {
               >
                 Your Local Junk Removal Experts in Tampa, FL
               </h1>
-              <p 
-                style={{
-                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 8px rgba(0,0,0,0.8)'
-                }} 
-                className="text-primary text-xl md:text-3xl text-left font-semibold mb-8"
-              >
-                If You've Got Junk That's Gotta Go, Call Junk in the Truck Co.
-              </p>
-              
-              <a 
-                href="tel:8448586546"
-                className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-2xl py-6 px-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] ring-4 ring-primary/20"
-              >
-                <Phone className="h-7 w-7 group-hover:animate-pulse" />
-                <span>Call Now for a Free Quote</span>
-              </a>
-              
-              <div className="flex items-center gap-4 mt-4 text-sm text-white/80">
-                <span className="flex items-center gap-1">
-                  <span className="text-primary">✓</span> Same-Day Service
-                </span>
-                <span className="flex items-center gap-1">
-                  <span className="text-primary">✓</span> Free Estimates
-                </span>
-              </div>
             </div>
           </div>
         </div>
