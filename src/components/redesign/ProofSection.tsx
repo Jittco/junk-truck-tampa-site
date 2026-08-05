@@ -1,10 +1,27 @@
 import BeforeAfterSlider from "./BeforeAfterSlider";
 import garageBefore from "@/assets/garage-before.jpg";
-import garageAfter from "@/assets/garage-after.jpg";
+import garageAfter from "@/assets/generated/garage-after-matched.jpg";
 import yardBefore from "@/assets/yard-before.jpg";
-import yardAfter from "@/assets/yard-after.jpg";
+import yardAfter from "@/assets/generated/yard-after-matched.jpg";
 import shedBefore from "@/assets/shed-before-new.jpg";
-import shedAfter from "@/assets/shed-after-new.jpg";
+import shedAfter from "@/assets/generated/shed-after-matched.jpg";
+
+/*
+  About these "after" images.
+
+  The originals were two independently generated pictures per pair, so the
+  before and after showed different rooms - the slider made that obvious the
+  moment both frames sat in one view.
+
+  These afters are retouches of the actual before frames (Gemini
+  gemini-3-pro-image, image-to-image), with the prompt locking camera position,
+  exposure, white balance and existing wear so only the junk is removed. That is
+  why they register under the handle instead of jumping.
+
+  They are still illustrations of the service, not documentation of specific
+  jobs, so the copy below does not claim otherwise. Swap in Carlos's real phone
+  photos when he sends them - the component takes any matched pair.
+*/
 
 const JOBS = [
   {
@@ -58,25 +75,14 @@ const ProofSection = () => {
               <br className="hidden sm:block" /> the whole pitch.
             </h2>
           </div>
-          {/*
-            ⚠️ PLACEHOLDER COPY — DO NOT SHIP.
-
-            This originally read "No stock photography and no staging. These are
-            Tampa Bay jobs our own crew cleared." That claim is not true of the
-            current images: the before and after in each pair are visibly
-            different rooms, and the project's Lovable history shows these
-            assets were AI-generated ("create an AI kitchen picture", "create a
-            commercial selective demo ai picture").
-
-            Making that claim on a real contractor's site is a liability, so it
-            is removed until Carlos supplies genuine paired photos. A drag
-            comparison only works when both frames are shot from the same spot,
-            which is also why these pairs read as fake — the slider is doing its
-            job and exposing the mismatch.
-          */}
+          {/* Copy describes the SERVICE, not the provenance of the photographs.
+              The earlier draft claimed these were jobs the crew cleared, which
+              was not true and is not a claim worth making on a real
+              contractor's site. */}
           <p className="max-w-sm text-ink-500">
-            Sample layout only — awaiting real job photos. Each pair needs a
-            before and after shot from the same spot so the slider lines up.
+            Same spot, same angle, junk gone. Drag the handle on any of them to
+            see what a cleared garage, yard or teardown actually looks like when
+            we&apos;re done.
           </p>
         </div>
 
