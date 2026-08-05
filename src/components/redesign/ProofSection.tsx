@@ -58,9 +58,25 @@ const ProofSection = () => {
               <br className="hidden sm:block" /> the whole pitch.
             </h2>
           </div>
+          {/*
+            ⚠️ PLACEHOLDER COPY — DO NOT SHIP.
+
+            This originally read "No stock photography and no staging. These are
+            Tampa Bay jobs our own crew cleared." That claim is not true of the
+            current images: the before and after in each pair are visibly
+            different rooms, and the project's Lovable history shows these
+            assets were AI-generated ("create an AI kitchen picture", "create a
+            commercial selective demo ai picture").
+
+            Making that claim on a real contractor's site is a liability, so it
+            is removed until Carlos supplies genuine paired photos. A drag
+            comparison only works when both frames are shot from the same spot,
+            which is also why these pairs read as fake — the slider is doing its
+            job and exposing the mismatch.
+          */}
           <p className="max-w-sm text-ink-500">
-            No stock photography and no staging. These are Tampa Bay jobs our
-            own crew cleared, shot before we started and after we swept up.
+            Sample layout only — awaiting real job photos. Each pair needs a
+            before and after shot from the same spot so the slider lines up.
           </p>
         </div>
 

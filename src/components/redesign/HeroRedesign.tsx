@@ -1,4 +1,5 @@
 import { Phone, Camera } from "lucide-react";
+import TextPhotoButton from "./TextPhotoButton";
 import heroMainImage from "@/assets/hero-main-page.webp";
 import {
   VOICE_PHONE,
@@ -95,15 +96,10 @@ const HeroRedesign = () => {
               Call {VOICE_PHONE}
             </a>
 
-            {SMS_PHONE && (
-              <a
-                href={buildSmsHref(SMS_PHONE, SMS_BODY)}
-                className="inline-flex items-center justify-center gap-3 border border-sand-50/35 px-8 py-5 font-display text-lg uppercase tracking-wide text-sand-50 transition-colors duration-200 hover:border-brand-orange hover:text-brand-orange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-50 md:hidden"
-              >
-                <Camera className="h-5 w-5" aria-hidden="true" />
-                Text a photo
-              </a>
-            )}
+            {/* Shown on every breakpoint, not just mobile: on desktop it still
+                resolves to a pre-addressed message for anyone with Messages
+                linked to their Mac, and the number below covers everyone else. */}
+            <TextPhotoButton variant="solid" />
           </div>
 
           {/* The text-a-photo promise, spelled out. On desktop sms: links do
