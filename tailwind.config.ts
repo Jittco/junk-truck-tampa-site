@@ -23,8 +23,41 @@ export default {
 				'inter': ['Inter', 'sans-serif'],
 				'changa-one': ['Changa One', 'Impact', 'sans-serif'],
 				'poppins': ['Poppins', 'sans-serif'],
+				// Alias so redesign components can say what a font is FOR rather
+				// than which typeface it happens to be. Points at Anton, which is
+				// already loaded and already the site's display face.
+				'display': ['Anton', 'Impact', 'sans-serif'],
 			},
 			colors: {
+				/*
+				  Redesign palette. Additive only — nothing above or below is
+				  changed, so every existing component keeps rendering exactly as
+				  it does today and these are opt-in per component.
+
+				  Neutrals are tinted warm toward the logo's orange rather than
+				  being pure grey, and there is no #000 or #fff anywhere: the
+				  darkest ink still carries red, and sand-50 is a warm off-white.
+				  That tint is what makes the orange feel native to the page
+				  instead of pasted onto it.
+				*/
+				ink: {
+					900: '#17120F', // near-black, warm
+					800: '#221B16',
+					700: '#31271F',
+					500: '#6B5D53',
+					300: '#A99C92',
+				},
+				sand: {
+					50: '#FAF6F1',  // warm off-white page base
+					100: '#F2EBE2',
+					200: '#E5DACB',
+				},
+				brand: {
+					orange: '#E98922',      // sampled from the logo artwork
+					'orange-deep': '#C96F14',
+					green: '#18D13D',       // existing CTA green
+					'green-deep': '#12A82F',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

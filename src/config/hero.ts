@@ -1,58 +1,86 @@
 /**
- * Hero configuration — the three values that were unknown when the hero was
- * built, isolated here so they can be filled in without touching layout code.
- *
- * Deliberately scoped to the hero. The voice phone number is hardcoded in ~32
- * other files across this repo; consolidating all of that is a separate change
- * and not worth the merge friction with Lovable's two-way sync right now.
+ * Site-level values that were unknown at build time, isolated here so they can
+ * be corrected in one place rather than hunted across components.
  */
 
 /** Voice line. Confirmed voice-only — it does NOT accept SMS or MMS. */
 export const VOICE_PHONE = "844-858-6546";
 
 /**
- * Number that can receive picture messages, for the "text a photo" quote path.
+ * ⚠️ DEMO PLACEHOLDER — REPLACE BEFORE THIS BRANCH MERGES.
  *
- * Carlos confirmed he has a line that accepts texts and photos but had not
- * provided it yet. While this is null the text-a-photo button does not render
- * at all — better to show nothing than to point customers at a number that
- * silently drops their message.
+ * Carlos confirmed he has a separate line that accepts texts and photos, but
+ * had not provided the number yet. This is set to the voice line purely so the
+ * "text a photo" path is visible in the preview.
  *
- * To enable: set this to the digits only, e.g. "8135551234".
+ * That line cannot actually receive picture messages, so shipping this to
+ * production as-is would send customers into a silent hole. Swap in the real
+ * number the moment he provides it, or set this back to null to hide the
+ * button entirely.
  */
-export const SMS_PHONE: string | null = null;
+export const SMS_PHONE: string | null = "844-858-6546";
+
+/** True once SMS_PHONE is a genuinely text-capable line. Gates the promise copy. */
+export const SMS_VERIFIED = false;
 
 /**
- * Price anchor shown under the headline.
+ * Price ladder. Numbers taken from the existing /pricing page tiers so the
+ * preview shows something real rather than invented figures.
  *
- * Left null until Carlos settles the contradiction already live on the site:
- * the homepage FAQ and /pricing say single items start at $99, while the
- * Brandon, USF, Riverview, Hyde Park and South Tampa pages say $150. Publishing
- * either number before he confirms risks undercutting his margin or repeating
- * the bait-and-switch this work is meant to remove.
- *
- * Example once known: "Most garage cleanouts $400–$800 · Single items from $150"
+ * ⚠️ The site currently contradicts itself on the entry price: the homepage FAQ
+ * and /pricing say single items start at $99, while the Brandon, USF, Riverview,
+ * Hyde Park and South Tampa pages say $150. Carlos needs to settle this before
+ * any of it goes live.
  */
-export const PRICE_ANCHOR: string | null = null;
+export const PRICE_TIERS = [
+  {
+    label: "Single item",
+    price: "$99",
+    detail: "One couch, fridge, mattress, or similar.",
+    fill: "1/8 truck",
+  },
+  {
+    label: "Small load",
+    price: "$175–$289",
+    detail: "A closet, a small shed, a pile in the garage.",
+    fill: "1/4 truck",
+  },
+  {
+    label: "Half truck",
+    price: "$400–$650",
+    detail: "Full garage or attic cleanout.",
+    fill: "1/2 truck",
+  },
+  {
+    label: "Full truck",
+    price: "$700–$950",
+    detail: "Whole-home or estate cleanout.",
+    fill: "Full truck",
+  },
+] as const;
+
+/** Short anchor used above the fold. */
+export const PRICE_ANCHOR = "Most garage cleanouts run $400–$800.";
 
 /**
- * Review count claim.
- *
- * The review widget embedded further down the homepage reports "Based on 485
- * reviews", so "450+" is comfortably true and stays true as the count grows.
- * Deliberately understated rather than tracking the exact number, since nothing
- * here reads from the live profile and a hardcoded exact figure goes stale.
+ * Review count claim. The review widget on the homepage reports 485, so this is
+ * comfortably true and stays true as the count grows.
  */
-export const REVIEW_COUNT = "450+";
+export const REVIEW_COUNT = "485";
 
 /** Prefilled body for the photo-quote text message. */
 export const SMS_BODY =
   "Hi! I'd like a quote for junk removal. Here's a photo of what needs to go:";
 
 /**
- * Builds a cross-platform sms: link. The "?&body=" form is the pattern that
- * works on both iOS and Android, which disagree on the separator.
+ * Cross-platform sms: link. The "?&body=" form is the pattern that works on
+ * both iOS and Android, which disagree on the separator.
  */
 export function buildSmsHref(phone: string, body: string): string {
-  return `sms:${phone}?&body=${encodeURIComponent(body)}`;
+  return `sms:${phone.replace(/[^0-9+]/g, "")}?&body=${encodeURIComponent(body)}`;
+}
+
+/** tel: href from a display-formatted number. */
+export function buildTelHref(phone: string): string {
+  return `tel:${phone.replace(/[^0-9+]/g, "")}`;
 }
