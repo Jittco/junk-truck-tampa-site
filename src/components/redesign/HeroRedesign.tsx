@@ -45,10 +45,17 @@ const HeroRedesign = () => {
             left-edge fade on desktop so the photo dissolves into the ink
             rather than sitting in a box. */}
         <div className="absolute inset-0 bg-ink-900/75 lg:hidden" />
-        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink-900 via-ink-900/55 to-transparent lg:block" />
+        {/* Explicit stops matter here. Without them the ramp spreads across the
+            whole photo column and buries the crew and the branded truck - the
+            two things actually worth showing. This keeps the wash tight to the
+            left seam where the headline needs contrast, then clears by 55%. */}
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink-900 from-0% via-ink-900/35 via-22% to-transparent to-55% lg:block" />
       </div>
 
-      <div className="relative mx-auto grid max-w-7xl gap-y-10 px-5 pb-16 pt-28 sm:px-8 lg:grid-cols-[minmax(0,1fr)_44%] lg:pb-24 lg:pt-36">
+      {/* Top padding clears the two-tier fixed nav (~128px). The old layout got
+          this via pt-32 on <main>, which pushed the hero photo below the nav
+          instead of letting it run behind it. */}
+      <div className="relative mx-auto grid max-w-7xl gap-y-10 px-5 pb-16 pt-40 sm:px-8 lg:grid-cols-[minmax(0,1fr)_44%] lg:pb-24 lg:pt-48">
         <div className="max-w-2xl">
           <p className="flex items-center gap-3 font-display text-[0.7rem] uppercase tracking-[0.3em] text-brand-orange">
             <span className="h-px w-8 bg-brand-orange" aria-hidden="true" />
