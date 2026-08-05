@@ -49,7 +49,7 @@ const HeroRedesign = () => {
             whole photo column and buries the crew and the branded truck - the
             two things actually worth showing. This keeps the wash tight to the
             left seam where the headline needs contrast, then clears by 55%. */}
-        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink-900 from-0% via-ink-900/35 via-22% to-transparent to-55% lg:block" />
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink-900 from-0% via-ink-900/35 via-20% to-transparent to-55% lg:block" />
       </div>
 
       {/* Top padding clears the two-tier fixed nav (~128px). The old layout got
