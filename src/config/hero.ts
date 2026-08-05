@@ -36,11 +36,14 @@ export const SMS_PHONE: string | null = null;
 export const PRICE_ANCHOR: string | null = null;
 
 /**
- * Review count claim. Kept deliberately conservative: the linked Google profile
- * showed roughly 439, so the previous "450+" overstated it. "400+" stays true
- * as the count moves and is verifiable by clicking through to the profile.
+ * Review count claim.
+ *
+ * The review widget embedded further down the homepage reports "Based on 485
+ * reviews", so "450+" is comfortably true and stays true as the count grows.
+ * Deliberately understated rather than tracking the exact number, since nothing
+ * here reads from the live profile and a hardcoded exact figure goes stale.
  */
-export const REVIEW_COUNT = "400+";
+export const REVIEW_COUNT = "450+";
 
 /** Prefilled body for the photo-quote text message. */
 export const SMS_BODY =

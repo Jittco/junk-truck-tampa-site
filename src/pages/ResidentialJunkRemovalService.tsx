@@ -84,7 +84,7 @@ const ResidentialJunkRemovalService: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-anton mb-4 text-foreground">
+              <h1 className="text-4xl md:text-5xl font-anton text-balance mb-4 text-foreground">
                 Residential Junk Removal in Tampa Bay Made Simple
               </h1>
               <p className="text-lg text-muted-foreground mb-6">

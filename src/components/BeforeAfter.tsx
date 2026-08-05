@@ -143,7 +143,7 @@ const BeforeAfter = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-anton mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-anton text-balance mb-6 text-foreground">
             See the Junk Gone — Before & After
           </h2>
           <p className="text-lg text-foreground max-w-3xl mx-auto leading-relaxed">

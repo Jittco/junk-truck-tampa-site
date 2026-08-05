@@ -5,7 +5,7 @@ const ServiceAreas = () => {
   return <section className="py-20 bg-primary">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-anton mb-6 text-slate-50 drop-shadow-sm">
+          <h2 className="text-4xl md:text-5xl font-anton text-balance mb-6 text-slate-50 drop-shadow-sm">
             Proudly Serving Tampa Bay and Beyond
           </h2>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed text-slate-50">

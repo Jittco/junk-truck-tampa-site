@@ -43,7 +43,7 @@ const Services = () => {
   return <section className="py-20 section-bg bg-[t#] bg-transparent rounded-none">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-anton mb-6">Junk Removal Services in Tampa Bay</h2>
+          <h2 className="text-4xl md:text-5xl font-anton text-balance mb-6">Junk Removal Services in Tampa Bay</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             From single-item pickups to full property cleanouts, Junk in the Truck Co provides fast, reliable junk removal services for homes and businesses throughout Tampa Bay.
           </p>
@@ -52,7 +52,7 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {services.map((service, index) => {
           const Icon = service.icon;
-          return <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-card border-0 shadow-lg">
+          return <Card key={index} className="group flex h-full flex-col overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-card border-0 shadow-lg">
                 <div className="relative overflow-hidden">
                   <img src={service.image} alt={service.title} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async" width="300" height="192" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -60,11 +60,15 @@ const Services = () => {
                     <Icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                 </div>
-                <CardContent className="p-6">
+                <CardContent className="flex flex-1 flex-col p-6">
                   <h3 className="text-xl font-anton mb-3 group-hover:text-primary transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">
+                  {/* No line-clamp: it cut descriptions mid-sentence ("with
+                      same-day...", "with prop..."), which reads as an unfinished
+                      page. Cards stretch to equal height in the grid instead, and
+                      flex-1 here pushes every button to a shared baseline. */}
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-1">
                     {service.description}
                   </p>
                   <Button asChild className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300" variant="outline">
