@@ -24,12 +24,18 @@ const Hero = () => {
   const telHref = `tel:${VOICE_PHONE.replace(/[^0-9+]/g, "")}`;
 
   return (
-    <section className="relative min-h-[100svh] flex items-center overflow-hidden">
+    // `isolate` is load-bearing: it gives this section its own stacking context.
+    // The previous markup put the background image at -z-10 inside a section
+    // that was position:relative but z-index:auto, so it created no stacking
+    // context and the image escaped it and painted behind the page background -
+    // invisible. Isolating here lets the layers below stack in DOM order with no
+    // negative z-index at all.
+    <section className="relative isolate min-h-[100svh] flex items-center overflow-hidden">
       {/* Background photo. No react-helmet preload here: it injected a
           <link rel="preload"> client-side, which fires long after the browser
           has already discovered this image, so it did nothing for LCP. The
           eager + fetchPriority="high" attributes below are what actually help. */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0">
         <picture>
           <source type="image/webp" srcSet={heroMainImage} sizes="100vw" />
           <img
