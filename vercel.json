@@ -3,512 +3,512 @@
     {
       "source": "/services/residential-junk-removal/",
       "destination": "/services/junk-removal/residential/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/residential-junk-removal",
       "destination": "/services/junk-removal/residential/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/commercial-junk-removal/",
       "destination": "/services/junk-removal/commercial/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/commercial-junk-removal",
       "destination": "/services/junk-removal/commercial/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/appliance-removal/",
       "destination": "/services/junk-removal/appliance-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/appliance-removal",
       "destination": "/services/junk-removal/appliance-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/clean-out/",
       "destination": "/services/junk-removal/clean-outs/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/clean-out",
       "destination": "/services/junk-removal/clean-outs/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/garage-clean-out/",
       "destination": "/services/junk-removal/garage-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/garage-clean-out",
       "destination": "/services/junk-removal/garage-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/estate-clean-out/",
       "destination": "/services/junk-removal/estate-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/estate-clean-out",
       "destination": "/services/junk-removal/estate-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/furniture-removal/",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/furniture-removal",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/couch-disposal/",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/couch-disposal",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/hot-tub-removal/",
       "destination": "/services/junk-removal/hot-tub-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/hot-tub-removal",
       "destination": "/services/junk-removal/hot-tub-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/yard-waste-removal/",
       "destination": "/services/junk-removal/yard-waste-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/yard-waste-removal",
       "destination": "/services/junk-removal/yard-waste-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/hoarder-cleanup/",
       "destination": "/services/junk-removal/hoarder-cleanup/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/hoarder-cleanup",
       "destination": "/services/junk-removal/hoarder-cleanup/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/homeless-encampment-cleanup/",
       "destination": "/services/junk-removal/homeless-encampment-cleanup/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/homeless-encampment-cleanup",
       "destination": "/services/junk-removal/homeless-encampment-cleanup/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/residential-junk-removal/",
       "destination": "/services/junk-removal/residential/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/residential-junk-removal",
       "destination": "/services/junk-removal/residential/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/commercial-junk-removal/",
       "destination": "/services/junk-removal/commercial/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/commercial-junk-removal",
       "destination": "/services/junk-removal/commercial/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/appliance-removal/",
       "destination": "/services/junk-removal/appliance-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/appliance-removal",
       "destination": "/services/junk-removal/appliance-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/clean-out/",
       "destination": "/services/junk-removal/clean-outs/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/clean-out",
       "destination": "/services/junk-removal/clean-outs/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/clean-outs/",
       "destination": "/services/junk-removal/clean-outs/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/clean-outs",
       "destination": "/services/junk-removal/clean-outs/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/garage-clean-out/",
       "destination": "/services/junk-removal/garage-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/garage-clean-out",
       "destination": "/services/junk-removal/garage-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/garage-cleanout/",
       "destination": "/services/junk-removal/garage-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/garage-cleanout",
       "destination": "/services/junk-removal/garage-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/estate-clean-out/",
       "destination": "/services/junk-removal/estate-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/estate-clean-out",
       "destination": "/services/junk-removal/estate-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/estate-cleanout/",
       "destination": "/services/junk-removal/estate-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/estate-cleanout",
       "destination": "/services/junk-removal/estate-cleanout/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/furniture-removal/",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/furniture-removal",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/furniture-removal/couch-disposal/",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/furniture-removal/couch-disposal",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/couch-disposal/",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/couch-disposal",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/hot-tub-removal/",
       "destination": "/services/junk-removal/hot-tub-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/hot-tub-removal",
       "destination": "/services/junk-removal/hot-tub-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/hot-tub-removal-2/",
       "destination": "/services/junk-removal/hot-tub-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/hot-tub-removal-2",
       "destination": "/services/junk-removal/hot-tub-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/yard-waste-removal/",
       "destination": "/services/junk-removal/yard-waste-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/yard-waste-removal",
       "destination": "/services/junk-removal/yard-waste-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/hoarder-cleanup/",
       "destination": "/services/junk-removal/hoarder-cleanup/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/junk-removal-services/hoarder-cleanup",
       "destination": "/services/junk-removal/hoarder-cleanup/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/residential-junk-removal-services/",
       "destination": "/services/junk-removal/residential/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/residential-junk-removal-services",
       "destination": "/services/junk-removal/residential/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/commercial-junk-removal-services/",
       "destination": "/services/junk-removal/commercial/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/commercial-junk-removal-services",
       "destination": "/services/junk-removal/commercial/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/appliance-removal-services/",
       "destination": "/services/junk-removal/appliance-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/appliance-removal-services",
       "destination": "/services/junk-removal/appliance-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/furniture-removal-services/",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/furniture-removal-services",
       "destination": "/services/junk-removal/furniture-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/hot-tub-removal-services/",
       "destination": "/services/junk-removal/hot-tub-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/hot-tub-removal-services",
       "destination": "/services/junk-removal/hot-tub-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/yard-waste-removal-services/",
       "destination": "/services/junk-removal/yard-waste-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/service/yard-waste-removal-services",
       "destination": "/services/junk-removal/yard-waste-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/",
       "destination": "/services/demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services",
       "destination": "/services/demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/playset-removal/",
       "destination": "/services/demolition/playset-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/playset-removal",
       "destination": "/services/demolition/playset-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/shed-removal/",
       "destination": "/services/demolition/shed-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/shed-removal",
       "destination": "/services/demolition/shed-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/pergola-demolition/",
       "destination": "/services/demolition/pergola-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/pergola-demolition",
       "destination": "/services/demolition/pergola-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/driveway-demolition/",
       "destination": "/services/demolition/driveway-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/driveway-demolition",
       "destination": "/services/demolition/driveway-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/interior-demolition/",
       "destination": "/services/demolition/interior-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/interior-demolition",
       "destination": "/services/demolition/interior-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/deck-removal/",
       "destination": "/services/demolition/deck-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/deck-removal",
       "destination": "/services/demolition/deck-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/fence-removal/",
       "destination": "/services/demolition/fence-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/fence-removal",
       "destination": "/services/demolition/fence-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/pool-removal/",
       "destination": "/services/demolition/pool-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/demolition-services/pool-removal",
       "destination": "/services/demolition/pool-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/deck-removal/",
       "destination": "/services/demolition/deck-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/deck-removal",
       "destination": "/services/demolition/deck-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/interior-demolition/",
       "destination": "/services/demolition/interior-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/interior-demolition",
       "destination": "/services/demolition/interior-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/pergola-demolition/",
       "destination": "/services/demolition/pergola-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/pergola-demolition",
       "destination": "/services/demolition/pergola-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/driveway-demo/",
       "destination": "/services/demolition/driveway-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/driveway-demo",
       "destination": "/services/demolition/driveway-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/driveway-demolition/",
       "destination": "/services/demolition/driveway-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/driveway-demolition",
       "destination": "/services/demolition/driveway-demolition/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/fence-removal/",
       "destination": "/services/demolition/fence-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/fence-removal",
       "destination": "/services/demolition/fence-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/pool-removal/",
       "destination": "/services/demolition/pool-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services/pool-removal",
       "destination": "/services/demolition/pool-removal/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services-areas/junk-removal-south-tampa/",
       "destination": "/service-areas/south-tampa-fl/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/services-areas/junk-removal-south-tampa",
       "destination": "/service-areas/south-tampa-fl/",
-      "permanent": true
+      "statusCode": 301
     }
   ],
   "headers": [
