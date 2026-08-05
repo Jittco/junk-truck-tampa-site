@@ -11,7 +11,7 @@ const FAQ = () => {
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-anton text-balance mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-anton mb-6 text-foreground">
             Tampa Junk Removal FAQs
           </h2>
         </div>

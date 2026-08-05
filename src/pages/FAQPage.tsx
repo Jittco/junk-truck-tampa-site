@@ -304,7 +304,7 @@ const FAQPage = () => {
           <section className="py-16 md:py-20 trust-accent">
             <div className="container mx-auto px-4 max-w-4xl">
               <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl font-anton text-balance mb-6 text-foreground">
+                <h1 className="text-4xl md:text-5xl font-anton mb-6 text-foreground">
                   Junk Removal FAQs – Junk in the Truck Co.
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
