@@ -95,13 +95,14 @@ const LocalBusinessSchema = ({ serviceName, serviceDescription, serviceUrl }: Lo
         "closes": "18:00"
       }
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "450",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
+    // NOTE: aggregateRating intentionally omitted.
+    // Google: "If the entity that's being reviewed controls the reviews about
+    // itself, their pages that use LocalBusiness or any other type of
+    // Organization structured data are ineligible for star review feature."
+    // https://developers.google.com/search/docs/appearance/structured-data/review-snippet
+    // The previous 5.0 / 450 values were hardcoded rather than derived from any
+    // source, so they earned no stars and asserted an unverifiable claim.
+    // Ratings are surfaced to Google through the Google Business Profile instead.
     "areaServed": [
       { "@type": "City", "name": "Tampa, FL" },
       { "@type": "Neighborhood", "name": "South Tampa" },

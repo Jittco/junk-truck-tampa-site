@@ -71,11 +71,9 @@ const southTampaSchema = {
         { "@type": "PostalCode", name: "33616" },
         { "@type": "PostalCode", name: "33629" },
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5.0",
-        reviewCount: "150",
-      },
+      // aggregateRating removed: self-controlled review markup is ineligible for
+      // Google's star features, and this hardcoded 150 contradicted the 450 stated
+      // elsewhere on the same site. See LocalBusinessSchema.tsx for the full note.
     },
     {
       "@type": "FAQPage",
