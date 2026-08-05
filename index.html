@@ -46,6 +46,17 @@
     <meta name="twitter:description" content="Tampa Bay's trusted locally owned, Christian-based junk removal. Same-day service, upfront pricing. South Tampa. Call 844-858-6546.">
     <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QSiskVDL3gY8WKn8VWP5JCI2aF82/social-images/social-1758761803697-Hero%20Main%20Page%20(2).png">
 
+    <!--
+      Vercel Web Analytics (page views).
+      Installed as a script tag rather than the @vercel/analytics npm package on
+      purpose: this repo carries bun.lock, bun.lockb AND package-lock.json, so
+      adding a dependency with npm would leave the bun lockfiles stale and risk
+      breaking the Vercel build. The script needs no dependency and no lockfile
+      change. Requires Web Analytics to be enabled in the Vercel project settings.
+      Note: custom events (e.g. click-to-call) are Pro-only, so this measures
+      traffic volume only. Call tracking still needs GA4.
+    -->
+    <script defer src="/_vercel/insights/script.js"></script>
   </head>
 
   <body>
