@@ -45,11 +45,13 @@ const HeroRedesign = () => {
             left-edge fade on desktop so the photo dissolves into the ink
             rather than sitting in a box. */}
         <div className="absolute inset-0 bg-ink-900/75 lg:hidden" />
-        {/* Explicit stops matter here. Without them the ramp spreads across the
-            whole photo column and buries the crew and the branded truck - the
-            two things actually worth showing. This keeps the wash tight to the
-            left seam where the headline needs contrast, then clears by 55%. */}
-        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink-900 from-0% via-ink-900/35 via-20% to-transparent to-55% lg:block" />
+        {/* Desktop scrim spans only the LEFT 60% of the photo column rather than
+            sitting over all of it. A full-width overlay with transparent end
+            stops still rendered the crew and the branded truck as flat black in
+            practice; constraining the element itself means there is physically
+            nothing above the right side of the photo. Verified against the
+            deployed preview, not just the build. */}
+        <div className="absolute inset-y-0 left-0 hidden w-3/5 bg-gradient-to-r from-ink-900 via-ink-900/85 via-35% to-transparent lg:block" />
       </div>
 
       {/* Top padding clears the two-tier fixed nav (~128px). The old layout got
