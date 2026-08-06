@@ -57,6 +57,45 @@
       traffic volume only. Call tracking still needs GA4.
     -->
     <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Google Analytics 4.
+         The property (Junk in the Truck Co / junkinthetruckco.com) already
+         existed but the tag had never been installed, so it had recorded zero
+         events. This is the install. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8KP8YK0YY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-D8KP8YK0YY');
+    </script>
+
+    <!--
+      Click-to-call and click-to-text tracking.
+
+      Done as one delegated listener in index.html rather than handlers on each
+      link, for two reasons: the phone number is hardcoded across ~32 component
+      files, and Lovable regenerates component markup when the owner edits the
+      site, which would silently strip per-component handlers. A listener on
+      document survives both.
+
+      This is the metric that actually matters here - phone calls are how this
+      business closes work, and nothing has ever measured them.
+    -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var el = e.target && e.target.closest
+          ? e.target.closest('a[href^="tel:"], a[href^="sms:"]')
+          : null;
+        if (!el || typeof gtag !== 'function') return;
+        var href = el.getAttribute('href') || '';
+        gtag('event', href.indexOf('tel:') === 0 ? 'click_to_call' : 'click_to_text', {
+          link_url: href,
+          page_path: location.pathname,
+          link_text: (el.textContent || '').trim().slice(0, 100)
+        });
+      }, true);
+    </script>
   </head>
 
   <body>
