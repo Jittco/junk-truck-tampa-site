@@ -79,7 +79,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does junk removal cost in Brandon FL?",
         answer:
-          "Junk removal in Brandon typically runs $150–$650 depending on volume. Single-item pickups start around $150. Full garage cleanouts usually fall between $400 and $800. We always quote on-site before any work starts — no hidden fees.",
+          "Junk removal in Brandon typically runs $150–$650 depending on volume. Single-item pickups start around $99. Full garage cleanouts usually fall between $400 and $800. We always quote on-site before any work starts — no hidden fees.",
       },
       {
         question: "Do you offer same-day junk removal in Brandon?",
@@ -331,7 +331,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does an apartment cleanout cost near USF?",
         answer:
-          "Most USF-area apartment cleanouts run $250–$600 depending on volume. Single-mattress or single-couch pickups start around $150. We quote on-site or via video walkthrough.",
+          "Most USF-area apartment cleanouts run $250–$600 depending on volume. Single-mattress or single-couch pickups start around $99. We quote on-site or via video walkthrough.",
       },
       {
         question: "Do you remove old mattresses in Temple Terrace?",
@@ -455,7 +455,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does junk removal cost in South Tampa?",
         answer:
-          "Most South Tampa jobs run $150–$850 depending on volume and access. Single items start at $150, full garage cleanouts $400–$800, and full home cleanouts $1,500–$4,500. Always an upfront quote before work starts.",
+          "Most South Tampa jobs run $150–$850 depending on volume and access. Single items start at $99, full garage cleanouts $400–$800, and full home cleanouts $1,500–$4,500. Always an upfront quote before work starts.",
       },
       {
         question: "Can you handle historic homes in Hyde Park and Davis Islands?",
@@ -701,7 +701,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does junk removal cost in Riverview?",
         answer:
-          "Most Riverview jobs run $150–$700. Single-item pickups start at $150, full garage cleanouts $400–$800. Always an upfront quote before any work.",
+          "Most Riverview jobs run $150–$700. Single-item pickups start at $99, full garage cleanouts $400–$800. Always an upfront quote before any work.",
       },
       {
         question: "Can you remove a playset from a Riverview backyard?",
