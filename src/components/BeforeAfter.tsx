@@ -159,7 +159,11 @@ const BeforeAfter = () => {
             See the Junk Gone — Before & After
           </h2>
           <p className="text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
-            Real results from our Tampa Bay customers. We clear it out so you can take back your space.
+            {/* Was "Real results from our Tampa Bay customers." These images are
+                illustrations of the service, not documented customer jobs, so
+                the claim is not made. Restore it once Carlos supplies real
+                before/after photos from his own jobs. */}
+            Garage, yard or full teardown — we clear it out so you can take back your space.
           </p>
         </div>
 
