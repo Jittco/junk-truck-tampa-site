@@ -100,7 +100,7 @@ export const southTampaNeighborhoods: Neighborhood[] = [
       {
         question: "What does junk removal in Hyde Park cost?",
         answer:
-          "Most Hyde Park junk removal jobs run between $150 and $650, priced by how much truck space your items fill. Single-item pickups like a couch or fridge start around $150. Full garage or attic cleanouts in historic homes typically land between $450 and $850. You always get an upfront, no-obligation quote on-site before any work starts.",
+          "Most Hyde Park junk removal jobs run between $150 and $650, priced by how much truck space your items fill. Single-item pickups like a couch or fridge start around $99. Full garage or attic cleanouts in historic homes typically land between $450 and $850. You always get an upfront, no-obligation quote on-site before any work starts.",
       },
       {
         question: "Do you serve historic homes in Hyde Park?",
