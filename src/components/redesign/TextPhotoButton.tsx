@@ -69,11 +69,26 @@ const TextPhotoButton = ({
     window.location.href = smsHref;
   };
 
+  /**
+   * The camera path is a <button>, so the delegated tel:/sms: listener in
+   * index.html cannot see it. Report it explicitly, otherwise the highest-intent
+   * action on the page would be the one action nobody measures.
+   */
+  const track = (event: string, extra: Record<string, string> = {}) => {
+    const g = (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag;
+    if (typeof g === "function") {
+      g("event", event, { page_path: location.pathname, ...extra });
+    }
+  };
+
   const onFileChosen = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     // Reset so picking the same photo twice still fires a change event.
     e.target.value = "";
-    if (!file) return;
+    if (!file) {
+      track("photo_quote_cancelled", { stage: "camera" });
+      return;
+    }
 
     setBusy(true);
     try {
@@ -83,13 +98,20 @@ const TextPhotoButton = ({
           title: "Junk removal quote",
           text: messageWithNumber,
         });
+        track("photo_quote_shared", { method: "web_share" });
       } else {
+        track("photo_quote_shared", { method: "sms_fallback" });
         openSms();
       }
     } catch (err) {
       // AbortError means the customer dismissed the share sheet on purpose —
       // dropping them into Messages after that would be obnoxious.
-      if ((err as Error)?.name !== "AbortError") openSms();
+      if ((err as Error)?.name === "AbortError") {
+        track("photo_quote_cancelled", { stage: "share_sheet" });
+      } else {
+        track("photo_quote_shared", { method: "sms_fallback_after_error" });
+        openSms();
+      }
     } finally {
       setBusy(false);
     }
@@ -119,7 +141,10 @@ const TextPhotoButton = ({
         <button
           type="button"
           disabled={busy}
-          onClick={() => inputRef.current?.click()}
+          onClick={() => {
+            track("photo_quote_started");
+            inputRef.current?.click();
+          }}
           className={`${base} ${look} ${className}`}
         >
           <Camera className="h-5 w-5" aria-hidden="true" />
