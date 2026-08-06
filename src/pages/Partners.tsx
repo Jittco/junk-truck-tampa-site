@@ -3,6 +3,7 @@ import { ArrowUpRight, Phone } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import dndLogo from "@/assets/dnd-logo.png";
 
 /**
  * Partners page.
@@ -22,6 +23,7 @@ const PARTNERS = [
     name: "DND Demolition",
     tagline: "Large-scale demolition across Tampa Bay",
     url: "https://www.dnddemolition.com",
+    logo: dndLogo,
     phone: "813-252-0639",
     relationship: "Sister company — same family, same Tampa Bay crews",
     theyHandle: [
@@ -79,19 +81,40 @@ const Partners = () => {
         {PARTNERS.map((p) => (
           <section key={p.name} className="pb-16 md:pb-20">
             <div className="container mx-auto max-w-5xl px-4">
-              <div className="rounded-xl border border-border bg-card p-7 md:p-10">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                  {p.relationship}
-                </p>
-                <h2 className="mt-3 font-anton text-3xl md:text-4xl text-foreground">
-                  {p.name}
-                </h2>
-                <p className="mt-2 text-lg text-muted-foreground">{p.tagline}</p>
+              <div className="overflow-hidden rounded-xl border border-border bg-card">
+                {/* Partner's own colours for the header band. A partner block
+                    that wears our styling reads as one of our own services;
+                    wearing theirs makes the distinction instant. Their logo is
+                    brushed steel on transparent, so it needs this dark field. */}
+                <div className="flex flex-col items-start gap-6 bg-[#061638] p-7 sm:flex-row sm:items-center md:p-10">
+                  {p.logo && (
+                    <img
+                      src={p.logo}
+                      alt={p.name}
+                      width={560}
+                      height={560}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-auto w-28 shrink-0 sm:w-32"
+                    />
+                  )}
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#9aa4b8]">
+                      {p.relationship}
+                    </p>
+                    <h2 className="mt-2 font-anton text-3xl text-white md:text-4xl">
+                      {p.name}
+                    </h2>
+                    <p className="mt-2 text-lg text-[#c3cad8]">{p.tagline}</p>
+                  </div>
+                </div>
+
+                <div className="p-7 md:p-10">
 
                 {/* Side by side so the dividing line is obvious at a glance.
                     A visitor should be able to place their own job in about
                     three seconds without reading a paragraph. */}
-                <div className="mt-9 grid gap-8 md:grid-cols-2">
+                <div className="grid gap-8 md:grid-cols-2">
                   <div>
                     <h3 className="font-anton text-lg text-foreground">
                       We handle it
@@ -148,6 +171,7 @@ const Partners = () => {
                     <Phone className="h-4 w-4" aria-hidden="true" />
                     {p.phone}
                   </a>
+                </div>
                 </div>
               </div>
             </div>
