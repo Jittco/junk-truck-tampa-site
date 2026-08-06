@@ -53,6 +53,7 @@ const ShedRemovalRiverview = lazy(() => import("./pages/serviceLocations/ShedRem
 const ApplianceRemovalSouthTampa = lazy(() => import("./pages/serviceLocations/ApplianceRemovalSouthTampa"));
 const HoarderCleanupTampa = lazy(() => import("./pages/serviceLocations/HoarderCleanupTampa"));
 const OurStory = lazy(() => import("./pages/OurStory"));
+const Partners = lazy(() => import("./pages/Partners"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
@@ -70,6 +71,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/our-story" element={<OurStory />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/partners/" element={<Partners />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />

@@ -39,9 +39,15 @@ interface ServiceCategoryData {
 
 interface ServiceCategoryHubProps {
   data: ServiceCategoryData;
+  /**
+   * Optional section rendered after the service listings and before the closing
+   * conversion band. Kept as a slot rather than baked into the data object
+   * because only one category needs it, and it renders arbitrary JSX.
+   */
+  beforeCta?: React.ReactNode;
 }
 
-const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
+const ServiceCategoryHub = ({ data, beforeCta }: ServiceCategoryHubProps) => {
   const location = useLocation();
   const canonicalUrl = `https://www.junkinthetruckco.com${location.pathname}`;
   const whyChooseFeatures = [
@@ -431,6 +437,12 @@ const ServiceCategoryHub = ({ data }: ServiceCategoryHubProps) => {
 
         {/* Service Areas internal links */}
         <ServiceAreasLinks serviceName={data.categoryName} />
+
+        {/* Optional extra section, rendered after the services and before the
+            conversion band. Used by the demolition hub for the DND referral,
+            which has to sit low on the page so it never intercepts the small
+            teardown jobs this crew wants. */}
+        {beforeCta}
 
         {/* Conversion Band */}
         <section className="py-16 bg-primary text-white relative overflow-hidden">

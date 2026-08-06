@@ -115,6 +115,7 @@ const Footer = () => {
             <h3 className="font-anton text-xl mb-6 text-[#f9f9f9]">Company</h3>
             <nav aria-label="Company" className="space-y-2 mb-6">
               <a href="/our-story" className="font-inter text-sm block hover:text-[#18d13d] transition-colors">Our Story</a>
+              <a href="/partners" className="font-inter text-sm block hover:text-[#18d13d] transition-colors">Partners</a>
               <a href="/pricing" className="font-inter text-sm block hover:text-[#18d13d] transition-colors">Pricing</a>
               <a href="/faq" className="font-inter text-sm block hover:text-[#18d13d] transition-colors">FAQ</a>
               <a href="/services" className="font-inter text-sm block hover:text-[#18d13d] transition-colors">All Services</a>
