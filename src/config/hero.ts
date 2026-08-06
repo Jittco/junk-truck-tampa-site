@@ -7,21 +7,30 @@
 export const VOICE_PHONE = "844-858-6546";
 
 /**
- * ⚠️ DEMO PLACEHOLDER — REPLACE BEFORE THIS BRANCH MERGES.
- *
- * Carlos confirmed he has a separate line that accepts texts and photos, but
- * had not provided the number yet. This is set to the voice line purely so the
- * "text a photo" path is visible in the preview.
- *
- * That line cannot actually receive picture messages, so shipping this to
- * production as-is would send customers into a silent hole. Swap in the real
- * number the moment he provides it, or set this back to null to hide the
- * button entirely.
+ * Line that accepts texts and picture messages, for the photo-quote path.
+ * Confirmed by Carlos. Takes calls too, but the 844 above stays the primary
+ * voice number so the published call-to-action doesn't fragment.
  */
-export const SMS_PHONE: string | null = "844-858-6546";
+export const SMS_PHONE: string | null = "813-531-9858";
 
 /** True once SMS_PHONE is a genuinely text-capable line. Gates the promise copy. */
-export const SMS_VERIFIED = false;
+export const SMS_VERIFIED = true;
+
+/**
+ * How fast Carlos can realistically reply to a photo quote. He said within 24
+ * hours.
+ *
+ * This is stated on the page rather than left vague on purpose. "Get a price
+ * back" with no timeframe reads as instant, and a customer who expects instant
+ * and waits a day feels ignored — worse than never offering it. An honest,
+ * beatable promise costs a little urgency and buys trust.
+ *
+ * Worth revisiting: the research on home services is unambiguous that
+ * speed-to-lead is the single biggest close-rate lever. If he can commit to
+ * same-day during business hours, this feature becomes materially stronger and
+ * this string is the only thing that needs to change.
+ */
+export const SMS_REPLY_WINDOW = "within 24 hours";
 
 /**
  * Price ladder. Numbers taken from the existing /pricing page tiers so the

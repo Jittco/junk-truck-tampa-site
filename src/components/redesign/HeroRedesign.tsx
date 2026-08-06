@@ -5,6 +5,7 @@ import {
   VOICE_PHONE,
   SMS_PHONE,
   SMS_VERIFIED,
+  SMS_REPLY_WINDOW,
   PRICE_ANCHOR,
   REVIEW_COUNT,
   SMS_BODY,
@@ -103,7 +104,10 @@ const HeroRedesign = () => {
           </div>
 
           {/* The text-a-photo promise, spelled out. On desktop sms: links do
-              nothing, so this reads as an instruction rather than a button. */}
+              nothing, so this reads as an instruction rather than a button.
+              The reply window is stated explicitly: "get a price back" with no
+              timeframe reads as instant, and a customer expecting instant who
+              waits a day feels ignored. */}
           {SMS_PHONE && (
             <p className="mt-4 text-sm text-sand-200/80">
               <Camera
@@ -117,7 +121,11 @@ const HeroRedesign = () => {
               >
                 {SMS_PHONE}
               </a>
-              , and get a price back — no walkthrough, no sales call.
+              , and we&apos;ll text a price back {SMS_REPLY_WINDOW} — no
+              walkthrough, no sales call.{" "}
+              <span className="text-sand-200/60">
+                In a hurry? Call and we&apos;ll price it on the spot.
+              </span>
               {!SMS_VERIFIED && (
                 <span className="mt-1 block text-xs text-brand-orange">
                   Preview only — pending a text-capable number from Carlos.
