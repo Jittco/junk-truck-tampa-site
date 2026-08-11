@@ -126,9 +126,13 @@ const HeroRedesign = () => {
               <span className="text-sand-200/60">
                 In a hurry? Call and we&apos;ll price it on the spot.
               </span>
+              {/* Safety guard, not a placeholder. If SMS_PHONE is ever pointed
+                  at a line that cannot receive picture messages, this warns
+                  rather than letting the page make a promise the number cannot
+                  keep. Currently inert because the number is verified. */}
               {!SMS_VERIFIED && (
                 <span className="mt-1 block text-xs text-brand-orange">
-                  Preview only — pending a text-capable number from Carlos.
+                  Photo texting is being set up on this number.
                 </span>
               )}
             </p>
