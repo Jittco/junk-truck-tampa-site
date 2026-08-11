@@ -1,7 +1,9 @@
 import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
+import HeroRedesign from "@/components/redesign/HeroRedesign";
+import PriceRail from "@/components/redesign/PriceRail";
+const ProofSection = lazy(() => import("@/components/redesign/ProofSection"));
 import TrustStrip from "@/components/TrustStrip";
 import Services from "@/components/Services";
 
@@ -48,12 +50,23 @@ const Index = () => {
       <FAQPageSchema />
       <FacebookPixel />
       <Navigation />
-      <main className="pt-32"> {/* Add padding-top to account for two-tier fixed nav */}
-        <Hero />
+      {/* Note: no pt-32 here. The redesigned hero owns its own top spacing and
+          sits under the fixed nav on purpose, so the photo runs behind it
+          instead of starting below a band of empty white. */}
+      <main>
+        {/* Order follows buyer anxiety, not site-map convenience: can you come
+            today (hero), what will it cost (price rail), can I see proof
+            (before/after), then everything else. Price and proof used to sit
+            below four sections of copy. */}
+        <HeroRedesign />
+        <PriceRail />
+        <Suspense fallback={<div className="h-96 bg-sand-100 animate-pulse" />}>
+          <ProofSection />
+        </Suspense>
         <TrustStrip />
         <Services />
         <Suspense fallback={<div className="h-20 bg-gray-100 animate-pulse" />}>
-          <HowItWorks 
+          <HowItWorks
             step1Img={scheduleImg}
             step2Img={estimateImg}
             step3Img={haulImg}

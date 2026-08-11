@@ -1,3 +1,4 @@
+import SisterCompanyCallout from "@/components/SisterCompanyCallout";
 import ServiceCategoryHub from "@/components/ServiceCategoryHub";
 import pergolaRemovalImage from "@/assets/pergola-removal.jpg";
 import drivewayDemolitionImage from "@/assets/driveway-demolition.jpg";
@@ -95,7 +96,15 @@ const DemolitionServices = () => {
     ]
   };
 
-  return <ServiceCategoryHub data={categoryData} />;
+  // The DND referral sits low on purpose. Junk in the Truck keeps and wants its
+  // demolition work — it ranks for these terms and takes inquiries on them — so
+  // the referral only speaks to jobs bigger than this crew handles.
+  return (
+    <ServiceCategoryHub
+      data={categoryData}
+      beforeCta={<SisterCompanyCallout />}
+    />
+  );
 };
 
 export default DemolitionServices;

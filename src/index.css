@@ -89,6 +89,28 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply font-anton;
   }
+
+  /*
+    Typography polish applied globally rather than as utility classes on each
+    component. Headings here use at least three different class combinations
+    (text-4xl md:text-5xl font-anton, font-anton text-3xl md:text-4xl
+    lg:text-5xl, text-3xl md:text-4xl font-anton), and Lovable regenerates
+    component class strings on edit, so per-component utilities would be
+    fragile and get silently dropped. One rule covers every heading the site
+    has now and every one it grows later.
+  */
+
+  /* Stops long headings orphaning a single word onto its own line, e.g.
+     "3 Simple Steps to Professional Junk Removal in Tampa / Bay". */
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
+  /* Avoids one-word last lines in body copy. Progressive enhancement -
+     browsers without support just wrap normally. */
+  p {
+    text-wrap: pretty;
+  }
 }
 
 @layer utilities {

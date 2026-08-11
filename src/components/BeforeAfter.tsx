@@ -7,12 +7,24 @@ import {
 } from "@/components/ui/carousel";
 
 // Import before/after images
+/*
+  All three "after" images are now retouches of this section's own "before"
+  frames rather than separately generated pictures.
+
+  The originals were unrelated images per pair - a different garage, a
+  different yard - which reads as fake the moment the two are compared. Each
+  after here is the matching before with only the junk erased, so the room,
+  camera position, lighting and wear all carry across.
+
+  Note the shed pair uses a different source photo than the redesigned proof
+  section further up the page, so it needed its own matched after.
+*/
 import garageBefore from "@/assets/garage-before.jpg";
-import garageAfter from "@/assets/garage-after.jpg";
+import garageAfter from "@/assets/generated/garage-after-matched.jpg";
 const shedBefore = "/lovable-uploads/f3f7ce71-ab76-47bf-a3ce-e01508b8ac04.png";
-const shedAfter = "/lovable-uploads/06842b0f-cce4-442f-b267-5706103755cd.png";
+import shedAfter from "@/assets/generated/shed2-after-matched.png";
 import yardBefore from "@/assets/yard-before.jpg";
-import yardAfter from "@/assets/yard-after.jpg";
+import yardAfter from "@/assets/generated/yard-after-matched.jpg";
 
 const transformations = [
   {
@@ -147,7 +159,11 @@ const BeforeAfter = () => {
             See the Junk Gone — Before & After
           </h2>
           <p className="text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
-            Real results from our Tampa Bay customers. We clear it out so you can take back your space.
+            {/* Was "Real results from our Tampa Bay customers." These images are
+                illustrations of the service, not documented customer jobs, so
+                the claim is not made. Restore it once Carlos supplies real
+                before/after photos from his own jobs. */}
+            Garage, yard or full teardown — we clear it out so you can take back your space.
           </p>
         </div>
 
