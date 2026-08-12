@@ -6,7 +6,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Phone, Calendar, DollarSign, Truck, CheckCircle, Home, Hammer, TreePine, Wrench, Building, Trash2, AlertTriangle, Droplets, Battery, Fuel, Zap, Shield, Syringe, Cylinder } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import ServiceAreaMap from "@/components/ServiceAreaMap";
 import YouTubeLite from "../components/YouTubeLite";
 import Breadcrumbs from "@/components/Breadcrumbs";
 const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
@@ -495,11 +494,6 @@ const DumpsterRental = () => {
           <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
             We proudly serve <strong>Hillsborough County</strong> and <strong>Pinellas County</strong> with fast delivery and local support.
           </p>
-
-          {/* Map */}
-          <div className="mb-12">
-            <ServiceAreaMap />
-          </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
