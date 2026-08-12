@@ -45,7 +45,12 @@ const Navigation = () => {
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <a href="/" className="nav-logo">
-              <img src="/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png" alt="Junk in the Truck Co Logo" className="h-24 w-auto font-bold" width="240" height="96" loading="eager" decoding="async" fetchPriority="high" />
+              {/* 320px copy, not the 1830px master. This loads eagerly at high
+                  priority on every page of the site to be drawn 96px tall, so it
+                  was 438KB of the critical path for nothing. The master stays
+                  where it is — several pages still use it as a heroImage and an
+                  og:image, where the size is warranted. */}
+              <img src="/lovable-uploads/logo-nav.webp" alt="Junk in the Truck Co Logo" className="h-24 w-auto font-bold" width="240" height="96" loading="eager" decoding="async" fetchPriority="high" />
             </a>
 
             {/* Desktop Navigation */}

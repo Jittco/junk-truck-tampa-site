@@ -21,8 +21,12 @@ import {
 */
 import garageBefore from "@/assets/garage-before.jpg";
 import garageAfter from "@/assets/generated/garage-after-matched.jpg";
-const shedBefore = "/lovable-uploads/f3f7ce71-ab76-47bf-a3ce-e01508b8ac04.png";
-import shedAfter from "@/assets/generated/shed2-after-matched.png";
+// Was a raw path to /lovable-uploads/f3f7ce71-…png, which is byte-for-byte the
+// same image as shed-before-new.jpg. The browser has no way to know that, so the
+// homepage downloaded the identical 1.7MB file twice under two different URLs.
+// Importing the shared asset makes it one hashed file fetched once.
+import shedBefore from "@/assets/shed-before-new.jpg";
+import shedAfter from "@/assets/generated/shed2-after-matched.jpg";
 import yardBefore from "@/assets/yard-before.jpg";
 import yardAfter from "@/assets/generated/yard-after-matched.jpg";
 
