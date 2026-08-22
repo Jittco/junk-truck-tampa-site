@@ -372,132 +372,132 @@
     },
     {
       "source": "/demolition-services/pergola-demolition/",
-      "destination": "/services/demolition/pergola-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/pergola-demolition",
-      "destination": "/services/demolition/pergola-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/driveway-demolition/",
-      "destination": "/services/demolition/driveway-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/driveway-demolition",
-      "destination": "/services/demolition/driveway-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/interior-demolition/",
-      "destination": "/services/demolition/interior-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/interior-demolition",
-      "destination": "/services/demolition/interior-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/deck-removal/",
-      "destination": "/services/demolition/deck-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/deck-removal",
-      "destination": "/services/demolition/deck-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/fence-removal/",
-      "destination": "/services/demolition/fence-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/fence-removal",
-      "destination": "/services/demolition/fence-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/pool-removal/",
-      "destination": "/services/demolition/pool-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/demolition-services/pool-removal",
-      "destination": "/services/demolition/pool-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/deck-removal/",
-      "destination": "/services/demolition/deck-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/deck-removal",
-      "destination": "/services/demolition/deck-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/interior-demolition/",
-      "destination": "/services/demolition/interior-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/interior-demolition",
-      "destination": "/services/demolition/interior-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/pergola-demolition/",
-      "destination": "/services/demolition/pergola-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/pergola-demolition",
-      "destination": "/services/demolition/pergola-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/driveway-demo/",
-      "destination": "/services/demolition/driveway-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/driveway-demo",
-      "destination": "/services/demolition/driveway-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/driveway-demolition/",
-      "destination": "/services/demolition/driveway-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/driveway-demolition",
-      "destination": "/services/demolition/driveway-demolition/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/fence-removal/",
-      "destination": "/services/demolition/fence-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/fence-removal",
-      "destination": "/services/demolition/fence-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/pool-removal/",
-      "destination": "/services/demolition/pool-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
       "source": "/services/pool-removal",
-      "destination": "/services/demolition/pool-removal/",
+      "destination": "/services/demolition/",
       "statusCode": 301
     },
     {
