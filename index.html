@@ -36,7 +36,12 @@
     <meta property="og:url" content="https://www.junkinthetruckco.com/" />
     <meta property="og:title" content="Tampa Bay Junk Removal | Same-Day Service | Junk in the Truck Co">
     <meta property="og:description" content="Tampa Bay's trusted locally owned, Christian-based junk removal. Same-day service, upfront pricing. South Tampa. Call 844-858-6546.">
-    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QSiskVDL3gY8WKn8VWP5JCI2aF82/social-images/social-1758761803697-Hero%20Main%20Page%20(2).png">
+    <!-- Served from our own domain. This previously pointed at
+         storage.googleapis.com/gpt-engineer-file-uploads — Lovable's upload
+         bucket — so every Facebook, iMessage and LinkedIn preview of this site
+         depended on infrastructure this account no longer uses. JPEG rather
+         than WebP because some social crawlers still handle WebP badly. -->
+    <meta property="og:image" content="https://www.junkinthetruckco.com/og-image.jpg">
     <meta property="og:site_name" content="Junk in the Truck Co" />
     <meta property="og:locale" content="en_US" />
 
@@ -44,19 +49,22 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tampa Bay Junk Removal | Same-Day Service | Junk in the Truck Co">
     <meta name="twitter:description" content="Tampa Bay's trusted locally owned, Christian-based junk removal. Same-day service, upfront pricing. South Tampa. Call 844-858-6546.">
-    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/QSiskVDL3gY8WKn8VWP5JCI2aF82/social-images/social-1758761803697-Hero%20Main%20Page%20(2).png">
+    <meta name="twitter:image" content="https://www.junkinthetruckco.com/og-image.jpg">
 
     <!--
-      Vercel Web Analytics (page views).
-      Installed as a script tag rather than the @vercel/analytics npm package on
-      purpose: this repo carries bun.lock, bun.lockb AND package-lock.json, so
-      adding a dependency with npm would leave the bun lockfiles stale and risk
-      breaking the Vercel build. The script needs no dependency and no lockfile
-      change. Requires Web Analytics to be enabled in the Vercel project settings.
-      Note: custom events (e.g. click-to-call) are Pro-only, so this measures
-      traffic volume only. Call tracking still needs GA4.
+      Vercel Web Analytics was requested here as /_vercel/insights/script.js,
+      but Web Analytics was never switched on in the Vercel project settings, so
+      that path does not exist. Combined with the SPA catch-all rewrite, the
+      request did not 404 — it returned index.html with Content-Type text/html,
+      and the browser then tried to parse a page of HTML as JavaScript. Every
+      visitor on every route got "Uncaught SyntaxError: Unexpected token '<'"
+      plus a wasted round trip.
+
+      Removed rather than repaired. If Web Analytics is enabled in the project
+      settings later, add the tag back then — a script tag pointing at a route
+      that does not exist is worse than no analytics, because the rewrite turns
+      a clean 404 into a parse error.
     -->
-    <script defer src="/_vercel/insights/script.js"></script>
 
     <!-- Google Analytics 4.
          The property (Junk in the Truck Co / junkinthetruckco.com) already
