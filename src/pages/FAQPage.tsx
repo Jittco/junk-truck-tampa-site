@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -33,7 +33,7 @@ const faqCategories = [
       },
       {
         question: "Do you offer weekend or evening service?",
-        answer: "Yes, we provide flexible scheduling to fit your busy lifestyle, including select weekends."
+        answer: "Yes. We're open Monday through Saturday, 8 AM to 6 PM, including Saturday service and select evenings. We're closed Sundays, though special arrangements can sometimes be made in advance."
       },
       {
         question: "What should I expect on junk removal day?",
@@ -101,7 +101,7 @@ const faqCategories = [
       },
       {
         question: "How do I book an appointment?",
-        answer: "You can book online anytime or call us at 813-536-6298."
+        answer: "You can book online anytime, or call our main line at 844-858-6546. You can also call or text 813-531-9858 — send a photo of your pile to that number and we'll text a price back."
       },
       {
         question: "Why should I choose Junk in the Truck Co. over a national brand?",
@@ -169,10 +169,10 @@ const FAQPage = () => {
               },
               {
                 "@type": "Question",
-                "name": "Do you work on Sundays?",
+                "name": "Do you offer weekend or evening service?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "No. We do not operate on Sundays. We're available Monday through Saturday with flexible scheduling, including select evenings."
+                  "text": "Yes. We're open Monday through Saturday, 8 AM to 6 PM, including Saturday service and select evenings. We're closed Sundays, though special arrangements can sometimes be made in advance."
                 }
               },
               {
@@ -201,7 +201,7 @@ const FAQPage = () => {
               },
               {
                 "@type": "Question",
-                "name": "Are there any items you can't haul away?",
+                "name": "Are there items you can't haul away?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "For safety and legal reasons we cannot take hazardous waste such as chemicals, paint, propane tanks, or asbestos."
@@ -217,7 +217,7 @@ const FAQPage = () => {
               },
               {
                 "@type": "Question",
-                "name": "What happens if the donation center won't accept my items?",
+                "name": "What if the donation center won't accept my items?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "With our fee-based donation pickup, if a charity declines your items, responsible disposal is included so nothing is left behind."
@@ -241,10 +241,10 @@ const FAQPage = () => {
               },
               {
                 "@type": "Question",
-                "name": "Where can I find you on Google Maps?",
+                "name": "Which counties do you serve?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "View our reviews, service info, and directions on our Google Business Profile: https://g.page/r/Ca8e1x8VZL6vEB0"
+                  "text": "Our service area covers Hillsborough County and Pinellas County."
                 }
               },
               {
@@ -268,23 +268,15 @@ const FAQPage = () => {
                 "name": "How do I book an appointment?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Book online at https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae or call 844-858-6546."
+                  "text": "Book online at https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae, or call our main line at 844-858-6546. You can also call or text 813-531-9858 — send a photo of your pile to that number and we'll text a price back."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Why choose Junk in the Truck Co. over a national brand?",
+                "name": "Why should I choose Junk in the Truck Co. over a national brand?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "We're a local, faith-driven team focused on integrity, personalized service, and fair pricing—backed by great reviews from Tampa Bay customers."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Where can I learn more about your company?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Read our story here: https://www.junkinthetruckco.com/our-story"
                 }
               }
             ]
@@ -353,24 +345,24 @@ const FAQPage = () => {
                 Still Have Questions?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Call us at 813-536-6298 or book online today for a free, no-obligation estimate.
+                Call us at 844-858-6546 or book online today for a free, no-obligation estimate. You can also call or text 813-531-9858 with a photo of your pile.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   size="lg" 
                   className="px-8 py-4 text-lg font-semibold"
-                  onClick={() => window.open('tel:813-536-6298', '_self')}
+                  onClick={() => window.open('tel:844-858-6546', '_self')}
                 >
                   <Phone className="w-5 h-5 mr-2" />
-                  Call Now
+                  Call 844-858-6546
                 </Button>
                 
                 <Button 
                   size="lg" 
                   variant="outline"
                   className="px-8 py-4 text-lg font-semibold"
-                  onClick={() => window.open('https://book.junkinthetruck.com', '_blank')}
+                  onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}
                 >
                   <Calendar className="w-5 h-5 mr-2" />
                   Book Online

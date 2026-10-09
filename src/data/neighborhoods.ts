@@ -100,7 +100,7 @@ export const southTampaNeighborhoods: Neighborhood[] = [
       {
         question: "What does junk removal in Hyde Park cost?",
         answer:
-          "Most Hyde Park junk removal jobs run between $150 and $650, priced by how much truck space your items fill. Single-item pickups like a couch or fridge start around $99. Full garage or attic cleanouts in historic homes typically land between $450 and $850. You always get an upfront, no-obligation quote on-site before any work starts.",
+          "We price by how much truck space your items fill. Single-item pickups like a couch or fridge start at $99, a small load (1/4 truck) runs $175–$289, a half truck $400–$650, and a full truck $700–$950. A full garage or attic cleanout in a Hyde Park historic home usually lands between half and full truck, so $400–$950. You always get an upfront, no-obligation quote on-site before any work starts.",
       },
       {
         question: "Do you serve historic homes in Hyde Park?",
@@ -142,7 +142,7 @@ export const southTampaNeighborhoods: Neighborhood[] = [
       {
         question: "Do you work weekends in Hyde Park?",
         answer:
-          "Yes, we offer Saturday service across Hyde Park and the rest of South Tampa. Sundays are by appointment for emergency or estate cleanouts.",
+          "Yes. Saturday service is standard across Hyde Park and the rest of South Tampa, 8 AM to 6 PM. We're closed Sundays, though a Sunday can sometimes be arranged in advance for an emergency or estate cleanout.",
       },
       {
         question: "Where does my junk go after pickup?",
@@ -341,7 +341,7 @@ export const southTampaNeighborhoods: Neighborhood[] = [
       {
         question: "What's the cost of a garage cleanout in Palma Ceia?",
         answer:
-          "Most Palma Ceia garage cleanouts run $350–$800. Pricing depends on how full the garage is and whether items need disassembly. You get an upfront quote on-site before we start.",
+          "A full garage cleanout is usually between a half truck and a full truck, so $400–$950 depending on how full the garage is and whether items need disassembly. Lighter garages can come in at a small load, $175–$289. You get an upfront quote on-site before we start.",
       },
       {
         question: "Can you donate items instead of throwing them out?",
@@ -573,7 +573,7 @@ export const southTampaNeighborhoods: Neighborhood[] = [
       {
         question: "How much does a 4-car garage cleanout cost?",
         answer:
-          "A fully packed 4-car garage cleanout in Sunset Park typically runs $700–$1,400 depending on volume and item types. Lighter cleanouts can come in under $500. We always quote on-site before starting.",
+          "A fully packed 4-car garage is more than one truckload, so it is quoted per load — as an example, most run $700–$1,400 depending on volume and item types. A lighter 4-car garage can come in at a half truck, $400–$650. We always quote on-site before starting.",
       },
       {
         question: "Can you handle teardown-prep cleanouts?",
@@ -610,7 +610,7 @@ export const southTampaNeighborhoods: Neighborhood[] = [
       {
         question: "Are weekends available in Sunset Park?",
         answer:
-          "Yes, Saturday service is standard. Sundays are available by appointment for time-sensitive jobs.",
+          "Yes. Saturday service is standard, 8 AM to 6 PM. We're closed Sundays, though a Sunday can sometimes be arranged in advance for a time-sensitive job.",
       },
     ],
     jobStories: [

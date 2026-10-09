@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Phone, ChevronRight, CheckCircle, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -66,7 +66,7 @@ const ServiceLocationTemplate = ({ data: s }: Props) => {
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "USD",
-      lowPrice: s.pricing[0]?.price?.replace(/[^0-9]/g, "").slice(0, 3) || "95",
+      lowPrice: s.pricing[0]?.price?.replace(/[^0-9]/g, "").slice(0, 3) || "99",
     },
     url,
   };
@@ -140,9 +140,14 @@ const ServiceLocationTemplate = ({ data: s }: Props) => {
       {/* Pricing */}
       <section className="py-12 bg-muted/30 border-b border-border">
         <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
-            {s.serviceName} Pricing in {s.cityName}
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">
+            What {s.serviceName} Usually Costs in {s.cityName}
           </h2>
+          <p className="text-muted-foreground mb-6">
+            Typical examples from jobs like yours — not a fixed price list. Junk
+            removal is priced by how much truck you fill, and every job is quoted
+            before we start.
+          </p>
           <div className="grid md:grid-cols-3 gap-4">
             {s.pricing.map((p) => (
               <Card key={p.label}>

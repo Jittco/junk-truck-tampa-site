@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import ServiceAreaTemplate from "@/components/ServiceAreaTemplate";
 import { serviceAreas } from "@/data/serviceAreas";
 import { southTampaNeighborhoods } from "@/data/neighborhoods";
@@ -35,55 +35,30 @@ const southTampaFaqs = [
   },
 ];
 
+/**
+ * This page used to declare a second LocalBusiness here, under @id "#business",
+ * alongside the site-wide one that ServiceAreaTemplate already renders through
+ * <LocalBusinessSchema /> under @id "#organization". Two LocalBusiness nodes
+ * describing one company, with different ids, is duplicate markup — Google has
+ * to guess which is the real entity.
+ *
+ * It went unnoticed because neither node ever reached the page: react-helmet
+ * was not rendering at all. Now that the build prerenders the head, it would
+ * have shipped, so the duplicate is removed and the canonical LocalBusiness in
+ * LocalBusinessSchema.tsx (which already lists South Tampa in areaServed, and
+ * carries the confirmed hours and phone) is the single source.
+ *
+ * The South Tampa service area itself is still expressed on the page in the
+ * visible copy and in the areaServed list of the shared schema.
+ */
 const southTampaSchema = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.junkinthetruckco.com/#business",
-      name: "Junk in the Truck Co",
-      url: "https://www.junkinthetruckco.com",
-      telephone: "844-858-6546",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "3810 W San Carlos St",
-        addressLocality: "Tampa",
-        addressRegion: "FL",
-        postalCode: "33629",
-        addressCountry: "US",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 27.9232938,
-        longitude: -82.5066304,
-      },
-      areaServed: [
-        { "@type": "City", name: "South Tampa" },
-        { "@type": "Neighborhood", name: "Hyde Park" },
-        { "@type": "Neighborhood", name: "Palma Ceia" },
-        { "@type": "Neighborhood", name: "Davis Islands" },
-        { "@type": "Neighborhood", name: "Bayshore Beautiful" },
-        { "@type": "Neighborhood", name: "Ballast Point" },
-        { "@type": "Neighborhood", name: "Westshore" },
-        { "@type": "PostalCode", name: "33606" },
-        { "@type": "PostalCode", name: "33609" },
-        { "@type": "PostalCode", name: "33611" },
-        { "@type": "PostalCode", name: "33616" },
-        { "@type": "PostalCode", name: "33629" },
-      ],
-      // aggregateRating removed: self-controlled review markup is ineligible for
-      // Google's star features, and this hardcoded 150 contradicted the 450 stated
-      // elsewhere on the same site. See LocalBusinessSchema.tsx for the full note.
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: southTampaFaqs.map((f) => ({
-        "@type": "Question",
-        name: f.question,
-        acceptedAnswer: { "@type": "Answer", text: f.answer },
-      })),
-    },
-  ],
+  "@type": "FAQPage",
+  mainEntity: southTampaFaqs.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: { "@type": "Answer", text: f.answer },
+  })),
 };
 
 const customHead = (

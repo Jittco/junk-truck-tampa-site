@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
@@ -31,18 +31,12 @@ const JunkRemovalHub: React.FC = () => {
     "@type": "Service",
     "name": "Junk Removal Services Tampa Bay",
     "description": "Professional junk removal services in Tampa Bay. Residential and commercial junk removal with same-day service, upfront pricing, and eco-friendly disposal.",
+    // Reference the one canonical business entity rather than restating a
+    // partial copy of it. The full LocalBusiness — with the confirmed hours,
+    // phone and address — is emitted once per page by the build's prerender
+    // step (scripts/seo-defaults.mjs) and by LocalBusinessSchema.tsx.
     "provider": {
-      "@type": "LocalBusiness",
-      "name": "Junk in the Truck Co",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "3810 W San Carlos Street",
-        "addressLocality": "Tampa",
-        "addressRegion": "FL",
-        "postalCode": "33629",
-        "addressCountry": "US"
-      },
-      "telephone": "844-858-6546"
+      "@id": "https://www.junkinthetruckco.com/#organization"
     },
     "areaServed": "Tampa Bay, FL"
   };

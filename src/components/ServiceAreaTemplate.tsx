@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Clock, CheckCircle, Users, Award, Leaf, Star, ChevronRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -36,7 +36,7 @@ const ServiceAreaTemplate = ({ area, customHead }: ServiceAreaTemplateProps) => 
     { icon: <Users className="h-6 w-6 text-primary" />, title: "Local Team", description: `Our crew knows ${area.name} well and provides personalized service.` },
     { icon: <Award className="h-6 w-6 text-primary" />, title: "Upfront Pricing", description: "No hidden fees. You know the cost before we start working." },
     { icon: <Leaf className="h-6 w-6 text-primary" />, title: "Eco-Friendly", description: "We donate and recycle whenever possible to protect the environment." },
-    { icon: <Star className="h-6 w-6 text-primary" />, title: "Fully Insured", description: "Licensed, bonded, and insured for your peace of mind." },
+    { icon: <Star className="h-6 w-6 text-primary" />, title: "Fully Insured", description: "Licensed and insured for your peace of mind." },
   ];
 
   const breadcrumbSchema = {
@@ -166,8 +166,24 @@ const ServiceAreaTemplate = ({ area, customHead }: ServiceAreaTemplateProps) => 
         {area.slug !== "south-tampa" && (
           <section className="py-10 bg-background border-b border-border">
             <div className="container mx-auto px-4 max-w-4xl">
+              {/* Built from each area's own data rather than one boilerplate
+                  sentence. The previous version of this paragraph was byte-for-byte
+                  identical on every city page, which is duplicate content and
+                  tells a reader in Brandon nothing a reader in Valrico wouldn't
+                  also see. */}
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Junk in the Truck Co serves {area.name} as part of our growing Tampa Bay service area. Based in South Tampa, our team brings the same 5-star, same-day junk removal service to {area.name} that our home community has come to trust.
+                Junk in the Truck Co runs out of South Tampa and works {area.name}
+                {area.zipCodes?.length ? ` (${area.zipCodes.join(", ")})` : ""} regularly
+                {area.landmarks?.length
+                  ? ` — around ${area.landmarks.slice(0, 3).join(", ")}`
+                  : ""}
+                .{" "}
+                {area.logisticsNotes
+                  ? area.logisticsNotes
+                  : `Same crews, same upfront pricing, same day where we have the slot.`}
+                {area.nearbyAreas?.length
+                  ? ` We cover ${area.nearbyAreas.slice(0, 3).join(", ")} on the same runs.`
+                  : ""}
               </p>
             </div>
           </section>

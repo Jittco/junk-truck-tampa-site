@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { lazy, Suspense } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Footer = lazy(() => import("@/components/Footer"));
 

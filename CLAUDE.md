@@ -22,15 +22,18 @@ link to each other on purpose; see "Sister company" below.
 
 | Number | Use | Where it belongs |
 |---|---|---|
-| `844-858-6546` | **Voice.** The main line. | Everywhere. ~91 places in the code. |
-| `813-531-9858` | **Text only.** Customers text photos of their pile for a quote. | The text-a-photo feature only. |
+| `844-858-6546` | **Main line.** Voice. | The primary number everywhere, and in schema. |
+| `813-531-9858` | **Call or text.** Customers text photos of their pile for a quote. | Secondary. Describe it as "Call or Text" — not "text only". |
 
-These are two different lines on purpose. The text line is not a voice line and
-the voice line does not receive photos. Do not "consolidate" them.
+Confirmed by Carlos, October 2026. Keep the hierarchy clear: 844 is the number
+a customer should reach for by default; 813-531-9858 is the one they can text a
+photo to and can also call.
 
-There is a third number in the code, `813-536-6298`, on the mobile Call Now
-button and the FAQ page. **Nobody has confirmed whether that line is real.** If
-you are about to touch phone numbers, ask Carlos about that one first.
+`813-536-6298` used to appear on the mobile Call Now button, the FAQ page and
+the service-area hub. Carlos confirmed it should be replaced with
+`813-531-9858`, and it has been. **Note that 813-536-6298 is painted on the
+truck in the homepage hero photo**, so it is almost certainly a live line — it
+simply is not published on the website any more.
 
 Everything phone-related lives in `src/config/hero.ts`. Change it there, not in
 individual components.
@@ -40,9 +43,41 @@ individual components.
 - **React + Vite + TypeScript**, styled with Tailwind and shadcn/ui components.
 - Hosted on **Vercel**. Pushing to the `main` branch deploys automatically —
   usually live in under a minute.
-- The site is **client-rendered**. The raw HTML a browser first receives is
-  nearly empty; JavaScript draws the whole page. This matters for search — see
-  "Known issues".
+- The page **body** is client-rendered: the raw HTML ships an empty `#root` and
+  JavaScript draws everything. The page **head** is not — see below.
+
+### The build has two steps
+
+`npm run build` runs `vite build` and then `node scripts/prerender.mjs`.
+
+The prerender step exists because a single-page app served through a catch-all
+rewrite returns the *same* HTML for every URL. That meant every page told Google
+it was the homepage: same title, same description, no canonical tag, no
+structured data. (`react-helmet` was supposed to fix that in the browser, but
+version 6 does not work under React 18 and was rendering nothing at all. The
+site now uses `react-helmet-async`.)
+
+The script renders each of the 44 real routes in Node, harvests what
+react-helmet-async would put in the head, and writes `dist/<route>/index.html`
+with that head baked in. Vercel serves a matching static file *before* it
+applies the rewrite, so this changes no URLs and touches none of the 102
+redirects.
+
+Two things to know:
+
+- **It fails the build on purpose.** If a route stops rendering, loses its
+  title, or two pages end up with the same title, the script exits non-zero and
+  Vercel refuses the deploy. That is deliberate — shipping homepage titles on
+  every page again is worse than not shipping.
+- **Metadata is harvested, never re-declared.** Page titles and descriptions
+  still live in each page's `<Helmet>` and in the data files. The prerender
+  reads them. Do not add a second list of titles somewhere — they would drift.
+
+To check the output yourself after a build:
+
+```bash
+grep -o "<title[^>]*>[^<]*" dist/services/dumpster-rental/index.html
+```
 
 ## Making a change
 
@@ -87,16 +122,51 @@ the page — Junk in the Truck ranks for demolition terms and gets real work fro
 them, so the goal is to catch the jobs that are genuinely too big, not to hand
 demolition traffic away.
 
+## Confirmed business facts (October 2026)
+
+These were settled with Carlos and the site was brought into line with them.
+They live in `src/config/hero.ts` and `src/pages/DumpsterRental.tsx`.
+
+**Junk removal** — the truck is 20 cubic yards. Public pricing is the four-tier
+framework, and nothing else: single item $99, small load (1/4 truck) $175–$289,
+half truck $400–$650, full truck $700–$950. A garage cleanout spans half to full
+truck, so it is quoted $400–$950. The detailed fractional pricing used
+internally is deliberately not published anywhere on the site.
+
+**Dumpster rental** — a separate service from the junk truck. Two sizes:
+
+| | 3 days | 7 days | 14 days | 30 days |
+|---|---|---|---|---|
+| 15-yard | $400 | $450 | $475 | $500 |
+| 20-yard | $450 | $525 | $550 | $600 |
+
+Every period includes 1 ton; overage is $0.06 per pound. There is no 18-yard
+dumpster — that was an old listing and has been removed sitewide.
+
+**Hours** — Monday–Saturday 8 AM–6 PM, Sunday closed. Sunday work only by prior
+arrangement, and the site must not advertise Sunday as a normal service day.
+
+**Licensed and insured. NOT bonded.** Do not let a city-page template or any
+other copy reintroduce a bonded claim.
+
+**Review counts are never hardcoded.** The Trustindex widget on the homepage is
+the live source. Everywhere else uses non-numeric wording (`REVIEW_PROOF` in
+`src/config/hero.ts`). The old 450+/474/485 figures went stale and contradicted
+the widget.
+
 ## Known issues, honestly stated
 
-- **The site is close to invisible to AI search.** ChatGPT, Perplexity and
-  Claude's own crawlers do not run JavaScript, so they receive an almost empty
-  page. Google renders JavaScript on a later pass so Google mostly sees the real
-  site. Fixing this means adding prerendering to the build. It is the single
-  biggest available SEO improvement.
-- **Mobile is slow.** The largest element takes about 7.6 seconds to appear on a
-  phone on a slow connection, because nothing can be drawn until JavaScript
-  loads. Desktop is fine at 0.7 seconds. Prerendering fixes this too.
+- **The page body is still invisible to crawlers that do not run JavaScript.**
+  The head is prerendered now (see "How the build works"), so titles, meta
+  descriptions, canonicals and schema are in the raw HTML. The `<body>` is still
+  an empty `#root` that React fills, so ChatGPT, Perplexity and similar crawlers
+  still receive no body copy. Fixing that means server-rendering the body as
+  well, which is a much larger job: several components touch `window` during
+  render, and a body prerender introduces hydration-mismatch risk that a
+  head-only prerender does not.
+- **Mobile is slow.** The largest element takes about 7.6 seconds on a phone on
+  a slow connection, because nothing can be drawn until JavaScript loads.
+  Desktop is fine. Body prerendering would fix this too.
 - **Six service pages do not exist** — deck, fence, driveway, pergola, pool and
   interior removal. 26 redirects used to point at them and now land on the
   general demolition page instead. Building the real pages would recover

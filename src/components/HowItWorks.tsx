@@ -6,7 +6,7 @@ type HowItWorksProps = {
   step3Img: string; // hauling/clean result
   className?: string;
 };
-const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
+const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae";
 const PHONE = "844-858-6546";
 export default function HowItWorks({
   step1Img,

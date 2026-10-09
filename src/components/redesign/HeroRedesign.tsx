@@ -7,7 +7,7 @@ import {
   SMS_VERIFIED,
   SMS_REPLY_WINDOW,
   PRICE_ANCHOR,
-  REVIEW_COUNT,
+  REVIEW_PROOF,
   SMS_BODY,
   buildSmsHref,
   buildTelHref,
@@ -144,7 +144,7 @@ const HeroRedesign = () => {
         <div className="self-end lg:pb-2">
           <dl className="grid grid-cols-3 gap-px overflow-hidden border border-sand-50/15 bg-sand-50/15 lg:ml-auto lg:max-w-sm">
             {[
-              { n: REVIEW_COUNT, l: "Google reviews" },
+              { n: REVIEW_PROOF, l: "Google reviews" },
               { n: "5.0", l: "Star average" },
               { n: "Same day", l: "Most jobs" },
             ].map((s) => (

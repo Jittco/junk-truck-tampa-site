@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { MapPin, Phone, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -89,8 +89,8 @@ const ServiceAreaHub = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4">
-                  <a href="tel:(813) 536-6298">
-                    Call (813) 536-6298
+                  <a href="tel:813-531-9858">
+                    Call (813) 531-9858
                   </a>
                 </Button>
               </div>
@@ -170,7 +170,7 @@ const ServiceAreaHub = () => {
                 </p>
                 
                 <Button asChild variant="outline">
-                  <a href="tel:(813) 536-6298">
+                  <a href="tel:813-531-9858">
                     Call to Check Your Area
                   </a>
                 </Button>
@@ -248,9 +248,9 @@ const ServiceAreaHub = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/20 text-white hover:bg-white/20">
-                  <a href="tel:(813) 536-6298">
+                  <a href="tel:813-531-9858">
                     <Phone className="mr-2 h-5 w-5" />
-                    Call (813) 536-6298
+                    Call (813) 531-9858
                   </a>
                 </Button>
               </div>

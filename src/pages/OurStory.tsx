@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -33,12 +33,12 @@ const OurStory = () => {
   return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Our Story | Christian-Owned Tampa Bay Junk Removal</title>
-        <meta name="description" content="Locally owned, Christian-based Tampa Bay junk removal in South Tampa. Licensed, insured, 5-star rated with 450+ reviews. Not a franchise." />
+        <meta name="description" content="Locally owned, Christian-based Tampa Bay junk removal in South Tampa. Licensed, insured, and 5-star rated on Google. Not a franchise." />
         <link rel="canonical" href="https://www.junkinthetruckco.com/our-story" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.junkinthetruckco.com/our-story" />
         <meta property="og:title" content="Our Story | Christian-Owned Tampa Bay Junk Removal" />
-        <meta property="og:description" content="Locally owned, Christian-based Tampa Bay junk removal in South Tampa. Licensed, insured, 5-star rated with 450+ reviews." />
+        <meta property="og:description" content="Locally owned, Christian-based Tampa Bay junk removal in South Tampa. Licensed, insured, and 5-star rated on Google." />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",

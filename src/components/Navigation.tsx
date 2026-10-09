@@ -13,24 +13,6 @@ const Navigation = () => {
   return <>
       {/* Two-Tier Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white">
-        {/* Desktop Sticky Call Bar */}
-        <div className="utility-bar hidden lg:block">
-          <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
-            <div className="flex flex-col">
-              <span className="text-base font-bold text-white tracking-wide">Junk Gotta Go?</span>
-              <span className="text-sm text-white/90">We'll Handle It Today</span>
-            </div>
-            <div className="flex items-center">
-              <a
-                href="tel:8448586546"
-                className="inline-flex items-center gap-2 bg-white text-primary font-bold px-5 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 animate-shake-subtle text-base"
-              >
-                <Phone className="w-5 h-5" />
-                Call Now
-              </a>
-            </div>
-          </div>
-        </div>
         {/* Mobile Utility Bar */}
         <div className="utility-bar lg:hidden">
           <div className="flex items-center justify-center w-full max-w-7xl mx-auto">
@@ -273,9 +255,9 @@ const Navigation = () => {
           <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button flex-1 justify-center" aria-label="Get a free quote for junk removal and demolition">
             Get Free Quote
           </a>
-          <a href="tel:813-536-6298" className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold flex-1">
+          <a href="tel:813-531-9858" className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold flex-1" aria-label="Call or text 813-531-9858">
             <Phone className="h-4 w-4" />
-            Call Now
+            Call or Text
           </a>
         </div>
       </div>

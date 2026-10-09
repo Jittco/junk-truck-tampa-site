@@ -1,11 +1,14 @@
 import React, { useMemo, useState } from "react";
 
-// Truck capacity constants
+// Truck capacity constants.
+// Confirmed by Carlos: the junk-removal truck is 20 cubic yards. The box
+// dimensions below are the advertised ones and multiply out slightly higher, so
+// the stated capacity is pinned to the confirmed 20 rather than derived.
 const TRUCK_WIDTH_FT = 8;
 const TRUCK_LENGTH_FT = 12;
 const TRUCK_HEIGHT_FT = 6;
-const TRUCK_VOL_CF = TRUCK_WIDTH_FT * TRUCK_LENGTH_FT * TRUCK_HEIGHT_FT; // 576
-const TRUCK_VOL_CY = TRUCK_VOL_CF / 27; // ≈21.33 cubic yards
+const TRUCK_VOL_CY = 20;
+const TRUCK_VOL_CF = TRUCK_VOL_CY * 27; // 540
 const PICKUP_EQUIV = 8; // One truck load equals eight pickup loads
 
 const ITEMS = [{
@@ -178,8 +181,9 @@ export default function TruckVolumeEstimator(): JSX.Element {
     <div className="mx-auto max-w-5xl space-y-6 p-4">
       <h2 className="text-2xl font-bold text-foreground">Visual: How Much Space Will Your Items Fill?</h2>
       <p className="text-muted-foreground">
-        Our truck is <strong>{TRUCK_WIDTH_FT}ft</strong> wide × <strong>{TRUCK_LENGTH_FT}ft</strong> long × <strong>{TRUCK_HEIGHT_FT}ft</strong> high
-        (≈ <strong>{TRUCK_VOL_CY.toFixed(1)}</strong> cubic yards). One full truck equals <strong>{PICKUP_EQUIV}</strong> pickup loads.
+        Our truck holds <strong>{TRUCK_VOL_CY} cubic yards</strong> — roughly{" "}
+        <strong>{TRUCK_WIDTH_FT}ft</strong> wide × <strong>{TRUCK_LENGTH_FT}ft</strong> long ×{" "}
+        <strong>{TRUCK_HEIGHT_FT}ft</strong> high. One full truck equals <strong>{PICKUP_EQUIV}</strong> pickup loads.
       </p>
 
       <div className="grid gap-6 md:grid-cols-3">
@@ -287,7 +291,7 @@ export default function TruckVolumeEstimator(): JSX.Element {
       </div>
 
       <div className="rounded-2xl bg-primary/10 p-4 text-sm text-foreground">
-        <strong>Truck Dimensions:</strong> {TRUCK_WIDTH_FT}ft (W) × {TRUCK_LENGTH_FT}ft (L) × {TRUCK_HEIGHT_FT}ft (H) = {TRUCK_VOL_CF} ft³ (≈ {TRUCK_VOL_CY.toFixed(1)} yd³). One full truck equals {PICKUP_EQUIV} pickup loads.
+        <strong>Truck capacity:</strong> {TRUCK_VOL_CY} cubic yards ({TRUCK_VOL_CF} ft³), roughly {TRUCK_WIDTH_FT}ft (W) × {TRUCK_LENGTH_FT}ft (L) × {TRUCK_HEIGHT_FT}ft (H). One full truck equals {PICKUP_EQUIV} pickup loads.
       </div>
     </div>
   );

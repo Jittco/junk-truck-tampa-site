@@ -99,7 +99,7 @@ const WhoWeHelp = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8">
-              <a href="https://book.housecallpro.com/book/Junk-in-the-Truck-Co/c12fa65856634aa0a22b6b38d3f6ed0d" target="_blank" rel="noopener noreferrer">
+              <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer">
                 Book Junk Removal
               </a>
             </Button>

@@ -1,7 +1,77 @@
 import React from 'react';
+import { Check } from 'lucide-react';
 import { ServiceDetailPage } from '../components/ServiceDetailPage';
 import CommercialServicesGrid from '../components/CommercialServicesGrid';
+import SisterCompanyCallout from '../components/SisterCompanyCallout';
 import { commercialServices, residentialServices } from '../data/services';
+
+/**
+ * What a property manager or contractor needs settled before they call. These
+ * are confirmed services, not aspirational ones — COI on request, after-hours
+ * by arrangement, photo confirmation, recurring routes, volume-based pricing.
+ *
+ * We are licensed and insured, NOT bonded. Do not add a bonded claim here or
+ * anywhere else on the site.
+ */
+const COMMERCIAL_COMMITMENTS = [
+  {
+    title: 'Certificates of Insurance',
+    body: 'We provide a COI naming your property or management company whenever one is required, before the crew arrives.',
+  },
+  {
+    title: 'After-hours service by arrangement',
+    body: 'Evening and early-morning work so a tenant-facing space is clear before business hours. Arranged in advance.',
+  },
+  {
+    title: 'Before-and-after photo confirmation',
+    body: 'Timestamped photos of the area cleared, sent after the job, so you can close out a work order without a site visit.',
+  },
+  {
+    title: 'Recurring service',
+    body: 'Standing routes for bulk pickups, trash-room overflow, and turnover cleanouts, on whatever interval your property needs.',
+  },
+  {
+    title: 'Volume-based pricing',
+    body: 'The same truck-fill pricing we use everywhere, so you can forecast a route or a turnover rather than wait on an hourly tally.',
+  },
+  {
+    title: 'Commercial cleanouts of every kind',
+    body: 'Offices, retail, restaurants, warehouses, storage facilities, and post-construction debris across Hillsborough and Pinellas.',
+  },
+];
+
+const CommercialCommitments = () => (
+  <section className="py-16 section-bg" aria-labelledby="commercial-commitments">
+    <div className="container mx-auto px-4 max-w-5xl">
+      <h2 id="commercial-commitments" className="text-3xl font-anton text-center mb-4">
+        What We Provide for Commercial Clients
+      </h2>
+      <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+        Property managers, businesses, and contractors generally need the same
+        few things settled before they book. Here is where we stand on each.
+      </p>
+
+      <div className="grid gap-6 md:grid-cols-2">
+        {COMMERCIAL_COMMITMENTS.map((item) => (
+          <div key={item.title} className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm">
+            <Check className="h-6 w-6 text-primary flex-shrink-0 mt-1" aria-hidden="true" />
+            <div>
+              <h3 className="font-medium text-foreground mb-2">{item.title}</h3>
+              <p className="text-sm text-muted-foreground">{item.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p className="text-sm text-muted-foreground mt-8 max-w-3xl mx-auto text-center">
+        Commercial pricing still varies with volume, labor, access, disposal,
+        material, timing, and scope — a loading-dock job and a fourth-floor
+        walk-up are not the same job. Larger or specialized work is quoted after
+        a walkthrough. We are licensed and insured.
+      </p>
+    </div>
+  </section>
+);
 
 const CommercialJunkRemovalService: React.FC = () => {
   const service = {
@@ -19,7 +89,15 @@ const CommercialJunkRemovalService: React.FC = () => {
       },
       {
         question: "Can you work around our business hours?",
-        answer: "Absolutely. We offer flexible scheduling including evenings and weekends to minimize disruption to your business operations."
+        answer: "Yes. We're on site Monday through Saturday, 8 AM to 6 PM, and after-hours or early-morning work can be arranged in advance so a tenant-facing space is clear before you open. We're closed Sundays."
+      },
+      {
+        question: "Can you provide a certificate of insurance?",
+        answer: "Yes. We provide a COI naming your property or management company whenever one is required, before the crew arrives. Junk in the Truck Co is licensed and insured."
+      },
+      {
+        question: "Do you handle larger demolition work?",
+        answer: "We take the small teardowns — sheds, fences, interior strip-outs, and similar. Anything structural or permitted goes to our sister company, DND Demolition, which is set up for that work."
       }
     ],
     order: 2
@@ -98,7 +176,13 @@ const CommercialJunkRemovalService: React.FC = () => {
         whoWeServe={whoWeServe}
         servicesWeOffer={servicesWeOffer}
         customSections={{
-          beforeWhoWeServe: <CommercialServicesGrid />
+          beforeWhoWeServe: (
+            <>
+              <CommercialCommitments />
+              <CommercialServicesGrid />
+            </>
+          ),
+          afterHowItWorks: <SisterCompanyCallout />
         }}
       />
     </>

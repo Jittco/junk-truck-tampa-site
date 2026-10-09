@@ -50,7 +50,7 @@ const GarageCleanOutService: React.FC = () => {
             <div className="mt-8">
               <p className="text-muted-foreground mb-4">By incorporating the services of Junk in the Truck Co, you can streamline the cleanout process and achieve an organized garage space more effectively.</p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" onClick={() => window.open('https://book.junkinthetruck.com', '_blank')}>
+                <Button size="lg" onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}>
                   Book Online Now
                 </Button>
                 <Button size="lg" variant="outline" onClick={() => window.open('tel:844-858-6546', '_self')}>

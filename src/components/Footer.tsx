@@ -131,9 +131,9 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#18d13d] transition-colors underline-offset-4 hover:underline"
-                  aria-label="Read our 450+ five-star Google reviews"
+                  aria-label="Read our five-star Google reviews"
                 >
-                  5-Star Rated &middot; 450+ Google Reviews
+                  5-Star Rated on Google
                 </a>
               </li>
               <li className="flex items-center gap-2"><Leaf className="w-4 h-4 text-[#18d13d]" aria-hidden="true" /> Eco-Friendly Disposal</li>

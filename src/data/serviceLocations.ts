@@ -296,7 +296,7 @@ export const serviceLocations: ServiceLocation[] = [
     whyHere:
       "South Tampa's mix of 1920s bungalows and modern high-rises means appliance removal here is rarely simple. Tight kitchen doorways in Hyde Park, freight-elevator coordination on Bayshore, and saltwater-corroded units from Davis Islands keep our crews busy. We pick up 10–15 South Tampa appliances every week.",
     pricing: [
-      { label: "Single appliance (fridge, washer, dryer, oven)", price: "$95–$175", notes: "Curbside or first-floor pickup." },
+      { label: "Single appliance (fridge, washer, dryer, oven)", price: "$99–$175", notes: "Curbside or first-floor pickup." },
       { label: "Bundle of 2–3 appliances", price: "$175–$295", notes: "Most common kitchen swap-out." },
       { label: "Full kitchen / laundry strip", price: "$295–$550", notes: "Fridge + range + dishwasher + microwave + W/D." },
       { label: "Bayshore high-rise pickup", price: "+$50–$100", notes: "Covers freight elevator + dock booking." },
@@ -313,7 +313,7 @@ export const serviceLocations: ServiceLocation[] = [
       {
         question: "How much does appliance removal cost in South Tampa?",
         answer:
-          "Appliance removal in South Tampa costs $95–$175 for a single fridge, washer, dryer, or oven, and $175–$295 for a bundle of two or three. Full kitchen strip-outs run $295–$550. Bayshore high-rise pickups add $50–$100 to cover freight-elevator and loading-dock coordination.",
+          "Appliance removal in South Tampa costs $99–$175 for a single fridge, washer, dryer, or oven, and $175–$295 for a bundle of two or three. Full kitchen strip-outs run $295–$550. Bayshore high-rise pickups add $50–$100 to cover freight-elevator and loading-dock coordination.",
       },
       {
         question: "Do you take refrigerators in South Tampa?",

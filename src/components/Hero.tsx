@@ -4,7 +4,7 @@ import {
   VOICE_PHONE,
   SMS_PHONE,
   PRICE_ANCHOR,
-  REVIEW_COUNT,
+  REVIEW_PROOF,
   SMS_BODY,
   buildSmsHref,
 } from "@/config/hero";
@@ -74,9 +74,8 @@ const Hero = () => {
             week.
           </p>
 
-          {/* Price anchor. Renders only once Carlos confirms his real starting
-              price, because the site currently contradicts itself ($99 vs $150)
-              and guessing would make that worse. */}
+          {/* Price anchor. Comes from the approved pricing framework in
+              config/hero.ts — change it there, not here. */}
           {PRICE_ANCHOR && (
             <p className="mt-4 text-lg font-semibold text-white">
               {PRICE_ANCHOR}
@@ -117,7 +116,7 @@ const Hero = () => {
                 ))}
               </span>
               <span className="font-semibold">
-                {REVIEW_COUNT} Google reviews
+                {REVIEW_PROOF} of Google reviews
               </span>
             </span>
             <span>✓ Licensed &amp; insured</span>

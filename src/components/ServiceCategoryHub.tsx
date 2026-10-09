@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Calendar, Truck, Recycle, Phone, Shield, Clock, Leaf, ChevronRight, Home, DollarSign, Check } from "lucide-react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import ServiceAreasLinks from "@/components/ServiceAreasLinks";
 import QuickAnswer from "@/components/QuickAnswer";
@@ -181,7 +181,7 @@ const ServiceCategoryHub = ({ data, beforeCta }: ServiceCategoryHubProps) => {
             </p>
             
             <Button variant="cta" size="lg" className="px-8 py-4 text-lg" asChild>
-              <a href="https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae">
+              <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae">
                 Book Online in 60 Seconds
               </a>
             </Button>

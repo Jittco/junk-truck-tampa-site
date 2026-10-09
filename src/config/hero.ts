@@ -33,13 +33,14 @@ export const SMS_VERIFIED = true;
 export const SMS_REPLY_WINDOW = "within 24 hours";
 
 /**
- * Price ladder. Numbers taken from the existing /pricing page tiers so the
- * preview shows something real rather than invented figures.
+ * Price ladder. This is the approved public junk-removal pricing framework,
+ * confirmed by Carlos in October 2026. It is the single source of truth — the
+ * city and neighborhood pages were brought into line with it, and the old
+ * contradictory $150 entry price and $349–$550 "average" are gone.
  *
- * ⚠️ The site currently contradicts itself on the entry price: the homepage FAQ
- * and /pricing say single items start at $99, while the Brandon, USF, Riverview,
- * Hyde Park and South Tampa pages say $150. Carlos needs to settle this before
- * any of it goes live.
+ * The detailed fractional pricing used internally is deliberately NOT published.
+ * A garage cleanout spans half truck to full truck, so it is quoted as $400–$950
+ * wherever it comes up.
  */
 export const PRICE_TIERS = [
   {
@@ -69,13 +70,23 @@ export const PRICE_TIERS = [
 ] as const;
 
 /** Short anchor used above the fold. */
-export const PRICE_ANCHOR = "Most garage cleanouts run $400–$800.";
+export const PRICE_ANCHOR = "Most garage cleanouts run $400–$950.";
 
 /**
- * Review count claim. The review widget on the homepage reports 485, so this is
- * comfortably true and stays true as the count grows.
+ * Social proof for the review count.
+ *
+ * Deliberately NOT a number. The live rating and review count come from the
+ * Trustindex widget on the homepage, which updates itself from Google. A second
+ * hardcoded number elsewhere on the site only goes stale and then contradicts
+ * the widget sitting a few hundred pixels below it — which is exactly what
+ * happened with the old 450+/474/485 figures.
+ *
+ * Trustindex injects its widget as third-party DOM and exposes no count we can
+ * safely read, so anywhere outside the widget uses wording that stays true as
+ * the count grows. If Trustindex ever exposes a documented API for the count,
+ * this is the one place to swap it in.
  */
-export const REVIEW_COUNT = "485";
+export const REVIEW_PROOF = "Hundreds";
 
 /** Prefilled body for the photo-quote text message. */
 export const SMS_BODY =

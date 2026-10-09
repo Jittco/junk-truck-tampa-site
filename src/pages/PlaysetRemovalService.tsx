@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Button } from '../components/ui/button';
@@ -60,19 +60,12 @@ const PlaysetRemovalService: React.FC = () => {
     "@type": "Service",
     "name": service.name,
     "description": service.shortDescription,
+    // Reference the one canonical business entity rather than restating a
+    // partial copy of it (this one also had the locality as "Tampa Bay", which
+    // is not a city). The full LocalBusiness is emitted once per page by the
+    // build's prerender step and by LocalBusinessSchema.tsx.
     "provider": {
-      "@type": "LocalBusiness",
-      "name": "Junk in the Truck Co",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "3810 W San Carlos Street",
-        "addressLocality": "Tampa Bay",
-        "addressRegion": "FL",
-        "postalCode": "33629",
-        "addressCountry": "US"
-      },
-      "telephone": "844-858-6546",
-      "url": "https://www.junkinthetruckco.com"
+      "@id": "https://www.junkinthetruckco.com/#organization"
     },
     "areaServed": "Tampa Bay, FL",
     "serviceType": service.name

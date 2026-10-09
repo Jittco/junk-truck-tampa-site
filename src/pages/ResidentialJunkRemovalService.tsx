@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Navigation from '../components/Navigation';
 import Breadcrumbs from '../components/Breadcrumbs';
 import Footer from '../components/Footer';
@@ -278,26 +278,30 @@ const ResidentialJunkRemovalService: React.FC = () => {
             </div>
             
             <div className="bg-primary/10 rounded-lg p-6 text-center mb-6 border border-green-500">
-              <p className="text-lg font-semibold mb-2 text-slate-950">Most residential jobs in Tampa Bay on average</p>
-              <p className="text-3xl font-anton text-primary">$349-$550</p>
-              <p className="text-sm mt-2 text-slate-950">depending on size and type of items</p>
+              <p className="text-lg font-semibold mb-2 text-slate-950">We price by how much truck you fill</p>
+              <p className="text-sm mt-2 text-slate-950">Not by the hour, and not by the item. You get the number before we start.</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-4 text-center">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+              <div className="border rounded-lg p-4 bg-green-50">
+                <h4 className="mb-2 font-medium text-xl text-slate-950">Single Item</h4>
+                <p className="font-bold mb-2 text-2xl text-[#18d13d]">$99</p>
+                <p className="text-sm text-slate-950">One couch, fridge, mattress, or similar</p>
+              </div>
               <div className="border rounded-lg p-4 bg-green-50">
                 <h4 className="mb-2 font-medium text-xl text-slate-950">Small Load</h4>
-                <p className="font-bold mb-2 text-[3] text-[#18d13d]">$99-$289</p>
-                <p className="text-sm text-slate-950">Few pieces of furniture or 1-2 appliances</p>
+                <p className="text-2xl font-bold text-primary mb-2">$175-$289</p>
+                <p className="text-sm text-slate-950">1/4 truck — a closet or a pile in the garage</p>
               </div>
               <div className="border rounded-lg p-4 bg-green-50">
-                <h4 className="mb-2 font-medium text-xl text-slate-950">Medium Load</h4>
-                <p className="text-2xl font-bold text-primary mb-2">$349-$550</p>
-                <p className="text-sm text-slate-950">Room cleanout or multiple appliances</p>
+                <h4 className="mb-2 font-medium text-xl text-slate-950">Half Truck</h4>
+                <p className="text-2xl font-bold text-primary mb-2">$400-$650</p>
+                <p className="text-sm text-slate-950">Full garage or attic cleanout</p>
               </div>
               <div className="border rounded-lg p-4 bg-[f0fdf4] bg-green-50">
-                <h4 className="mb-2 font-medium text-xl text-slate-950">Large Load</h4>
-                <p className="text-2xl font-bold text-primary mb-2">$750-$950</p>
-                <p className="text-sm text-slate-950">Whole house cleanout or estate removal</p>
+                <h4 className="mb-2 font-medium text-xl text-slate-950">Full Truck</h4>
+                <p className="text-2xl font-bold text-primary mb-2">$700-$950</p>
+                <p className="text-sm text-slate-950">Whole-home or estate cleanout</p>
               </div>
             </div>
 

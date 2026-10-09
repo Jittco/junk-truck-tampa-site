@@ -1,6 +1,6 @@
 // BreadcrumbSchema — reusable JSON-LD BreadcrumbList for SERP breadcrumbs
 // and AI-search structural understanding. Pass ordered crumbs from Home → page.
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export interface Crumb {
   name: string;

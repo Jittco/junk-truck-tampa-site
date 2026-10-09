@@ -20,7 +20,7 @@ const DumpsterVsJunkRemoval = () => {
                 <Recycle className="h-6 w-6" />
               </div>
               <h3 className="text-xl text-green-800 font-medium">
-                Dumpster Rental (18-Yard Roll-Off)
+                Dumpster Rental (15 & 20-Yard Roll-Off)
               </h3>
             </div>
             

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -8,26 +8,51 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import YouTubeLite from "../components/YouTubeLite";
 import Breadcrumbs from "@/components/Breadcrumbs";
-const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTrunkco/2eef934dbbae44e09e5d7b3ec87330ae";
+const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae";
 const PHONE = "844-858-6546";
+
+/**
+ * Confirmed customer-facing dumpster pricing (October 2026). Every rental
+ * period includes 1 ton; overage is $0.06 per pound. These are rentals, which
+ * are a separate service from the 20 cubic yard junk-removal truck — do not mix
+ * the two price structures.
+ */
+const DUMPSTER_SIZES = [
+  {
+    name: "15-Yard Dumpster",
+    bestFor: "Single-room remodels, garage and estate cleanouts, roofing debris",
+    featured: true,
+    rates: [
+      { days: "3 days", price: "$400" },
+      { days: "7 days", price: "$450" },
+      { days: "14 days", price: "$475" },
+      { days: "30 days", price: "$500" },
+    ],
+  },
+  {
+    name: "20-Yard Dumpster",
+    bestFor: "Whole-home cleanouts, larger renovations, construction debris",
+    featured: false,
+    rates: [
+      { days: "3 days", price: "$450" },
+      { days: "7 days", price: "$525" },
+      { days: "14 days", price: "$550" },
+      { days: "30 days", price: "$600" },
+    ],
+  },
+] as const;
 const DumpsterRental = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Dumpster Rental Tampa Bay",
-    "description": "Affordable 18-yard dumpster rentals in Tampa Bay with same-day delivery, flat-rate pricing, and 1 ton included. Serving Hillsborough & Pinellas County.",
+    "description": "Dumpster rental in Tampa with 15-yard and 20-yard roll-off dumpsters. Same-day delivery, flat-rate 3, 7, 14 and 30 day pricing, 1 ton included. Serving Hillsborough & Pinellas County.",
+    // Reference the one canonical business entity rather than restating a
+    // partial copy of it. The full LocalBusiness — with the confirmed hours,
+    // phone and address — is emitted once per page by the build's prerender
+    // step (scripts/seo-defaults.mjs).
     "provider": {
-      "@type": "LocalBusiness",
-      "name": "Junk in the Truck Co",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "3810 W San Carlos Street",
-        "addressLocality": "Tampa",
-        "addressRegion": "FL",
-        "addressCountry": "US"
-      },
-      "telephone": PHONE,
-      "url": "https://www.junkinthetruckco.com"
+      "@id": "https://www.junkinthetruckco.com/#organization"
     },
     "areaServed": [{
       "@type": "State",
@@ -36,21 +61,21 @@ const DumpsterRental = () => {
     "serviceType": "Dumpster Rental",
     "offers": {
       "@type": "Offer",
-      "priceRange": "$300-$350",
+      "priceRange": "$400-$600",
       "priceCurrency": "USD"
     }
   };
   return <>
       <Helmet>
-        <title>Dumpster Rental Tampa Bay | Same-Day 18-Yard Roll-Off</title>
-        <meta name="description" content="Affordable 18-yard dumpster rentals in Tampa Bay. Same-day delivery, flat-rate pricing, 1 ton included. Serving Hillsborough & Pinellas. Book online in minutes." />
+        <title>Dumpster Rental Tampa | 15 & 20 Yard Roll-Off | Same-Day Delivery</title>
+        <meta name="description" content="Dumpster rental Tampa — 15-yard and 20-yard roll-off dumpsters from $400. Same-day delivery, flat rates for 3, 7, 14 or 30 days, 1 ton included. Call 844-858-6546." />
         <link rel="canonical" href="https://www.junkinthetruckco.com/services/dumpster-rental/" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.junkinthetruckco.com/services/dumpster-rental/" />
-        <meta property="og:title" content="Dumpster Rental Tampa Bay | 18-Yard Roll-Off | Same-Day Delivery" />
-        <meta property="og:description" content="Affordable 18-yard dumpster rentals in Tampa Bay. Same-day delivery, flat-rate pricing, 1 ton included. Serving Hillsborough & Pinellas." />
+        <meta property="og:title" content="Dumpster Rental Tampa | 15 & 20 Yard Roll-Off | Same-Day Delivery" />
+        <meta property="og:description" content="Dumpster rental Tampa — 15-yard and 20-yard roll-off dumpsters. Same-day delivery, flat rates for 3, 7, 14 or 30 days, 1 ton included." />
         <meta property="og:site_name" content="Junk in the Truck Co" />
 
         <script type="application/ld+json">
@@ -73,10 +98,10 @@ const DumpsterRental = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-anton mb-6 text-white">
-            Affordable Dumpster Rental in Tampa Bay
+            Dumpster Rental in Tampa
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white max-w-3xl mx-auto">
-            Get a clean <strong>18-yard roll-off dumpster</strong> with <strong>same-day delivery available</strong>, flat-rate pricing, and local service you can trust.
+            Clean <strong>15-yard and 20-yard roll-off dumpsters</strong> with <strong>same-day delivery available</strong>, flat-rate pricing for 3, 7, 14 or 30 days, and local service you can trust.
           </p>
           
           {/* Badges */}
@@ -155,7 +180,7 @@ const DumpsterRental = () => {
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-foreground mb-2 font-normal">Flexible scheduling to fit your project</h3>
-                  <p className="text-sm text-muted-foreground">1-7 day rentals with same-day delivery available</p>
+                  <p className="text-sm text-muted-foreground">3, 7, 14 or 30 day rentals with same-day delivery available</p>
                 </div>
               </div>
             </div>
@@ -167,47 +192,56 @@ const DumpsterRental = () => {
       <section className="py-16 lg:py-20 bg-[#222222]">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-anton text-center mb-6 text-white">
-            18 Cubic Yard Dumpster – Pricing & Details
+            Dumpster Sizes &amp; Pricing
           </h2>
           <p className="text-lg text-center text-white mb-12 max-w-3xl mx-auto">
-            Our single-size, 18-yard dumpster fits most home and light commercial projects—cleanouts, remodels, roofing, and more.
+            Two sizes, flat rates, and your choice of 3, 7, 14 or 30 days. Every
+            rental includes 1 ton of disposal.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="border-2 border-primary">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-anton text-foreground">1–3 Days</CardTitle>
-                <div className="text-4xl font-bold text-primary">$325</div>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-muted-foreground mb-4">Perfect for quick cleanouts</p>
-                <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• 1 ton included</li>
-                  <li>• $0.08 per lb after first ton</li>
-                  <li>• Same-day delivery available</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-anton text-foreground">4–7 Days</CardTitle>
-                <div className="text-4xl font-bold text-primary">$450</div>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-muted-foreground mb-4">Great for bigger projects</p>
-                <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• 2 ton included</li>
-                  <li>• $0.08 per lb after first ton</li>
-                  <li>• Flexible timeline</li>
-                </ul>
-              </CardContent>
-            </Card>
+            {DUMPSTER_SIZES.map((size) => (
+              <Card key={size.name} className={size.featured ? "border-2 border-primary" : undefined}>
+                <CardHeader className="text-center">
+                  <CardTitle className="text-2xl font-anton text-foreground">{size.name}</CardTitle>
+                  <p className="text-muted-foreground">{size.bestFor}</p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="divide-y divide-border">
+                    {size.rates.map((rate) => (
+                      <li key={rate.days} className="flex items-baseline justify-between py-3">
+                        <span className="text-foreground">{rate.days}</span>
+                        <span className="text-2xl font-bold text-primary">{rate.price}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-sm text-muted-foreground mt-4 text-center">
+                    1 ton included · $0.06 per lb over 1 ton
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
-          <p className="text-center text-sm text-primary mt-8">
-            <strong>Note:</strong> Same-day delivery available (call to confirm availability)
-          </p>
+          <div className="max-w-3xl mx-auto mt-10 text-center">
+            <p className="text-lg text-white mb-4">
+              Not sure which size or rental period is right for your project? Call
+              us today at{" "}
+              <a href={`tel:${PHONE}`} className="text-primary font-semibold hover:underline">
+                {PHONE}
+              </a>{" "}
+              and we'll help you choose the best option.
+            </p>
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-3 text-lg" asChild>
+              <a href={`tel:${PHONE}`}>
+                <Phone className="h-5 w-5" />
+                Call {PHONE}
+              </a>
+            </Button>
+            <p className="text-sm text-primary mt-6">
+              <strong>Note:</strong> Same-day delivery available (call to confirm availability)
+            </p>
+          </div>
         </div>
       </section>
 
@@ -231,7 +265,7 @@ const DumpsterRental = () => {
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-normal text-foreground mb-2">Flexible rental periods</h3>
-                <p className="text-sm text-muted-foreground">1–7 days</p>
+                <p className="text-sm text-muted-foreground">3, 7, 14 or 30 days</p>
               </div>
             </div>
 
@@ -297,8 +331,8 @@ const DumpsterRental = () => {
                 <Trash2 className="h-8 w-8" />
               </div>
               <div className="text-primary font-bold text-lg mb-2">2</div>
-              <h3 className="font-normal text-foreground mb-2">Fill Your 18-Yard Dumpster</h3>
-              <p className="text-sm text-muted-foreground">Take 1-7 days to load household junk, construction debris, or renovation materials at your own pace</p>
+              <h3 className="font-normal text-foreground mb-2">Fill Your Dumpster</h3>
+              <p className="text-sm text-muted-foreground">Take 3, 7, 14 or 30 days to load household junk, construction debris, or renovation materials at your own pace</p>
             </li>
 
             <li className="text-center">
@@ -328,7 +362,7 @@ const DumpsterRental = () => {
             A Dumpster for Every Project in Tampa
           </h2>
           <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            No matter your project, our <strong>18-yard roll-off dumpster</strong> makes cleanup fast and stress-free.
+            No matter your project, our <strong>15-yard and 20-yard roll-off dumpsters</strong> make cleanup fast and stress-free.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -433,7 +467,7 @@ const DumpsterRental = () => {
                 What size is your dumpster?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                We offer one size: an <strong>18 cubic yard roll-off dumpster</strong>. This size fits most residential and light commercial projects including cleanouts, renovations, and debris removal.
+                We offer two sizes: a <strong>15-yard</strong> and a <strong>20-yard roll-off dumpster</strong>. The 15-yard suits single-room remodels, garage cleanouts and roofing debris; the 20-yard suits whole-home cleanouts, larger renovations and construction debris. Not sure which you need? Call us at 844-858-6546 and we will help you choose.
               </AccordionContent>
             </AccordionItem>
 
@@ -442,7 +476,7 @@ const DumpsterRental = () => {
                 How much does it cost to rent a dumpster?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                $300 (1–3 days) or $350 (4–7 days). Includes 1 ton of disposal, with additional weight at $0.08 per lb after the first ton. No hidden fees or surprises.
+                A 15-yard dumpster is $400 for 3 days, $450 for 7 days, $475 for 14 days, or $500 for 30 days. A 20-yard is $450 for 3 days, $525 for 7 days, $550 for 14 days, or $600 for 30 days. Every rental includes 1 ton of disposal, with additional weight at $0.06 per lb over the first ton. No hidden fees or surprises.
               </AccordionContent>
             </AccordionItem>
 
@@ -542,7 +576,7 @@ const DumpsterRental = () => {
             Ready to Book Your Dumpster?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Get your <strong>18-yard dumpster delivered today</strong> — fast, affordable, and local.
+            Get your <strong>15-yard or 20-yard dumpster delivered today</strong> — fast, affordable, and local.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

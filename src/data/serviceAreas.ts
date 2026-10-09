@@ -79,7 +79,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does junk removal cost in Brandon FL?",
         answer:
-          "Junk removal in Brandon typically runs $150–$650 depending on volume. Single-item pickups start around $99. Full garage cleanouts usually fall between $400 and $800. We always quote on-site before any work starts — no hidden fees.",
+          "We price by how much truck you fill. Single items start at $99, a small load (1/4 truck) runs $175–$289, a half truck $400–$650, and a full truck $700–$950. A full garage cleanout in Brandon usually lands somewhere between half and full truck, so $400–$950. We always quote on-site before any work starts — no hidden fees.",
       },
       {
         question: "Do you offer same-day junk removal in Brandon?",
@@ -208,7 +208,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does a garage cleanout cost in Carrollwood?",
         answer:
-          "Most Carrollwood garage cleanouts run $350–$750 depending on how packed the space is. We provide a binding on-site quote before starting.",
+          "A full garage cleanout is usually between a half truck and a full truck, so $400–$950 depending on how packed the space is. Lighter garages can come in at a small load, $175–$289. We provide a binding on-site quote before starting.",
       },
       {
         question: "Can you handle large furniture removal in Carrollwood Village?",
@@ -331,7 +331,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does an apartment cleanout cost near USF?",
         answer:
-          "Most USF-area apartment cleanouts run $250–$600 depending on volume. Single-mattress or single-couch pickups start around $99. We quote on-site or via video walkthrough.",
+          "As an example, a typical USF-area apartment cleanout falls between a small load and a half truck — roughly $250–$600 depending on volume. Single-mattress or single-couch pickups start at $99. Final pricing always comes from how much truck you fill, and we quote on-site or via video walkthrough before any work.",
       },
       {
         question: "Do you remove old mattresses in Temple Terrace?",
@@ -455,7 +455,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does junk removal cost in South Tampa?",
         answer:
-          "Most South Tampa jobs run $150–$850 depending on volume and access. Single items start at $99, full garage cleanouts $400–$800, and full home cleanouts $1,500–$4,500. Always an upfront quote before work starts.",
+          "We price by how much truck you fill. Single items start at $99, a small load (1/4 truck) runs $175–$289, a half truck $400–$650, and a full truck $700–$950. A full garage cleanout usually lands between half and full truck, so $400–$950. Larger South Tampa estate cleanouts that fill more than one truck are quoted individually. Always an upfront quote before work starts.",
       },
       {
         question: "Can you handle historic homes in Hyde Park and Davis Islands?",
@@ -579,7 +579,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does a storage unit cleanout cost?",
         answer:
-          "Most storage unit cleanouts in Town 'n' Country run $250–$700 depending on unit size and contents. We quote on-site or via video.",
+          "As an example, a storage unit cleanout in Town 'n' Country usually falls between a small load and a full truck — roughly $250–$700 depending on unit size and contents. Final pricing always comes from how much truck you fill. We quote on-site or via video.",
       },
       {
         question: "Can you handle commercial junk removal?",
@@ -701,7 +701,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does junk removal cost in Riverview?",
         answer:
-          "Most Riverview jobs run $150–$700. Single-item pickups start at $99, full garage cleanouts $400–$800. Always an upfront quote before any work.",
+          "We price by how much truck you fill. Single items start at $99, a small load (1/4 truck) runs $175–$289, a half truck $400–$650, and a full truck $700–$950. A full garage cleanout in Riverview usually lands between half and full truck, so $400–$950. Always an upfront quote before any work.",
       },
       {
         question: "Can you remove a playset from a Riverview backyard?",
@@ -823,7 +823,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does shed removal cost in Valrico?",
         answer:
-          "Most shed removals in Valrico run $400–$900 depending on size, material, and access. We disassemble in place and haul everything, leaving the pad clean.",
+          "Shed removal is a demolition job rather than a straight truck-fill, so it is quoted individually — as an example, most Valrico sheds land around $400–$900 depending on size, material, and access. We disassemble in place and haul everything, leaving the pad clean.",
       },
       {
         question: "Can you handle FishHawk-adjacent neighborhoods?",
@@ -951,7 +951,7 @@ export const serviceAreas: ServiceArea[] = [
       {
         question: "How much does a waterfront cleanout cost?",
         answer:
-          "Most Apollo Beach waterfront cleanouts run $400–$1,500 depending on volume, dock access, and item types. Always an upfront quote before any work.",
+          "Waterfront cleanouts are quoted individually because dock access and item types vary so much — as an example, most Apollo Beach jobs land around $400–$1,500, with anything over a full truck priced per load. Always an upfront quote before any work.",
       },
     ],
     jobStories: [
