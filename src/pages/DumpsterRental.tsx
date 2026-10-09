@@ -8,8 +8,27 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import YouTubeLite from "../components/YouTubeLite";
 import Breadcrumbs from "@/components/Breadcrumbs";
-const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae";
+import { buildTelHref, buildSmsHref } from "@/config/hero";
 const PHONE = "844-858-6546";
+const TEXT_PHONE = "813-531-9858";
+
+/**
+ * Dumpster rentals do NOT go through Housecall Pro.
+ *
+ * Every booking button on this page used to point at the Housecall Pro link,
+ * but that flow is junk removal only — it opens with "Welcome to Junk in the
+ * Truck Co Junk Removal", gates on a zip code, and has no dumpster option. So
+ * every click from this page landed a dumpster customer in the wrong funnel.
+ *
+ * Until there is a real dumpster booking flow, this page sends people to the
+ * phone. Do not reintroduce a Housecall Pro link here. Junk-removal pages are
+ * unaffected and still book through Housecall Pro as before.
+ */
+const CALL_HREF = buildTelHref("+1" + PHONE);
+const TEXT_HREF = buildSmsHref(
+  "+1" + TEXT_PHONE,
+  "Hi! I'd like to check dumpster availability for:"
+);
 
 /**
  * Confirmed customer-facing dumpster pricing (October 2026). Every rental
@@ -120,12 +139,15 @@ const DumpsterRental = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-3 text-lg" asChild>
-              <a href={BOOK_URL} target="_blank" rel="noopener noreferrer">
-                Book a Dumpster
+              <a href={CALL_HREF}>
+                <Phone className="h-5 w-5" />
+                Call to Rent a Dumpster
               </a>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground px-8 py-3 text-lg" asChild>
-              
+              <a href={TEXT_HREF}>
+                Text for Dumpster Availability
+              </a>
             </Button>
           </div>
         </div>
@@ -227,13 +249,13 @@ const DumpsterRental = () => {
             <p className="text-lg text-white mb-4">
               Not sure which size or rental period is right for your project? Call
               us today at{" "}
-              <a href={`tel:${PHONE}`} className="text-primary font-semibold hover:underline">
+              <a href={CALL_HREF} className="text-primary font-semibold hover:underline">
                 {PHONE}
               </a>{" "}
               and we'll help you choose the best option.
             </p>
             <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-3 text-lg" asChild>
-              <a href={`tel:${PHONE}`}>
+              <a href={CALL_HREF}>
                 <Phone className="h-5 w-5" />
                 Call {PHONE}
               </a>
@@ -322,8 +344,8 @@ const DumpsterRental = () => {
                 <Calendar className="h-8 w-8" />
               </div>
               <div className="text-primary font-bold text-lg mb-2">1</div>
-              <h3 className="font-normal text-foreground mb-2">Book Your Tampa Bay Dumpster Rental</h3>
-              <p className="text-sm text-muted-foreground">Reserve online in minutes or call {PHONE} for same-day delivery throughout Hillsborough & Pinellas County</p>
+              <h3 className="font-normal text-foreground mb-2">Call or Text to Reserve Your Dumpster</h3>
+              <p className="text-sm text-muted-foreground">Call {PHONE} or text {TEXT_PHONE} and we'll confirm size, rental period and delivery — same-day available throughout Hillsborough &amp; Pinellas County</p>
             </li>
 
             <li className="text-center">
@@ -347,8 +369,9 @@ const DumpsterRental = () => {
 
           <div className="text-center">
             <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-3" asChild>
-              <a href={BOOK_URL} target="_blank" rel="noopener noreferrer">
-                Reserve Your Dumpster
+              <a href={CALL_HREF}>
+                <Phone className="h-5 w-5" />
+                Check Availability
               </a>
             </Button>
           </div>
@@ -512,7 +535,7 @@ const DumpsterRental = () => {
                 How do I book?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Use our online booking link or call us. We'll confirm delivery time and place the dumpster in a driveway-friendly location with proper protection for your property.
+                Call us at {PHONE} or text {TEXT_PHONE}. We'll confirm the size, rental period and delivery time, and place the dumpster in a driveway-friendly location with proper protection for your property.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -581,12 +604,15 @@ const DumpsterRental = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="px-8 py-3 text-lg font-semibold" asChild>
-              <a href={BOOK_URL} target="_blank" rel="noopener noreferrer">
-                Reserve Online Now
+              <a href={CALL_HREF}>
+                <Phone className="h-5 w-5" />
+                Call to Rent a Dumpster
               </a>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold" asChild>
-              
+              <a href={TEXT_HREF}>
+                Text for Dumpster Availability
+              </a>
             </Button>
           </div>
         </div>

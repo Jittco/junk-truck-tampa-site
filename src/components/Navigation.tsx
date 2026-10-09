@@ -1,8 +1,30 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { ChevronDown, Menu, X, Phone, ChevronRight } from "lucide-react";
 import { serviceCategories } from "@/data/services";
+import { buildTelHref, buildSmsHref } from "@/config/hero";
+
+const BOOK_URL = "https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae";
+
+/**
+ * Dumpster rentals have no Housecall Pro flow — that booking link is junk
+ * removal only. On the dumpster page the two "Get Free Quote" buttons would
+ * therefore drop a dumpster customer into the wrong funnel, so there, and only
+ * there, they become call and text.
+ *
+ * Every other page is untouched and still books through Housecall Pro.
+ */
+const DUMPSTER_PATH = "/services/dumpster-rental";
+const DUMPSTER_CALL_HREF = buildTelHref("+1844-858-6546");
+const DUMPSTER_TEXT_HREF = buildSmsHref(
+  "+1813-531-9858",
+  "Hi! I'd like to check dumpster availability for:"
+);
+
 const Navigation = () => {
+  const { pathname } = useLocation();
+  const isDumpsterPage = pathname.replace(/\/+$/, "") === DUMPSTER_PATH;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isDemolitionDropdownOpen, setIsDemolitionDropdownOpen] = useState(false);
@@ -143,9 +165,15 @@ const Navigation = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button" aria-label="Get a free quote for junk removal and demolition">
-                Get Free Quote
-              </a>
+              {isDumpsterPage ? (
+                <a href={DUMPSTER_CALL_HREF} className="cta-button" aria-label="Call 844-858-6546 to rent a dumpster">
+                  Call to Rent a Dumpster
+                </a>
+              ) : (
+                <a href={BOOK_URL} target="_blank" rel="noopener noreferrer" className="cta-button" aria-label="Get a free quote for junk removal and demolition">
+                  Get Free Quote
+                </a>
+              )}
             </div>
 
             {/* Mobile phone number and menu button */}
@@ -252,13 +280,26 @@ const Navigation = () => {
       {/* Mobile Sticky Buttons */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 p-4 bg-white border-t">
         <div className="flex gap-3">
-          <a href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae" target="_blank" rel="noopener noreferrer" className="cta-button flex-1 justify-center" aria-label="Get a free quote for junk removal and demolition">
-            Get Free Quote
-          </a>
-          <a href="tel:813-531-9858" className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold flex-1" aria-label="Call or text 813-531-9858">
-            <Phone className="h-4 w-4" />
-            Call or Text
-          </a>
+          {isDumpsterPage ? (
+            <>
+              <a href={DUMPSTER_CALL_HREF} className="cta-button flex-1 justify-center text-center" aria-label="Call 844-858-6546 to rent a dumpster">
+                Call to Rent a Dumpster
+              </a>
+              <a href={DUMPSTER_TEXT_HREF} className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold flex-1 text-center" aria-label="Text 813-531-9858 for dumpster availability">
+                Text for Dumpster Availability
+              </a>
+            </>
+          ) : (
+            <>
+              <a href={BOOK_URL} target="_blank" rel="noopener noreferrer" className="cta-button flex-1 justify-center" aria-label="Get a free quote for junk removal and demolition">
+                Get Free Quote
+              </a>
+              <a href="tel:813-531-9858" className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold flex-1" aria-label="Call or text 813-531-9858">
+                <Phone className="h-4 w-4" />
+                Call or Text
+              </a>
+            </>
+          )}
         </div>
       </div>
     </>;
