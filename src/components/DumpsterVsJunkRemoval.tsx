@@ -39,7 +39,7 @@ const DumpsterVsJunkRemoval = () => {
               </div>
               <div>
                 <span className="font-semibold text-green-800">Flexibility:</span>
-                <span className="text-green-700"> 1–7 day rental period</span>
+                <span className="text-green-700"> 3, 7, 14 or 30 day rentals</span>
               </div>
               <div>
                 <span className="font-semibold text-green-800">Included:</span>
@@ -47,7 +47,7 @@ const DumpsterVsJunkRemoval = () => {
               </div>
             </div>
 
-            <a href="/dumpster-rental" className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold transition-colors">
+            <a href="/services/dumpster-rental/" className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold transition-colors">
               View Tampa Bay Dumpster Rental Options
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>

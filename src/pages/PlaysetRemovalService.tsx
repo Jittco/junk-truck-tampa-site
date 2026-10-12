@@ -497,19 +497,19 @@ const PlaysetRemovalService: React.FC = () => {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-anton text-center mb-8">Want to Tear Down Your Own Playset? We've Got You Covered.</h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                If you'd rather <strong>demo your playset yourself</strong>, we make cleanup easy with our <strong>20-yard dumpster rental</strong>. Perfect for swing sets, mulch, rubber borders, and wood debris, our dumpster gives you the flexibility to work at your own pace.
+                If you'd rather <strong>demo your playset yourself</strong>, we make cleanup easy with our <strong>15- or 20-yard dumpster rental</strong>. Perfect for swing sets, mulch, rubber borders, and wood debris, our dumpster gives you the flexibility to work at your own pace.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Flat-rate pricing with a <strong>1-ton weight limit</strong> (just $100 per ton over)</span>
+                    <span className="text-muted-foreground">Flat-rate pricing with <strong>1 ton included</strong> (just $0.06 per lb over)</span>
                   </div>
                   
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Affordable rates starting at <strong>$350 for a 20-yard dumpster</strong></span>
+                    <span className="text-muted-foreground">Affordable rates <strong>from $400 (15-yard, 3 days)</strong></span>
                   </div>
                 </div>
                 

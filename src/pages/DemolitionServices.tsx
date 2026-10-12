@@ -89,7 +89,7 @@ const DemolitionServices = () => {
       },
       {
         title: "Dumpster Rental",
-        description: "Dumpster rentals for demolition debris",
+        description: "Dumpster rentals for DIY cleanouts and remodeling debris",
         image: "/lovable-uploads/d077d45a-c6fd-4a67-b113-f854669f61dd.png",
         link: "/services/dumpster-rental/"
       }

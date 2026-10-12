@@ -188,35 +188,27 @@ export const serviceCategories: ServiceCategory[] = [
   {
     name: "Dumpster Rental",
     slug: "dumpster-rental",
-    intro: "Convenient dumpster rental service for your cleanup projects. 20-yard dumpsters perfect for home renovations, cleanouts, and construction projects.",
+    intro: "Roll-off dumpster rental across Tampa Bay in 15-yard and 20-yard sizes. Flat-rate for 3, 7, 14 or 30 days, from $400 with 1 ton of disposal included.",
     heroImage: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
     order: 3,
-    services: [
-      {
-        name: "20-Yard Dumpster",
-        slug: "20-yard",
-        shortDescription: "Perfect for home renovations, large cleanouts, and small construction projects. Holds approximately 8 pickup truck loads.",
-        longDescription: "Our 20-yard dumpster is perfect for medium to large projects. Ideal for home renovations, estate cleanouts, roofing projects, and small construction jobs. Dimensions: 22' long x 8' wide x 4' high. Can hold approximately 8 pickup truck loads of debris.",
-        heroImage: "/lovable-uploads/d27a78b7-3af2-41cc-9a86-cd4c76bfa10d.png",
-        metaTitle: "20-Yard Dumpster Rental Tampa Bay | Junk in the Truck Co",
-        metaDescription: "Rent a 20-yard dumpster in Tampa Bay. Perfect for home renovations and cleanouts. Same-day delivery available.",
-        faq: [
-          {
-            question: "How long can I keep the dumpster?",
-            answer: "Standard rental period is 7 days. Extended rentals are available for an additional daily fee."
-          },
-          {
-            question: "What can I put in the dumpster?",
-            answer: "Most household and construction debris is accepted. We cannot accept hazardous materials, tires, appliances with freon, or electronics."
-          },
-          {
-            question: "Do you deliver to my location?",
-            answer: "Yes, we deliver throughout Tampa Bay. We'll need a clear, flat area for placement with adequate access for our delivery truck."
-          }
-        ],
-        order: 1
-      }
-    ]
+    /**
+     * Deliberately empty.
+     *
+     * This category used to hold a single "20-Yard Dumpster" sub-service, which
+     * made /services render a link and a schema ItemList entry pointing at
+     * /services/dumpster-rental/20-yard/ — a URL that does not exist and landed
+     * on the Page Not Found screen.
+     *
+     * Its copy was also wrong in ways that could not simply be patched: it
+     * published unverified dimensions, described a 7-day standard period with a
+     * per-day surcharge that contradicts the flat 3/7/14/30-day pricing, and
+     * listed tires and appliances as refused when both are accepted (with a call
+     * first). Removing the sub-service deletes all of that and leaves
+     * /services/dumpster-rental/ as the single real dumpster page.
+     *
+     * Do not add sub-services here unless the URLs actually exist.
+     */
+    services: []
   }
 ];
 
