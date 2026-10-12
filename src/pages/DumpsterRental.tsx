@@ -113,9 +113,11 @@ const DumpsterRental = () => {
       {/* Hero Section */}
       {/* pb-28 on mobile only: the fixed call/text bar covers the bottom ~84px
           of the viewport, and without this the hero's own text CTA ends up
-          partly behind it on first load. Cleared at lg, where no sticky bar
-          renders. */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-8 pb-28 lg:pb-0" style={{
+          partly behind it on first load. pt-6 balances it — with bottom padding
+          alone the content outgrows min-h-[70vh], the centring gap collapses
+          and the h1 ends up flush against the top edge of the photo. Both are
+          cleared at lg, where no sticky bar renders. */}
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-8 pt-6 pb-28 lg:pt-0 lg:pb-0" style={{
       backgroundImage: `url('/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png')`
     }}>
         <div className="absolute inset-0 bg-black/40"></div>
