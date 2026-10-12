@@ -260,7 +260,7 @@ const Pricing = () => {
                       <Check className="h-4 w-4 text-primary" />
                       Best For
                     </h4>
-                    <p className="text-muted-foreground text-sm">Ongoing projects, renovations, DIY cleanouts, roofing debris, yard work</p>
+                    <p className="text-muted-foreground text-sm">Ongoing projects, renovations, DIY cleanouts, roofing debris from smaller projects (with approval), yard work</p>
                   </div>
                   
                   <div>
@@ -301,6 +301,49 @@ const Pricing = () => {
                       Stress Level
                     </h4>
                     <p className="text-muted-foreground text-sm">Budget-friendly but requires effort</p>
+                  </div>
+
+                  {/* The exact confirmed dumpster rates. Anyone comparing the two
+                      options on this page previously had to leave it to find a
+                      number. Keep these in step with DumpsterRental.tsx. */}
+                  <div>
+                    <h4 className="text-foreground mb-2 flex items-center gap-2 font-medium">
+                      <Check className="h-4 w-4 text-primary" />
+                      Flat Rates
+                    </h4>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm text-muted-foreground">
+                        <thead>
+                          <tr className="text-left">
+                            <th className="font-medium text-foreground pb-1 pr-2">Size</th>
+                            <th className="font-medium text-foreground pb-1 px-1 text-right">3 d</th>
+                            <th className="font-medium text-foreground pb-1 px-1 text-right">7 d</th>
+                            <th className="font-medium text-foreground pb-1 px-1 text-right">14 d</th>
+                            <th className="font-medium text-foreground pb-1 pl-1 text-right">30 d</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-t border-border">
+                            <td className="py-1 pr-2 whitespace-nowrap">15-yard</td>
+                            <td className="py-1 px-1 text-right">$400</td>
+                            <td className="py-1 px-1 text-right">$450</td>
+                            <td className="py-1 px-1 text-right">$475</td>
+                            <td className="py-1 pl-1 text-right">$500</td>
+                          </tr>
+                          <tr className="border-t border-border">
+                            <td className="py-1 pr-2 whitespace-nowrap">20-yard</td>
+                            <td className="py-1 px-1 text-right">$450</td>
+                            <td className="py-1 px-1 text-right">$525</td>
+                            <td className="py-1 px-1 text-right">$550</td>
+                            <td className="py-1 pl-1 text-right">$600</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="text-muted-foreground text-sm mt-2">1 ton included · $0.06/lb over</p>
+                    <a href="/services/dumpster-rental/" className="text-primary text-sm font-semibold hover:underline inline-block mt-2">
+                      See dumpster rental details
+                    </a>
                   </div>
                 </div>
               </div>

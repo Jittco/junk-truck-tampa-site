@@ -30,7 +30,7 @@ const ServicesHub: React.FC = () => {
     },
     {
       title: "Dumpster Rental",
-      description: "20-yard dumpsters perfect for renovations and cleanouts.",
+      description: "15- and 20-yard dumpsters, from $400 with 1 ton included.",
       image: "/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png",
       link: "/services/dumpster-rental/"
     }

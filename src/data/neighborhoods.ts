@@ -132,7 +132,7 @@ export const southTampaNeighborhoods: Neighborhood[] = [
       {
         question: "Do you remove old plaster, lath, or renovation debris?",
         answer:
-          "Yes, for small-to-medium renovation loads. For large interior demolition jobs in Hyde Park, we offer dedicated demolition crews and roll-off options.",
+          "Yes, for small-to-medium renovation loads. For large interior demolition jobs in Hyde Park, we offer dedicated demolition crews.",
       },
       {
         question: "Will you remove items from a third-floor walk-up?",
