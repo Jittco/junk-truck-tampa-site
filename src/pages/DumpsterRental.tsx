@@ -111,7 +111,11 @@ const DumpsterRental = () => {
       ]} />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-8" style={{
+      {/* pb-28 on mobile only: the fixed call/text bar covers the bottom ~84px
+          of the viewport, and without this the hero's own text CTA ends up
+          partly behind it on first load. Cleared at lg, where no sticky bar
+          renders. */}
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat mt-8 pb-28 lg:pb-0" style={{
       backgroundImage: `url('/lovable-uploads/a5fe3c97-a4c9-4709-9911-a32de46871ae.png')`
     }}>
         <div className="absolute inset-0 bg-black/40"></div>
@@ -144,7 +148,7 @@ const DumpsterRental = () => {
                 Call to Rent a Dumpster
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground px-8 py-3 text-lg" asChild>
+            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-foreground px-8 py-3 text-lg" asChild>
               <a href={TEXT_HREF}>
                 Text for Dumpster Availability
               </a>
@@ -257,7 +261,7 @@ const DumpsterRental = () => {
             <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8 py-3 text-lg" asChild>
               <a href={CALL_HREF}>
                 <Phone className="h-5 w-5" />
-                Call {PHONE}
+                Call to Rent a Dumpster
               </a>
             </Button>
             <p className="text-sm text-primary mt-6">
@@ -609,7 +613,7 @@ const DumpsterRental = () => {
                 Call to Rent a Dumpster
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold" asChild>
+            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold" asChild>
               <a href={TEXT_HREF}>
                 Text for Dumpster Availability
               </a>

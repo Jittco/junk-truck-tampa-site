@@ -24,7 +24,12 @@ const DUMPSTER_TEXT_HREF = buildSmsHref(
 
 const Navigation = () => {
   const { pathname } = useLocation();
-  const isDumpsterPage = pathname.replace(/\/+$/, "") === DUMPSTER_PATH;
+  // Lowercased on purpose: react-router matches routes case-insensitively, so
+  // /Services/Dumpster-Rental/ renders this page too. A case-sensitive check
+  // here would serve that visitor the dumpster page with the junk-removal
+  // "Get Free Quote" button — straight back into the wrong booking flow.
+  const isDumpsterPage =
+    pathname.replace(/\/+$/, "").toLowerCase() === DUMPSTER_PATH;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isDemolitionDropdownOpen, setIsDemolitionDropdownOpen] = useState(false);
@@ -278,14 +283,20 @@ const Navigation = () => {
       </header>
 
       {/* Mobile Sticky Buttons */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 p-4 bg-white border-t">
+      <div className={`lg:hidden fixed bottom-0 left-0 right-0 z-50 ${isDumpsterPage ? "p-3" : "p-4"} bg-white border-t`}>
         <div className="flex gap-3">
+          {/* Two lines, not one. At 375px each button gets 165px, and "Text for
+              Dumpster Availability" needs 200px on one line at 14px — it only
+              fits unwrapped at 11px, which is too small to read. So the labels
+              wrap to two tight lines instead, which keeps the approved wording,
+              holds the bar at roughly 87px (it was 133px wrapping to 4–5 lines
+              and covering the hero CTA), and keeps both tap targets over 44px. */}
           {isDumpsterPage ? (
             <>
-              <a href={DUMPSTER_CALL_HREF} className="cta-button flex-1 justify-center text-center" aria-label="Call 844-858-6546 to rent a dumpster">
+              <a href={DUMPSTER_CALL_HREF} className="cta-button flex-1 justify-center text-center text-xs leading-tight px-2 py-2" aria-label="Call 844-858-6546 to rent a dumpster">
                 Call to Rent a Dumpster
               </a>
-              <a href={DUMPSTER_TEXT_HREF} className="flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold flex-1 text-center" aria-label="Text 813-531-9858 for dumpster availability">
+              <a href={DUMPSTER_TEXT_HREF} className="flex items-center justify-center px-2 py-2 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg font-semibold flex-1 text-center text-xs leading-tight" aria-label="Text 813-531-9858 for dumpster availability">
                 Text for Dumpster Availability
               </a>
             </>
