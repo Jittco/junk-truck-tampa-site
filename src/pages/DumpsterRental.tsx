@@ -436,7 +436,7 @@ const DumpsterRental = () => {
             What You Can't Put in Your Dumpster
           </h2>
           <p className="text-lg text-center mb-12 max-w-3xl mx-auto text-slate-50">
-            For safety and compliance, some materials <strong>cannot</strong> be placed in our dumpsters. If you're unsure, give us a call.
+            For safety and compliance, some materials <strong>cannot</strong> be placed in our dumpsters. Concrete and dirt are not accepted in standard dumpster rentals. Tires and automotive parts are not on this list — both can go in, with conditions explained in the FAQs below. If you're unsure, give us a call.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -460,9 +460,15 @@ const DumpsterRental = () => {
               <h3 className="text-foreground text-lg font-light">Asbestos & contaminated materials</h3>
             </div>
 
+            {/* Was "Tires & auto parts". Both are in fact accepted — tires with
+                an extra disposal fee, auto parts once fluids are drained — so
+                listing them here was wrong. The slot is reused for concrete and
+                dirt, which genuinely are not accepted, to keep the grid at eight
+                cards. Tires, auto parts and roofing are covered in the FAQ text
+                below, where the conditions can actually be explained. */}
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
               <Truck className="h-8 w-8 text-destructive mb-3" />
-              <h3 className="text-foreground text-lg font-light">Tires & auto parts</h3>
+              <h3 className="text-foreground text-lg font-light">Concrete &amp; dirt</h3>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-background rounded-lg shadow-sm border-l-4 border-destructive">
@@ -523,7 +529,7 @@ const DumpsterRental = () => {
                 What can I put in the dumpster?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Household junk, furniture, yard waste, remodeling debris, and light construction debris. Most common project materials are accepted. Small amounts of roofing shingles are OK. Full roof tear-offs aren't accepted. Call or text us first if you're not sure.
+                Household junk, furniture, yard waste, remodeling debris, and light construction debris. Most common project materials are accepted. Small amounts of roofing shingles are OK. Full roof tear-offs aren't accepted. Call or text us first if you're not sure. Roofing debris from smaller projects can be accepted with approval, but entire house roof replacements are not. Tires are accepted with an additional disposal fee — contact us first. Automotive parts are accepted as long as all fluids such as oil, fuel and coolant have been drained.
               </AccordionContent>
             </AccordionItem>
 
@@ -532,7 +538,7 @@ const DumpsterRental = () => {
                 What items are prohibited?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Hazardous waste, chemicals, paints, oils, asbestos, tires, batteries, medical waste, propane tanks, and flammable materials. Call us if you're unsure about specific items.
+                Hazardous waste, chemicals, paints (including wet or liquid paint), oils, asbestos, batteries, medical waste, propane tanks, and flammable materials. Concrete and dirt are also not accepted in standard dumpster rentals. Tires are not prohibited — they are accepted with an additional disposal fee, so contact us first. Call us if you're unsure about specific items.
               </AccordionContent>
             </AccordionItem>
 

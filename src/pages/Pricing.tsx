@@ -260,7 +260,7 @@ const Pricing = () => {
                       <Check className="h-4 w-4 text-primary" />
                       Best For
                     </h4>
-                    <p className="text-muted-foreground text-sm">Ongoing projects, renovations, DIY cleanouts, roofing debris, yard work</p>
+                    <p className="text-muted-foreground text-sm">Ongoing projects, renovations, DIY cleanouts, roofing debris from smaller projects (with approval), yard work</p>
                   </div>
                   
                   <div>
