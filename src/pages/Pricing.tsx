@@ -62,7 +62,7 @@ const Pricing = () => {
     answer: "When possible, yes. We prioritize responsible disposal through recycling and donation."
   }, {
     question: "Any items you can't take?",
-    answer: "We cannot take hazardous waste, paints/solvents, oils/fuels, asbestos, tires, batteries, medical waste, or propane/pressurized tanks."
+    answer: "We cannot take hazardous waste, paints/solvents, oils/fuels, asbestos, batteries, medical waste, or propane/pressurized tanks. Tires are accepted with an additional disposal fee, and auto parts are accepted when free of hazardous fluids."
   }, {
     question: "Do you offer same-day service?",
     answer: "Often yes! Call 844-858-6546 to confirm same-day availability in your area."
