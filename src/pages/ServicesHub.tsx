@@ -165,21 +165,35 @@ const ServicesHub: React.FC = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-anton mb-4">Ready to schedule? Get your free estimate now.</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="secondary"
-                onClick={() => window.open('https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae', '_blank')}
-              >
-                Book Now
+              {/* Real anchors rather than window.open handlers, matching the
+                  pattern used elsewhere on the site. The delegated GA4 listener
+                  in index.html only sees tel:/sms: anchors, so the Call button
+                  was invisible to call tracking as a <button>. */}
+              <Button size="lg" variant="secondary" asChild>
+                <a
+                  href="https://book.housecallpro.com/book/JunkintheTruckco/2eef934dbbae44e09e5d7b3ec87330ae"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Now
+                </a>
               </Button>
-              <Button 
-                size="lg" 
+              {/* Dark text, not white. The outline variant's bg-background is
+                  white, and with text-primary-foreground (also white) this
+                  button rendered white-on-white at 1:1 — completely invisible.
+                  White on the brand green would only reach 1.87:1, so the text
+                  and border use the site's existing #222222, which gives 8.49:1
+                  on the band. The band's own heading colour is untouched. */}
+              <Button
+                size="lg"
                 variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                onClick={() => window.open('tel:844-858-6546', '_self')}
+                className="bg-transparent border-[#222222] text-[#222222] hover:bg-[#222222] hover:text-white"
+                asChild
               >
-                <Phone className="w-4 h-4 mr-2" />
-                Call
+                <a href="tel:+18448586546">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Call
+                </a>
               </Button>
             </div>
           </div>

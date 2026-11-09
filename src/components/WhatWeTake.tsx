@@ -8,9 +8,16 @@ const WhatWeTake = () => {
     { text: "Yard waste & debris removal", bold: "Yard waste" },
     { text: "Construction Debris Hauling – renovation & remodel waste", bold: "Construction Debris Hauling" },
     { text: "Electronics disposal (small quantities)", bold: "Electronics disposal" },
-    { text: "Office & commercial junk removal", bold: "commercial junk removal" }
+    { text: "Office & commercial junk removal", bold: "commercial junk removal" },
+    { text: "Tires (additional disposal fee)", bold: "Tires" },
+    { text: "Large auto parts – engines, transmissions, bumpers, doors (fluids drained)", bold: "Large auto parts" }
   ];
-  const itemsWeDont = ["Hazardous waste & toxic materials", "Paints, stains & solvents", "Oils, fuels & flammable liquids", "Asbestos or contaminated items", "Tires & large auto parts", "Batteries & chemicals", "Medical waste & sharps", "Propane tanks & pressurized containers"];
+  // "Tires & large auto parts" used to sit in this list. Both are in fact taken —
+  // tires for an additional disposal fee, large auto parts once oil, fuel and
+  // coolant are drained — so they have moved to the accepted list above. The
+  // fluids themselves stay prohibited, on the "Oils, fuels & flammable liquids"
+  // line, and every other restriction here is unchanged.
+  const itemsWeDont = ["Hazardous waste & toxic materials", "Paints, stains & solvents", "Oils, fuels & flammable liquids", "Asbestos or contaminated items", "Batteries & chemicals", "Medical waste & sharps", "Propane tanks & pressurized containers"];
   return <section className="py-16 bg-[#222222]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
